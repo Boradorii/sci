@@ -1,0 +1,39 @@
+[2023-07-25 16:41:10, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:42:50, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:42:53, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:42:58, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:43:01, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:43:35, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:43:37, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:45:59, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:47:47, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:48:43, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:48:47, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:48:59, error] "[Router Error]: /favicon.ico"
+[2023-07-25 16:49:31, info] "MySQL Query:     SELECT h_user_code    from user_hospital    where h_user_account_pw = SHA2(?, 256) and h_user_code = ?;"
+[2023-07-25 16:49:31, info] "MySQL Query Params: hostest11!,"
+[2023-07-25 16:49:31, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-25 16:49:31, error] "[System Error]: Cannot read properties of undefined (reading 'h_user_code')"
+[2023-07-25 16:49:31, error] "Cannot read properties of undefined (reading 'h_user_code')"
+TypeError: Cannot read properties of undefined (reading 'h_user_code')
+    at hospitalService.pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:24:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:20:23)
+[2023-07-25 16:49:38, info] "MySQL Query:     SELECT h_user_code    from user_hospital    where h_user_account_pw = SHA2(?, 256) and h_user_code = ?;"
+[2023-07-25 16:49:38, info] "MySQL Query Params: hostest11!,"
+[2023-07-25 16:49:38, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-25 16:49:38, error] "[System Error]: Cannot read properties of undefined (reading 'h_user_code')"
+[2023-07-25 16:49:38, error] "Cannot read properties of undefined (reading 'h_user_code')"
+TypeError: Cannot read properties of undefined (reading 'h_user_code')
+    at hospitalService.pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:24:23)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:20:23)
+[2023-07-25 16:50:37, error] "[Router Error]: /favicon.ico"

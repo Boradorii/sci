@@ -1,0 +1,145 @@
+{% extends "templates/appmainbase.html" %}
+<!-- ------------------------------------------------------------- -->
+{% block head %}
+<!-- CSS -->
+<!-- datepicker CSS -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    rel="stylesheet">
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+    .pet-info {
+        margin-bottom: 0px;
+    }
+
+    .card-box {
+        margin-top: 10px;
+        border: 2px solid lightgray;
+    }
+
+    table {
+        width: 100%;
+        /* border-collapse: collapse; */
+    }
+
+    table td,
+    table th {
+        /* padding: 10px; */
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 3px solid white;
+    }
+
+    .td-pet-info {
+        border-right: 1px solid lightgray;
+    }
+
+    .table-test {
+        width: 100%;
+    }
+
+    .table-test td,
+    .table-test th {
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 1px solid #e9ecef;
+        border-top: none;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+<!-- Content 시작 -->
+{% block contents%}
+<!-- html -->
+<div class="skin-megna page-wrapper" style="padding: 0; overflow-y: scroll;">
+    <div id="box" class="container-fluid">
+        <!-- 반려견 정보 -->
+        <div class="card card-box" style="text-align: center; width: 110%;">
+            <p class="m-b-0">모든 서비스는 대표 반려동물을 대상으로 제공합니다. <br> * 아이콘을 터치하여 대표 반려동물을 설정해 주세요. </p>
+        </div>
+        <i id="petAdd" class="material-icons ml-auto" style="color: black; font-size: 50px;">add</i>
+
+
+
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+{% block script %}
+<script src="/javascripts/config.js"></script>
+<script src="/assets/node_modules/moment/moment.js"></script>
+<script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
+<script src="/javascripts/commonUtil.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="/app/a_mypage/a_mypage_myPet.js"></script>
+<script>
+    let p_userCode = "{{p_userCode}}";
+    console.log("aa", p_userCode);
+
+
+    // //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+    window.parent.postMessage({
+        action: 'moveFrameN'
+    }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+    //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+    // 페이지 이동 버튼 클릭 이벤트 2021.05.10 JG
+    $("#petAdd").on('click', function (evnt) {
+        let targetId = evnt.currentTarget.id,
+            reqUrl = baseUrl + '/a_mypage';
+        switch (targetId) {
+            case 'petAdd': // 아이디가 myPetCare 일 때.
+                reqUrl += '/myPetPage2';
+                window.parent.postMessage({ // 앱 상단 타이틀 변경을 위한 postMessage 전송
+                    action: 'go-petManage2'
+                }, '*');
+                break;
+
+        }
+
+        reqUrl += '?p_userCode=' + p_userCode /* + '&lang=' + lang + "&accessToken=" + accessToken*/;
+        location.href = reqUrl;
+
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+        window.parent.postMessage({
+            action: 'moveFrameY' //메인페이지에서 하위 메뉴로 들어갔을 때 페이지 이동 표시("Y": 하위 메뉴/"N": 메인메뉴)
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+
+
+    });
+
+
+
+
+    init();
+
+</script>
+
+{% endblock %}

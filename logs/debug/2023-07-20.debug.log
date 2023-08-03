@@ -1,0 +1,1208 @@
+[2023-07-20 09:19:46, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:19:46, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:19:46, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:19:47, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:19:47, info] "MySQL Query Params: p_2"
+[2023-07-20 09:19:47, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:19:47, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:19:47, info] "MySQL Query Params: p_2"
+[2023-07-20 09:19:47, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "N"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:19:47, error] "[System Error]: fn is not a function"
+[2023-07-20 09:19:47, error] "fn is not a function"
+TypeError: fn is not a function
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:47:12)
+[2023-07-20 09:19:48, error] "[System Error]: fn is not a function"
+[2023-07-20 09:19:48, error] "fn is not a function"
+TypeError: fn is not a function
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:47:12)
+[2023-07-20 09:19:49, error] "[System Error]: fn is not a function"
+[2023-07-20 09:19:49, error] "fn is not a function"
+TypeError: fn is not a function
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:47:12)
+[2023-07-20 09:19:51, error] "[System Error]: fn is not a function"
+[2023-07-20 09:19:51, error] "fn is not a function"
+TypeError: fn is not a function
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:47:12)
+[2023-07-20 09:19:51, error] "[System Error]: fn is not a function"
+[2023-07-20 09:19:51, error] "fn is not a function"
+TypeError: fn is not a function
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:47:12)
+[2023-07-20 09:19:51, error] "[System Error]: fn is not a function"
+[2023-07-20 09:19:51, error] "fn is not a function"
+TypeError: fn is not a function
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:47:12)
+[2023-07-20 09:19:52, error] "[System Error]: fn is not a function"
+[2023-07-20 09:19:52, error] "fn is not a function"
+TypeError: fn is not a function
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:47:12)
+[2023-07-20 09:20:03, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:20:03, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:20:03, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:20:04, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:20:04, info] "MySQL Query Params: p_2"
+[2023-07-20 09:20:04, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:20:04, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:20:04, info] "MySQL Query Params: p_2"
+[2023-07-20 09:20:04, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "N"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:20:05, error] "[System Error]: fn is not a function"
+[2023-07-20 09:20:05, error] "fn is not a function"
+TypeError: fn is not a function
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:47:12)
+[2023-07-20 09:20:30, error] "[System Error]: fn is not a function"
+[2023-07-20 09:20:30, error] "fn is not a function"
+TypeError: fn is not a function
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:47:12)
+[2023-07-20 09:20:32, error] "[System Error]: fn is not a function"
+[2023-07-20 09:20:32, error] "fn is not a function"
+TypeError: fn is not a function
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:47:12)
+[2023-07-20 09:24:41, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:24:41, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:24:41, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:24:42, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:24:42, info] "MySQL Query Params: p_2"
+[2023-07-20 09:24:42, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:24:42, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:24:42, info] "MySQL Query Params: p_2"
+[2023-07-20 09:24:42, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "N"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:24:43, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:24:43, info] "MySQL Query Params: p_2"
+[2023-07-20 09:24:43, debug] {
+    "succ": 1,
+    "state": true
+}
+[2023-07-20 09:24:56, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:24:56, info] "MySQL Query Params: p_2"
+[2023-07-20 09:24:56, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:25:08, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:25:08, info] "MySQL Query Params: p_2"
+[2023-07-20 09:25:08, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:25:09, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:25:09, info] "MySQL Query Params: p_2"
+[2023-07-20 09:25:09, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:25:14, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:25:14, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:25:14, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:25:15, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:25:15, info] "MySQL Query Params: p_2"
+[2023-07-20 09:25:15, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:25:15, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:25:15, info] "MySQL Query Params: p_2"
+[2023-07-20 09:25:15, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:28:48, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:28:48, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:28:48, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:28:49, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:28:49, info] "MySQL Query Params: p_2"
+[2023-07-20 09:28:49, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:28:49, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:28:49, info] "MySQL Query Params: p_2"
+[2023-07-20 09:28:49, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:29:00, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:29:00, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:29:00, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:29:01, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:29:01, info] "MySQL Query Params: p_2"
+[2023-07-20 09:29:01, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:29:01, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:29:01, info] "MySQL Query Params: p_2"
+[2023-07-20 09:29:01, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "N"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:29:02, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:29:02, info] "MySQL Query Params: p_2"
+[2023-07-20 09:29:02, debug] {
+    "succ": 1,
+    "state": true
+}
+[2023-07-20 09:29:11, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:29:11, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:29:11, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:29:20, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:29:20, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:29:20, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:29:21, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:29:21, info] "MySQL Query Params: p_2"
+[2023-07-20 09:29:21, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:29:21, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:29:21, info] "MySQL Query Params: p_2"
+[2023-07-20 09:29:21, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "N"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:29:22, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:29:22, info] "MySQL Query Params: p_2"
+[2023-07-20 09:29:22, debug] {
+    "succ": 1,
+    "state": true
+}
+[2023-07-20 09:29:23, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:29:23, info] "MySQL Query Params: p_2"
+[2023-07-20 09:29:23, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:30:28, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:30:28, info] "MySQL Query Params: p_2"
+[2023-07-20 09:30:28, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:30:33, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:30:33, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:30:33, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:30:34, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:30:34, info] "MySQL Query Params: p_2"
+[2023-07-20 09:30:34, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:30:34, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:30:34, info] "MySQL Query Params: p_2"
+[2023-07-20 09:30:34, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "N"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:30:35, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:30:35, info] "MySQL Query Params: p_2"
+[2023-07-20 09:30:35, debug] {
+    "succ": 1,
+    "state": true
+}
+[2023-07-20 09:30:44, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:30:44, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:30:44, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:30:45, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:30:45, info] "MySQL Query Params: p_2"
+[2023-07-20 09:30:45, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:30:45, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:30:45, info] "MySQL Query Params: p_2"
+[2023-07-20 09:30:45, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:45:16, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:45:16, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:45:16, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:45:17, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:45:17, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:17, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:45:17, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:45:17, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:17, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:45:17, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:45:17, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:17, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:45:36, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:45:36, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:45:36, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:45:36, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:45:36, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:45:36, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:45:37, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:45:37, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:37, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:45:37, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:45:37, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:37, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:45:38, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:45:38, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:38, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:45:46, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:45:46, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:46, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:45:48, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:45:48, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:48, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:45:50, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:45:50, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:45:50, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:45:51, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:45:51, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:51, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:45:51, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:45:51, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:51, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:45:53, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:45:53, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:53, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:45:59, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:45:59, info] "MySQL Query Params: p_2"
+[2023-07-20 09:45:59, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:46:00, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:46:00, info] "MySQL Query Params: p_2"
+[2023-07-20 09:46:00, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:46:00, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:46:00, info] "MySQL Query Params: p_2"
+[2023-07-20 09:46:00, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:46:06, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:46:06, info] "MySQL Query Params: p_2"
+[2023-07-20 09:46:06, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:46:06, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:46:06, info] "MySQL Query Params: p_2"
+[2023-07-20 09:46:06, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:46:07, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 09:46:07, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 09:46:07, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:46:09, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 09:46:09, info] "MySQL Query Params: p_2"
+[2023-07-20 09:46:09, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 09:46:09, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 09:46:09, info] "MySQL Query Params: p_2"
+[2023-07-20 09:46:09, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 09:46:10, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:46:10, info] "MySQL Query Params: p_2"
+[2023-07-20 09:46:10, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 09:46:10, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 09:46:10, info] "MySQL Query Params: p_2"
+[2023-07-20 09:46:10, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 11:35:52, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 11:35:52, info] "MySQL Query Params: p_2"
+[2023-07-20 11:35:52, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 11:35:53, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 11:35:53, info] "MySQL Query Params: p_2"
+[2023-07-20 11:35:53, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 11:39:52, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 11:39:52, info] "MySQL Query Params: p_2"
+[2023-07-20 11:39:52, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 11:39:53, info] "MySQL Query:     UPDATE alert_list    SET alert_check = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 11:39:53, info] "MySQL Query Params: p_2"
+[2023-07-20 11:39:53, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 11:43:31, info] "MySQL Query:     UPDATE user_protector    SET p_user_provide_yn = 'N'    WHERE p_user_code = ?;"
+[2023-07-20 11:43:31, info] "MySQL Query Params: p_2"
+[2023-07-20 11:43:31, debug] {
+    "succ": 1,
+    "state": true
+}
+[2023-07-20 11:43:31, info] "MySQL Query:     select p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 11:43:31, info] "MySQL Query Params: p_2"
+[2023-07-20 11:43:31, debug] {
+    "row": {
+        "p_user_provide_yn": "N"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:43:32, info] "MySQL Query:     UPDATE user_protector    SET p_user_provide_yn = 'Y'    WHERE p_user_code = ?;"
+[2023-07-20 11:43:32, info] "MySQL Query Params: p_2"
+[2023-07-20 11:43:32, debug] {
+    "succ": 1,
+    "state": true
+}
+[2023-07-20 11:43:32, info] "MySQL Query:     select p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 11:43:32, info] "MySQL Query Params: p_2"
+[2023-07-20 11:43:32, debug] {
+    "row": {
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:43:53, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 11:43:53, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 11:43:53, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:43:54, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 11:43:54, info] "MySQL Query Params: p_2"
+[2023-07-20 11:43:54, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:43:54, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 11:43:54, info] "MySQL Query Params: p_2"
+[2023-07-20 11:43:54, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 11:44:09, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 11:44:09, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 11:44:09, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:44:10, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 11:44:10, info] "MySQL Query Params: p_2"
+[2023-07-20 11:44:10, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:44:10, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 11:44:10, info] "MySQL Query Params: p_2"
+[2023-07-20 11:44:10, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 11:44:18, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 11:44:18, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 11:44:18, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:44:19, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 11:44:19, info] "MySQL Query Params: p_2"
+[2023-07-20 11:44:19, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:44:19, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 11:44:19, info] "MySQL Query Params: p_2"
+[2023-07-20 11:44:19, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 11:44:34, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 11:44:34, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 11:44:34, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:44:36, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 11:44:36, info] "MySQL Query Params: p_2"
+[2023-07-20 11:44:36, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:44:36, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 11:44:36, info] "MySQL Query Params: p_2"
+[2023-07-20 11:44:36, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 11:44:42, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 11:44:42, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 11:44:42, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:44:43, info] "MySQL Query:     select push_date, p_user_provide_yn    from user_protector    where p_user_code=?;"
+[2023-07-20 11:44:43, info] "MySQL Query Params: p_2"
+[2023-07-20 11:44:43, debug] {
+    "row": {
+        "push_date": "2023-06-22",
+        "p_user_provide_yn": "Y"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:44:43, info] "MySQL Query:     select *    from alert_list    where p_user_code=?;"
+[2023-07-20 11:44:43, info] "MySQL Query Params: p_2"
+[2023-07-20 11:44:43, debug] {
+    "rows": [
+        {
+            "alert_num": 1,
+            "p_user_code": "p_2",
+            "pet_id": 1,
+            "alert_class": 0,
+            "inquiry_num": 18,
+            "alert_created_time": "2023-07-18 13:55:37",
+            "alert_check": "Y"
+        },
+        {
+            "alert_num": 19,
+            "p_user_code": "p_2",
+            "pet_id": 2,
+            "alert_class": 1,
+            "inquiry_num": 19,
+            "alert_created_time": "2023-07-18 16:46:35",
+            "alert_check": "Y"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-20 11:48:30, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 11:48:30, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 11:48:30, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:48:33, info] "MySQL Query: UPDATE user_protector SET p_app_token=? WHERE p_user_code=?;"
+[2023-07-20 11:48:33, info] "MySQL Query Params: ,p_2"
+[2023-07-20 11:48:33, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-20 11:48:33, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 11:48:33, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 11:48:33, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:48:33, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-20 11:48:33, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-20 11:48:33, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:48:34, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-20 11:48:34, info] "MySQL Query Params: p_2"
+[2023-07-20 11:48:34, debug] {
+    "row": {
+        "pet_id": 21,
+        "pet_code": "",
+        "pet_name": "성근이",
+        "pet_byear": 2020,
+        "pet_weight": "4.0",
+        "pet_breed": "래브라도 리트리버",
+        "pet_note": null,
+        "pet_first_yn": "Y",
+        "p_user_code": "p_2",
+        "pet_isNeutering": "Y",
+        "pet_gender": "M"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:48:34, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-20 11:48:34, info] "MySQL Query Params: p_2"
+[2023-07-20 11:48:34, debug] {
+    "rows": [
+        {
+            "pet_id": 21
+        }
+    ],
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-20 11:48:34, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-20 11:48:34, info] "MySQL Query Params: 21"
+[2023-07-20 11:48:34, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}

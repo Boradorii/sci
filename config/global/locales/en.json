@@ -1,0 +1,14 @@
+{
+	"errorPage": {
+		"errorTitleAuth": "Announcement",
+		"errorMsgAuth": "You have been logged out automatically because you have been inactive for a long time or logged in to another device. \n\nPlease log in again.",
+		"errorTitleRout": "Announcement",
+		"errorMsgRout": "404. The page you requested is currently not found.",
+		"errorTitleSystem": "System Error",
+		"errorMsgSystem": "Sorry, a system failure has occurred. Please try again later."
+	},
+	"healthPage": "healthPage",
+	"homePage": "homePage",
+	"a_myPage": "a_myPage",
+	"a_hospitalPage": "a_hospitalPage"
+}

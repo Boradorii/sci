@@ -1,0 +1,71 @@
+[2023-07-18 13:49:31, error] "[System Error]: fn is not a function"
+[2023-07-18 13:49:31, error] "fn is not a function"
+TypeError: fn is not a function
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+    at router (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:47:12)
+[2023-07-18 13:49:31, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-18 13:52:54, error] "[System Error]: template not found: app/notice/notice.html"
+[2023-07-18 13:52:54, error] "template not found: app/notice/notice.html"
+Error: template not found: app/notice/notice.html
+    at createTemplate (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\environment.js:234:15)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\lib.js:260:7)
+    at handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\environment.js:267:11)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\environment.js:276:9
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\lib.js:258:7)
+    at Object.asyncIter (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\lib.js:263:3)
+    at Environment.getTemplate (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\environment.js:259:9)
+    at Environment.render (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\environment.js:295:10)
+    at NunjucksView.render (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\express-app.js:18:9)
+    at tryRender (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\application.js:657:10)
+[2023-07-18 13:52:54, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-18 13:53:01, error] "[System Error]: template not found: app/notice/notice.html"
+[2023-07-18 13:53:01, error] "template not found: app/notice/notice.html"
+Error: template not found: app/notice/notice.html
+    at createTemplate (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\environment.js:234:15)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\lib.js:260:7)
+    at handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\environment.js:267:11)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\environment.js:276:9
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\lib.js:258:7)
+    at Object.asyncIter (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\lib.js:263:3)
+    at Environment.getTemplate (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\environment.js:259:9)
+    at Environment.render (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\environment.js:295:10)
+    at NunjucksView.render (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\nunjucks\src\express-app.js:18:9)
+    at tryRender (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\application.js:657:10)
+[2023-07-18 13:53:01, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-18 13:54:33, error] "[Router Error]: /app/p_apphome/p_apphome.js"
+[2023-07-18 13:57:48, error] "[Router Error]: /app/p_apphome/p_apphome.js"
+[2023-07-18 14:56:33, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-18 14:56:43, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-18 14:56:43, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\config\db\database_mysql.js:35:15)
+    at aMyPageService.setRepresent (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:105:29)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async setRepresent (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:125:28)
+[2023-07-18 14:56:44, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-18 14:56:44, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\config\db\database_mysql.js:35:15)
+    at aMyPageService.setRepresent (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:105:29)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async setRepresent (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:125:28)
+[2023-07-18 14:58:34, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-18 14:58:34, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\config\db\database_mysql.js:35:15)
+    at aMyPageService.setRepresent (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:88:29)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async setRepresent (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:117:28)
+[2023-07-18 15:12:57, error] "[Router Error]: /app/p_apphome/p_apphome.js"
+[2023-07-18 15:24:47, error] "[Router Error]: /app/p_apphome/p_apphome.js"
+[2023-07-18 15:31:44, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-18 16:40:42, error] "[Router Error]: /api/a_mypage?p_userCode=p_2"
+[2023-07-18 16:40:42, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"

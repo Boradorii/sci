@@ -1,0 +1,133 @@
+{% extends "templates/appmainbase.html" %}
+<!-- ------------------------------------------------------------- -->
+{% block head %}
+<!-- CSS -->
+<!-- datepicker CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+    .card-box {
+        margin-top: 20px;
+        border: 2px solid lightgray;
+    }
+    
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .table th {
+        padding: 10px 3px;
+        font-size: 15px;
+    }
+    
+    .table td {
+        padding: 15px 3px;
+    }
+    
+    .modalValue {
+        font-weight: lighter;
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+<!-- Content 시작 -->
+{% block contents%}
+<!-- html -->
+<div class="skin-megna page-wrapper" style="padding: 0; overflow-y: scroll;">
+    <div class="container-fluid">
+        <!-- 날짜 선택 -->
+        <div class="card" style="align-items: center; margin-top: 20px; width: 100%; padding: 10px;">
+            <div class="row" style="align-items: center; width: 100%;">
+                <div class="col-2" style="text-align: right; padding: 0px; font-weight: 700;">
+                    날짜 선택:
+                </div>
+                <div class="col" style="margin-left: 20px;">
+                    <input type="text" class="form-control" name="date_day" id="day-datepicker" placeholder="날짜선택" style="width:100%; text-align: center;" />
+                </div>
+            </div>
+        </div>
+        <!--  진료내역 -->
+        <div class="table-responsive">
+            <table class="table table-hover" id="treat-table" style="text-align:center;align-items: center;">
+                <thead>
+                    <tr>
+                        <th>일자</th>
+                        <th>병원명</th>
+                        <th>방문대상</th>
+                        <th>방문목적</th>
+                    </tr>
+                </thead>
+                <tbody id="treatList">
+                </tbody>
+            </table>
+            <div id="none-data" style="display:none; text-align:center">해당 기간의 진료내역이 없습니다.</div>
+        </div>
+    </div>
+
+    <!-- 내병원 설명 모달 -->
+    <div class="modal fade" id="treatDetail-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <input type="hidden" id="edit-num" name="edit-num" />
+                <div class="modal-header">
+                    <h4 class="modal-title">진료상세정보</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body" style="font-size:15px;">
+                    <div class="m-10 row">
+                        <span class="col-3 modalKey">병원명</span>
+                        <span class="m-r-10"> | </span>
+                        <span class="modalValue h6" id="h_name"></span>
+                    </div>
+                    <div class="m-10 row">
+                        <span class="col-3 modalKey">방문일자</span>
+                        <span class="m-r-10"> | </span>
+                        <span class="modalValue h6" id="medi_created_time"></span>
+                    </div>
+                    <div class="m-10 row">
+                        <span class="col-3 modalKey">방문 목적</span>
+                        <span class="m-r-10"> | </span>
+                        <span class="modalValue h6" id="medi_purpose"></span>
+                    </div>
+                    <div class="row" style="margin:15px 10px;">
+                        <span class="col-3 modalKey">진료 내용</span>
+                        <span class="m-r-10"> | </span>
+                    </div>
+                    <div class="row" style="margin:15px 10px;">
+                        <span class="col modalValue h6" id="medi_contents"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+{% block script %}
+<script src="/assets/node_modules/moment/moment.js"></script>
+<script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script>
+    let p_userCode = '{{p_userCode}}';
+</script>
+<script type="text/javascript" src="/app/a_hospital/js/a_hospital_treat.js"></script>
+
+{% endblock %}

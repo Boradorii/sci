@@ -1,0 +1,186 @@
+{% extends "templates/appmainbase.html" %}
+<!-- ------------------------------------------------------------- -->
+{% block head %}
+<!-- CSS -->
+<!-- datepicker CSS -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    rel="stylesheet">
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+    .card-box {
+        margin-top: 20px;
+    }
+
+
+
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+    }
+
+    #toggle_on {
+        position: fixed;
+        right: 20px;
+    }
+
+    #toggle_off {
+        position: fixed;
+        right: 20px;
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+<!-- Content 시작 -->
+{% block contents%}
+<!-- html -->
+<div class="skin-megna page-wrapper" style="padding: 0; overflow-y: scroll;">
+    <div class="container-fluid">
+
+        <div class="card card-box" style="width: 100%;">
+
+            <div class="row"
+                style="margin-top: 0px; margin-left: 10px; margin-bottom: 0px; align-self: left; align-items: center; font-size: 20px; padding-bottom: 0px;">
+                <div class="" style="padding-right: 0px;">
+                    서비스 알림 수신</div>
+                <i id="serviceAlertDetail" class="material-icons col"
+                    style="color: black; font-size: 25px; padding: 0px; margin-right: 10px;">
+                    info
+                </i>
+                <i id="toggle_on" class="material-icons pushAllow col-2"
+                    style="color: green; font-size: 50px; margin-left: 90px;">
+                    toggle_on
+                </i>
+                <i id="toggle_off" class="material-icons pushAllow col-2"
+                    style="color: gray; font-size: 50px; margin-left: 90px;">
+                    toggle_off
+                </i>
+
+            </div>
+            <p id="pushDate" style="font-size: 8pt; margin-top: 0px; margin-left: 20px;">수신 동의날짜 | 2023-06-01</p>
+        </div>
+        <div id="alertList">
+
+            <!-- 건강관리 -->
+            <div class="card"
+                style="text-align: left; width: 100%; height: auto; padding: 10px; font-weight: 600; background-color: rgb(231, 231, 231);">
+
+                <div>
+                    건강관리
+                </div>
+                <div>
+                    오늘의 건강 상태를 측정해 주세요.
+                </div>
+                <div>
+                    2023-06-01 08:00:00
+                </div>
+            </div>
+            <!-- 원격의료 -->
+            <div class="card" style="text-align: left; width: 100%; height: auto; padding: 10px; font-weight: 600;">
+
+                <div>
+                    원격의료
+                </div>
+                <div>
+                    원격의료 답변이 도착했어요
+                </div>
+                <div>
+                    2023-06-01 08:00:00
+                </div>
+            </div>
+            <!-- 건강관리 -->
+            <div class="card"
+                style="text-align: left; width: 100%; height: auto; padding: 10px; font-weight: 600; background-color: rgb(231, 231, 231);">
+
+                <div>
+                    건강관리
+                </div>
+                <div>
+                    오늘의 건강 상태를 측정해 주세요.
+                </div>
+                <div>
+                    2023-06-01 08:00:00
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div id="serviceAlertDetailModal" class="modal bs-example-modal-lg" tabindex="-1" role="dialog"
+    aria-labelledby="longmodal" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="longmodal">
+
+                </h4>
+                <button type="button" id="close_regi" class="close" data-dismiss="modal" aria-hidden="true">
+                    ×
+                </button>
+            </div>
+            <div class="modal-body h4" style="text-align: center;">
+                <h3 style="font-weight: 600;">서비스 알림 수신 정보</h3>
+                <h4 style="font-weight: 600;">건강관리</h4>
+                <p>건강 상태 측정 요청 알림<br>(매일 오전 8시 알림)</p>
+                <h4 style="font-weight: 600;">원격의료</h4>
+                <p>사용자가 요청한 병원 문의 답변 알림<br> (병원 측 답변 전송 시 즉시 알림)</p>
+                <div id="closeModal" class="btn btn-secondary">닫기</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="pushAllowModal" class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="longmodal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="longmodal">
+
+                    </h4>
+                    <button type="button" id="close_regi" class="close" data-dismiss="modal" aria-hidden="true">
+                        ×
+                    </button>
+                </div>
+                <div class="modal-body h4" style="text-align: center;">
+                    <h3 style="font-weight: 600;">서비스 알림 수신 동의</h3>
+                    <p>'독닥독닥'에서 알림을 보내고자 합니다.<br>해당 기기로 서비스 이용에 필요한<br> 안내 사항을 푸시 알림으로 보내드리겠습니다.</p>
+                    <div class="row">
+                        <div id="disallow" class="col btn btn-secondary">허용안함</div>
+                        <div id="allow" class="col btn btn-secondary">허용</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+{% block script %}
+<script src="/assets/node_modules/moment/moment.js"></script>
+<script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
+<script type="text/javascript" src="/app/a_mypage/a_mypage_notice01.js"></script>
+<script>
+    let p_userCode = "{{p_userCode}}";
+    // console.log(p_user_code)
+
+
+    init();
+</script>
+
+{% endblock %}

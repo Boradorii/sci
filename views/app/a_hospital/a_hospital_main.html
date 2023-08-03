@@ -1,0 +1,166 @@
+{% extends "templates/appmainbase.html" %}
+<!-- ------------------------------------------------------------- -->
+{% block head %}
+<!-- CSS -->
+<!-- datepicker CSS -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+
+<style>
+    .card-box {
+        width: 100%;
+        margin-top: 60px;
+        border: 2px solid lightgray;
+    }
+    
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .p_down {
+        /* border-top: 1px solid lightgray; */
+        width: 100%;
+        margin: 7px;
+        font-size: 15pt;
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+<!-- Content 시작 -->
+{% block contents%}
+<!-- html -->
+<div class="skin-megna page-wrapper" style="padding: 0; overflow-y: scroll;">
+    <div class="container-fluid">
+
+        <!-- 병원 찾기 -->
+        <div class="card card-box buttonList" id="go-findHos" style="text-align: center;">
+            <div style="width: 100%; padding: 0px;">
+                <img src="/images/icon/find-vet.jpg" style="width:100px; height:100px;margin-top: 10px;">
+                <!-- <h6 style="font-weight: 700; margin-top: 20px;">이미지</h6> -->
+                <div class="row" style="display: flex; justify-content: center; width: 100%; margin: 10px 0px;">
+                    <p class="p_down" id="findHospital">병원찾기</p>
+                </div>
+            </div>
+        </div>
+        <!-- 최근 방문한 동물병원 -->
+        <div class="card card-box buttonList" id="go-visitHos" style="text-align: center; margin-bottom: 0px;">
+
+        </div>
+
+
+
+        <!-- 측정 기록 조회 -->
+
+        <div class="card card-box buttonList" id="go-treatList" style="text-align: center;">
+            <div>
+                <img src="/images/icon/treat-list.jpg" style="width:100px; height:100px;margin-top: 10px;">
+                <!-- <h6 style="font-weight: 700; margin-top: 20px;">이미지</h6> -->
+                <div class="row" style="display: flex; justify-content: center; width: 100%; margin: 10px 0px;">
+                    <p class="p_down" id="hospitalRecord">진료 내역</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+{% block script %}
+<script src="/assets/node_modules/moment/moment.js"></script>
+<script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
+<script>
+    let p_userCode = '{{p_userCode}}',
+        visitHos = '{{visitHos|safe}}';
+    visitHos = JSON.parse(visitHos)
+    console.log(visitHos)
+</script>
+<script>
+    //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+    window.parent.postMessage({
+        action: 'moveFrameN'
+    }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+    //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+    //최근 방문한 동물병원 표시
+    let hosRecord
+    if (visitHos.rowLength > 0) {
+        $('#go-visitHos').html('')
+        hosRecord = `<div class="hosRecord" id=${visitHos.rows[0].h_user_code}>
+                <div class="h4 card-title" style="font-weight: 700; margin-top: 10px;">최근 방문한 동물병원</div>
+                <div class="row" style="display: flex; justify-content: center; margin-top: 10px; width: 100%; margin: 20px 0px;">
+                    <span id="hosRecordName" style="margin-right: 20%;">${visitHos.rows[0].h_name}</span>
+                    <span>방문일 | <span id="hosRecordDate"></span> ${visitHos.rows[0].medi_created_time.slice(0,10)}</span>
+                </div>
+            </div>`
+    } else {
+        hosRecord = `<div class="hosRecord">
+                <div class="h4 card-title" style="font-weight: 700; margin-top: 10px;">최근 방문한 동물병원</div>
+                <div class="row" style="display: flex; justify-content: center; margin-top: 10px; width: 100%; margin: 20px 0px;">
+                    <span id="hosRecordName" style="margin-right: 20%;">최근 방문한 동물병원 기록이 없습니다.</span>
+                </div>
+            </div>`
+    };
+    $('#go-visitHos').html(hosRecord);
+    //최근 방문한 동물병원 표시
+
+
+    // 페이지 이동 버튼 클릭 이벤트 2021.05.10 JG
+    $(".buttonList").on('click', function(evnt) {
+        let targetId = evnt.currentTarget.id,
+            reqUrl = baseUrl + '/a_hospital';
+        switch (targetId) {
+            case 'go-findHos':
+                reqUrl += '/findHosPage';
+                window.parent.postMessage({ // 앱 상단 타이틀 변경을 위한 postMessage 전송
+                    action: 'go-findHos'
+                }, '*');
+                reqUrl += '?p_userCode=' + p_userCode /* + '&lang=' + lang + "&accessToken=" + accessToken*/ ;
+
+                location.href = reqUrl;
+                break;
+            case 'go-visitHos':
+                if (typeof $('.hosRecord').attr('id') != undefined) {
+                    reqUrl += '/hosInfoPage?p_userCode=' + p_userCode + '&h_userCode=' + $('.hosRecord').attr('id');
+                    window.parent.postMessage({ // 앱 상단 타이틀 변경을 위한 postMessage 전송
+                        action: 'go-hosInfo'
+                    }, '*');
+                    location.href = reqUrl;
+                }
+                break;
+
+            case 'go-treatList':
+                reqUrl += '/treatListPage';
+                window.parent.postMessage({ // 앱 상단 타이틀 변경을 위한 postMessage 전송
+                    action: 'go-treatList'
+                }, '*');
+                reqUrl += '?p_userCode=' + p_userCode /* + '&lang=' + lang + "&accessToken=" + accessToken*/ ;
+
+                location.href = reqUrl;
+                break;
+        }
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+        window.parent.postMessage({
+            action: 'moveFrameY' //메인페이지에서 하위 메뉴로 들어갔을 때 페이지 이동 표시("Y": 하위 메뉴/"N": 메인메뉴)
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+    });
+</script>
+
+{% endblock %}

@@ -1,0 +1,160 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "logs\\debug\\.bb1d7059a445a4344042a43a1ea49e125e981bb8-audit.json",
+    "files": [
+        {
+            "date": 1687313733326,
+            "name": "logs\\debug\\2023-06-21.debug.log",
+            "hash": "b769ba9796ac1b9163cedc991152d2eb2d0e154d89ee01ce3c80f66e43efdfb4"
+        },
+        {
+            "date": 1687392525980,
+            "name": "logs\\debug\\2023-06-22.debug.log",
+            "hash": "32f855908355cf2bddbd72ac4485ab2977041429e8f82adb03968ff46f49cab7"
+        },
+        {
+            "date": 1687487521425,
+            "name": "logs\\debug\\2023-06-23.debug.log",
+            "hash": "09acf77d7f7a3b8415551334e198544869b772ec3e1cbef40245016b380dc37b"
+        },
+        {
+            "date": 1687845469355,
+            "name": "logs\\debug\\2023-06-27.debug.log",
+            "hash": "77182cdc73de06a88b5e1f769654475571b57723d5696a6fd05a1f3e408f9786"
+        },
+        {
+            "date": 1687911259606,
+            "name": "logs\\debug\\2023-06-28.debug.log",
+            "hash": "f26045684d49412d0cbf69be1aba19bb539dae4bc6279402333d481623902fb9"
+        },
+        {
+            "date": 1687997880768,
+            "name": "logs\\debug\\2023-06-29.debug.log",
+            "hash": "d48e3f4fd026cfdda779cc08ff290aca1943cda414be471f16440ce349c98b4d"
+        },
+        {
+            "date": 1688083517860,
+            "name": "logs\\debug\\2023-06-30.debug.log",
+            "hash": "5a46284ae37aa0912c3e8f2457990f9b3fe939729e131d8ae0315a937e3187d7"
+        },
+        {
+            "date": 1688352239743,
+            "name": "logs\\debug\\2023-07-03.debug.log",
+            "hash": "518c64ea0757f0928e2f1ef6430e08fbfa07cebf85862b380097d3c86cb915c4"
+        },
+        {
+            "date": 1688435824707,
+            "name": "logs\\debug\\2023-07-04.debug.log",
+            "hash": "3aa107b3a377c52cb7b641b7565d51250c91ad929cd51d5a5032d348ff7c75b5"
+        },
+        {
+            "date": 1688517445373,
+            "name": "logs\\debug\\2023-07-05.debug.log",
+            "hash": "0b5439e706cef62a90eb1ccb4b49899064720ca2e34f1f66bfb64dcbfb5f9709"
+        },
+        {
+            "date": 1688601319375,
+            "name": "logs\\debug\\2023-07-06.debug.log",
+            "hash": "352094e8b5fec08b4037f3ad7e2fcbd0b46f4f6d874e065f14449d49662f82d5"
+        },
+        {
+            "date": 1688688357640,
+            "name": "logs\\debug\\2023-07-07.debug.log",
+            "hash": "399986e10b0020060af24ac5f6191b4176f482ad94aa6ca50056f6d2186d4992"
+        },
+        {
+            "date": 1688949659860,
+            "name": "logs\\debug\\2023-07-10.debug.log",
+            "hash": "ce8bb66bad759da690dcfa9fcdf9b2c0ba947302140c172a24bc398b01e82251"
+        },
+        {
+            "date": 1689034512596,
+            "name": "logs\\debug\\2023-07-11.debug.log",
+            "hash": "7078d0eff099127131a0d1c92e9af7f8ac0db934dbdb899bbc8e1758976357c6"
+        },
+        {
+            "date": 1689120798569,
+            "name": "logs\\debug\\2023-07-12.debug.log",
+            "hash": "7340327989b12d49b07d0ec2e184905acbca036cb8775d369de5643859e6228a"
+        },
+        {
+            "date": 1689206711185,
+            "name": "logs\\debug\\2023-07-13.debug.log",
+            "hash": "0a9099556e0ad401a07f5ba4ae061b39b12a1c067a1ea72123f1e6618a41bbe1"
+        },
+        {
+            "date": 1689293067433,
+            "name": "logs\\debug\\2023-07-14.debug.log",
+            "hash": "8b94d3d3b65b258bd12dbc5db2d662774728f1b81d6a45c8d3715c57cd10ccdc"
+        },
+        {
+            "date": 1689553509531,
+            "name": "logs\\debug\\2023-07-17.debug.log",
+            "hash": "60469d0f1b65201f3a5414e0dcec26b6531c574cce4617cca4aea5b2a75e007d"
+        },
+        {
+            "date": 1689648280971,
+            "name": "logs\\debug\\2023-07-18.debug.log",
+            "hash": "5fd79677d83fb2163d99ccfe574716b4811445d11dccecea4bb60608f3710b03"
+        },
+        {
+            "date": 1689735698994,
+            "name": "logs\\debug\\2023-07-19.debug.log",
+            "hash": "dbe9853ca30e3b213574916837c20cca75c05c4194d21c4a0bbe90407e704d1d"
+        },
+        {
+            "date": 1689811503116,
+            "name": "logs\\debug\\2023-07-20.debug.log",
+            "hash": "7cea0ccd24197057b9f05028676f109949ff18af9b12eb46d49525f6ed3a561c"
+        },
+        {
+            "date": 1690174627543,
+            "name": "logs\\debug\\2023-07-24.debug.log",
+            "hash": "d530b48e065cedcf876ce718661640efa15f9624ba1c370eb72c6b224cbcdf01"
+        },
+        {
+            "date": 1690270868776,
+            "name": "logs\\debug\\2023-07-25.debug.log",
+            "hash": "0d74005415b1c00aa28d33e80feb4703130ab389d6e7e7b92e77a74afd67e937"
+        },
+        {
+            "date": 1690332064481,
+            "name": "logs\\debug\\2023-07-26.debug.log",
+            "hash": "a0f6d9412b4db24e7b175b5ab8f956ebb3f8e50fee67d9c6c09c69e61eb4d2a2"
+        },
+        {
+            "date": 1690447814002,
+            "name": "logs\\debug\\2023-07-27.debug.log",
+            "hash": "38625af65cd60ba45dd64a140bcc2a0773f39b833fd3ff39952c27ea8a6c1d4b"
+        },
+        {
+            "date": 1690519606635,
+            "name": "logs\\debug\\2023-07-28.debug.log",
+            "hash": "9a365ce8ab3ea18b5bd1fd89896d5ec3886cf2844bdf31e81928a82466c608cb"
+        },
+        {
+            "date": 1690777326070,
+            "name": "logs\\debug\\2023-07-31.debug.log",
+            "hash": "8befa2c8dae7e441431a4297600cca310f4aca10b2ca1fd94f84b687687e0055"
+        },
+        {
+            "date": 1690849206990,
+            "name": "logs\\debug\\2023-08-01.debug.log",
+            "hash": "a6936a91b93e5cbbd6cd6de313e403c7bdfdd5b51e1e8240442ab213a9ccffcb"
+        },
+        {
+            "date": 1690902007136,
+            "name": "logs\\debug\\2023-08-02.debug.log",
+            "hash": "2adb991978fd3a8fbf350e1fb16adddd3ec1a830a10027ae1e41f6ab49314bf1"
+        },
+        {
+            "date": 1691024754555,
+            "name": "logs\\debug\\2023-08-03.debug.log",
+            "hash": "5fc8dcc173e048ba2fb22a6b4e92b3ef35b447483f390b85f27cc1ca567d1734"
+        }
+    ],
+    "hashType": "sha256"
+}

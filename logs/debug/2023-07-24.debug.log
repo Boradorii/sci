@@ -1,0 +1,1082 @@
+[2023-07-24 13:57:22, error] "[Router Error]: /favicon.ico"
+[2023-07-24 13:57:34, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 13:57:34, info] "MySQL Query Params: "
+[2023-07-24 13:57:34, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 13:57:34, info] "MySQL Query:     SELECT *    from user_hospital    where h_user_code=?;"
+[2023-07-24 13:57:34, info] "MySQL Query Params: "
+[2023-07-24 13:57:34, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 13:57:34, error] "[System Error]: Cannot read property 'h_user_name' of undefined"
+[2023-07-24 13:57:34, error] "Cannot read property 'h_user_name' of undefined"
+TypeError: Cannot read property 'h_user_name' of undefined
+    at hospitalService.hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:25:87)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:19:32)
+[2023-07-24 13:57:34, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 13:57:34, info] "MySQL Query Params: "
+[2023-07-24 13:57:34, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 13:57:34, info] "MySQL Query:     SELECT *    from hp_staff_info    where h_user_code=?;"
+[2023-07-24 13:57:34, info] "MySQL Query Params: "
+[2023-07-24 13:57:34, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 13:57:34, error] "[Router Error]: /favicon.ico"
+[2023-07-24 13:58:59, error] "[Router Error]: /favicon.ico"
+[2023-07-24 13:59:02, error] "[Router Error]: /favicon.ico"
+[2023-07-24 13:59:02, error] "[Router Error]: /favicon.ico"
+[2023-07-24 13:59:02, error] "[Router Error]: /favicon.ico"
+[2023-07-24 13:59:03, error] "[Router Error]: /favicon.ico"
+[2023-07-24 13:59:03, error] "[Router Error]: /favicon.ico"
+[2023-07-24 13:59:14, error] "[Router Error]: /favicon.ico"
+[2023-07-24 13:59:18, error] "[Router Error]: /favicon.ico"
+[2023-07-24 13:59:19, error] "[Router Error]: /favicon.ico"
+[2023-07-24 13:59:27, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:00:20, info] "MySQL Query: UPDATE user_protector SET p_app_token=? WHERE p_user_code=?;"
+[2023-07-24 14:00:20, info] "MySQL Query Params: ,p_2"
+[2023-07-24 14:00:20, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 14:00:21, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-24 14:00:21, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-24 14:00:21, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:00:21, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-24 14:00:21, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.D9vbTjgt3yAFvSxj_Ne6vokSgWxG-v-3brQV0_SrrXE"
+[2023-07-24 14:00:21, debug] {
+    "row": {
+        "p_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkyOTMxMTYsImV4cCI6MTY5NzA2OTExNn0.9zPeG8-pCK672iAmQonQ0mIh6qL0bMpOS3qeQ-1Q1ds"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:00:21, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-24 14:00:21, info] "MySQL Query Params: p_2"
+[2023-07-24 14:00:21, debug] {
+    "row": {
+        "pet_id": 21,
+        "pet_code": "",
+        "pet_name": "성근이",
+        "pet_byear": 2020,
+        "pet_weight": "4.0",
+        "pet_breed": "래브라도 리트리버",
+        "pet_note": null,
+        "pet_first_yn": "Y",
+        "p_user_code": "p_2",
+        "pet_isNeutering": "Y",
+        "pet_gender": "M"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:00:21, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-24 14:00:21, info] "MySQL Query Params: p_2"
+[2023-07-24 14:00:21, debug] {
+    "rows": [
+        {
+            "pet_id": 21
+        }
+    ],
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:00:21, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-24 14:00:21, info] "MySQL Query Params: 21"
+[2023-07-24 14:00:21, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:00:25, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:00:26, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:01:10, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:01:12, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:01:16, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:01:16, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:01:17, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:01:21, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:01:44, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:01:47, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:01:55, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:01:56, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:01:57, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:02:03, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:02:34, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:02:35, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:03:11, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:03:12, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:03:53, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:03:54, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:03:55, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:03:57, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:04:25, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:04:25, info] "MySQL Query Params: "
+[2023-07-24 14:04:25, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:04:25, info] "MySQL Query:     SELECT *    from user_hospital    where h_user_code=?;"
+[2023-07-24 14:04:25, info] "MySQL Query Params: "
+[2023-07-24 14:04:25, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:04:25, error] "[System Error]: Cannot read property 'h_user_name' of undefined"
+[2023-07-24 14:04:25, error] "Cannot read property 'h_user_name' of undefined"
+TypeError: Cannot read property 'h_user_name' of undefined
+    at hospitalService.hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:25:87)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:19:32)
+[2023-07-24 14:04:25, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:04:25, info] "MySQL Query Params: "
+[2023-07-24 14:04:25, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:04:25, info] "MySQL Query:     SELECT *    from hp_staff_info    where h_user_code=?;"
+[2023-07-24 14:04:25, info] "MySQL Query Params: "
+[2023-07-24 14:04:25, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:04:25, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:04:30, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:04:30, info] "MySQL Query Params: "
+[2023-07-24 14:04:30, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:04:30, info] "MySQL Query:     SELECT *    from user_hospital    where h_user_code=?;"
+[2023-07-24 14:04:30, info] "MySQL Query Params: "
+[2023-07-24 14:04:30, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:04:30, error] "[System Error]: Cannot read property 'h_user_name' of undefined"
+[2023-07-24 14:04:30, error] "Cannot read property 'h_user_name' of undefined"
+TypeError: Cannot read property 'h_user_name' of undefined
+    at hospitalService.hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:25:87)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:19:32)
+[2023-07-24 14:04:30, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:04:30, info] "MySQL Query Params: "
+[2023-07-24 14:04:30, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:04:30, info] "MySQL Query:     SELECT *    from hp_staff_info    where h_user_code=?;"
+[2023-07-24 14:04:30, info] "MySQL Query Params: "
+[2023-07-24 14:04:30, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:04:30, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:05:11, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:05:11, info] "MySQL Query Params: "
+[2023-07-24 14:05:11, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:05:11, info] "MySQL Query:     SELECT *    from user_hospital    where h_user_code=?;"
+[2023-07-24 14:05:11, info] "MySQL Query Params: "
+[2023-07-24 14:05:11, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:05:11, error] "[System Error]: Cannot read property 'h_user_name' of undefined"
+[2023-07-24 14:05:11, error] "Cannot read property 'h_user_name' of undefined"
+TypeError: Cannot read property 'h_user_name' of undefined
+    at hospitalService.hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:25:87)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:19:32)
+[2023-07-24 14:05:11, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:05:11, info] "MySQL Query Params: "
+[2023-07-24 14:05:11, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:05:11, info] "MySQL Query:     SELECT *    from hp_staff_info    where h_user_code=?;"
+[2023-07-24 14:05:11, info] "MySQL Query Params: "
+[2023-07-24 14:05:11, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:05:11, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:05:40, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:07:33, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:07:33, info] "MySQL Query Params: "
+[2023-07-24 14:07:33, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:07:33, info] "MySQL Query:     SELECT *    from user_hospital    where h_user_code=?;"
+[2023-07-24 14:07:33, info] "MySQL Query Params: "
+[2023-07-24 14:07:33, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:07:33, error] "[System Error]: Cannot read property 'h_user_name' of undefined"
+[2023-07-24 14:07:33, error] "Cannot read property 'h_user_name' of undefined"
+TypeError: Cannot read property 'h_user_name' of undefined
+    at hospitalService.hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:25:87)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:19:32)
+[2023-07-24 14:07:33, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:07:33, info] "MySQL Query Params: "
+[2023-07-24 14:07:33, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:07:33, info] "MySQL Query:     SELECT *    from hp_staff_info    where h_user_code=?;"
+[2023-07-24 14:07:33, info] "MySQL Query Params: "
+[2023-07-24 14:07:33, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:07:33, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:07:56, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:07:56, info] "MySQL Query Params: "
+[2023-07-24 14:07:56, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:07:56, info] "MySQL Query:     SELECT *    from user_hospital    where h_user_code=?;"
+[2023-07-24 14:07:56, info] "MySQL Query Params: "
+[2023-07-24 14:07:56, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:07:56, error] "[System Error]: Cannot read property 'h_user_name' of undefined"
+[2023-07-24 14:07:56, error] "Cannot read property 'h_user_name' of undefined"
+TypeError: Cannot read property 'h_user_name' of undefined
+    at hospitalService.hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:25:87)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:19:32)
+[2023-07-24 14:07:56, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:07:56, info] "MySQL Query Params: "
+[2023-07-24 14:07:56, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:07:56, info] "MySQL Query:     SELECT *    from hp_staff_info    where h_user_code=?;"
+[2023-07-24 14:07:56, info] "MySQL Query Params: "
+[2023-07-24 14:07:56, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:07:56, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:12:53, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:12:53, info] "MySQL Query Params: "
+[2023-07-24 14:12:53, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:12:53, info] "MySQL Query:     SELECT *    from user_hospital    where h_user_code=?;"
+[2023-07-24 14:12:53, info] "MySQL Query Params: "
+[2023-07-24 14:12:53, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:12:53, error] "[System Error]: Cannot read property 'h_user_name' of undefined"
+[2023-07-24 14:12:53, error] "Cannot read property 'h_user_name' of undefined"
+TypeError: Cannot read property 'h_user_name' of undefined
+    at hospitalService.hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:25:87)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:19:32)
+[2023-07-24 14:12:53, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:12:53, info] "MySQL Query Params: "
+[2023-07-24 14:12:53, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:12:53, info] "MySQL Query:     SELECT *    from hp_staff_info    where h_user_code=?;"
+[2023-07-24 14:12:53, info] "MySQL Query Params: "
+[2023-07-24 14:12:53, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:12:53, error] "[Router Error]: /favicon.ico"
+[2023-07-24 14:13:02, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:13:02, info] "MySQL Query Params: "
+[2023-07-24 14:13:02, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:13:02, info] "MySQL Query:     SELECT *    from user_hospital    where h_user_code=?;"
+[2023-07-24 14:13:02, info] "MySQL Query Params: "
+[2023-07-24 14:13:02, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:13:02, error] "[System Error]: Cannot read property 'h_user_name' of undefined"
+[2023-07-24 14:13:02, error] "Cannot read property 'h_user_name' of undefined"
+TypeError: Cannot read property 'h_user_name' of undefined
+    at hospitalService.hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:25:87)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:19:32)
+[2023-07-24 14:13:02, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 14:13:02, info] "MySQL Query Params: "
+[2023-07-24 14:13:02, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 14:13:02, info] "MySQL Query:     SELECT *    from hp_staff_info    where h_user_code=?;"
+[2023-07-24 14:13:02, info] "MySQL Query Params: "
+[2023-07-24 14:13:02, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 14:13:02, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:30:34, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:30:40, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:35:35, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:35:44, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:36:38, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:36:47, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:39:25, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:39:39, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:43:04, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:44:19, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:44:21, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:45:00, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:45:08, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:45:10, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:45:57, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:47:03, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:47:03, info] "MySQL Query Params: "
+[2023-07-24 15:47:03, debug] {
+    "succ": 1,
+    "state": true
+}
+[2023-07-24 15:47:31, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:48:05, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:48:05, info] "MySQL Query Params: "
+[2023-07-24 15:48:05, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:49:24, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:49:27, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:49:27, info] "MySQL Query Params: "
+[2023-07-24 15:49:27, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:49:59, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:50:02, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:50:02, info] "MySQL Query Params: "
+[2023-07-24 15:50:02, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:50:09, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:50:09, info] "MySQL Query Params: "
+[2023-07-24 15:50:09, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:50:14, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:50:14, info] "MySQL Query Params: "
+[2023-07-24 15:50:14, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:50:39, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:50:41, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:50:41, info] "MySQL Query Params: "
+[2023-07-24 15:50:41, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:51:16, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:51:18, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:51:18, info] "MySQL Query Params: "
+[2023-07-24 15:51:18, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:51:30, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:51:32, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:51:32, info] "MySQL Query Params: "
+[2023-07-24 15:51:32, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:51:38, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:51:38, info] "MySQL Query Params: "
+[2023-07-24 15:51:38, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:52:59, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:53:01, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:53:01, info] "MySQL Query Params: "
+[2023-07-24 15:53:01, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:54:05, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:54:07, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:54:07, info] "MySQL Query Params: "
+[2023-07-24 15:54:07, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:54:11, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:54:11, info] "MySQL Query Params: "
+[2023-07-24 15:54:11, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:55:18, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:55:22, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:55:22, info] "MySQL Query Params: "
+[2023-07-24 15:55:22, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:55:26, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:55:26, info] "MySQL Query Params: "
+[2023-07-24 15:55:26, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:55:29, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:55:29, info] "MySQL Query Params: "
+[2023-07-24 15:55:29, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:55:32, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:55:32, info] "MySQL Query Params: "
+[2023-07-24 15:55:32, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:55:46, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:55:48, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:55:48, info] "MySQL Query Params: "
+[2023-07-24 15:55:48, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:55:53, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:55:53, info] "MySQL Query Params: "
+[2023-07-24 15:55:53, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:56:01, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:56:03, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:56:03, info] "MySQL Query Params: "
+[2023-07-24 15:56:03, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:59:33, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:59:33, info] "MySQL Query Params: "
+[2023-07-24 15:59:33, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 15:59:43, error] "[Router Error]: /favicon.ico"
+[2023-07-24 15:59:45, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 15:59:45, info] "MySQL Query Params: "
+[2023-07-24 15:59:45, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 16:00:17, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:00:19, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 16:00:19, info] "MySQL Query Params: "
+[2023-07-24 16:00:19, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 16:11:30, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:11:32, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 16:11:32, info] "MySQL Query Params: "
+[2023-07-24 16:11:32, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 16:11:33, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-24 16:13:38, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:13:41, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 16:13:41, info] "MySQL Query Params: "
+[2023-07-24 16:13:41, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 16:13:46, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-24 16:13:59, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:14:03, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 16:14:03, info] "MySQL Query Params: "
+[2023-07-24 16:14:03, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 16:14:05, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-24 16:14:19, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 16:14:19, info] "MySQL Query Params: "
+[2023-07-24 16:14:19, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:14:19, info] "MySQL Query:    SELECT h_user_code, h_user_name, h_user_login_check,h_name    FROM user_hospital    WHERE h_user_account_id=? AND h_user_account_pw = SHA2(?, 256);"
+[2023-07-24 16:14:19, info] "MySQL Query Params: test1111,test1111!"
+[2023-07-24 16:14:19, debug] {
+    "row": {},
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 16:17:31, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 16:17:31, info] "MySQL Query Params: "
+[2023-07-24 16:17:31, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:17:31, info] "MySQL Query:    SELECT h_user_code, h_user_name, h_user_login_check,h_name    FROM user_hospital    WHERE h_user_account_id=? AND h_user_account_pw = SHA2(?, 256);"
+[2023-07-24 16:17:31, info] "MySQL Query Params: test1111,test1111!"
+[2023-07-24 16:17:31, debug] {
+    "row": {},
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 16:17:33, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-24 16:17:37, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-24 16:17:55, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-24 16:18:12, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 16:18:12, info] "MySQL Query Params: "
+[2023-07-24 16:18:12, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:18:12, info] "MySQL Query:    SELECT h_user_code, h_user_name, h_user_login_check,h_name    FROM user_hospital    WHERE h_user_account_id=? AND h_user_account_pw = SHA2(?, 256);"
+[2023-07-24 16:18:12, info] "MySQL Query Params: hostest11,hostest11!"
+[2023-07-24 16:18:12, debug] {
+    "row": {
+        "h_user_code": "h_1",
+        "h_user_name": "8Bd7Mt0Q2pIkmBS/",
+        "h_user_login_check": "Y",
+        "h_name": "독닥병원"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:18:12, info] "MySQL Query:    UPDATE user_hospital SET h_user_login_check = 'Y' WHERE h_user_code = ?;"
+[2023-07-24 16:18:12, info] "MySQL Query Params: h_1"
+[2023-07-24 16:18:12, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 16:18:12, info] "MySQL Query:    UPDATE user_hospital SET h_user_access_token = ?, h_user_refresh_token = ?    WHERE h_user_code = ?;"
+[2023-07-24 16:18:12, info] "MySQL Query Params: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.ShYEy9PFr0aaLu9zBft2XGwFohgqsLbUoDaKrmEkdcg,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.xIRmH3HCGjW1ePOIcGS6gSQYncyDY_4BZC6nWs06se4,h_1"
+[2023-07-24 16:18:12, debug] {
+    "succ": 1,
+    "state": true
+}
+[2023-07-24 16:18:12, info] "MySQL Query:    SELECT h_user_refresh_token FROM user_hospital WHERE h_user_code = ? and h_user_access_token = ?;"
+[2023-07-24 16:18:12, info] "MySQL Query Params: h_1,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.ShYEy9PFr0aaLu9zBft2XGwFohgqsLbUoDaKrmEkdcg"
+[2023-07-24 16:18:12, debug] {
+    "row": {
+        "h_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.xIRmH3HCGjW1ePOIcGS6gSQYncyDY_4BZC6nWs06se4"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:18:12, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:18:31, info] "MySQL Query:    SELECT h_user_refresh_token FROM user_hospital WHERE h_user_code = ? and h_user_access_token = ?;"
+[2023-07-24 16:18:31, info] "MySQL Query Params: h_1,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.ShYEy9PFr0aaLu9zBft2XGwFohgqsLbUoDaKrmEkdcg"
+[2023-07-24 16:18:31, debug] {
+    "row": {
+        "h_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.xIRmH3HCGjW1ePOIcGS6gSQYncyDY_4BZC6nWs06se4"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:18:32, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:18:34, info] "MySQL Query:    SELECT h_user_refresh_token FROM user_hospital WHERE h_user_code = ? and h_user_access_token = ?;"
+[2023-07-24 16:18:34, info] "MySQL Query Params: h_1,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.ShYEy9PFr0aaLu9zBft2XGwFohgqsLbUoDaKrmEkdcg"
+[2023-07-24 16:18:34, debug] {
+    "row": {
+        "h_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.xIRmH3HCGjW1ePOIcGS6gSQYncyDY_4BZC6nWs06se4"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:18:35, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:18:42, info] "MySQL Query:     SELECT h_user_code    from user_hospital    where h_user_account_pw = SHA2(?, 256) and h_user_code = ?;"
+[2023-07-24 16:18:42, info] "MySQL Query Params: hostest111!,h_1"
+[2023-07-24 16:18:42, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 16:18:42, error] "[System Error]: Cannot read property 'h_user_code' of undefined"
+[2023-07-24 16:18:42, error] "Cannot read property 'h_user_code' of undefined"
+TypeError: Cannot read property 'h_user_code' of undefined
+    at hospitalService.pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:24:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:20:23)
+[2023-07-24 16:18:55, info] "MySQL Query:     SELECT h_user_code    from user_hospital    where h_user_account_pw = SHA2(?, 256) and h_user_code = ?;"
+[2023-07-24 16:18:55, info] "MySQL Query Params: hostest11!,h_1"
+[2023-07-24 16:18:55, debug] {
+    "rows": [
+        {
+            "h_user_code": "h_1"
+        }
+    ],
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:18:55, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 16:18:55, info] "MySQL Query Params: "
+[2023-07-24 16:18:55, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:18:55, info] "MySQL Query:     SELECT *    from user_hospital    where h_user_code=?;"
+[2023-07-24 16:18:55, info] "MySQL Query Params: h_1"
+[2023-07-24 16:18:55, debug] {
+    "rows": [
+        {
+            "h_user_code": "h_1",
+            "h_user_account_id": "hostest11",
+            "h_user_account_pw": "13b0e01810ba7c69d9081aba9b4d81bfc923de106c56399485dad6b33148e721",
+            "h_user_name": "8Bd7Mt0Q2pIkmBS/",
+            "h_user_phone_first": "K6nO",
+            "h_user_phone_middle": "KqrN7Q==",
+            "h_user_phone_last": "Lq7J4Q==",
+            "h_user_email_id": "aPuX62aEBxGB",
+            "h_user_email_domain": "gmail.com",
+            "h_name": "독닥병원",
+            "h_address1": "광주광역시 동구 금남로 193-12 (금남로4가)",
+            "h_address2": "403호",
+            "h_telnum": "062-123-5678",
+            "h_operating_time": "월~일 09:00~18:00",
+            "h_answer_time": "09:00-18:00",
+            "h_user_provide_yn": "Y",
+            "h_user_login_check": "Y",
+            "h_user_registered_date": "2023-06-22",
+            "h_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.xIRmH3HCGjW1ePOIcGS6gSQYncyDY_4BZC6nWs06se4",
+            "h_user_access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.ShYEy9PFr0aaLu9zBft2XGwFohgqsLbUoDaKrmEkdcg",
+            "h_user_delete_check": "Y",
+            "h_user_delete_date": "2023-07-24"
+        }
+    ],
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:18:55, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 16:18:55, info] "MySQL Query Params: "
+[2023-07-24 16:18:55, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:18:55, info] "MySQL Query:     SELECT *    from hp_staff_info    where h_user_code=?;"
+[2023-07-24 16:18:55, info] "MySQL Query Params: h_1"
+[2023-07-24 16:18:55, debug] {
+    "rows": [
+        {
+            "h_user_code": "h_1",
+            "h_staff_code": 1,
+            "h_staff_name": "박보영",
+            "h_staff_phone_first": "010",
+            "h_staff_phone_middle": "1325",
+            "h_staff_phone_last": "1234",
+            "h_staff_eid": "pby1234",
+            "h_staff_edomain": "@naver.com",
+            "h_staff_class": 0,
+            "h_staff_note": "원장님"
+        },
+        {
+            "h_user_code": "h_1",
+            "h_staff_code": 2,
+            "h_staff_name": "아이유",
+            "h_staff_phone_first": "010",
+            "h_staff_phone_middle": "1325",
+            "h_staff_phone_last": "1234",
+            "h_staff_eid": "pby1234",
+            "h_staff_edomain": "@naver.com",
+            "h_staff_class": 0,
+            "h_staff_note": "병원장"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-24 16:19:02, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 16:19:02, info] "MySQL Query Params: h_1"
+[2023-07-24 16:19:02, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 16:19:04, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-24 16:19:19, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:19:22, info] "MySQL Query:    SELECT h_user_refresh_token FROM user_hospital WHERE h_user_code = ? and h_user_access_token = ?;"
+[2023-07-24 16:19:22, info] "MySQL Query Params: h_1,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.ShYEy9PFr0aaLu9zBft2XGwFohgqsLbUoDaKrmEkdcg"
+[2023-07-24 16:19:23, debug] {
+    "row": {
+        "h_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.xIRmH3HCGjW1ePOIcGS6gSQYncyDY_4BZC6nWs06se4"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:19:23, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:19:27, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:19:32, info] "MySQL Query:     SELECT h_user_code    from user_hospital    where h_user_account_pw = SHA2(?, 256) and h_user_code = ?;"
+[2023-07-24 16:19:32, info] "MySQL Query Params: HOSTET11!,h_1"
+[2023-07-24 16:19:32, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 16:19:32, error] "[System Error]: Cannot read property 'h_user_code' of undefined"
+[2023-07-24 16:19:32, error] "Cannot read property 'h_user_code' of undefined"
+TypeError: Cannot read property 'h_user_code' of undefined
+    at hospitalService.pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:24:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:20:23)
+[2023-07-24 16:19:37, info] "MySQL Query:     SELECT h_user_code    from user_hospital    where h_user_account_pw = SHA2(?, 256) and h_user_code = ?;"
+[2023-07-24 16:19:37, info] "MySQL Query Params: HOSTEST11!,h_1"
+[2023-07-24 16:19:37, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 16:19:37, error] "[System Error]: Cannot read property 'h_user_code' of undefined"
+[2023-07-24 16:19:37, error] "Cannot read property 'h_user_code' of undefined"
+TypeError: Cannot read property 'h_user_code' of undefined
+    at hospitalService.pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:24:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:20:23)
+[2023-07-24 16:19:46, info] "MySQL Query:     SELECT h_user_code    from user_hospital    where h_user_account_pw = SHA2(?, 256) and h_user_code = ?;"
+[2023-07-24 16:19:46, info] "MySQL Query Params: HOSTEST11!,h_1"
+[2023-07-24 16:19:46, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 16:19:46, error] "[System Error]: Cannot read property 'h_user_code' of undefined"
+[2023-07-24 16:19:46, error] "Cannot read property 'h_user_code' of undefined"
+TypeError: Cannot read property 'h_user_code' of undefined
+    at hospitalService.pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:24:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:20:23)
+[2023-07-24 16:19:51, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:19:59, info] "MySQL Query:     SELECT h_user_code    from user_hospital    where h_user_account_pw = SHA2(?, 256) and h_user_code = ?;"
+[2023-07-24 16:19:59, info] "MySQL Query Params: hostest11!,h_1"
+[2023-07-24 16:19:59, debug] {
+    "rows": [
+        {
+            "h_user_code": "h_1"
+        }
+    ],
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:19:59, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 16:19:59, info] "MySQL Query Params: "
+[2023-07-24 16:19:59, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:19:59, info] "MySQL Query:     SELECT *    from user_hospital    where h_user_code=?;"
+[2023-07-24 16:19:59, info] "MySQL Query Params: h_1"
+[2023-07-24 16:19:59, debug] {
+    "rows": [
+        {
+            "h_user_code": "h_1",
+            "h_user_account_id": "hostest11",
+            "h_user_account_pw": "13b0e01810ba7c69d9081aba9b4d81bfc923de106c56399485dad6b33148e721",
+            "h_user_name": "8Bd7Mt0Q2pIkmBS/",
+            "h_user_phone_first": "K6nO",
+            "h_user_phone_middle": "KqrN7Q==",
+            "h_user_phone_last": "Lq7J4Q==",
+            "h_user_email_id": "aPuX62aEBxGB",
+            "h_user_email_domain": "gmail.com",
+            "h_name": "독닥병원",
+            "h_address1": "광주광역시 동구 금남로 193-12 (금남로4가)",
+            "h_address2": "403호",
+            "h_telnum": "062-123-5678",
+            "h_operating_time": "월~일 09:00~18:00",
+            "h_answer_time": "09:00-18:00",
+            "h_user_provide_yn": "Y",
+            "h_user_login_check": "Y",
+            "h_user_registered_date": "2023-06-22",
+            "h_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.xIRmH3HCGjW1ePOIcGS6gSQYncyDY_4BZC6nWs06se4",
+            "h_user_access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.ShYEy9PFr0aaLu9zBft2XGwFohgqsLbUoDaKrmEkdcg",
+            "h_user_delete_check": "Y",
+            "h_user_delete_date": "2023-07-24"
+        }
+    ],
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:19:59, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 16:19:59, info] "MySQL Query Params: "
+[2023-07-24 16:19:59, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:19:59, info] "MySQL Query:     SELECT *    from hp_staff_info    where h_user_code=?;"
+[2023-07-24 16:19:59, info] "MySQL Query Params: h_1"
+[2023-07-24 16:19:59, debug] {
+    "rows": [
+        {
+            "h_user_code": "h_1",
+            "h_staff_code": 1,
+            "h_staff_name": "박보영",
+            "h_staff_phone_first": "010",
+            "h_staff_phone_middle": "1325",
+            "h_staff_phone_last": "1234",
+            "h_staff_eid": "pby1234",
+            "h_staff_edomain": "@naver.com",
+            "h_staff_class": 0,
+            "h_staff_note": "원장님"
+        },
+        {
+            "h_user_code": "h_1",
+            "h_staff_code": 2,
+            "h_staff_name": "아이유",
+            "h_staff_phone_first": "010",
+            "h_staff_phone_middle": "1325",
+            "h_staff_phone_last": "1234",
+            "h_staff_eid": "pby1234",
+            "h_staff_edomain": "@naver.com",
+            "h_staff_class": 0,
+            "h_staff_note": "병원장"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-24 16:20:04, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:20:11, info] "MySQL Query:     SELECT h_user_code    from user_hospital    where h_user_account_pw = SHA2(?, 256) and h_user_code = ?;"
+[2023-07-24 16:20:11, info] "MySQL Query Params: hostest11!,h_1"
+[2023-07-24 16:20:11, debug] {
+    "rows": [
+        {
+            "h_user_code": "h_1"
+        }
+    ],
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:20:11, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 16:20:11, info] "MySQL Query Params: "
+[2023-07-24 16:20:11, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:20:11, info] "MySQL Query:     SELECT *    from user_hospital    where h_user_code=?;"
+[2023-07-24 16:20:11, info] "MySQL Query Params: h_1"
+[2023-07-24 16:20:11, debug] {
+    "rows": [
+        {
+            "h_user_code": "h_1",
+            "h_user_account_id": "hostest11",
+            "h_user_account_pw": "13b0e01810ba7c69d9081aba9b4d81bfc923de106c56399485dad6b33148e721",
+            "h_user_name": "8Bd7Mt0Q2pIkmBS/",
+            "h_user_phone_first": "K6nO",
+            "h_user_phone_middle": "KqrN7Q==",
+            "h_user_phone_last": "Lq7J4Q==",
+            "h_user_email_id": "aPuX62aEBxGB",
+            "h_user_email_domain": "gmail.com",
+            "h_name": "독닥병원",
+            "h_address1": "광주광역시 동구 금남로 193-12 (금남로4가)",
+            "h_address2": "403호",
+            "h_telnum": "062-123-5678",
+            "h_operating_time": "월~일 09:00~18:00",
+            "h_answer_time": "09:00-18:00",
+            "h_user_provide_yn": "Y",
+            "h_user_login_check": "Y",
+            "h_user_registered_date": "2023-06-22",
+            "h_user_refresh_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.xIRmH3HCGjW1ePOIcGS6gSQYncyDY_4BZC6nWs06se4",
+            "h_user_access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJob3N0ZXN0MTEiLCJpYXQiOjE2OTAxODMwOTIsImV4cCI6MTY5Nzk1OTA5Mn0.ShYEy9PFr0aaLu9zBft2XGwFohgqsLbUoDaKrmEkdcg",
+            "h_user_delete_check": "Y",
+            "h_user_delete_date": "2023-07-24"
+        }
+    ],
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:20:11, info] "MySQL Query: SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';"
+[2023-07-24 16:20:11, info] "MySQL Query Params: "
+[2023-07-24 16:20:11, debug] {
+    "row": {
+        "key_string": "_Cause_8-bit_life_is_so_simple__"
+    },
+    "rowLength": 1,
+    "state": true
+}
+[2023-07-24 16:20:11, info] "MySQL Query:     SELECT *    from hp_staff_info    where h_user_code=?;"
+[2023-07-24 16:20:11, info] "MySQL Query Params: h_1"
+[2023-07-24 16:20:11, debug] {
+    "rows": [
+        {
+            "h_user_code": "h_1",
+            "h_staff_code": 1,
+            "h_staff_name": "박보영",
+            "h_staff_phone_first": "010",
+            "h_staff_phone_middle": "1325",
+            "h_staff_phone_last": "1234",
+            "h_staff_eid": "pby1234",
+            "h_staff_edomain": "@naver.com",
+            "h_staff_class": 0,
+            "h_staff_note": "원장님"
+        },
+        {
+            "h_user_code": "h_1",
+            "h_staff_code": 2,
+            "h_staff_name": "아이유",
+            "h_staff_phone_first": "010",
+            "h_staff_phone_middle": "1325",
+            "h_staff_phone_last": "1234",
+            "h_staff_eid": "pby1234",
+            "h_staff_edomain": "@naver.com",
+            "h_staff_class": 0,
+            "h_staff_note": "병원장"
+        }
+    ],
+    "rowLength": 2,
+    "state": true
+}
+[2023-07-24 16:20:15, info] "MySQL Query:     update user_hospital    set h_user_delete_check = 'Y', h_user_delete_date = now()    where h_user_code='h_1';"
+[2023-07-24 16:20:15, info] "MySQL Query Params: h_1"
+[2023-07-24 16:20:15, debug] {
+    "succ": 0,
+    "state": true
+}
+[2023-07-24 16:20:16, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-24 16:20:20, error] "[Router Error]: /favicon.ico"
+[2023-07-24 16:20:25, info] "MySQL Query:     SELECT h_user_code    from user_hospital    where h_user_account_pw = SHA2(?, 256) and h_user_code = ?;"
+[2023-07-24 16:20:25, info] "MySQL Query Params: hostest11!,"
+[2023-07-24 16:20:25, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 16:20:25, error] "[System Error]: Cannot read property 'h_user_code' of undefined"
+[2023-07-24 16:20:25, error] "Cannot read property 'h_user_code' of undefined"
+TypeError: Cannot read property 'h_user_code' of undefined
+    at hospitalService.pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:24:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:20:23)
+[2023-07-24 16:20:32, info] "MySQL Query:     SELECT h_user_code    from user_hospital    where h_user_account_pw = SHA2(?, 256) and h_user_code = ?;"
+[2023-07-24 16:20:32, info] "MySQL Query Params: hostest11!,"
+[2023-07-24 16:20:32, debug] {
+    "rows": [],
+    "rowLength": 0,
+    "state": true
+}
+[2023-07-24 16:20:32, error] "[System Error]: Cannot read property 'h_user_code' of undefined"
+[2023-07-24 16:20:32, error] "Cannot read property 'h_user_code' of undefined"
+TypeError: Cannot read property 'h_user_code' of undefined
+    at hospitalService.pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:24:23)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async pwCheck (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:20:23)
+[2023-07-24 16:20:41, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"

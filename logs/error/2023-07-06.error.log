@@ -1,0 +1,134 @@
+[2023-07-06 08:55:24, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 08:55:55, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 08:55:57, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 08:55:58, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 08:59:59, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 08:59:59, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:00:00, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:07:16, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:07:17, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:07:17, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:10:36, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:10:37, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:10:38, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:10:48, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:11:53, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:12:21, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:13:33, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:14:48, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:14:56, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:14:58, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:15:01, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:25:53, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-06 09:25:53, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\SCI\Desktop\PPG_Pet\server\config\db\database_mysql.js:35:15)
+    at aHosService.visitHos (C:\Users\SCI\Desktop\PPG_Pet\server\api\a_hospital\a_hospital.service.js:13:30)
+    at loadHosPage (C:\Users\SCI\Desktop\PPG_Pet\server\api\a_hospital\a_hospital.controller.js:10:41)
+    at C:\Users\SCI\Desktop\PPG_Pet\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\index.js:365:14)
+[2023-07-06 09:26:07, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:26:07, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:26:08, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:26:10, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:26:12, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:27:44, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:27:46, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:27:58, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:28:02, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:28:08, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:28:10, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:28:15, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:28:17, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:30:08, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:30:11, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:30:13, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:30:49, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:30:50, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:31:38, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:31:40, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:32:11, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:32:23, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:33:07, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:33:09, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:33:10, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:33:19, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:33:32, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:33:56, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:33:57, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:33:58, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:34:06, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:34:12, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:34:13, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:34:33, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:34:40, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:36:40, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:37:01, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:37:39, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:37:41, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:38:44, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:39:08, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:39:12, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:40:47, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:40:49, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:41:18, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:41:26, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:41:31, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:42:05, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:42:25, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:42:31, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:42:59, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:43:00, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:43:02, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:43:46, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:43:47, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:45:37, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:45:40, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:46:22, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:46:25, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:46:26, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 09:46:35, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 10:02:45, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 10:06:57, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 10:07:57, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 10:08:21, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 10:11:27, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-06 10:11:27, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\SCI\Desktop\PPG_Pet\server\config\db\database_mysql.js:35:15)
+    at aHosService.visitHos (C:\Users\SCI\Desktop\PPG_Pet\server\api\a_hospital\a_hospital.service.js:13:30)
+    at loadHosPage (C:\Users\SCI\Desktop\PPG_Pet\server\api\a_hospital\a_hospital.controller.js:10:41)
+    at C:\Users\SCI\Desktop\PPG_Pet\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\index.js:365:14)
+[2023-07-06 10:11:27, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 10:11:28, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-06 10:11:28, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\SCI\Desktop\PPG_Pet\server\config\db\database_mysql.js:35:15)
+    at aHosService.visitHos (C:\Users\SCI\Desktop\PPG_Pet\server\api\a_hospital\a_hospital.service.js:13:30)
+    at loadHosPage (C:\Users\SCI\Desktop\PPG_Pet\server\api\a_hospital\a_hospital.controller.js:10:41)
+    at C:\Users\SCI\Desktop\PPG_Pet\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\index.js:284:15
+    at param (C:\Users\SCI\Desktop\PPG_Pet\server\node_modules\express\lib\router\index.js:365:14)
+[2023-07-06 10:11:28, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-06 10:40:15, error] "[Query Error!]Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS mr LEFT JOIN user_hospital AS uhON mr.h_user_code=uh.h_user_codeWHERE mr.p_us' at line 1"
+[2023-07-06 11:21:36, error] "[Router Error]: /api/users/logout"
+[2023-07-06 11:23:07, error] "[Router Error]: /api/users/logout"
+[2023-07-06 11:24:59, error] "[Router Error]: /api/a_mypage?p_userCode=p_1"
+[2023-07-06 11:27:27, error] "[Router Error]: /api/a_mypage?p_userCode=p_1"
+[2023-07-06 11:35:12, error] "[Router Error]: /app/p_apphome/p_apphome.js"
+[2023-07-06 15:13:08, error] "[Router Error]: /api/a_hospital/selectTreatData?p_userCode=p_1&startDate=2023-06-06&endDate=2023-07-06"

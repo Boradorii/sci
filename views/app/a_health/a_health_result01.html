@@ -1,0 +1,176 @@
+{% extends "templates/appmainbase.html" %}
+<!-- ------------------------------------------------------------- -->
+{% block head %}
+<!-- CSS -->
+<!-- datepicker CSS -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+    .pet-info {
+        margin-bottom: 0px;
+    }
+    
+    .card-box {
+        margin-top: 10px;
+        border: 2px solid lightgray;
+        width: 100%;
+    }
+    
+    table {
+        width: 100%;
+    }
+    
+    table td,
+    table th {
+        padding: 10px;
+        text-align: center;
+        vertical-align: middle;
+        border: 1px solid lightgray;
+        width: 50%;
+    }
+    
+    .td-pet-info {
+        border-right: 1px solid lightgray;
+    }
+    
+    .table-test {
+        width: 100%;
+    }
+    
+    .table-test td,
+    .table-test th {
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 1px solid lightgray;
+        border-top: none;
+    }
+    
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .center-align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+<!-- Content 시작 -->
+{% block contents%}
+<!-- html -->
+<div class="skin-megna page-wrapper" style="padding: 0; overflow-y: scroll;">
+    <div class="container-fluid">
+        <div class="h3 m-t-10 font-weight-bold">
+            측정 결과
+        </div>
+        <!-- 측정 결과 평균 심박수, 혈당 -->
+        <div style="text-align: center; width: 100%; background-color: white;">
+            <div style="margin: 10px; ">
+                <table class="table-result h4">
+                    <tr>
+                        <td>평균 심박수</td>
+                        <td>80 BPM</td>
+                    </tr>
+                    <tr>
+                        <td>혈당</td>
+                        <td>82 mg/dl</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h5>정상 심박수 범위 : 분당 70~120 BPM</h5>
+                <h5>정상 혈당 범위 : 80 - 120 mg/dl</h5>
+            </div>
+        </div>
+
+        <!-- 지난주와 결과 비교 -->
+        <div style="text-align: center; width: 100%; margin-top: 50px; background-color: white;">
+            <div style="margin: 10px;">
+                <table class=" table-result h4">
+                    <!-- 심박수 -->
+                    <tr>
+                        <td>심박수</td>
+                        <td>좋음</td>
+                    </tr>
+                    <tr>
+                        <td>지난주 대비(심박수)</td>
+                        <td>
+                            <div class="center-align"><i class="material-icons" style="color: red;">keyboard_arrow_up</i>5
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- 혈당 -->
+                    <tr>
+                        <td>혈당</td>
+                        <td>좋음</td>
+                    </tr>
+                    <tr>
+                        <td>지난주 대비(혈당)</td>
+                        <td>
+                            <div class="center-align"><i class="material-icons" style="color: blue;">keyboard_arrow_down</i>3</div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+
+        <!-- 측정 전 체크 -->
+        <div class="card card-box" style="margin-top: 50px;">
+            <div>
+                <h4 class="center-align"><i class="material-icons" style="color: black;">star</i> 코코 건강 상태 종합 분석 <i class="material-icons" style="color: black;">star</i></h4>
+            </div>
+            <div style="margin-left: 10px;">
+                <h5>1. 코코의 심박수는 정상 범위에 속해요.</h5>
+                <h5>2. 코코의 혈당 수치는 정상 범위에 속해요.</h5>
+                <h5>3. 코코를 위해 주기적으로 건강을 체크하고..</h5>
+            </div>
+        </div>
+
+    </div>
+    <div style="text-align: center;">
+        <button class="btn btn-lg btn-success col-3" id="send-button">병원 문의</button>
+    </div>
+
+    <div style="margin-top:100px"></div>
+</div>
+
+
+
+
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+{% block script %}
+<script src="/javascripts/config.js"></script>
+<script src="/assets/node_modules/moment/moment.js"></script>
+<script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
+<script src="/javascripts/commonUtil.js"></script>
+<script>
+    let p_userCode = '{{p_userCode}}'
+</script>
+<script>
+    let reqUrl = baseUrl + '/a_health/';
+    $("#send-button").on('click', function() {
+        reqUrl += 'sendPage';
+        reqUrl += '?p_userCode=' + p_userCode /* + '&lang=' + lang + "&accessToken=" + accessToken*/ ;
+        console.log(reqUrl)
+        location.href = reqUrl;
+    })
+</script>
+
+{% endblock %}

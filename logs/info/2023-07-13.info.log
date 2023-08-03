@@ -1,0 +1,337 @@
+[2023-07-13 09:18:25, info] "MySQL Query: UPDATE user_protector SET p_app_token=? WHERE p_user_code=?;"
+[2023-07-13 09:18:25, info] "MySQL Query Params: ,p_2"
+[2023-07-13 09:18:25, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 09:18:25, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 09:18:25, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 09:18:25, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 09:18:25, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 09:18:25, info] "MySQL Query Params: p_2"
+[2023-07-13 09:18:25, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 09:18:25, info] "MySQL Query Params: p_2"
+[2023-07-13 09:18:25, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 09:18:25, info] "MySQL Query Params: 2"
+[2023-07-13 12:00:56, info] "MySQL Query: UPDATE user_protector SET p_app_token=? WHERE p_user_code=?;"
+[2023-07-13 12:00:56, info] "MySQL Query Params: ,p_2"
+[2023-07-13 12:00:56, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 12:00:56, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 12:00:56, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 12:00:56, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 12:00:56, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 12:00:56, info] "MySQL Query Params: p_2"
+[2023-07-13 12:00:56, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 12:00:56, info] "MySQL Query Params: p_2"
+[2023-07-13 12:00:56, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 12:00:56, info] "MySQL Query Params: 2"
+[2023-07-13 12:00:57, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 12:00:57, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 12:01:57, info] "MySQL Query:     insert into pet_info (pet_code, pet_name, pet_byear, pet_weight, pet_breed,p_user_code, pet_isNeutering, pet_gender )    values(?,?,?,?,?,?,?,?);"
+[2023-07-13 12:01:57, info] "MySQL Query Params: ,qwe,2011,424,치와와,p_2,Y,M"
+[2023-07-13 12:02:11, info] "MySQL Query:     insert into pet_info (pet_code, pet_name, pet_byear, pet_weight, pet_breed,p_user_code, pet_isNeutering, pet_gender )    values(?,?,?,?,?,?,?,?);"
+[2023-07-13 12:02:11, info] "MySQL Query Params: 123456789012345,qwe,2011,424,치와와,p_2,Y,M"
+[2023-07-13 15:24:59, info] "MySQL Query: UPDATE user_protector SET p_app_token=? WHERE p_user_code=?;"
+[2023-07-13 15:24:59, info] "MySQL Query Params: ,p_2"
+[2023-07-13 15:24:59, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 15:24:59, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 15:24:59, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 15:24:59, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 15:25:00, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 15:25:00, info] "MySQL Query Params: p_2"
+[2023-07-13 15:25:00, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 15:25:00, info] "MySQL Query Params: p_2"
+[2023-07-13 15:25:00, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 15:25:00, info] "MySQL Query Params: 2"
+[2023-07-13 15:25:00, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 15:25:00, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 15:26:36, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 15:26:36, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 15:31:48, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 15:37:30, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 15:37:30, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 15:37:33, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 15:37:56, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 15:37:56, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 15:37:59, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 15:38:41, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 15:38:41, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 15:38:45, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 15:39:11, info] "MySQL Query:     insert into pet_info (pet_code, pet_name, pet_byear, pet_weight, pet_breed,p_user_code, pet_isNeutering, pet_gender )    values(?,?,?,?,?,?,?,?);"
+[2023-07-13 15:39:11, info] "MySQL Query Params: ,qwe,2011,12.2,말티즈,p_2,N,M"
+[2023-07-13 15:49:15, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 15:49:15, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:20:52, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:20:52, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:20:55, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:21:03, info] "MySQL Query:     insert into pet_info (pet_code, pet_name, pet_byear, pet_weight, pet_breed,p_user_code, pet_isNeutering, pet_gender )    values(?,?,?,?,?,?,?,?);"
+[2023-07-13 16:21:03, info] "MySQL Query Params: ,qwe,2011,12,포메라니안,p_2,Y,M"
+[2023-07-13 16:21:03, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-13 16:21:03, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\config\db\database_mysql.js:35:15)
+    at aMyPageService.loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:51:28)
+    at loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:58:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+[2023-07-13 16:21:04, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:21:29, info] "MySQL Query:     insert into pet_info (pet_code, pet_name, pet_byear, pet_weight, pet_breed,p_user_code, pet_isNeutering, pet_gender )    values(?,?,?,?,?,?,?,?);"
+[2023-07-13 16:21:29, info] "MySQL Query Params: ,qwe,2011,12,말티즈,p_2,Y,M"
+[2023-07-13 16:21:30, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-13 16:21:30, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\config\db\database_mysql.js:35:15)
+    at aMyPageService.loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:51:28)
+    at loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:58:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+[2023-07-13 16:21:30, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:21:32, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:21:32, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:21:36, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:21:42, info] "MySQL Query:     insert into pet_info (pet_code, pet_name, pet_byear, pet_weight, pet_breed,p_user_code, pet_isNeutering, pet_gender )    values(?,?,?,?,?,?,?,?);"
+[2023-07-13 16:21:42, info] "MySQL Query Params: ,qweqww,2011,12,포메라니안,p_2,Y,M"
+[2023-07-13 16:21:42, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-13 16:21:42, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\config\db\database_mysql.js:35:15)
+    at aMyPageService.loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:51:28)
+    at loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:58:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+[2023-07-13 16:22:22, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:22:22, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:22:26, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:22:37, info] "MySQL Query:     insert into pet_info (pet_code, pet_name, pet_byear, pet_weight, pet_breed,p_user_code, pet_isNeutering, pet_gender )    values(?,?,?,?,?,?,?,?);"
+[2023-07-13 16:22:37, info] "MySQL Query Params: ,11,2012,11,말티즈,p_2,Y,M"
+[2023-07-13 16:22:37, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-13 16:22:37, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\config\db\database_mysql.js:35:15)
+    at aMyPageService.loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:51:28)
+    at loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:58:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+[2023-07-13 16:23:01, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:24:00, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:24:00, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:24:03, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:24:11, info] "MySQL Query:     insert into pet_info (pet_code, pet_name, pet_byear, pet_weight, pet_breed,p_user_code, pet_isNeutering, pet_gender )    values(?,?,?,?,?,?,?,?);"
+[2023-07-13 16:24:11, info] "MySQL Query Params: ,112,2000,23,포메라니안,p_2,Y,M"
+[2023-07-13 16:24:23, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:24:23, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:24:25, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:24:30, info] "MySQL Query:     insert into pet_info (pet_code, pet_name, pet_byear, pet_weight, pet_breed,p_user_code, pet_isNeutering, pet_gender )    values(?,?,?,?,?,?,?,?);"
+[2023-07-13 16:24:30, info] "MySQL Query Params: ,55,1990,33,치와와,p_2,Y,M"
+[2023-07-13 16:24:40, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:24:40, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:24:43, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:24:48, info] "MySQL Query:     insert into pet_info (pet_code, pet_name, pet_byear, pet_weight, pet_breed,p_user_code, pet_isNeutering, pet_gender )    values(?,?,?,?,?,?,?,?);"
+[2023-07-13 16:24:48, info] "MySQL Query Params: ,33,1990,33,말티즈,p_2,Y,M"
+[2023-07-13 16:24:48, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-13 16:24:48, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\config\db\database_mysql.js:35:15)
+    at aMyPageService.loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:51:28)
+    at loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:58:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+[2023-07-13 16:25:06, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:06, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:12, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:12, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:13, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:13, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:16, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:16, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:18, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:18, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:20, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:20, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:22, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:25:23, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:23, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:26, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:25:28, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:28, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:33, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:25:34, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:34, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:35, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:35, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:39, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:25:40, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:40, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:43, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:43, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:43, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:25:43, info] "MySQL Query Params: p_2"
+[2023-07-13 16:25:43, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:25:43, info] "MySQL Query Params: p_2"
+[2023-07-13 16:25:43, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 16:25:43, info] "MySQL Query Params: 2"
+[2023-07-13 16:25:46, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:46, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:46, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:25:46, info] "MySQL Query Params: p_2"
+[2023-07-13 16:25:46, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:25:46, info] "MySQL Query Params: p_2"
+[2023-07-13 16:25:46, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 16:25:46, info] "MySQL Query Params: 2"
+[2023-07-13 16:25:52, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:52, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:52, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:25:52, info] "MySQL Query Params: p_2"
+[2023-07-13 16:25:52, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:25:52, info] "MySQL Query Params: p_2"
+[2023-07-13 16:25:52, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 16:25:52, info] "MySQL Query Params: 2"
+[2023-07-13 16:25:53, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:53, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:25:57, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:25:57, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:26:00, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:26:01, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:26:01, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:26:54, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:26:54, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:26:55, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:26:55, info] "MySQL Query Params: p_2"
+[2023-07-13 16:26:55, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:26:55, info] "MySQL Query Params: p_2"
+[2023-07-13 16:26:55, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 16:26:55, info] "MySQL Query Params: 2"
+[2023-07-13 16:26:57, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:26:57, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:26:57, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:26:57, info] "MySQL Query Params: p_2"
+[2023-07-13 16:26:57, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:26:57, info] "MySQL Query Params: p_2"
+[2023-07-13 16:26:57, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 16:26:57, info] "MySQL Query Params: 2"
+[2023-07-13 16:27:01, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:27:01, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:27:01, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:27:01, info] "MySQL Query Params: p_2"
+[2023-07-13 16:27:01, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:27:01, info] "MySQL Query Params: p_2"
+[2023-07-13 16:27:01, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 16:27:01, info] "MySQL Query Params: 2"
+[2023-07-13 16:27:23, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:27:23, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:27:28, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:27:29, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:27:29, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:27:32, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:27:32, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:27:32, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:27:32, info] "MySQL Query Params: p_2"
+[2023-07-13 16:27:32, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:27:32, info] "MySQL Query Params: p_2"
+[2023-07-13 16:27:32, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 16:27:32, info] "MySQL Query Params: 2"
+[2023-07-13 16:27:36, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:27:37, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:27:37, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:27:37, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:27:37, info] "MySQL Query Params: p_2"
+[2023-07-13 16:27:37, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:27:37, info] "MySQL Query Params: p_2"
+[2023-07-13 16:27:37, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 16:27:37, info] "MySQL Query Params: 2"
+[2023-07-13 16:27:39, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:27:39, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:27:39, info] "MySQL Query:     select *    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:27:39, info] "MySQL Query Params: p_2"
+[2023-07-13 16:27:39, info] "MySQL Query:     select pet_id    from pet_info    where pet_first_yn = 'Y' and p_user_code = ?;"
+[2023-07-13 16:27:39, info] "MySQL Query Params: p_2"
+[2023-07-13 16:27:39, info] "MySQL Query:     select hr_avg, predict_glucose, created_time    from predict_data    where pet_id =?;"
+[2023-07-13 16:27:39, info] "MySQL Query Params: 2"
+[2023-07-13 16:27:41, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:27:41, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:27:43, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:27:46, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:27:48, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:29:14, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:29:14, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:29:17, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:31:09, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:31:09, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:31:13, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:31:41, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:31:41, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:31:44, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:31:46, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:31:47, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:31:54, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:31:54, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:31:58, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-07-13 16:38:50, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:38:50, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:39:04, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:39:04, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:39:06, error] "[System Error]: Cannot read property 'replace' of undefined"
+[2023-07-13 16:39:06, error] "Cannot read property 'replace' of undefined"
+TypeError: Cannot read property 'replace' of undefined
+    at mysqlDB (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\config\db\database_mysql.js:35:15)
+    at aMyPageService.loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:51:28)
+    at loadPetList (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:58:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+[2023-07-13 16:44:11, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:44:11, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:44:13, info] "MySQL Query:     select *    from pet_info    where p_user_code =? order by pet_first_yn;"
+[2023-07-13 16:44:13, info] "MySQL Query Params: p_2"
+[2023-07-13 16:47:35, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:47:35, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:47:39, info] "MySQL Query:     select *    from pet_info    where p_user_code =? order by pet_first_yn;"
+[2023-07-13 16:47:39, info] "MySQL Query Params: p_2"
+[2023-07-13 16:48:08, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:48:08, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:48:10, info] "MySQL Query:     select *    from pet_info    where p_user_code =? order by pet_first_yn;"
+[2023-07-13 16:48:10, info] "MySQL Query Params: p_2"
+[2023-07-13 16:55:37, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:55:37, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:55:39, info] "MySQL Query:     select *    from pet_info    where p_user_code =? order by pet_first_yn;"
+[2023-07-13 16:55:39, info] "MySQL Query Params: p_2"
+[2023-07-13 16:55:53, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:55:53, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:55:55, info] "MySQL Query:     select *    from pet_info    where p_user_code =? order by pet_first_yn;"
+[2023-07-13 16:55:55, info] "MySQL Query Params: p_2"
+[2023-07-13 16:56:24, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:56:24, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:56:26, info] "MySQL Query:     select *    from pet_info    where p_user_code =? order by pet_first_yn;"
+[2023-07-13 16:56:26, info] "MySQL Query Params: p_2"
+[2023-07-13 16:56:51, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:56:51, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:56:51, info] "MySQL Query: SELECT p_user_refresh_token FROM user_protector WHERE p_user_code = ? and p_user_access_token = ?;"
+[2023-07-13 16:56:51, info] "MySQL Query Params: p_2,eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY2NvdW50SWQiOiJ0ZXN0MTExMTEiLCJpYXQiOjE2ODkxMzQ2OTgsImV4cCI6MTY5NjkxMDY5OH0.YoC2xx9hyUxMq9RUm_g8PVwTn0jD8LpmTMAuWlTO2as"
+[2023-07-13 16:56:52, info] "MySQL Query:     select *    from pet_info    where p_user_code =? order by pet_first_yn;"
+[2023-07-13 16:56:52, info] "MySQL Query Params: p_2"

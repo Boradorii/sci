@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>독닥독닥</title>
+    <link href="/dist/css/style.min.css" rel="stylesheet">
+    <link href="/dist/css/pages/dashboard1.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+
+<style>
+    @font-face {
+        font-family: 'NanumSquareNeo-Variable';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_11-01@1.0/NanumSquareNeo-Variable.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    body {
+        font-family: NanumSquareNeo-Variable;
+    }
+
+    .active {
+        margin-top: 0.7em;
+        margin-bottom: 0;
+    }
+
+    .deactive {
+        display: none;
+    }
+
+    .border-line {
+        border-bottom: 1px solid #ddd;
+    }
+</style>
+{% block style %}{%endblock%}
+
+<body>
+    <div id="main-wrapper">
+        <header class="topbar">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <div class="navbar-header">
+                    <a class="navbar-brand m-auto sd-list" id="page-title" href="javascript:void(0)">
+                        <!-- Logo icon --><b>
+                            <img src="/assets/images/sci_logo.png" alt="homepage" />
+                        </b>
+                        <!--End Logo icon -->
+                        <span class="hidden-xs"><span class="m-l-10" style="font-size:x-large">독닥독닥</span>
+                    </a>
+                </div>
+            </nav>
+        </header>
+        <aside class="left-sidebar skin-megna">
+            <div class="scroll-sidebar">
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <div class="border-line"></div>
+                        <li class="sd-list" id="side-menu-measure"><a class="waves-effect waves-dark"
+                                href="javascript:void(0)"><span class="hide-menu">혈당/혈압 측정</span></a></li>
+                        <li class="sd-list" id="side-menu-patient"><a class="waves-effect waves-dark"
+                                href="javascript:void(0)"><span class="hide-menu">환자관리</span></a></li>
+                        <div class="border-line"></div>
+                        <li><a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
+                                aria-expanded="false"><span class="hide-menu" id="hosName"></span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li class="sd-list" id="side-menu-notice">
+                                    <a class="waves-effect waves-dark" href="javascript:void(0)"><span id="alertManage"
+                                            class="hide-menu">알림 관리</span></a>
+                                </li>
+                                <li class="sd-list" id="side-menu-hospital">
+                                    <a class="waves-effect waves-dark" href="javascript:void(0)"></i><span
+                                            class="hide-menu">병원 관리</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <div class="border-line"></div>
+                        <li class="sd-list" id="side-menu-manual"><a class="waves-effect waves-dark"
+                                href="javascript:void(0)"><span class="hide-menu">독닥독닥 매뉴얼</span></a></li>
+                        <li class="sd-list" id="side-menu-logout"><a class="waves-effect waves-dark"
+                                href="javascript:void(0)"><span class="hide-menu">로그아웃</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+        <div class="page-wrapper">
+            <div class="container-fluid">
+                <!-- html 작성부분 -->
+                {%block contents%} {% endblock %}
+                <!-- html 작성부분 -->
+
+            </div>
+        </div>
+    </div>
+
+    <div style="padding-top:50px;"></div>
+    <div style="padding-top:50px;"></div>
+</body>
+<script src="/javascripts/config.js"></script>
+<script src="/javascripts/commonUtil.js"></script>
+
+<!-- <script src="/assets/node_modules/jquery/jquery-3.2.1.min.js"></script>/ -->
+<script src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!--Wave Effects -->
+<script src="/dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<script src="/dist/js/sidebarmenu.js"></script>
+
+<script>
+    let h_adminCode = getSessionStorage('h_adminCode');
+    check_hospital_alert(h_adminCode)
+
+
+    // 사이드 메뉴 색 표시
+    let culPageUrl = getSessionStorage("culPageUrl")
+
+    // 병원 이름 세팅_230621 SY
+    let hosName = localStorage.getItem("hosName");
+    $("#hosName").text(hosName);
+
+    culPage = culPageUrl.split('/')[5]
+    let targetid
+    if (culPage != null) {
+        $('.sd-list').css('color', 'black')
+        switch (culPage) {
+            case 'measure':
+                targetid = "#side-menu-" + culPage + " a"
+                $(targetid).css('color', '#01c0c8');
+                $('.has-arrow').removeClass('active')
+                $('.collapse').removeClass('in')
+                break;
+
+            case 'patient':
+                targetid = "#side-menu-" + culPage + " a"
+                $(targetid).css('color', '#01c0c8');
+                $('.has-arrow').removeClass('in')
+
+                break;
+
+            case 'notice':
+                targetid = "#side-menu-" + culPage + " a"
+                $(targetid).css('color', '#01c0c8');
+                $('.has-arrow').addClass('active')
+                $('.collapse').addClass('in')
+                break;
+
+            case 'hospital':
+                targetid = "#side-menu-" + culPage + " a"
+                $(targetid).css('color', '#01c0c8');
+                $('.has-arrow').addClass('active')
+                $('.collapse').addClass('in')
+                break;
+
+            default:
+                $('.sd-list').css('color', 'black')
+                $('.has-arrow').removeClass('active')
+                $('.collapse').removeClass('in')
+        }
+    }
+    // 사이드 메뉴 색 표시
+
+
+
+    $('.sd-list').on('click', function (evnt) {
+        console.log(evnt.currentTarget.id)
+        switch (evnt.currentTarget.id) {
+            case 'side-menu-measure':
+                let measureUrl = baseUrl + "/measure/measure/" + h_adminCode
+                changeView(measureUrl)
+                break;
+
+            case 'side-menu-patient':
+                let patientUrl = baseUrl + "/patient/patient/" + h_adminCode
+                changeView(patientUrl)
+                break;
+
+            case 'side-menu-notice':
+                let noticeUrl = baseUrl + "/notice/notice/" + h_adminCode
+                changeView(noticeUrl)
+                break;
+            case 'side-menu-hospital':
+                let hospitalUrl = baseUrl + "/hospital/hospital/" + h_adminCode
+                changeView(hospitalUrl)
+                break;
+
+            //로그아웃 구현_230621 SY
+            case 'side-menu-logout':
+                let cmmContentType = 'application/json',
+                    cmmType = 'post',
+                    cmmUrl = '/api/userLogout',
+                    cmmReqDataObj = {
+                        userCode: h_adminCode
+                    },
+                    cmmAsync = false,
+                    cmmSucc = function (result) {
+                        if (result.state) {
+                            localStorage.removeItem('hosName');
+                            removeSessionStorage('userCode');
+                            removeSessionStorage('accessToken');
+                            removeSessionStorage('culPageUrl');
+                            removeLocalStorage('culPageUrl');
+                            changeView(baseUrl);
+                        }
+                    },
+                    cmmErr = function () {
+                        alert('로그아웃 실패하였습니다. 다시 시도해 주세요.');
+                    };
+                commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
+                break;
+        }
+
+    });
+
+
+    function check_hospital_alert(h_adminCode) {
+
+        let cmmContentType = 'application/json',
+            cmmType = 'post',
+            cmmUrl = '/api/a_hospital/check_hospital_alert',
+            cmmReqDataObj = {
+                h_user_code: h_adminCode
+            },
+            cmmAsync = false,
+
+            cmmSucc = function check_hospital_alert(result) {
+                console.log(result);
+                if (result.rows[0].h_alert_count < 10) {
+                    $('#alertManage').text("알림관리(" + result.rows[0].h_alert_count + ")");
+                } else {
+                    $('#alertManage').text("알림관리(9+)");
+                }
+
+            },
+            cmmErr = null;
+        commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
+
+    }
+
+
+
+</script>
+
+{%block script%} {% endblock %}
+
+</html>

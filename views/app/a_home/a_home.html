@@ -1,0 +1,232 @@
+{% extends "templates/appmainbase.html" %}
+<!-- ------------------------------------------------------------- -->
+{% block head %}
+<!-- CSS -->
+<!-- datepicker CSS -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    rel="stylesheet">
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+<style>
+    .pet-info {
+        margin-bottom: 0px;
+    }
+
+    .card-box {
+        margin-top: 10px;
+        border: 2px solid lightgray;
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        /* border-collapse: collapse; */
+    }
+
+    table td,
+    table th {
+        /* padding: 10px; */
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 3px solid white;
+    }
+
+    .td-pet-info {
+        border-right: 1px solid lightgray;
+    }
+
+    .table-test {
+        width: 100%;
+    }
+
+    .table-test td,
+    .table-test th {
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 1px solid #e9ecef;
+        border-top: none;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+<!-- Content 시작 -->
+{% block contents%}
+<!-- html -->
+<div class="skin-megna page-wrapper" style="padding: 0; overflow-y: scroll;">
+    <div class="container-fluid">
+        <!-- 반려견 정보 -->
+        <div class="card card-box" style="text-align: center;">
+            <div>
+                <div class="h3" style="margin-top: 5px; font-weight: 700;">반려동물 정보</div>
+                <div class="h5">* 대표로 등록된 반려동물의 정보를 출력합니다.</div>
+                <div class="row" style="margin-bottom: 10px;">
+
+                    <div class="col">
+                        <table style="align-items: center;">
+                            <tr>
+                                <td class="td-pet-info">나 이</td>
+                                <td id="age">2살</td>
+                            </tr>
+                            <tr>
+                                <td class="td-pet-info">성 별</td>
+                                <td id="gender">남아</td>
+                            </tr>
+                            <tr>
+                                <td class="td-pet-info">품 종</td>
+                                <td id="kind">말티즈</td>
+                            </tr>
+                            <tr>
+                                <td class="td-pet-info">몸무게</td>
+                                <td id="weight">6kg</td>
+                            </tr>
+
+                        </table>
+
+                    </div>
+                    <div class="col" style="align-self: center;">
+                        <button class="btn btn-outline-secondary" id="myPetCare">우리 아이 관리</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- 당일 측정 기록 -->
+        <div id="todayTestListNone" class="card card-box" style="text-align: center;">
+            <div>
+                <h4 style="margin-top: 5px; font-weight: 700;">당일 측정 기록</h4>
+                <h6 style="font-weight: 700;">측정 기록이 존재하지 않습니다.</h6>
+
+
+                <div class="row" style="display: flex; justify-content: center; margin-bottom: 10px;">
+                    <button class="btn btn-outline-secondary" id="healthTest">건강상태 측정하기</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="todayTestListExist" class="card card-box" style="text-align: center;">
+            <div>
+                <h4 style="margin-top: 5px;">당일 측정 기록</h4>
+                <div>
+                    <table id="todayTestTable" class="table table-test">
+                        <tbody>
+                            <tr>
+                                <td colspan="2">측정 날짜</td>
+                                <td>심박수</td>
+                                <td>혈당</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div style="padding-bottom: 50px;"></div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+{% block script %}
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script src="/assets/node_modules/moment/moment.js"></script>
+<script type="text/javascript" src="/app/a_home/a_home.js"></script>
+
+<script>
+
+    let p_userCode = '{{p_userCode}}';
+
+    init()
+
+
+    //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+    window.parent.postMessage({
+        action: 'moveFrameN'
+    }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+    //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+    // 페이지 이동 버튼 클릭 이벤트 2021.05.10 JG
+    $("#myPetCare").on('click', function (evnt) {
+        let targetId = evnt.currentTarget.id,
+            reqUrl = baseUrl + '/a_mypage';
+        switch (targetId) {
+            case 'myPetCare': // 아이디가 myPetCare 일 때.
+                reqUrl += '/myPetPage';
+                window.parent.postMessage({ // 앱 상단 타이틀 변경을 위한 postMessage 전송
+                    action: 'go-petManage'
+                }, '*');
+                break;
+
+        }
+
+        reqUrl += '?p_userCode=' + p_userCode /* + '&lang=' + lang + "&accessToken=" + accessToken*/;
+        location.href = reqUrl;
+
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+        window.parent.postMessage({
+            action: 'moveFrameY' //메인페이지에서 하위 메뉴로 들어갔을 때 페이지 이동 표시("Y": 하위 메뉴/"N": 메인메뉴)
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+    });
+
+    $("#healthTest").on('click', function (evnt) {
+        let targetId = evnt.currentTarget.id,
+            reqUrl = baseUrl + '/a_health';
+        switch (targetId) {
+            case 'healthTest': // 아이디가 healthTest 일 때.
+                reqUrl += '/predictPage';
+                window.parent.postMessage({ // 앱 상단 타이틀 변경을 위한 postMessage 전송
+                    action: 'go-healthManage'
+                }, '*');
+                break;
+
+        }
+
+
+        reqUrl += '?p_userCode=' + p_userCode /* + '&lang=' + lang + "&accessToken=" + accessToken*/;
+        location.href = reqUrl;
+
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+        window.parent.postMessage({
+            action: 'moveFrameY' //메인페이지에서 하위 메뉴로 들어갔을 때 페이지 이동 표시("Y": 하위 메뉴/"N": 메인메뉴)
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+    });
+
+
+
+
+
+
+
+
+</script>
+
+{% endblock %}

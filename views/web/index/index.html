@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/sci_logo.png">
+    <title>Login</title>
+
+    <!-- page css -->
+    <link href="dist/css/pages/login-register-lock.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="dist/css/style.min.css" rel="stylesheet">
+</head>
+
+<body class="skin-default card-no-border">
+    <!-- ============================================================== -->
+    <!-- Preloader - style you can find in spinners.css -->
+    <!-- ============================================================== -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loader__figure"></div>
+            <p class="loader__label">Elite admin</p>
+        </div>
+    </div>
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <section id="wrapper">
+        <div class="login-register">
+            <div class="login-box card" style="margin: auto;">
+                <div class="card-body">
+                    <h3 class="text-center m-b-20" style="margin-bottom: 25px;"><strong>로그인</strong></h3>
+                    <form class="form-horizontal form-material" id="loginform" action="index.html">
+                        <!-- 이미지 or 문구 추가-->
+                        <div class="text-center m-b-20" style="background-color: lightgrey; height:150px; line-height: 150px;">이미지 or 문구 추가</div><br>
+                        <div class="form-group ">
+                            <div class="col-xs-12">
+                                <input class="form-control" type="text" id="id-input" placeholder="아이디">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="col-xs-12">
+                                <input class="form-control" type="password" id="pw-input" placeholder="비밀번호">
+                            </div>
+                        </div>
+
+                        <div class="form-group text-center">
+                            <div class="col-xs-12 p-b-20">
+                                <button class="btn btn-block btn-lg btn-info" id="login-btn" type="button">로그인</button>
+                            </div>
+                        </div>
+                        <div class="form-group m-b-0">
+                            <div class="col-md-12">
+                                <div class="d-flex no-block align-items-center">
+                                    <div class="m-auto">
+                                        <a href="javascript:void(0)" id="find-id" class="text-muted">아이디 찾기</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                                        <a href="javascript:void(0)" id="find-pw" class="text-muted">비밀번호 찾기</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                                        <a href="javascript:void(0)" id="signup-btn" class="text-muted">회원가입</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="/assets/node_modules/jquery/jquery-3.2.1.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="/assets/node_modules/popper/popper.min.js"></script>
+    <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/javascripts/config.js"></script>
+    <script src="/javascripts/commonUtil.js"></script>
+
+    <!--Custom JavaScript -->
+    <script src="/web/index/index.js">
+    </script>
+<script>
+    // 뒤로가기 동작 막기
+    window.history.pushState(null, null, document.URL);
+    $(window).on('popstate', function () {
+    window.history.pushState(null, null, document.URL);
+    });
+</script>
+</body>
+
+</html>

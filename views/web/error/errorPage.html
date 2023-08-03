@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="sci_logo.png">
+    <title>독닥독닥</title>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <base href="/">
+</head>
+
+<body class="skin-megna fixed-layout">
+    <div class="skin-megna page-wrapper" style="padding: 0;">
+        <div class="container-fluid">
+            <div class="alert alert-warning mt-5" style="list-style:none; display:block;">
+
+                <h3 class="text-warning">
+                    <i class="fa fa-exclamation-triangle"></i> {{errorTitle}}
+                </h3>
+                <div class="row ml-2">{{errorMsg}}</div>
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/config.js"></script>
+    <script src="/javascripts/commonUtil.js"></script>
+    <script src="/dist/js/perfect-scrollbar.jquery.min"></script>
+</body>
+
+</html>

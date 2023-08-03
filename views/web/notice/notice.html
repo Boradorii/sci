@@ -1,0 +1,604 @@
+{% extends "templates/webmainbase.html" %}
+
+<!-- ------------------------------------------------------------- -->
+{% block style%}
+<!-- <link rel="stylesheet" href="/web/rtime_web/rtime_web.css" type="text/css" /> -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+<style>
+    /*---------- 측정 시작 페이지 -----------*/
+
+    a.nav-link {
+        color: black;
+        margin: 0;
+    }
+
+    a.nav-link.active {
+        font-weight: 600;
+    }
+
+    .form-control-sm {
+        font-size: 13px;
+    }
+
+    .active-notice,
+    .deactive-notice {
+        display: none;
+    }
+
+    .scroll {
+        overflow: scroll;
+    }
+
+    /*input type number일 때 화살표 없애기*/
+
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button,
+    #authnumber {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    #noticeList-table {
+        text-align: center;
+    }
+
+    /*----------------- 미확인 알림 내역 -----------------*/
+
+    #noticeN-table,
+    #noticeY-table {
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    #noticeN-table th,
+    #noticeY-table th {
+        font-weight: bold;
+        height: 35px;
+        line-height: 35px;
+    }
+
+    #noticeN-table td,
+    #noticeY-table td {
+        height: 35px;
+        line-height: 35px;
+    }
+
+    .symptonArea {
+        cursor: pointer;
+    }
+
+    #answer-input {
+        height: 130px;
+        margin-top: 10px;
+    }
+
+    /*----------------- 환자 검색 form -----------------*/
+
+    #searchFrm {
+        width: 100%;
+        text-align: right;
+    }
+
+    #noticeDate {
+        width: 15%;
+        text-align: center;
+    }
+
+    #searchKey {
+        width: 8%;
+    }
+
+    #searchWord {
+        width: 20%;
+    }
+
+    #searchBtn {
+        width: 5%;
+    }
+
+    /*----------------- 문진표 모달 -----------------*/
+
+    textarea#questionnaire_09_text,
+    #detail-questionnaire_09_text,
+    #detail-answer {
+        height: 100px;
+        padding: 15px;
+        text-align: left;
+        font-size: 15px;
+    }
+
+    .wj-flexgrid input[type=radio]:checked {
+        background-color: lightgray;
+        border-color: rgb(47, 47, 224);
+    }
+</style>
+
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+<!-- ------------------------------------------------------------- -->
+{% block contents%}
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <!-- 상단 탭 메뉴 -->
+                <ul class="nav nav-tabs" id="postTab">
+                    <li class="nav-item"><a data-toggle="tab" href="#noticeN-tab" class="nav-link active">미확인 알림 내역</a>
+                    </li>
+                    <li class="nav-item"><a data-toggle="tab" href="#noticeY-tab" class="nav-link">확인 알림 내역</a>
+                    </li>
+                </ul>
+
+                <!-- 미확인 알림 내역 탭 매핑 div -->
+                <div class="tab-content" id="postTabContent">
+                    <div id="noticeN-tab" class="tab-pane fade show active">
+                        <p>* 미확인 알림 내역입니다. 문진표(증상) 체크 후 답변해 주세요.</p>
+                        <table id="noticeN-table" class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>보호자 이름</th>
+                                    <th>환자 이름</th>
+                                    <th>알림 날짜</th>
+                                    <th>문진표(증상)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>박길동</td>
+                                    <td>코코</td>
+                                    <td>2023-06-15 11:11:11</td>
+                                    <td>
+                                        <button id="showInfoBtn" class="btn btn-secondary" data-toggle="modal"
+                                            data-target="#symptom-detail-modal">확인</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- 확인 알림 내역 탭 매핑 div -->
+                    <div id="noticeY-tab" class="tab-pane fade">
+                        <div id="searchFrm" class="form-group">
+                            <input type="text" id="noticeDate" class="form-control" />
+                            <select id="searchKey" name="searchKey" class="form-control">
+                                <!-- <option>선택 ▼</option> -->
+                                <option value="1">환자명</option>
+                                <option value="2">보호자명</option>
+                            </select>
+                            <input type="text" class="form-control" id="searchWord" name="searchWord"
+                                placeholder="검색어 입력" />
+                            <input type="button" class="btn btn-secondary" id="searchBtn" value="검색" data-toggle="modal"
+                                data-target="#select-patient-modal" onclick="searchInfo()" />
+                        </div>
+
+                        <p>* 확인 알림 내역입니다. 상세정보 확인 버튼을 클릭하시면 문진표(증상) 및 작성하신 답변을 조회할 수 있습니다.</p>
+                        <table id="noticeY-table" class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>보호자 이름</th>
+                                    <th>환자 이름</th>
+                                    <th>알림 날짜</th>
+                                    <th>확인 날짜</th>
+                                    <th>상세정보</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>박길동</td>
+                                    <td>코코</td>
+                                    <td>
+                                        <button id="showInfoBtn2" class="btn btn-secondary" data-toggle="modal"
+                                            data-target="#notice-detail-modal">확인</button>
+                                    </td>
+                                    <td>2023-06-15 11:11:11</td>
+                                    <td>2023-06-16 11:11:11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 문진표/증상 확인 모달 -->
+<!--
+    모달을 열기 위한 태그 속성에 data-toggle, data-target을 작성하면
+    모달의 X, 닫기 버튼 클릭 시 data-dismiss 작동
+    모달 바깥 클릭, esc 입력 시 backdrop, keyboard 속성들 작동
+
+    ※위 방법으로 접근 안 하고 js로 접근하면 다 js로 설정해줘야 함
+
+    ajax로 생성해야 하는 태그들은 그때그때 다른 값 사용해야 하니까 onclick으로 모달 제어하고,
+    html에서할 수 있는 건 data-target으로 모달 제어하는 식으로 짜놨어요!
+-->
+<div id="symptom-detail-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">코코 문진표</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <p style="font-size: 15pt; font-weight: bold; text-align: center;">문진표</p>
+
+                <div>
+                    <p>1. 반려견이 갈증증상이 있거나 배뇨 빈도가 증가하였나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_01_O" name="questionnaire_n01" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_01_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_01_X" name="questionnaire_n01" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_01_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>2. 반려견이 보통 평소보다 더 많이 먹고 마시나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_02_O" name="questionnaire_n02" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_02_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_02_X" name="questionnaire_n02" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_02_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>3. 반려견이 최근 체중이 줄거나 늘었나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_03_O" name="questionnaire_n03" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_03_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_03_X" name="questionnaire_n03" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_03_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>4. 반려견의 활동 수준이나 행동에 변화가 있었나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_04_O" name="questionnaire_n04" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_04_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_04_X" name="questionnaire_n04" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_04_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>5. 반려견이 다른 질병 진단을 받았거나 약을 먹고 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_05_O" name="questionnaire_n05" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_05_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_05_X" name="questionnaire_n05" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_05_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>6. 반려견이 요로 감염에 걸린 적이 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_06_O" name="questionnaire_n06" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_06_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_06_X" name="questionnaire_n06" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_06_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>7. 반려견이 당뇨병 진단을 받은 적이 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_07_O" name="questionnaire_n07" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_07_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_07_X" name="questionnaire_n07" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_07_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>8. 반려견의 부모 중 당뇨가 있는 개가 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_08_O" name="questionnaire_n08" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_08_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_08_X" name="questionnaire_n08" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_08_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>9. 반려견의 현재 식단은 무엇인가요?<br> 식품의 브랜드, 유형, 보조제, 간식 등을 아래에 작성해 주세요.</p>
+                    <textarea class="form-control" name="questionnaire_09" id="questionnaire_09_text" rows="5"
+                        readonly>보호자가 작성한 식단 내용</textarea>
+
+                    <p>10. 반려견의 이상증상을 아래에 작성해 주세요.(선택)</p>
+                    <textarea class="form-control" name="questionnaire_10" id="questionnaire_10_text" rows="5"
+                        readonly>보호자가 작성한 증상</textarea>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <div id="modalBtn-div">
+                    <button id="adminEditBtn2" type="button" class="btn btn-success" data-toggle="modal"
+                        data-target="#answer-modal" onclick="$('#symptom-detail-modal').modal('hide');">답변하기</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        onclick="$('#symptom-detail-modal').modal('hide');">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 알림 답변 모달 -->
+<div id="answer-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"
+    data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">문의 답변</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <!-- 문구 추가, 수정 필요 !!!!!!!!!!!!! -->
+                <select id="answer-select" class="form-control form-control-sm">
+                    <option selected value="self">직접 입력</option>
+                    <option>내원하셔서 검사를 받아보시길 바랍니다.</option>
+                    <option>내원하셔서 정확한 상담을 받아보시길 바랍니다.</option>
+                </select>
+                <input id="answer-input" type="text" class="form-control"
+                    placeholder="답변을 입력해 주세요. 입력하신 답변은 보호자에게 전송됩니다." maxlength="100" />
+            </div>
+
+            <div class="modal-footer">
+                <div id="modalBtn-div">
+                    <button id="adminEditBtn" type="button" class="btn btn-success">전송</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 알림 상세내용 모달 -->
+<div id="notice-detail-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"
+    data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">사용자 수정</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                    onclick="$('#notice-detail-modal').modal('hide');">&times;</button>
+            </div>
+
+            <div class="modal-body">
+                <p style="font-size: 15pt; font-weight: bold; text-align: center;">문진표</p>
+
+                <div>
+                    <p>1. 반려견이 갈증증상이 있거나 배뇨 빈도가 증가하였나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="detail-questionnaire_01_O" name="questionnaire_y01" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_01_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="detail-questionnaire_01_X" name="questionnaire_y01" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_01_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>2. 반려견이 보통 평소보다 더 많이 먹고 마시나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="detail-questionnaire_02_O" name="questionnaire_y02" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_02_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="detail-questionnaire_02_X" name="questionnaire_y02" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_02_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>3. 반려견이 최근 체중이 줄거나 늘었나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="detail-questionnaire_03_O" name="questionnaire_y03" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_03_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="detail-questionnaire_03_X" name="questionnaire_y03" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_03_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>4. 반려견의 활동 수준이나 행동에 변화가 있었나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="detail-questionnaire_04_O" name="questionnaire_y04" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_04_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="detail-questionnaire_04_X" name="questionnaire_y04" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_04_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>5. 반려견이 다른 질병 진단을 받았거나 약을 먹고 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="detail-questionnaire_05_O" name="questionnaire_y05" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_05_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="detail-questionnaire_05_X" name="questionnaire_y05" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_05_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>6. 반려견이 요로 감염에 걸린 적이 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="detail-questionnaire_06_O" name="questionnaire_y06" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_06_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="detail-questionnaire_06_X" name="questionnaire_y06" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_06_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>7. 반려견이 당뇨병 진단을 받은 적이 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="detail-questionnaire_07_O" name="questionnaire_y07" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_07_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="detail-questionnaire_07_X" name="questionnaire_y07" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_07_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>8. 반려견의 부모 중 당뇨가 있는 개가 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="detail-questionnaire_08_O" name="questionnaire_y08" value="Y"
+                                onclick="return(false);">
+                            <label for="questionnaire_08_O"
+                                style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="detail-questionnaire_08_X" name="questionnaire_y08" value="N"
+                                onclick="return(false);">
+                            <label for="questionnaire_08_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>9. 반려견의 현재 식단은 무엇인가요?<br> 식품의 브랜드, 유형, 보조제, 간식 등을 아래에 작성해 주세요.</p>
+                    <textarea class="form-control" name="questionnaire_09" id="questionnaire_09_text" rows="5"
+                        readonly>보호자가 작성한 식단 내용</textarea>
+
+                    <p>10. 반려견의 이상증상을 아래에 작성해 주세요.(선택)</p>
+                    <textarea class="form-control" name="questionnaire_10" id="questionnaire_10_text" rows="5"
+                        readonly>보호자가 작성한 증상</textarea>
+
+                    <p style="font-size: 13pt;">의사 소견</p>
+                    <textarea class="form-control" name="detail-answer" id="detail-answer" rows="5"
+                        readonly>수의사가 작성한 소견 내용</textarea>
+                </div>
+
+                <div class="modal-footer">
+                    <div id="modalBtn-div">
+                        <button type="button" class="btn btn-secondary"
+                            onclick="$('#notice-detail-modal').modal('hide');">닫기</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% endblock %}
+    <!-- ------------------------------------------------------------- -->
+
+    <!-- ------------------------------------------------------------- -->
+
+    {%block script%}
+    <!-- daterangepicker js -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <!-- SweetAlert2 예쁜 알람창 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/web/notice/notice.js"></script>
+
+    <script>
+        function init() {
+            /* 
+                ※ daterangepicker 초기화 코드
+                https://www.daterangepicker.com/ 옵션 설정 시 daterangepicker 사이트 참고
+            */
+            $('#noticeDate').daterangepicker({
+                autoApply: true,
+                locale: {
+                    format: 'YYYY-MM-DD',
+                    "daysOfWeek": ["일", "월", "화", "수", "목", "금", "토"],
+                    "monthNames": ["1월", "2월", "3월", "4월", "5월", "6월", "7월", "8월", "9월", "10월", "11월", "12월"]
+                },
+            });
+            noticeNList();
+        }
+
+        init();
+
+        // 담당자 이메일 변경 버튼 클릭 이벤트
+        $("#edit-emailBtn").on('click', function () {
+            $("#edit-emailBtn").toggle();
+            $("#edit-emailBtn2").toggle();
+            $("#email-input").attr('readonly', false);
+            $("#email-input2").attr('readonly', false);
+            $("#email-select-input2").toggle();
+
+            $("#input-authnumber").toggle();
+        });
+
+        // 담당자 이메일 변경 취소 버튼 클릭 이벤트
+        $("#edit-emailBtn2").on('click', function () {
+            $("#edit-emailBtn").toggle();
+            $("#edit-emailBtn2").toggle();
+            $("#email-input").attr('readonly', true);
+            $("#email-input2").attr('readonly', true);
+            $("#email-select-input2").toggle();
+
+            $("#input-authnumber").toggle();
+        });
+
+        // 문진표 확인버튼 클릭 시 모달 출력
+        function showSymptom() {
+            //$("#symptom-detail-modal").css('display', 'block');
+            $("#symptom-detail-modal").modal('show');
+            //ajax 코드 작성
+        }
+
+        // 문진표 확인버튼 클릭 시 모달 출력
+        function showNoticeInfo() {
+            $("#notice-detail-modal").modal('show');
+            //ajax 코드 작성
+        }
+
+        // 문의 답변 select 이벤트
+        $("#answer-select").on('change', function () {
+            if ($("#answer-select").val() == 'self') { // 직접입력
+                $("#answer-input").val('');
+                $("#answer-input").attr('readonly', false);
+            } else {
+                $("#answer-input").val($("#answer-select").val());
+                $("#answer-input").attr('readonly', true);
+            }
+        });
+    </script>
+    {% endblock %}
+    <!-- ------------------------------------------------------------- -->

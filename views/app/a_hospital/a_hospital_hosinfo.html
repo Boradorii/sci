@@ -1,0 +1,295 @@
+{% extends "templates/appmainbase.html" %}
+<!-- ------------------------------------------------------------- -->
+{% block head %}
+<!-- CSS -->
+<!-- datepicker CSS -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    rel="stylesheet">
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+    .card-box {
+        margin-top: 30px;
+        border: 2px solid gray;
+    }
+
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .selectBtn {
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 25%;
+    }
+
+    .inquiry-list ul {
+        padding-inline-start: 0px;
+    }
+
+    ul.no-bullet {
+        list-style: none;
+    }
+
+    .radio-select {
+        padding: 15px 10px;
+        text-align: center;
+    }
+
+    .radio-select input[type=radio] {
+        display: none;
+    }
+
+    .radio-select input[type=radio]+label {
+        display: inline-block;
+        cursor: pointer;
+        height: 24px;
+        width: 90px;
+        border: 1px solid #333;
+        line-height: 24px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 13px;
+    }
+
+    .radio-select input[type=radio]+label {
+        background-color: #fff;
+        color: #333;
+    }
+
+    .radio-select input[type=radio]:checked+label {
+        background-color: #333;
+        color: #fff;
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+<!-- Content 시작 -->
+{% block contents%}
+<!-- html -->
+<div class="skin-megna page-wrapper" style="padding: 0; overflow-y: scroll;">
+    <div class="container-fluid">
+
+        <div class="card m-t-10" style="text-align: center; width: 100%;">
+            <div style="text-align: left; width: 100%; background-color: rgb(231, 231, 231); align-items: center; padding: 10px; margin-left: 0px;"
+                class="row">
+                <div class="col" id="h_name" style="width: 100%; font-weight: 500; height: 45px; font-size: 20pt;">
+                    A 동물병원
+                </div>
+                <div class="col-1 favorite" onclick="clickHeart(this)">
+                    <i class="material-icons">
+                        favorite
+                    </i>
+                </div>
+            </div>
+
+            <div class="row" style="align-items: center;">
+                <div style="text-align: left; margin-top: 10px; font-weight: 600; margin-left: 10px;">
+                    <p id="h_address" style="margin-bottom: 5px;">광주광역시 남구 봉선로 84번길 7</P>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-1" style="text-align: right; padding: 0px;">
+                    <i class="material-icons" style="color: black; margin: 0px;">
+                        call
+                    </i>
+                </div>
+                <div class="col" style="text-align: left; font-size: 12pt;">
+                    <p id="h_telnum" style="margin-bottom: 5px; font-weight: 600;">062-621-3250</p>
+                </div>
+            </div>
+
+            <div class="row" style="align-items: center;">
+                <div style="text-align: left; margin-top: 5px; font-weight: 600; margin-left: 10px;">
+                    <p style="margin-bottom: 5px;">운영시간</P>
+                </div>
+            </div>
+            <div class="row" style="align-items: center;">
+                <div style="text-align: left; margin-top: 0px; font-weight: 600; margin-left: 20px;">
+                    <p id="h_operating_time" style="margin-bottom: 5px;">월~금 09:00 ~ 18:00, 토,일 휴무</P>
+                </div>
+            </div>
+            <div class="row" style="align-items: center;">
+                <div style="text-align: left; margin-top: 0px; font-weight: 600; margin-left: 10px;">
+                    <p style="margin-bottom: 5px;">원격의료 답변 가능 시간</P>
+                </div>
+            </div>
+            <div class="row" style="align-items: center;">
+                <div style="text-align: left; margin-top: 0px; font-weight: 600; margin-left: 20px;">
+                    <p id="h_answer_time" style="margin-bottom: 5px;">10:00 ~ 18:00</P>
+                </div>
+            </div>
+        </div>
+
+        <!-- 건강 상태 측정 -->
+        <div class="card"
+            style="text-align: center; width: 100%; background-color: rgb(231, 231, 231); margin-top: 30px; padding: 5px;">
+            <div style="font-weight: 600; margin-top: 15px;">
+                우리 아이가 아파보일 때,<br>건강 상태 측정 결과가 좋지 않을 때,<br>문진표 및 증상 작성 후 병원에 문의해 보세요!
+                <br>
+                <button class="selectBtn btn btn-secondary" id="inquiry" data-toggle="modal"
+                    data-target="#inquiry-modal" style="font-weight: 600;">병원 문의</button>
+            </div>
+        </div>
+
+        <div style="text-align: left;">
+            * 원격의료 서비스는 교육, 훈련 등의 상담은 불가하며 정확한 진단이 필요한 경우 병원에 방문하시길 바랍니다.
+        </div>
+    </div>
+    <div style="margin:50px;"></div>
+
+    <!-- 내병원 설명 모달 -->
+    <div id="inquiry-modal" class="modal long-modal fade" tabindex="-1" role="dialog" aria-hidden="true"
+        data-backdrop="static" data-keyboard="false" aria-labelledby="longmodal" style="height:700px;">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div class="h4 modal-title bold">병원문의</div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="row" style="align-items: center; margin-bottom:10px;">
+                        <div class="col-4">병원선택</div>
+                        <div class="col">
+                            <select id="select-hos" name="hosList" class="form-control" aria-label="region"
+                                aria-describedby="region" style="margin: 5px 10px">
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row" style="align-items: center; margin-bottom:10px;">
+                        <div class="col-4">반려동물 선택</div>
+                        <div class="col">
+                            <select id="select-pet" name="petList" class="form-control" aria-label="region"
+                                aria-describedby="region" style="margin: 5px 10px">>
+                            </select>
+                        </div>
+                    </div>
+
+                    <h4 style="border-bottom: 1px solid gray; width: 100%;"></h4>
+                    <div class="inquiry-list">
+                        <ul class="no-bullet">
+                            <li>1. 반려동물이 갈증증상이 있거나 배뇨 빈도가 증가하였나요?</li>
+                            <div class="radio-select" id="inquiry1">
+                                <input type="radio" id="inquiry1Y" name="inquiry1" value="Y"><label
+                                    for="inquiry1Y">Yes</label>
+                                <input type="radio" id="inquiry1N" name="inquiry1" value="N"><label
+                                    for="inquiry1N">No</label>
+                            </div>
+
+                            <li>2. 반려동물이 보통 평소보다 더 많이 먹고 마시나요?</li>
+                            <div class="radio-select" id="inquiry2">
+                                <input type="radio" id="inquiry2Y" name="inquiry2" value="Y"><label
+                                    for="inquiry2Y">Yes</label>
+                                <input type="radio" id="inquiry2N" name="inquiry2" value="N"><label
+                                    for="inquiry2N">No</label>
+                            </div>
+
+                            <li>3. 반려동물이 최근 체중이 줄거나 늘었나요?</li>
+                            <div class="radio-select" id="inquiry3">
+                                <input type="radio" id="inquiry3Y" name="inquiry3" value="Y"><label
+                                    for="inquiry3Y">Yes</label>
+                                <input type="radio" id="inquiry3N" name="inquiry3" value="N"><label
+                                    for="inquiry3N">No</label>
+                            </div>
+
+                            <li>4. 반려동물의 활동 수준이나 행동에 변화가 있었나요?</li>
+                            <div class="radio-select" id="inquiry4">
+                                <input type="radio" id="inquiry4Y" name="inquiry4" value="Y"><label
+                                    for="inquiry4Y">Yes</label>
+                                <input type="radio" id="inquiry4N" name="inquiry4" value="N"><label
+                                    for="inquiry4N">No</label>
+                            </div>
+
+                            <li>5. 반려동물이 다른 질병 진단을 받았거나 약을 먹고 있나요?</li>
+                            <div class="radio-select" id="inquiry5">
+                                <input type="radio" id="inquiry5Y" name="inquiry5" value="Y"><label
+                                    for="inquiry5Y">Yes</label>
+                                <input type="radio" id="inquiry5N" name="inquiry5" value="N"><label
+                                    for="inquiry5N">No</label>
+                            </div>
+
+                            <li>6. 반려동물이 요로 감염에 걸린 적이 있나요?</li>
+                            <div class="radio-select" id="inquiry6">
+                                <input type="radio" id="inquiry6Y" name="inquiry6" value="Y"><label
+                                    for="inquiry6Y">Yes</label>
+                                <input type="radio" id="inquiry6N" name="inquiry6" value="N"><label
+                                    for="inquiry6N">No</label>
+                            </div>
+
+                            <li>7. 반려동물이 당뇨병 진단을 받은 적이 있나요?</li>
+                            <div class="radio-select" id="inquiry7">
+                                <input type="radio" id="inquiry7Y" name="inquiry7" value="Y"><label
+                                    for="inquiry7Y">Yes</label>
+                                <input type="radio" id="inquiry7N" name="inquiry7" value="N"><label
+                                    for="inquiry7N">No</label>
+                            </div>
+
+                            <li>8. 반려동물의 부모 중 당뇨 이력이 있나요?</li>
+                            <div class="radio-select" id="inquiry8">
+                                <input type="radio" id="inquiry8Y" name="inquiry8" value="Y"><label
+                                    for="inquiry8Y">Yes</label>
+                                <input type="radio" id="inquiry8N" name="inquiry8" value="N"><label
+                                    for="inquiry8N">No</label>
+                            </div>
+
+                            <li>9. 반려견의 현재 식단은 무엇인가요? 식품의 브랜드, 유형, 보조제, 간식 등을 아래에 작성해 주세요.</li>
+                            <div class="" id="inquiry9">
+                                <textarea id="inquiry9" placeholder="식단 입력(200자 이내)" maxlength="200"
+                                    style="width: 100%; height:50px"></textarea>
+                            </div>
+
+                            <li>10. 반려견의 이상증상을 아래에 작성해주세요 (선택)</li>
+                            <div class="" id="inquiry10">
+                                <textarea id="inquiry10" placeholder="이상증상 입력(200자 이내)" maxlength="200"
+                                    style="width: 100%; height:50px"></textarea>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="btn btn-success" id="sendInquery">문의하기</div>
+                    <div class="btn btn-secondary">취소</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+{% block script %}
+<script src="/assets/node_modules/moment/moment.js"></script>
+<script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
+<script src="/javascripts/config.js"></script>
+
+<script>
+    let p_userCode = '{{p_userCode}}',
+        h_userCode = '{{h_userCode}}',
+        myHos = '{{myHos|safe}}',
+        hInfo = '{{hInfo|safe}}',
+        myPet = '{{myPet|safe}}';
+    myHos = JSON.parse(myHos);
+    hInfo = JSON.parse(hInfo);
+    myPet = JSON.parse(myPet);
+</script>
+<script type="text/javascript" src="/app/a_hospital/js/a_hospital_hosinfo.js"></script>
+
+{% endblock %}

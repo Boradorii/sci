@@ -1,0 +1,158 @@
+{% extends "templates/appmainbase.html" %} {% block head %}
+<!-- <link href="/dist/css/pages/dashboard1.css" rel="stylesheet"> -->
+<!-- page css -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    rel="stylesheet" />
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css" />
+{%endblock%}{% block contents %}
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #fff;
+    }
+
+    .profile {
+        font-size: 25pt;
+        font-weight: 400;
+    }
+
+    .old {
+        font-size: 15pt;
+        font-weight: 100;
+        color: gray;
+    }
+
+    #mypage-manage {
+        margin-top: 50px;
+    }
+
+    .hr-normal {
+        border: 0px;
+        border-top: 2px solid rgb(209, 206, 206);
+    }
+
+    .info {
+        font-size: 25px;
+        font-weight: 300;
+        margin-left: 2%;
+    }
+
+    .logout {
+        float: right;
+        margin-top: 20px;
+        margin-right: 20px;
+        font-size: 15px;
+        font-weight: 900;
+        color: gray;
+    }
+</style>
+<div class="skin-megna page-wrapper" style="padding: 0; background-color: white">
+    <div class="container-fluid">
+
+        <div id="mypage-manage">
+            <div>
+                <div class="mt-3 info" id="myInfo"><strong>내 정보 관리</strong></div>
+            </div>
+            <hr class="hr-normal" />
+            <div class="info" id="petManage"><strong>우리 아이 관리</strong></div>
+            <hr class="hr-normal" />
+            <div class="info" id="noticeManage">
+                <strong>알림 관리</strong>
+            </div>
+            <hr class="hr-normal" />
+            <div class="info" id="changeLanguage">
+                <strong>언어 변경</strong>
+            </div>
+            <hr class="hr-normal" />
+            <div class="info" id="customerCenter">
+                <strong>고객센터</strong>
+            </div>
+            <hr class="hr-normal" />
+            <div class="info logout" id="goLogout">
+                <strong>로그아웃</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %} {%block script%}
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="/dist/js/perfect-scrollbar.jquery.min.js"></script>
+<!--Wave Effects -->
+<script src="/dist/js/waves.js"></script>
+<!--Custom JavaScript -->
+<script src="/dist/js/custom.min.js"></script>
+<script src="/javascripts/config.js"></script>
+<script src="/javascripts/commonUtil.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script>
+    let p_userCode = "{{p_userCode}}";
+
+</script>
+<!-- js파일 로드
+<script></script>
+js파일 로드 -->
+
+<script>
+    //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+    window.parent.postMessage({
+        action: 'moveFrameN'
+    }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+    //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+    // 페이지 이동 버튼 클릭 이벤트 2021.05.10 JG
+    $(".info").on('click', function (evnt) {
+        let targetId = evnt.currentTarget.id,
+            reqUrl = baseUrl + '/a_mypage';
+        switch (targetId) {
+            case 'myInfo':
+                reqUrl += '/myInfoPage';
+                window.parent.postMessage({ // 앱 상단 타이틀 변경을 위한 postMessage 전송
+                    action: 'go-myInfo'
+                }, '*');
+                break;
+            case 'petManage':
+                reqUrl += '/myPetPage';
+                window.parent.postMessage({ // 앱 상단 타이틀 변경을 위한 postMessage 전송
+                    action: 'go-petManage'
+                }, '*');
+                break;
+            case 'noticeManage':
+                reqUrl += '/noticePage/' + p_userCode;
+                window.parent.postMessage({ // 앱 상단 타이틀 변경을 위한 postMessage 전송
+                    action: 'go-noticeManage'
+                }, '*');
+                break;
+            case 'goLogout':
+                window.parent.postMessage({
+                    action: 'logout'
+                }, '*');
+                break;
+        }
+
+        console.log(reqUrl)
+        reqUrl += '?p_userCode=' + p_userCode /* + '&lang=' + lang + "&accessToken=" + accessToken*/;
+        location.href = reqUrl;
+
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+        window.parent.postMessage({
+            action: 'moveFrameY' //메인페이지에서 하위 메뉴로 들어갔을 때 페이지 이동 표시("Y": 하위 메뉴/"N": 메인메뉴)
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+    });
+</script>
+{% endblock %}

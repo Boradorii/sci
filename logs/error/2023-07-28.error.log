@@ -1,0 +1,157 @@
+[2023-07-28 13:46:52, error] "[Router Error]: /api/a_mypage?p_userCode=p_2"
+[2023-07-28 13:46:52, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-07-28 13:59:08, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 13:59:08, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:05:39, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:05:39, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:05:40, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:05:40, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:05:40, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:05:40, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:05:41, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:05:41, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:05:41, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:05:42, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:05:42, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:05:42, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:05:42, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:05:43, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:06:05, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:06:05, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:06:41, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:06:41, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:07:47, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:07:47, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:08:04, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:08:04, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:08:47, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:08:47, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:08:56, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:08:56, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:08:58, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:08:58, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:09:02, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:09:02, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:09:07, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:09:07, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:09:20, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:09:20, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:09:20, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-28 14:09:20, error] "[Router Error]: /favicon.ico"
+[2023-07-28 14:39:18, error] "[System Error]: Cannot access 'p_userCode' before initialization"
+[2023-07-28 14:39:18, error] "Cannot access 'p_userCode' before initialization"
+ReferenceError: Cannot access 'p_userCode' before initialization
+    at sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:110:26)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:175:3)
+[2023-07-28 14:39:59, error] "[System Error]: p_userCode is not defined"
+[2023-07-28 14:39:59, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:89:73)
+    at sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:111:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+[2023-07-28 14:40:02, error] "[System Error]: p_userCode is not defined"
+[2023-07-28 14:40:02, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:89:73)
+    at sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:111:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+[2023-07-28 14:41:41, error] "[System Error]: p_userCode is not defined"
+[2023-07-28 14:41:41, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:89:73)
+    at sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+[2023-07-28 14:47:53, error] "[System Error]: p_userCode is not defined"
+[2023-07-28 14:47:53, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:89:73)
+    at sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+[2023-07-28 15:39:48, error] "[System Error]: p_userCode is not defined"
+[2023-07-28 15:39:48, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:89:73)
+    at sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+[2023-07-28 15:42:29, error] "[System Error]: p_userCode is not defined"
+[2023-07-28 15:42:29, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:89:73)
+    at sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+[2023-07-28 16:24:48, error] "[System Error]: p_userCode is not defined"
+[2023-07-28 16:24:48, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:89:73)
+    at sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)
+[2023-07-28 17:21:42, error] "[System Error]: p_userCode is not defined"
+[2023-07-28 17:21:42, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:89:73)
+    at sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:39)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\helper\asyncErrHelper.js:13:9
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\node_modules\express\lib\router\index.js:280:10)

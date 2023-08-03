@@ -1,0 +1,10 @@
+{
+    "errorPage": {
+        "errorTitleAuth": "公告",
+        "errorMsgAuth": "由于长时间处于非活动状态或登录到其他设备，您已自动注销。 \n\n请重新登录。",
+        "errorTitleRout": "公告",
+        "errorMsgRout": "404. 您请求的页面当前未找到。",
+        "errorTitleSystem": "系统错误",
+        "errorMsgSystem": "对不起，发生系统故障。 请稍后再试。"
+    }
+}

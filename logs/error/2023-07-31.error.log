@@ -1,0 +1,2321 @@
+[2023-07-31 13:51:42, error] "[System Error]: result is not defined"
+[2023-07-31 13:51:42, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:51:44, error] "[System Error]: result is not defined"
+[2023-07-31 13:51:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:51:46, error] "[System Error]: result is not defined"
+[2023-07-31 13:51:46, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:51:48, error] "[System Error]: result is not defined"
+[2023-07-31 13:51:48, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:51:50, error] "[System Error]: result is not defined"
+[2023-07-31 13:51:50, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:51:52, error] "[System Error]: result is not defined"
+[2023-07-31 13:51:52, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:51:54, error] "[System Error]: result is not defined"
+[2023-07-31 13:51:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:51:56, error] "[System Error]: result is not defined"
+[2023-07-31 13:51:56, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:51:58, error] "[System Error]: result is not defined"
+[2023-07-31 13:51:58, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:00, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:00, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:02, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:02, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:04, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:06, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:06, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:08, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:08, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:10, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:10, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:12, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:12, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:14, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:16, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:16, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:18, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:18, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:20, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:20, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:22, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:22, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:24, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:26, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:26, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:28, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:28, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:30, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:30, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:32, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:32, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:34, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:36, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:36, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:38, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:38, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:40, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:40, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:42, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:42, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:44, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:46, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:46, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:48, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:48, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:50, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:50, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:52, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:52, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:54, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:56, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:56, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:52:58, error] "[System Error]: result is not defined"
+[2023-07-31 13:52:58, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:00, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:00, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:02, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:02, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:04, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:06, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:06, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:08, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:08, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:10, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:10, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:12, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:12, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:14, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:16, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:16, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:18, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:18, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:20, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:20, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:22, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:22, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:24, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:26, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:26, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:28, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:28, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:30, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:30, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:32, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:32, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:34, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:36, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:36, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:38, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:38, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:40, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:40, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:42, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:42, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:44, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:46, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:46, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:48, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:48, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:50, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:50, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:52, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:52, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:54, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:56, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:56, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:53:58, error] "[System Error]: result is not defined"
+[2023-07-31 13:53:58, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:00, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:00, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:02, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:02, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:04, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:06, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:06, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:08, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:08, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:10, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:10, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:12, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:12, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:14, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:16, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:16, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:18, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:18, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:20, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:20, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:22, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:22, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:24, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:26, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:26, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:28, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:28, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:30, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:30, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:32, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:32, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:34, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:36, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:36, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:38, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:38, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:40, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:40, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:42, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:42, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:44, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:46, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:46, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:48, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:48, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:50, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:50, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:52, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:52, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:54, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:56, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:56, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:54:58, error] "[System Error]: result is not defined"
+[2023-07-31 13:54:58, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:00, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:00, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:02, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:02, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:04, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:06, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:06, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:08, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:08, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:10, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:10, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:12, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:12, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:14, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:16, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:16, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:18, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:18, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:20, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:20, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:22, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:22, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:24, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:26, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:26, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:28, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:28, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:30, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:30, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:32, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:32, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:34, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:36, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:36, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:38, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:38, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:40, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:40, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:42, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:42, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:44, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:46, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:46, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:48, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:48, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:50, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:50, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:52, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:52, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:54, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:56, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:56, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:55:58, error] "[System Error]: result is not defined"
+[2023-07-31 13:55:58, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:00, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:00, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:02, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:02, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:04, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:06, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:06, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:08, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:08, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:10, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:10, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:12, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:12, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:17, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:17, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:19, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:19, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:21, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:21, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:23, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:23, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:25, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:25, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:27, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:27, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:29, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:29, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:31, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:31, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:33, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:33, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:35, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:35, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:37, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:37, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:39, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:39, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:41, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:41, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:43, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:43, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:45, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:45, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:47, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:47, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:49, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:49, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:51, error] "[System Error]: result is not defined"
+[2023-07-31 13:56:51, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:92:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:54, error] "[System Error]: p_userCode is not defined"
+[2023-07-31 13:56:54, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:73)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:55, error] "[System Error]: p_userCode is not defined"
+[2023-07-31 13:56:55, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:73)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:56:57, error] "[System Error]: p_userCode is not defined"
+[2023-07-31 13:56:57, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:73)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:57:00, error] "[System Error]: p_userCode is not defined"
+[2023-07-31 13:57:00, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:73)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:57:02, error] "[System Error]: p_userCode is not defined"
+[2023-07-31 13:57:02, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:73)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:57:04, error] "[System Error]: p_userCode is not defined"
+[2023-07-31 13:57:04, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:73)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:57:06, error] "[System Error]: p_userCode is not defined"
+[2023-07-31 13:57:06, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:73)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:57:08, error] "[System Error]: p_userCode is not defined"
+[2023-07-31 13:57:08, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:73)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:57:10, error] "[System Error]: p_userCode is not defined"
+[2023-07-31 13:57:10, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:73)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:57:12, error] "[System Error]: p_userCode is not defined"
+[2023-07-31 13:57:12, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:73)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:57:14, error] "[System Error]: p_userCode is not defined"
+[2023-07-31 13:57:14, error] "p_userCode is not defined"
+ReferenceError: p_userCode is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:73)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:58:20, error] "[System Error]: rowLength is not defined"
+[2023-07-31 13:58:20, error] "rowLength is not defined"
+ReferenceError: rowLength is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:58:22, error] "[System Error]: rowLength is not defined"
+[2023-07-31 13:58:22, error] "rowLength is not defined"
+ReferenceError: rowLength is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:58:24, error] "[System Error]: rowLength is not defined"
+[2023-07-31 13:58:24, error] "rowLength is not defined"
+ReferenceError: rowLength is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:58:26, error] "[System Error]: rowLength is not defined"
+[2023-07-31 13:58:26, error] "rowLength is not defined"
+ReferenceError: rowLength is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 13:58:28, error] "[System Error]: rowLength is not defined"
+[2023-07-31 13:58:28, error] "rowLength is not defined"
+ReferenceError: rowLength is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:91:29)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:21:49, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:21:49, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:21:54, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:21:54, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:21:59, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:21:59, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:04, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:22:04, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:09, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:22:09, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:14, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:22:14, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:19, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:22:19, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:24, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:22:24, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:29, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:22:29, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:34, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:22:34, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:39, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:22:39, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:44, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:22:44, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:49, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:22:49, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:54, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 14:22:54, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:24)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:22:59, error] "[System Error]: Cannot set properties of undefined (setting 'h_user_code')"
+[2023-07-31 14:22:59, error] "Cannot set properties of undefined (setting 'h_user_code')"
+TypeError: Cannot set properties of undefined (setting 'h_user_code')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:23:04, error] "[System Error]: Cannot set properties of undefined (setting 'h_user_code')"
+[2023-07-31 14:23:04, error] "Cannot set properties of undefined (setting 'h_user_code')"
+TypeError: Cannot set properties of undefined (setting 'h_user_code')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:23:09, error] "[System Error]: Cannot set properties of undefined (setting 'h_user_code')"
+[2023-07-31 14:23:09, error] "Cannot set properties of undefined (setting 'h_user_code')"
+TypeError: Cannot set properties of undefined (setting 'h_user_code')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:23:14, error] "[System Error]: Cannot set properties of undefined (setting 'h_user_code')"
+[2023-07-31 14:23:14, error] "Cannot set properties of undefined (setting 'h_user_code')"
+TypeError: Cannot set properties of undefined (setting 'h_user_code')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:23:19, error] "[System Error]: Cannot set properties of undefined (setting 'h_user_code')"
+[2023-07-31 14:23:19, error] "Cannot set properties of undefined (setting 'h_user_code')"
+TypeError: Cannot set properties of undefined (setting 'h_user_code')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:23:24, error] "[System Error]: Cannot set properties of undefined (setting 'h_user_code')"
+[2023-07-31 14:23:24, error] "Cannot set properties of undefined (setting 'h_user_code')"
+TypeError: Cannot set properties of undefined (setting 'h_user_code')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:40)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:38:09, error] "[System Error]: result is not defined"
+[2023-07-31 14:38:09, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:102:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:38:14, error] "[System Error]: result is not defined"
+[2023-07-31 14:38:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:102:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:38:19, error] "[System Error]: result is not defined"
+[2023-07-31 14:38:19, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:103:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:38:24, error] "[System Error]: result is not defined"
+[2023-07-31 14:38:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:103:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:38:29, error] "[System Error]: result is not defined"
+[2023-07-31 14:38:29, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:103:21)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:38:34, error] "[System Error]: result is not defined"
+[2023-07-31 14:38:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:38:39, error] "[System Error]: result is not defined"
+[2023-07-31 14:38:39, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:38:44, error] "[System Error]: result is not defined"
+[2023-07-31 14:38:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:39:54, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:39:54, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:39:59, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:39:59, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:04, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:04, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:09, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:09, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:14, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:14, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:19, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:19, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:24, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:24, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:29, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:29, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:34, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:34, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:39, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:39, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:44, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:44, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:49, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:49, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:54, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:54, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:40:59, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:40:59, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:04, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:04, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:09, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:09, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:14, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:14, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:19, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:19, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:24, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:24, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:29, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:29, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:34, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:34, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:39, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:39, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:44, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:44, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:49, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:49, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:54, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:54, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:41:59, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:41:59, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:04, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:04, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:09, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:09, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:14, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:14, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:19, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:19, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:24, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:24, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:29, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:29, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:34, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:34, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:39, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:39, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:44, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:44, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:49, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:49, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:54, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:54, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:42:59, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:42:59, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:04, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:04, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:09, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:09, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:14, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:14, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:19, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:19, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:24, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:24, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:29, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:29, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:64)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:34, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:34, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:39, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:39, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:44, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:44, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:49, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:49, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:54, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:54, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:43:59, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:43:59, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:44:04, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:44:04, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:44:09, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:44:09, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:44:14, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:44:14, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:44:19, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:44:19, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:44:24, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:44:24, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:44:29, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:44:29, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:44:34, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:44:34, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:100)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:44:39, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:44:39, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:106)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:44:44, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:44:44, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:106)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:44:49, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:44:49, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:106)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 14:44:54, error] "[System Error]: count_total_hosAlert is not defined"
+[2023-07-31 14:44:54, error] "count_total_hosAlert is not defined"
+ReferenceError: count_total_hosAlert is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:97:106)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:18:09, error] "[System Error]: result is not defined"
+[2023-07-31 15:18:09, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:18:14, error] "[System Error]: result is not defined"
+[2023-07-31 15:18:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:18:19, error] "[System Error]: result is not defined"
+[2023-07-31 15:18:19, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:18:24, error] "[System Error]: result is not defined"
+[2023-07-31 15:18:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:18:29, error] "[System Error]: result is not defined"
+[2023-07-31 15:18:29, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:18:35, error] "[System Error]: result is not defined"
+[2023-07-31 15:18:35, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:106:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:18:39, error] "[System Error]: result is not defined"
+[2023-07-31 15:18:39, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:106:9)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:18:44, error] "[System Error]: result is not defined"
+[2023-07-31 15:18:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:18:49, error] "[System Error]: result is not defined"
+[2023-07-31 15:18:49, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:18:54, error] "[System Error]: result is not defined"
+[2023-07-31 15:18:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:18:59, error] "[System Error]: result is not defined"
+[2023-07-31 15:18:59, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:04, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:09, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:09, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:14, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:19, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:19, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:24, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:29, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:29, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:34, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:39, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:39, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:44, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:49, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:49, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:54, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:19:59, error] "[System Error]: result is not defined"
+[2023-07-31 15:19:59, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:04, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:09, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:09, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:14, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:19, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:19, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:24, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:29, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:29, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:34, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:39, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:39, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:44, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:49, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:49, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:54, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:20:59, error] "[System Error]: result is not defined"
+[2023-07-31 15:20:59, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:04, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:09, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:09, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:14, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:19, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:19, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:24, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:29, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:29, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:34, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:39, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:39, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:44, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:49, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:49, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:54, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:21:59, error] "[System Error]: result is not defined"
+[2023-07-31 15:21:59, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:04, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:09, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:09, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:14, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:19, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:19, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:24, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:29, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:29, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:34, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:39, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:39, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:44, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:49, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:49, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:54, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:22:59, error] "[System Error]: result is not defined"
+[2023-07-31 15:22:59, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:04, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:09, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:09, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:14, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:19, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:19, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:24, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:29, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:29, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:34, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:39, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:39, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:44, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:49, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:49, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:54, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:23:59, error] "[System Error]: result is not defined"
+[2023-07-31 15:23:59, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:04, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:09, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:09, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:14, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:19, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:19, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:24, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:29, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:29, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:34, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:39, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:39, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:44, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:49, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:49, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:54, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:54, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:24:59, error] "[System Error]: result is not defined"
+[2023-07-31 15:24:59, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:25:04, error] "[System Error]: result is not defined"
+[2023-07-31 15:25:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:25:09, error] "[System Error]: result is not defined"
+[2023-07-31 15:25:09, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:25:14, error] "[System Error]: result is not defined"
+[2023-07-31 15:25:14, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:25:19, error] "[System Error]: result is not defined"
+[2023-07-31 15:25:19, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:25:24, error] "[System Error]: result is not defined"
+[2023-07-31 15:25:24, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:25:29, error] "[System Error]: result is not defined"
+[2023-07-31 15:25:29, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:25:34, error] "[System Error]: result is not defined"
+[2023-07-31 15:25:34, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:25:39, error] "[System Error]: result is not defined"
+[2023-07-31 15:25:39, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:25:44, error] "[System Error]: result is not defined"
+[2023-07-31 15:25:44, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:31:56, error] "[System Error]: result is not defined"
+[2023-07-31 15:31:56, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:31:59, error] "[System Error]: result is not defined"
+[2023-07-31 15:31:59, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:32:04, error] "[System Error]: result is not defined"
+[2023-07-31 15:32:04, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:32:09, error] "[System Error]: result is not defined"
+[2023-07-31 15:32:09, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:32:18, error] "[System Error]: result is not defined"
+[2023-07-31 15:32:18, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:32:23, error] "[System Error]: result is not defined"
+[2023-07-31 15:32:23, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:32:28, error] "[System Error]: result is not defined"
+[2023-07-31 15:32:28, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:32:33, error] "[System Error]: result is not defined"
+[2023-07-31 15:32:33, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:32:38, error] "[System Error]: result is not defined"
+[2023-07-31 15:32:38, error] "result is not defined"
+ReferenceError: result is not defined
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:93:16)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:32:43, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:32:43, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:32:43, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:32:48, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:32:48, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:32:48, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:32:53, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:32:53, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:32:53, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:32:58, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:32:58, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:32:58, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:03, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:03, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:03, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:08, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:08, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:08, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:13, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:13, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:13, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:18, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:18, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:18, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:23, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:23, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:23, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:28, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:28, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:28, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:33, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:33, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:33, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:38, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:38, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:38, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:43, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:43, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:43, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:48, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:48, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:48, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:53, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:53, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:53, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:33:58, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:33:58, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:33:58, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:34:03, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:34:03, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:34:03, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:34:08, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:34:08, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:34:08, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:34:13, error] "[Query Error!]TypeError: Bind parameters must not contain undefined. To pass SQL NULL specify JS null"
+[2023-07-31 15:34:13, error] "[System Error]: Cannot read properties of undefined (reading '0')"
+[2023-07-31 15:34:13, error] "Cannot read properties of undefined (reading '0')"
+TypeError: Cannot read properties of undefined (reading '0')
+    at aHosService.sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.service.js:105:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async sendAlertState (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_hospital\a_hospital.controller.js:112:22)
+[2023-07-31 15:47:48, error] "[Router Error]: /api/dist/css/pages/login-register-lock.css"
+[2023-07-31 15:47:48, error] "[Router Error]: /api/dist/css/style.min.css"
+[2023-07-31 15:47:57, error] "[Router Error]: /favicon.ico"
+[2023-07-31 17:25:34, error] "[Router Error]: /favicon.ico"
+[2023-07-31 17:25:37, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-31 17:25:38, error] "[Router Error]: /favicon.ico"
+[2023-07-31 17:25:54, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-31 17:25:54, error] "[Query Error!]Error: Malformed communication packet."
+[2023-07-31 17:25:54, error] "[Router Error]: /favicon.ico"
+[2023-07-31 17:28:08, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-31 17:28:08, error] "[Query Error!]Error: Malformed communication packet."
+[2023-07-31 17:28:08, error] "[Router Error]: /favicon.ico"
+[2023-07-31 17:28:09, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-31 17:28:09, error] "[Query Error!]Error: Malformed communication packet."
+[2023-07-31 17:28:09, error] "[Router Error]: /favicon.ico"
+[2023-07-31 17:28:12, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-31 17:28:12, error] "[Query Error!]Error: Malformed communication packet."
+[2023-07-31 17:28:12, error] "[Router Error]: /favicon.ico"
+[2023-07-31 17:31:01, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-31 17:31:01, error] "[Router Error]: /favicon.ico"
+[2023-07-31 17:31:21, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-31 17:31:21, error] "[Router Error]: /favicon.ico"
+[2023-07-31 17:31:55, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-31 17:31:55, error] "[Router Error]: /favicon.ico"
+[2023-07-31 17:32:46, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-31 17:32:46, error] "[Router Error]: /favicon.ico"
+[2023-07-31 17:32:51, error] "[Router Error]: /app/notice/notice.js"
+[2023-07-31 17:32:51, error] "[Router Error]: /favicon.ico"

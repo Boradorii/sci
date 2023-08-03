@@ -1,0 +1,190 @@
+{% extends "templates/appmainbase.html" %}
+<!-- ------------------------------------------------------------- -->
+{% block head %}
+<!-- CSS -->
+<!-- datepicker CSS -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    rel="stylesheet">
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<style>
+    .card-box {
+        width: 100%;
+        margin-top: 60px;
+        border: 2px solid lightgray;
+    }
+
+    /* .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } */
+
+    .selectBtn {
+        margin-right: 10px;
+        margin-top: 10px;
+        width: 25%;
+    }
+
+    .clickBtn {
+        font-weight: bold;
+        background-color: #dae0e5;
+        border: 2px solid #dae0e5;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .block {
+        display: block
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+<!-- Content 시작 -->
+{% block contents%}
+<!-- html -->
+<div class="skin-megna page-wrapper" style="padding: 0; overflow-y: scroll;">
+    <div class="container-fluid">
+
+
+        <!-- </div> -->
+        <div
+            style="display:flex; align-items: center; justify-content: center; height: 40px; background-color: rgb(231, 231, 231); font-weight: 700; margin: 20px 5px 5px;">
+            <div>안내 | 독닥독닥 서비스 협력병원만 검색 가능합니다.</div>
+        </div>
+
+        <!-- 병원찾기 -->
+        <div class="card" style="text-align: center;">
+            <!-- <div style="padding: 20px; align-self: center;"> -->
+            <div class="row" style="margin: 20px 5px 5px;">
+                <input id="hos-search" type="text" class="col-8" placeholder="병원명 또는 주소를 입력해 주세요."
+                    style="margin-right: 10px;">
+                <div class="col-3 btn btn-info" id="hos-searchbtn">검색</div>
+            </div>
+            <div class="row" style="margin: 5px 0px;">
+                <div class="col-3 selectBtn btn btn-rounded btn-secondary" id="all-btn">전체</div>
+                <div class="col-3 selectBtn btn btn-rounded btn-secondary" id="local-btn">지역별</div>
+                <div class="col-3 selectBtn btn btn-rounded btn-secondary" id="myHos-btn">내 병원</div>
+            </div>
+
+            <div class="row localList hide" style="align-items: center; margin: 20px 0px; ">
+                <select id="select-local" name="region" class="form-control" aria-label="region"
+                    aria-describedby="region" style="width: 50%;">
+                    <option selected>서울특별시</option>
+                    <option>부산광역시</option>
+                    <option>대구광역시</option>
+                    <option>인천광역시</option>
+                    <option>광주광역시</option>
+                    <option>대전광역시</option>
+                    <option>울산광역시</option>
+                    <option>세종특별자치시</option>
+                    <option>경기도</option>
+                    <option>강원도</option>
+                    <option>충청북도</option>
+                    <option>충청남도</option>
+                    <option>전라북도</option>
+                    <option>전라남도</option>
+                    <option>경상북도</option>
+                    <option>경상남도</option>
+                    <option>제주특별자치도</option>
+                </select>
+            </div>
+
+            <div class="row myHos-list hide" style="justify-content: center; margin: 20px 0px; align-self: center;">
+                <span style="font-size: 12pt; font-weight: 700;">내 병원 리스트</span>
+                <i class="material-icons" style="color: #479aff; font-size: 15pt; margin-left: 3px;" data-toggle="modal"
+                    data-target="#myHosInfo-modal">
+                    info
+                </i>
+            </div>
+
+
+            <div class="hos-list-none hide">
+                <h4 style="border-bottom: 1px solid gray; width: 100%;"></h4>
+                <div style="text-align:center;">등록된 병원이 없습니다.</div>
+            </div>
+
+
+            <div class="hos-search-list">
+                <!-- <div class="hos-list" id="hos-list1">
+                    <h4 style="border-bottom: 1px solid gray; width: 100%;"></h4>
+                    <div class="row" style="align-items: center;">
+                        <div class="col" style="text-align: left; margin-top: 10px; font-weight: 600;">
+                            <p id="hos-name">A 동물병원</p>
+                            <P id="hos-address">광주광역시 남구 봉선로 84번길 7</P>
+                        </div>
+                        <div class="col-2">
+                            <i class="material-icons" style="color: red;">
+                                favorite
+                            </i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hos-list" id="hos-list2">
+                    <h4 style="border-bottom: 1px solid gray; width: 100%;"></h4>
+                    <div class="row" style="align-items: center;">
+                        <div class="col" style="text-align: left; margin-top: 10px; font-weight: 600;">
+                            <p id="hos-name">B 동물병원</p>
+                            <P id="hos-address">광주광역시 남구 봉선로 84번길 7</P>
+                        </div>
+                        <div class="col-2">
+                            <i class="material-icons" style="color: gray;">
+                                favorite
+                            </i>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 내병원 설명 모달 -->
+<div id="myHosInfo-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"
+    data-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="h4 modal-title">[내 병원 리스트 추가] 기능 안내</div>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <br />
+                <p>내 병원 리스트 추가 시 회원님의 가입 정보 및 반려동물 등록 정보가 해당 병원에 제공됩니다. 제공될 데이터는 협력병원 내원 시 접수 및 진단을 위한 목적으로만 사용됩니다. </p>
+                <p>내 병원 리스트를 추가하신 경우에만 해당 병원으로 측정 데이터 전송 가능하오니 이 점 유의하시길 바랍니다. </p>
+                <p>추가한 병원 리스트는 병원 검색창 하단에 있는 내 병원 버튼 선택을 통해 확인하실 수 있습니다.</p>
+                <br />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+{% block script %}
+<script src="/assets/node_modules/moment/moment.js"></script>
+<script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
+<script>
+    let p_userCode = '{{p_userCode}}',
+        myHos = '{{myHos|safe}}';
+    myHos = JSON.parse(myHos);
+</script>
+<script type="text/javascript" src="/app/a_hospital/js/a_hospital_find.js"></script>
+
+{% endblock %}

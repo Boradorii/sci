@@ -1,0 +1,10 @@
+{
+    "errorPage": {
+        "errorTitleAuth": "お知らせ",
+        "errorMsgAuth": "長い間非アクティブであるか、別のデバイスにログインしているため、自動的にログアウトされています。 \n\nもう一度ログインしてください。",
+        "errorTitleRout": "お知らせ",
+        "errorMsgRout": "404. ご要望のページは現在見つかりません。",
+        "errorTitleSystem": "システムエラー",
+        "errorMsgSystem": "申し訳ありませんが、システム障害が発生しました。 後でもう一度試してください。"
+    }
+}

@@ -1,0 +1,708 @@
+{% extends "templates/webmainbase.html" %}
+
+<!-- ------------------------------------------------------------- -->
+{% block style%}
+<!-- Date Range Picker CSS -->
+<!--
+    ※ dateprangepicker에서 화살표 안 보이는 문제
+    아래 link 주석 해제하면 보이는데 기존 css 버전 충돌 문제로 전체적으로 깨짐 (템플릿 새로 만든 후에 맞추면 될 것 같아요!)
+-->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" /> -->
+<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+<style>
+    .form-control-sm {
+        font-size: 13px;
+    }
+
+    /*----------------- 환자 검색 form -----------------*/
+
+    #searchFrm {
+        width: 35%;
+        text-align: left;
+        margin-left: 4%;
+    }
+
+    #searchKey {
+        width: 20%;
+    }
+
+    #searchWord {
+        width: 55%;
+    }
+
+    #searchBtn {
+        width: 13%;
+    }
+
+    /*--------- 환자 선택 모달 -----------*/
+
+    #search-modal-table {
+        width: 100%;
+        margin: 0 auto;
+        table-layout: fixed;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #search-modal-table th {
+        text-align: center;
+        padding: 5px;
+        font-weight: bold;
+        background-color: rgb(240, 240, 240);
+    }
+
+    #search-modal-table td {
+        padding: 5px;
+        line-height: 30px;
+    }
+
+    .modal-backdrop {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /*--------- 환자 정보 div -----------*/
+
+    #patient-info {
+        width: 95%;
+        overflow: auto;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .patient-title {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .patient-div1 {
+        display: inline-block;
+        font-size: 14px;
+        width: 43%;
+        height: 340px;
+        border: 1px solid rgb(179, 179, 179);
+        border-radius: 10px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .patient-div2 {
+        display: inline-block;
+        font-size: 14px;
+        width: 52%;
+        height: 340px;
+        border: 1px solid rgb(179, 179, 179);
+        border-radius: 10px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    /* 스크롤 css */
+
+    .patient-div1,
+    .patient-div2 {
+        overflow-y: scroll;
+        -ms-overflow-style: none;
+        /* 인터넷 익스플로러 */
+        scrollbar-width: none;
+        /* 파이어폭스 */
+    }
+
+    .patient-div1::-webkit-scrollbar,
+    .patient-div2::-webkit-scrollbar {
+        display: none;
+        /* 크롬, 사파리, 오페라, 엣지 */
+    }
+
+    /*-------- 환자 및 보호자 정보 ---------*/
+
+    #patient-info-table,
+    #protector-info-table {
+        width: 100%;
+        border: 1px solid rgb(228, 228, 228);
+    }
+
+    #patient-info-table th,
+    #protector-info-table th {
+        width: 25%;
+        font-weight: bold;
+        background-color: rgb(240, 240, 240);
+        border: 1px solid rgb(228, 228, 228);
+        padding: 5px;
+    }
+
+    #patient-info-table td,
+    #protector-info-table td {
+        width: 50%;
+        border: 1px solid rgb(228, 228, 228);
+    }
+
+    #patientEditBtn {
+        width: 10%;
+        float: right;
+        margin-top: 5px;
+    }
+
+    #protector-info-table {
+        margin-bottom: 30px;
+    }
+
+    .patient-info-input {
+        width: 100%;
+        border: none;
+        text-align: center;
+        outline: none;
+    }
+
+    .patient-info-input.focus {
+        border: 1px solid blue;
+    }
+
+    /*----------- 진료 내역 ------------*/
+    /*-------- 환자 및 보호자 정보 ---------*/
+
+    #searchFrm2 {
+        text-align: left;
+        margin-left: 9px;
+        margin-top: 15px;
+    }
+
+    #searchDate2 {
+        width: 18%;
+    }
+
+    #search-record {
+        width: 12%;
+    }
+
+    #searchWord2 {
+        width: 25%;
+    }
+
+    #searchBtn2 {
+        width: 8%;
+    }
+
+    #recordBtn {
+        float: right;
+        margin-right: 5px;
+    }
+
+    #record-table {
+        width: 98%;
+        margin: 0 auto;
+        table-layout: fixed;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #record-table th {
+        text-align: center;
+        padding: 8px;
+        font-weight: bold;
+        background-color: rgb(240, 240, 240);
+    }
+
+    #record-table td {
+        padding: 8px;
+        line-height: 30px;
+    }
+
+    #record-table button {
+        width: 50%;
+    }
+
+    #neuteredRadio {
+        display: none;
+    }
+
+    /*-------- 진료 기록 모달 ---------*/
+
+    .modal-input-div {
+        text-align: left;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .modal-input-div label {
+        width: 16%;
+        height: 30px;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .modal-input-div select {
+        width: 25%;
+    }
+
+    #record-detail {
+        height: 150px;
+    }
+
+    #rangeDate_diagnosis {
+        width: 35%;
+        text-align: center;
+        float: left;
+        margin-right: 5px;
+        margin-left: 1%;
+    }
+
+    /*------------ 최근 생체정보 --------------*/
+
+    #rangeDate {
+        width: 35%;
+        text-align: center;
+        float: left;
+        margin-right: 5px;
+        margin-left: 1%;
+    }
+
+    .range_inputs {
+        display: none;
+    }
+
+    #recentSearchBtn {
+        float: left;
+    }
+
+    #tableBtn,
+    #graphBtn {
+        float: right;
+        margin-right: 8px;
+        margin-bottom: 8px;
+    }
+
+    #tableBtn img,
+    #graphBtn img {
+        width: 18px;
+    }
+
+    #recentInfo-table {
+        width: 98%;
+        margin: 0 auto;
+        table-layout: fixed;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    #recentInfo-table th {
+        text-align: center;
+        padding: 8px;
+        font-weight: bold;
+        background-color: rgb(240, 240, 240);
+    }
+
+    #recentInfo-table td {
+        padding: 8px;
+        line-height: 30px;
+    }
+
+    /*------------ 진료 내용 ----------------*/
+
+    .record-input-div {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 14px;
+    }
+
+    .record-input-div label {
+        margin-right: 5px;
+    }
+
+    #recordDate {
+        width: 19%;
+        margin-right: 10px;
+    }
+
+    #recordDoctor {
+        width: 13%;
+        text-align: center;
+        margin-right: 10px;
+    }
+
+    #recordDoctor[readonly] {
+        background-color: transparent;
+        color: black;
+    }
+
+    #recordPurpose {
+        width: 17%;
+        margin-right: 10px;
+    }
+
+    #recordDetail {
+        width: 90%;
+        height: 180px;
+        padding-top: 10px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    #editRecordBtn,
+    #deleteRecordBtn {
+        width: 8%;
+        float: right;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+
+    #deleteRecordBtn {
+        margin-right: 40px;
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+<!--
+    환자 관리 페이지
+    환자 및 보호자 정보, 진료 내역, 최근 생체정보, 진료 내용 div에 스크롤 기능 있어요
+
+-->
+<!-- ------------------------------------------------------------- -->
+{% block contents%}
+
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <!-- 검색 폼 -->
+                <div id="searchFrm" class="form-group">
+                    <select id="searchKey" name="searchKey" class="form-control">
+                        <option value="1">환자명</option>
+                        <option value="2">보호자명</option>
+                    </select>
+                    <input type="text" class="form-control" id="searchWord" name="searchWord" placeholder="검색어 입력" />
+                    <input type="button" class="btn btn-secondary" id="searchBtn" value="검색" />
+                </div>
+            </div>
+
+            <!-- 환자 관련 정보 div -->
+            <div id="patient-info">
+                <!-- 환자 및 보호자 정보 -->
+                <div class="patient-div1">
+                    <p class="patient-title">환자 및 보호자 정보</p>
+                    <span style="float:left; margin-left: 5px; margin-bottom:5px; font-size: 14px;"></span>
+                    <table id="patient-info-table">
+                        <tr>
+                            <th>환자 이름</th>
+                            <td id="petName"></td>
+                        </tr>
+                        <tr>
+                            <th>동물등록번호</th>
+                            <td id="petNumber"></td>
+                        </tr>
+                        <tr>
+                            <th>나이</th>
+                            <td id="petAge"></td>
+                        </tr>
+                        <tr>
+                            <th>성별</th>
+                            <td id="petGender"></td>
+                        </tr>
+                        <tr>
+                            <th>품종</th>
+                            <td id="petKind"></td>
+                        </tr>
+                        <tr>
+                            <th>중성화 여부 *</th>
+                            <td id="neuteredRadio">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="neuteredRadioY" value="Y" checked>
+                                    <label class="form-check-label" for="inlineRadio1">Y</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="neuteredRadioN" value="N">
+                                    <label class="form-check-label" for="inlineRadio2">N</label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>몸무게 *</th>
+                            <td><input type="text" class="patient-info-input" name="petWeight" id="petWeightInput"
+                                    value="" />
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>환자노트 *</th>
+                            <td><input type="text" class="patient-info-input" name="petNote" id="patient-note"
+                                    value="" />
+                            </td>
+                        </tr>
+                    </table>
+                    <p style="text-align: left; color: rgb(161, 161, 161); font-size: 12px; margin-left:5px;">
+                        *이 표시된 항목은 수정할 수 있습니다.
+                        <button id="patientEditBtn" class="btn btn-success btn-sm">수정</button>
+                    </p>
+
+                    <span style="float:left; margin-left: 5px; margin-bottom:5px; font-size: 14px;">보호자
+                        정보</span>
+                    <table id="protector-info-table">
+                        <tr>
+                            <th>보호자 이름</th>
+                            <td id="protectorName">-</td>
+                        </tr>
+                        <tr>
+                            <th>보호자 연락처</th>
+                            <td id="protectorPhone">-</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <!-- 진료 내역 -->
+                <div class="patient-div2">
+                    <p class="patient-title">진료 내역</p>
+                    <div id="searchFrm2">
+                        <input type="text" id="rangeDate_diagnosis" class="form-control form-control-sm" />
+                        <input type="text" id="searchWord2" class="form-control form-control-sm" placeholder="진료의 검색" />
+                        <input type="button" id="searchBtn2" class="btn btn-secondary btn-sm" value="검색" />
+                        <input type="button" id="recordBtn" class="btn btn-success btn-sm" data-toggle="modal"
+                            data-target="#record-add-modal" value="진료 기록" />
+                    </div>
+
+
+                    <table id="record-table" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width:19%;">진료 날짜</th>
+                                <th style="width:15%;">방문목적</th>
+                                <th style="width:12%;">진료의</th>
+                                <th style="width:12%;">세부내용</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 최근 생체정보 -->
+                <div class="patient-div1">
+                    <p class="patient-title">최근 생체정보</p>
+                    <div>
+                        <input type="text" id="rangeDate" class="form-control form-control-sm" />
+                        <button id="recentSearchBtn" class="btn btn-secondary btn-sm">조회</button>
+                        <button id="weekBtn" class="btn btn-secondary btn-sm">1주일</button>
+                        <button id="monthBtn" class="btn btn-secondary btn-sm">1개월</button>
+                        <button id="yearBtn" class="btn btn-secondary btn-sm">1년</button>
+
+
+                        <!-- 표, 그래프 이미지 버튼 -->
+                        <button id="graphBtn" class="btn btn-secondary btn-sm" title="그래프"><img
+                                src="/assets/images/icon/graph_icon.png" /></button>
+                        <button id="tableBtn" class="btn btn-secondary btn-sm" title="표"><img
+                                src="/assets/images/icon/table_icon.png" /></button>
+                    </div>
+
+                    <!-- 표 버튼 클릭 시 보여질 테이블 -->
+                    <!-- ※ 독립변수 확정되면 거기에 맞게 표 수정해 주세요! -->
+                    <table id="recentInfo-table" class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th style="width:19%;">측정일</th>
+                                <th style="width:15%;">혈당</th>
+                                <th style="width:12%;">최고혈압</th>
+                                <th style="width:12%;">최저혈압</th>
+                                <th style="width:12%;">HR</th>
+                                <th style="width:12%;">HRV</th>
+                                <th style="width:12%;">세부내용</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <!-- 그래프 버튼 클릭 시 보여질 차트 -->
+                    <canvas id="hrChart" width="650" height="400"></canvas>
+                </div>
+
+                <!-- 진료 내용 -->
+                <!-- 진료 내용은 선택한 진료 내역의 데이터를 기본값으로 세팅!-->
+                <div class="patient-div2">
+                    <p class="patient-title">진료 내용</p>
+
+                    <div class="record-input-div">
+                        <label for="recordDate">진료 날짜</label>
+                        <input type="date" id="recordDate" class="form-control form-control-sm" value="2023-06-14" />
+                        <label for="recordDoctor">진료의</label>
+                        <input type="text" id="recordDoctor" class="form-control form-control-sm" value="" readonly />
+                        <label for="recordPurpose">방문 목적</label>
+                        <select id="recordPurpose" class="form-control form-control-sm">
+                            <option selected>진단/치료</option>
+                            <option>예방 접종</option>
+                            <option>건강검진</option>
+                            <option>수술</option>
+                            <option>기타</option>
+                        </select>
+                    </div>
+
+                    <textarea class="form-control" id="recordDetail" maxlength="300"
+                        placeholder="진료 내용을 300자 이내로 입력해 주세요."></textarea><br />
+
+                    <div>
+                        <button id="deleteRecordBtn" type="button" class=" btn btn-danger btn-sm">삭제</button>
+                        <button id="editRecordBtn" type="button" class="btn btn-success btn-sm">수정</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- 환자 선택 모달 -->
+<div id="select-patient-modal" class="modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">환자 선택</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+
+            <div class="modal-body" style="margin:10px;">
+                <p style="text-align: center;">* 해당 환자를 선택해 주세요.</p>
+                <table id="search-modal-table" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>환자명</th>
+                            <th>보호자명</th>
+                            <th>보호자 연락처</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal-footer">
+                <div id="modalBtn-div">
+                    <button id="closeBtn" type="button" class="modal-btn btn btn-danger waves-effect"
+                        data-dismiss="modal" aria-hidden="true">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 진료 기록 모달 -->
+<div id="record-add-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">진료 기록</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+
+            <div class="modal-body" style="margin:10px;">
+                <div class="modal-input-div">
+                    <label for="select-doctor">진료의</label>
+                    <select id="select-doctor" class="form-control form-control-sm">
+                        <option selected>선택 ▼</option>
+                    </select>
+                </div>
+                <div class="modal-input-div">
+                    <label for="select-purpose">방문 목적</label>
+                    <select id="select-purpose" class="form-control form-control-sm">
+                        <option>진단/치료</option>
+                        <option>예방 접종</option>
+                        <option>건강검진</option>
+                        <option>수술</option>
+                        <option>기타</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="record-detail">진료 내용</label> <span style="font-size: 12px; margin-left: 10px;">*
+                        등록하신 진료
+                        내용은 보호자에게 전송됩니다.</span>
+                    <textarea class="form-control" id="record-detail" maxlength="300"
+                        placeholder="진료 내용을 300자 이내로 입력해 주세요."></textarea><br />
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <div id="modalBtn-div">
+                    <button id="addRecordBtn" type="button" class="modal-btn btn btn-success waves-effect">등록</button>
+                    <button id="closeBtn" type="button" class="modal-btn btn btn-secondary waves-effect"
+                        data-dismiss="modal" aria-hidden="true">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 생체 정보 상세 모달 -->
+<div id="bioInfo-detail-modal" class="modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">생체 정보</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+
+            <div class="modal-body" style="margin:10px;">
+                <p id="bioInfoDate" style="text-align: center; font-weight: bold;">측정일</p>
+                <table id="bioInfo-modal-table" class="table table-hover">
+                    <!-- <thead>
+                        <tr>
+                            <th></th>
+                            <th>측정값</th>
+                        </tr>
+                    </thead> -->
+                    <tbody style="text-align: center;">
+
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal-footer">
+                <div id="modalBtn-div">
+                    <button id="closeBtn" type="button" class="modal-btn btn btn-danger waves-effect"
+                        data-dismiss="modal" aria-hidden="true">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+<!-- ------------------------------------------------------------- -->
+
+{%block script%}
+<!-- daterangepicker js -->
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/moment/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script> -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+<!-- chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/moment"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<!-- SweetAlert2 예쁜 알람창 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+<!-- bootstrap js -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/web/patient/patient.js"></script>
+
+<script>
+    // h_adminCode가 h_userCode임 병원 고유 코드
+    init();
+</script>
+{% endblock %}
+<!-- ------------------------------------------------------------- -->

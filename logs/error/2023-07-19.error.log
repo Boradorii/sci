@@ -1,0 +1,16 @@
+[2023-07-19 14:13:31, error] "[System Error]: Cannot read property 'h_user_name' of undefined"
+[2023-07-19 14:13:31, error] "Cannot read property 'h_user_name' of undefined"
+TypeError: Cannot read property 'h_user_name' of undefined
+    at hospitalService.hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:25:87)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:19:32)
+[2023-07-19 14:13:31, error] "[Router Error]: /favicon.ico"
+[2023-07-19 14:21:54, error] "[System Error]: Cannot read property 'h_user_name' of undefined"
+[2023-07-19 14:21:54, error] "Cannot read property 'h_user_name' of undefined"
+TypeError: Cannot read property 'h_user_name' of undefined
+    at hospitalService.hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.service.js:25:87)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at async hospitalInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\hospital\hospital.controller.js:19:32)
+[2023-07-19 14:21:54, error] "[Router Error]: /favicon.ico"
+[2023-07-19 16:14:51, error] "[Router Error]: /api/a_mypage?p_userCode=p_2"
+[2023-07-19 16:14:51, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"

@@ -1,0 +1,625 @@
+{% extends "templates/webmainbase.html" %}
+
+<!-- ------------------------------------------------------------- -->
+{% block style%}
+<style>
+    /*---------- 측정 시작 페이지 -----------*/
+    
+    a.nav-link {
+        color: black;
+        margin: 0;
+    }
+    
+    a.nav-link.active {
+        font-weight: 600;
+    }
+    
+    #measurement-start {
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    
+    #patient-info,
+    #measure-info,
+    #measure-result {
+        border: 1px solid lightgray;
+        border-radius: 50px;
+        width: 450px;
+        margin: 0 auto;
+        padding: 2%;
+    }
+    
+    #patient-info h4,
+    #measure-info h4,
+    #measure-result h4 {
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    #patient-info p,
+    #measure-info p,
+    #measure-result p {
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    
+    .form-control {
+        font-size: 13px;
+    }
+    /*----------------- 환자 검색 form -----------------*/
+    
+    #searchFrm {
+        text-align: center;
+    }
+    
+    #searchKey {
+        width: 23%;
+    }
+    
+    #searchWord {
+        width: 48%;
+    }
+    
+    #searchBtn {
+        width: 13%;
+    }
+    /*--------- 환자 정보 입력 css (측정 시작, 측정 결과 css랑 겹침) ----------*/
+    
+    .input-div {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    
+    .input-div label {
+        width: 20%;
+        text-align: left;
+    }
+    
+    .patient_info {
+        margin-left: 10px;
+        width: 60%;
+    }
+    
+    .input-div button {
+        width: 30%;
+        float: center;
+        margin-bottom: 10px;
+    }
+    
+    #startPageBtn,
+    #recordPageBtn {
+        width: 35%;
+    }
+    
+    #startPageBtn {
+        margin-right: 15px;
+    }
+    /*--------- progress CSS ---------*/
+    
+    progress {
+        width: 70%;
+        height: 22px;
+        margin-top: 10px;
+        appearance: none;
+    }
+    
+    progress::-webkit-progress-bar {
+        background: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: inset 3px 3px 10px #ccc;
+    }
+    
+    progress::-webkit-progress-value {
+        border-radius: 10px;
+        background: #1D976C;
+        background: -webkit-linear-gradient(to right, #93F9B9, #1D976C);
+        background: linear-gradient(to right, #93F9B9, #1D976C);
+    }
+    
+    #measure-result-table {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #measure-result-table th {
+        width: 50%;
+        padding: 5px;
+        font-weight: bold;
+        background-color: rgb(219, 218, 218);
+        /*background-color: rgb(240, 240, 240);*/
+        border: 1px solid rgb(228, 228, 228);
+    }
+    
+    #measure-result-table td {
+        width: 50%;
+        padding: 5px;
+        border: 1px solid rgb(228, 228, 228);
+    }
+    /*---------- 모달 -----------*/
+    
+    .modal-title {
+        font-weight: bold;
+    }
+    
+    #measure-modal {
+        margin: 0 auto;
+    }
+    
+    #nextBtn,
+    #cancleBtn {
+        width: 20%;
+    }
+    
+    #cancleBtn {
+        margin-left: 20px;
+    }
+    
+    #modalBtn-div {
+        text-align: center;
+        width: 100%;
+    }
+    
+    .modal-body p {
+        text-align: center;
+    }
+    /*---------- 측정 기록 조회 페이지 -----------*/
+    
+    #searchDate {
+        width: 9%;
+    }
+    
+    #search-member {
+        width: 7%;
+    }
+    
+    #search-patient {
+        width: 7%;
+    }
+    
+    #searchBtn2 {
+        width: 5%;
+    }
+    
+    #searchWord2 {
+        width: 16%;
+    }
+    
+    #record-table {
+        width: 98%;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 15px;
+    }
+    
+    #record-table tr {
+        text-align: center;
+    }
+    
+    #record-table th {
+        border: none;
+    }
+    
+    #record-table td {
+        padding: 10px;
+        height: 35px;
+        line-height: 35px;
+    }
+    
+    .recordInfoBtn {
+        width: 90%;
+    }
+    /*--------- 측정 기록 상세정보 모달창 ----------*/
+    
+    #patient-info-table {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+    #patient-info-table th {
+        font-weight: bold;
+        width: 40%;
+        height: 35px;
+        line-height: 35px;
+        background-color: rgb(219, 218, 218);
+        border: 1px solid rgb(228, 228, 228);
+    }
+    
+    #patient-info-table td {
+        border: 1px solid rgb(228, 228, 228);
+    }
+    
+    #measure-info-table {
+        width: 85%;
+        margin: 0 auto;
+        text-align: center;
+        height: 35px;
+    }
+    
+    #measure-info-table th {
+        font-weight: bold;
+        height: 35px;
+        line-height: 35px;
+        background-color: rgb(219, 218, 218);
+        border: 1px solid rgb(228, 228, 228);
+    }
+    
+    #measure-info-table td {
+        height: 35px;
+        line-height: 35px;
+        border: 1px solid rgb(228, 228, 228);
+    }
+    
+    #modalBtn-div {
+        text-align: center;
+    }
+    
+    #modalBtn-div button {
+        width: 15%;
+        text-align: center;
+    }
+    
+    #closeBtn {
+        margin-left: 10px;
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+<!-- ------------------------------------------------------------- -->
+{% block contents%}
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-body">
+                <!-- 상단 탭 메뉴 -->
+                <ul class="nav nav-tabs" id="postTab">
+                    <li class="nav-item"><a data-toggle="tab" href="#measurement-start" class="nav-link active">측정 시작</a></li>
+                    <li class="nav-item"><a data-toggle="tab" href="#measurement-record" class="nav-link">측정 기록 조회</a>
+                    </li>
+                </ul>
+
+                <!-- 측정 시작 탭 매핑 div -->
+                <div class="tab-content" id="postTabContent">
+                    <div id="measurement-start" class="tab-pane fade show active">
+                        <div>
+                            <!-- 환자 정보 입력 div -->
+                            <div id="patient-info">
+                                <h4>환자 정보 입력</h4>
+                                <hr />
+                                <p>* 독닥독닥 회원의 경우 검색 후 선택하시면 환자 정보가 자동 입력됩니다.<br />독닥독닥 비회원의 경우 환자 정보를 직접 입력해 주세요.</p>
+
+                                <div id="searchFrm" class="form-group">
+                                    <select id="searchKey" class="form-control form-control-sm">
+                                        <!-- <option>선택 ▼</option> -->
+                                        <option id="petName">환자명</option>
+                                        <option id="protectName">보호자명</option>
+                                    </select>
+                                    <input type="text" class="form-control form-control-sm" id="searchWord" placeholder="검색어 입력" />
+                                    <input type="submit" class="btn btn-secondary btn-sm" id="searchBtn" value="검색" data-toggle="modal" data-target="#select-patient-modal" />
+                                </div>
+
+                                <div class="input-div">
+                                    <label for="protector-name">보호자명</label>
+                                    <input type="text" id="protector-name" class="form-control form-control-sm patient_info" placeholder="보호자명 입력" />
+                                </div>
+
+                                <div class="input-div">
+                                    <label for="patient-name">환자명</label>
+                                    <input type="text" id="patient-name" class="form-control form-control-sm patient_info" placeholder="환자명 입력" />
+                                </div>
+
+                                <div class="input-div">
+                                    <label for="patient-age">환자 나이</label>
+                                    <input type="text" id="patient-age" class="form-control form-control-sm patient_info" placeholder="환자 나이 입력" />
+                                </div>
+
+                                <div class="input-div">
+                                    <label for="patient-weight">환자 몸무게</label>
+                                    <input type="text" id="patient-weight" class="form-control form-control-sm patient_info" placeholder="환자 몸무게 입력" />
+                                </div>
+
+                                <hr />
+                                <div class="input-div" style="margin-top: 10px;">
+                                    <button data-toggle="modal" data-target="#measure-modal1" class="btn btn-success" id="measureBtn">측정하기</button>
+                                </div>
+                            </div>
+
+                            <!-- 측정 시작 div -->
+                            <div id="measure-info" style="display: none;">
+                                <h4>측정 시작</h4>
+                                <hr/>
+                                <p> 측정 중 ...</p>
+                                <div class="input-div" style="margin-top: 20px; margin-bottom: 20px;">
+                                    <label>심박수 : </label>
+                                    <span>88 BPM</span>
+                                </div>
+
+                                <div class="input-div" style="margin-bottom: 20px;">
+                                    <label>진행률 : </label>
+                                    <span>50%</span><br/>
+                                    <progress value="50" max="100"></progress>
+                                </div>
+
+                                <hr/>
+                                <p>* 환자가 움직이면 정확한 측정이 어려울 수 있으므로,<br/>안정된 상태에서 진행해 주시길 바랍니다.</p>
+                                <div class="input-div" style="margin-top: 20px;">
+                                    <button class="btn btn-success" id="stopBtn">측정 중단</button>
+                                </div>
+                            </div>
+
+                            <!-- 측정 결과 div -->
+                            <div id="measure-result" style="display: none;">
+                                <h4>측정 결과(코코)</h4>
+                                <hr/><br/>
+
+                                <table id="measure-result-table">
+                                    <thead>
+                                        <tr>
+                                            <th>평균 심박수</th>
+                                            <td>88 BPM</td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th>혈당</th>
+                                            <td>70 mg/dL</td>
+                                        </tr>
+                                        <tr>
+                                            <th>혈압</th>
+                                            <td>111/58 mmHg</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <br/>
+                                <hr/>
+                                <div class="input-div" style="margin-top: 25px;">
+                                    <button class="btn btn-success" id="startPageBtn">측정 시작 페이지</button>
+                                    <button class="btn btn-success" id="recordPageBtn">측정 기록 페이지</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 측정 기록 조회 매핑 div -->
+                    <div id="measurement-record" class="tab-pane fade">
+                        <!-- 검색 폼 -->
+                        <div id="searchFrm2">
+                            <input type="date" id="searchDate" class="form-control" value="" />
+
+                            <select id="search-member" class="form-control">
+                                <option selected>전체 조회 ▼</option>
+                                <option>회원</option>
+                                <option>비회원</option>
+                            </select>
+
+                            <select id="search-patient" class="form-control">
+                                <option selected>선택 ▼</option>
+                                <option>환자명</option>
+                                <option>보호자명</option>
+                            </select>
+                            <input type="text" id="searchWord2" class="form-control" placeholder="검색어 입력" />
+                            <input type="submit" id="searchBtn2" class="form-control" value="검색" />
+                        </div>
+
+                        <table id="record-table" class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th style="width:19%;">측정일</th>
+                                    <th style="width:22%;">환자명 / 보호자명</th>
+                                    <th style="width:12%;">나이</th>
+                                    <th style="width:12%;">심박수</th>
+                                    <th style="width:12%;">혈당</th>
+                                    <th style="width:12%;">혈압</th>
+                                    <th>상세정보</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>2023-06-13 15:06:00</td>
+                                    <td>코코 / 홍길동</td>
+                                    <td>6</td>
+                                    <td>88</td>
+                                    <td>90</td>
+                                    <td>90</td>
+                                    <td><button class="btn btn-secondary recordInfoBtn" data-toggle="modal" data-target="#measure-detail-modal">확인</button></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 환자 선택 모달 -->
+<div id="select-patient-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">환자 선택</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+
+            <div class="modal-body" style="margin:10px;">
+                <p style="text-align: center;">* 해당 환자를 선택해 주세요.</p>
+                <table id="search-modal-table" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th>환자명</th>
+                            <th>보호자명</th>
+                            <th>보호자 연락처</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>코코</td>
+                            <td>홍길동</td>
+                            <td>010-1111-1111</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal-footer">
+                <div id="modalBtn-div">
+                    <button id="closeBtn" type="button" class="modal-btn btn btn-danger waves-effect" data-dismiss="modal" aria-hidden="true">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 전원 연결 모달1 (측정하기 버튼 클릭 시 열리는 모달) -->
+<div id="measure-modal1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">전원 연결</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <br/>
+                <p>이미지 or 전원 연결 소개 문구 검토</p>
+                <p style="font-size:17px;">기기의 전원 연결 후,<br/>다음 버튼을 클릭해 주세요.</p>
+                <br/>
+            </div>
+            <div class="modal-footer">
+                <div id="modalBtn-div">
+                    <button id="nextBtn" type="button" class="modal-btn btn btn-success waves-effect" data-target="#measure-modal2" data-toggle="modal" data-dismiss="modal">다음</button>
+                    <button id="cancleBtn" type="button" class="modal-btn btn btn-secondary waves-effect" data-dismiss="modal" aria-hidden="true">취소</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 전원 연결 모달2 (연결 확인) -->
+<!--
+    아래 모달창으로 화면 설계서 17~18p에 있는 4개 모달창 만드시면 될 것 같아요.
+    h5태그, p태그 id값 참조해서 텍스트만 바꾸기!
+    그리고 전원 연결 모달 2는 연결 상태에 따라 자동으로 모달창 바뀌게 하려고 일부러 닫기 기능은 안 넣었어요!
+-->
+<div id="measure-modal2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 id="connect-title" class="modal-title">전원 연결</h5>
+            </div>
+            <div class="modal-body">
+                <br/>
+                <p id="connect-state" style="font-weight:bold; font-size:20px;">기기 연결 중</p>
+                <p id="connect-info" style="font-size:15px;">연결이 안될 시, 기기의 전원을 재연결해 주세요.</p>
+                <br/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- 측정 기록 상세정보 모달 -->
+<div id="measure-detail-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+    <div class="modal-lg modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">측정 기록 상세정보 (코코)</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p style="font-weight: bold;">[환자 정보]</p>
+                <table id="patient-info-table">
+                    <thead>
+                        <tr>
+                            <th>환자명</th>
+                            <td>코코</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>나이</th>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <th>품종</th>
+                            <td>말티즈</td>
+                        </tr>
+                        <tr>
+                            <th>성별</th>
+                            <td>남</td>
+                        </tr>
+                        <tr>
+                            <th>중성화 여부</th>
+                            <td>Y</td>
+                        </tr>
+                        <tr>
+                            <th>몸무게</th>
+                            <td>3.5kg</td>
+                        </tr>
+                        <tr>
+                            <th>환자노트</th>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+                <p style="font-weight: bold;">[측정 정보]</p>
+                <p style="width: 69%; margin: 0 auto; text-align: left;">측정일 | 2023-06-13 16:49:00</p>
+                <table id="measure-info-table">
+                    <thead>
+                        <tr>
+                            <th>HR</th>
+                            <th>HRV</th>
+                            <th>SDNN</th>
+                            <th>RMSSD</th>
+                            <th>PNN50</th>
+                            <th>VLF</th>
+                            <th>LF</th>
+                            <th>HF</th>
+                            <th>Glucos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br/>
+            </div>
+            <div class="modal-footer">
+                <div id="modalBtn-div">
+                    <button id="patientPageBtn" type="button" class="modal-btn btn btn-success waves-effect">환자 페이지</button>
+                    <button id="closeBtn" type="button" class="modal-btn btn btn-secondary waves-effect" data-dismiss="modal" aria-hidden="true">닫기</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+<!-- ------------------------------------------------------------- -->
+
+{%block script%}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="/web/measurement/measurement.js"></script>
+
+<script>
+</script>
+{% endblock %}
+<!-- ------------------------------------------------------------- -->

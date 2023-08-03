@@ -1,0 +1,155 @@
+[2023-08-01 10:07:33, error] "[Router Error]: /api/a_mypage?p_userCode=p_1"
+[2023-08-01 10:07:33, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-08-01 13:57:44, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 13:58:18, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 14:04:54, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:19:48, error] "[Router Error]: /app/a_mypage/js/a_mypage_myInfo.js"
+[2023-08-01 15:19:48, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:20:21, error] "[Router Error]: /app/a_mypage/js/a_mypage_myInfo.js"
+[2023-08-01 15:20:21, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:20:23, error] "[Router Error]: /app/a_mypage/js/a_mypage_myInfo.js"
+[2023-08-01 15:20:23, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:20:30, error] "[Router Error]: /api/a_mypage?p_userCode=p_1"
+[2023-08-01 15:20:30, error] "[Router Error]: /dist/js/perfect-scrollbar.jquery.min"
+[2023-08-01 15:20:39, error] "[Router Error]: /app/a_mypage/js/a_mypage_myInfo.js"
+[2023-08-01 15:20:39, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:24:38, error] "[Router Error]: /app/a_mypage/js/a_mypage_myInfo.js"
+[2023-08-01 15:24:38, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:25:39, error] "[Router Error]: /app/a_mypage/js/a_mypage_myInfo.js"
+[2023-08-01 15:25:39, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:27:01, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:27:34, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:27:34, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:27:34, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:27:35, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:27:35, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:27:35, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:31:33, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:31:33, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:31:33, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:31:35, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:31:35, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:31:35, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:31:37, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:31:37, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:31:37, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:31:40, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:31:40, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:31:40, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:31:42, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:31:42, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:31:42, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:31:46, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:31:46, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:31:46, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:31:48, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:31:48, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:31:48, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:31:56, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:32:09, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:32:29, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:32:29, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:32:29, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:32:35, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:32:35, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:32:35, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:33:30, error] "[System Error]: Cannot read properties of undefined (reading 'p_user_name')"
+[2023-08-01 15:33:30, error] "Cannot read properties of undefined (reading 'p_user_name')"
+TypeError: Cannot read properties of undefined (reading 'p_user_name')
+    at aMyPageService.myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.service.js:235:87)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async myInfoLoad (C:\Users\LCG\Desktop\0706 반려견\반려견 0710\server\api\a_mypage\a_mypage.controller.js:155:26)
+[2023-08-01 15:33:30, error] "[Router Error]: /assets/node_modules/popper/popper.min.js.map"
+[2023-08-01 15:53:49, error] "[Router Error]: /favicon.ico"
+[2023-08-01 15:53:52, error] "[Router Error]: /api/dist/css/pages/login-register-lock.css"
+[2023-08-01 15:53:52, error] "[Router Error]: /api/dist/css/style.min.css"
+[2023-08-01 15:54:00, error] "[Router Error]: /favicon.ico"
+[2023-08-01 15:54:02, error] "[Router Error]: /favicon.ico"
+[2023-08-01 15:56:47, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:06:15, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:06:20, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:06:20, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:06:23, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:06:24, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:06:25, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:06:25, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:06:26, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:06:27, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:06:36, error] "[Router Error]: /api/dist/css/pages/login-register-lock.css"
+[2023-08-01 16:06:36, error] "[Router Error]: /api/dist/css/style.min.css"
+[2023-08-01 16:07:16, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:07:19, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:07:49, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:08:04, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:08:06, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:08:07, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:08:08, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:08:18, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:14:20, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:19:25, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:19:33, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:19:38, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:27:07, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:30:45, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:33:15, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:33:21, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:34:03, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:34:40, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:35:41, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:41:43, error] "[Router Error]: /favicon.ico"
+[2023-08-01 16:51:07, error] "[Router Error]: /favicon.ico"
+[2023-08-01 17:06:24, error] "[Router Error]: /favicon.ico"
+[2023-08-01 17:06:43, error] "[Router Error]: /favicon.ico"
+[2023-08-01 17:06:50, error] "[Router Error]: /favicon.ico"
+[2023-08-01 17:06:57, error] "[Router Error]: /favicon.ico"
+[2023-08-01 17:07:18, error] "[Router Error]: /favicon.ico"
+[2023-08-01 17:07:29, error] "[Router Error]: /favicon.ico"
+[2023-08-01 17:07:59, error] "[Router Error]: /favicon.ico"
+[2023-08-01 17:08:57, error] "[Router Error]: /favicon.ico"
+[2023-08-01 17:11:07, error] "[Router Error]: /favicon.ico"
+[2023-08-01 17:11:09, error] "[Router Error]: /favicon.ico"
+[2023-08-01 17:57:28, error] "[Router Error]: /favicon.ico"

@@ -1,0 +1,184 @@
+{% extends "templates/appmainbase.html" %}
+<!-- ------------------------------------------------------------- -->
+{% block head %}
+<!-- CSS -->
+<!-- datepicker CSS -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+    .card-box {
+        margin-top: 10px;
+        border: 2px solid gray;
+    }
+    
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .center-align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .custom-textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        resize: vertical;
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+<!-- Content 시작 -->
+{% block contents%}
+<!-- html -->
+<div class="skin-megna page-wrapper" style="padding: 0; overflow-y: scroll; margin-bottom: 30px;">
+    <div class="container-fluid">
+        <!-- 측정 결과 평균 심박수, 혈당 -->
+        <div class="card-box card" style="text-align: center; width: 80%; margin-top: 20px; background-color: white; padding: 10px;">
+
+            <h3 style="text-align: center; font-weight: 700;">병원 문의</h3>
+
+            <div class="row">
+                <p class="col" style="font-size: 18pt;">병원 선택</p>
+                <div class="col"><select class="form-control form-control-sm" id="hospital_select" name="hospital" aria-label="hospital" aria-describedby="hospital" style="width: 80%; height: 35px;">
+                        <option selected>선택</option>
+                    </select>
+                </div>
+            </div>
+
+            <div style="font-size: 10pt; text-align: left; padding: 10px;">
+
+                <div>
+                    <p style="font-size: 15pt; font-weight: 500;">문진표 작성</p>
+                </div>
+
+                <div>
+                    <p>1. 반려견이 갈증증상이 있거나 배뇨 빈도가 증가하였나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_01_O" name="questionnaire_01" value="questionnaire_01_O">
+                            <label for="questionnaire_01_O" style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_01_X" name="questionnaire_01" value="questionnaire_01_X">
+                            <label for="questionnaire_01_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>2. 반려견이 보통 평소보다 더 많이 먹고 마시나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_02_O" name="questionnaire_02" value="questionnaire_02_O">
+                            <label for="questionnaire_02_O" style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_02_X" name="questionnaire_02" value="questionnaire_02_X">
+                            <label for="questionnaire_02_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>3. 반려견이 최근 체중이 줄거나 늘었나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_03_O" name="questionnaire_03" value="questionnaire_03_O">
+                            <label for="questionnaire_03_O" style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_03_X" name="questionnaire_03" value="questionnaire_03_X">
+                            <label for="questionnaire_03_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>4. 반려견의 활동 수준이나 행동에 변화가 있었나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_04_O" name="questionnaire_04" value="questionnaire_04_O">
+                            <label for="questionnaire_04_O" style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_04_X" name="questionnaire_04" value="questionnaire_04_X">
+                            <label for="questionnaire_04_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>5. 반려견이 다른 질병 진단을 받았거나 약을 먹고 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_05_O" name="questionnaire_05" value="questionnaire_05_O">
+                            <label for="questionnaire_05_O" style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_05_X" name="questionnaire_05" value="questionnaire_05_X">
+                            <label for="questionnaire_05_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>6. 반려견이 요로 감염에 걸린 적이 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_06_O" name="questionnaire_06" value="questionnaire_06_O">
+                            <label for="questionnaire_06_O" style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_06_X" name="questionnaire_06" value="questionnaire_06_X">
+                            <label for="questionnaire_06_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>7. 반려견이 당뇨병 진단을 받은 적이 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_07_O" name="questionnaire_07" value="questionnaire_07_O">
+                            <label for="questionnaire_07_O" style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_07_X" name="questionnaire_07" value="questionnaire_07_X">
+                            <label for="questionnaire_07_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>8. 반려견의 부모 중 당뇨가 있는 개가 있나요?</p>
+                    <div class="justify-content-center" style="margin-left: 3px;">
+                        <div>
+                            <input type="radio" id="questionnaire_08_O" name="questionnaire_08" value="questionnaire_08_O">
+                            <label for="questionnaire_08_O" style="font-weight: 500; margin-right: 50px; font-size: 15px;">O</label>
+                            <input type="radio" id="questionnaire_08_X" name="questionnaire_08" value="questionnaire_08_X">
+                            <label for="questionnaire_08_X" style="font-weight: 500; font-size: 15px;">X</label>
+                        </div>
+                    </div>
+                    <p>9. 반려견의 현재 식단은 무엇인가요?<br> 식품의 브랜드, 유형, 보조제, 간식 등을 아래에 작성해 주세요.</p>
+                    <h4>증상, 식단 입력</h4>
+                    <div><textarea class="custom-textarea" name="questionnaire_09" id="questionnaire_09_text" rows="5" placeholder="이상 증상, 식단 입력(300자 이내)"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row" style="align-self: center;">
+                <button id="send" class="btn btn-info" style="width: 100px; margin-right: 20px;">전송</button>
+                <button id="cancel" class="btn btn-secondary" style="width: 100px; margin-left: 20px;">취소</button>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:100px"></div>
+</div>
+
+
+
+
+
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+{% block script %}
+<script src="/javascripts/config.js"></script>
+<script src="/assets/node_modules/moment/moment.js"></script>
+<script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
+<script src="/javascripts/commonUtil.js"></script>
+<script type="text/javascript" src="/app/p_apphome/p_apphome.js"></script>
+<script>
+    let userCode = '{{userCode}}',
+        emergencyList = JSON.parse('{{emergencyList | safe}}'),
+        checkList = JSON.parse('{{checkList | safe}}'),
+        emDetail = JSON.parse('{{selectEmDetail | safe}}');
+
+    init();
+</script>
+
+{% endblock %}

@@ -100,11 +100,15 @@ function hospitalInfoLoad() {
         cmmAsync = false,
 
         cmmSucc = function hospitalInfoLoad(result) {
-
+            let telnum = result.rows[0].h_telnum
+            let telArray = telnum.split('-');
+            console.log(telArray);
             $("#hospital-name-input").val(result.rows[0].h_name);
             $("#hospital-address1-input").val(result.rows[0].h_address1);
             $("#hospital-address2-input").val(result.rows[0].h_address2);
-            $("#phone").val(result.rows[0].h_telnum);
+            $("#phone1").val(telArray[0]);
+            $("#phone2").val(telArray[1]);
+            $("#phone3").val(telArray[2]);
             $("#hospital-time-input").val(result.rows[0].h_operating_time);
             $("#operating-start-time").val(result.operatingTime[0]);
             $("#operating-end-time").val(result.operatingTime[1]);
@@ -112,9 +116,9 @@ function hospitalInfoLoad() {
             $("#adminuser-name-input").val(result.rows[0].h_user_name);
             $('#pwd-input').val("");
             $('#pwd-confirm-input').val("");
-            $("#phone1").val(result.rows[0].h_user_phone_first);
-            $("#phone2").val(result.rows[0].h_user_phone_middle);
-            $("#phone3").val(result.rows[0].h_user_phone_last);
+            $("#userPhone1").val(result.rows[0].h_user_phone_first);
+            $("#userPhone2").val(result.rows[0].h_user_phone_middle);
+            $("#userPhone3").val(result.rows[0].h_user_phone_last);
             $("#email-input").val(result.rows[0].h_user_email_id);
             $("#email-input2").val(result.rows[0].h_user_email_domain);
 
@@ -328,14 +332,36 @@ function formCheck(targetId) {
             }
             break;
 
-        case 'phone': // 병원 연락처
-            if (targetVal == '') {
+            case 'phone1': // 병원 연락처 1
+            if ($("#phone1").val() == '선택' || !phonePattern2.test($("#phone2").val()) || !phonePattern3.test($("#phone3").val())) {
                 $("#hospital-phone-notice").removeClass('deactive-notice');
                 $("#hospital-phone-notice").addClass('active-notice');
             } else {
                 $("#hospital-phone-notice").removeClass('active-notice');
                 $("#hospital-phone-notice").addClass('deactive-notice');
                 inputList.h_telnum = targetVal;
+            }
+            break;
+
+        case 'phone2': // 병원 연락처 2
+            if ($("#phone1").val() == '선택' || !phonePattern2.test($("#phone2").val()) || !phonePattern3.test($("#phone3").val())) {
+                $("#hospital-phone-notice").removeClass('deactive-notice');
+                $("#hospital-phone-notice").addClass('active-notice');
+            } else {
+                $("#hospital-phone-notice").removeClass('active-notice');
+                $("#hospital-phone-notice").addClass('deactive-notice');
+                inputList.h_telnum += '-' + targetVal;
+            }
+            break;
+
+        case 'phone3': // 병원 연락처 3
+            if ($("#phone1").val() == '선택' || !phonePattern2.test($("#phone2").val()) || !phonePattern3.test($("#phone3").val())) {
+                $("#hospital-phone-notice").removeClass('deactive-notice');
+                $("#hospital-phone-notice").addClass('active-notice');
+            } else {
+                $("#hospital-phone-notice").removeClass('active-notice');
+                $("#hospital-phone-notice").addClass('deactive-notice');
+                inputList.h_telnum += '-' + targetVal;
             }
             break;
 
@@ -404,8 +430,8 @@ function formCheck(targetId) {
             }
             break;
 
-        case 'phone1': // 담당자 연락처 1
-            phoneDupl = phoneDuplicateCheck($("#phone1").val(), $("#phone2").val(), $("#phone3").val());
+        case 'userPhone1': // 담당자 연락처 1
+            phoneDupl = phoneDuplicateCheck($("#userPhone1").val(), $("#userPhone2").val(), $("#userPhone3").val());
             if (phoneDupl) {
                 $("#phone-dupl-notice").removeClass('deactive-notice');
                 $("#phone-dupl-notice").addClass('active-notice');
@@ -415,7 +441,7 @@ function formCheck(targetId) {
                 $("#phone-dupl-notice").removeClass('active-notice');
                 $("#phone-dupl-notice").addClass('deactive-notice');
 
-                if (!phonePattern1.test($("#phone1").val()) || !phonePattern2.test($("#phone2").val()) || !phonePattern3.test($("#phone3").val())) {
+                if (!phonePattern1.test($("#userPhone1").val()) || !phonePattern2.test($("#userPone2").val()) || !phonePattern3.test($("#userPhone3").val())) {
                     $("#phone-notice").removeClass('deactive-notice');
                     $("#phone-notice").addClass('active-notice');
                 } else {
@@ -426,8 +452,8 @@ function formCheck(targetId) {
             }
             break;
 
-        case 'phone2': // 담당자 연락처 2
-            phoneDupl = phoneDuplicateCheck($("#phone1").val(), $("#phone2").val(), $("#phone3").val());
+        case 'userPhone2': // 담당자 연락처 2
+            phoneDupl = phoneDuplicateCheck($("#userPhone1").val(), $("#user-phone2").val(), $("#userPhone3").val());
             if (phoneDupl) {
                 $("#phone-dupl-notice").removeClass('deactive-notice');
                 $("#phone-dupl-notice").addClass('active-notice');
@@ -437,7 +463,7 @@ function formCheck(targetId) {
                 $("#phone-dupl-notice").removeClass('active-notice');
                 $("#phone-dupl-notice").addClass('deactive-notice');
 
-                if (!phonePattern1.test($("#phone1").val()) || !phonePattern2.test($("#phone2").val()) || !phonePattern3.test($("#phone3").val())) {
+                if (!phonePattern1.test($("#userPhone1").val()) || !phonePattern2.test($("#userPhone2").val()) || !phonePattern3.test($("#userPhone3").val())) {
                     $("#phone-notice").removeClass('deactive-notice');
                     $("#phone-notice").addClass('active-notice');
                 } else {
@@ -448,8 +474,8 @@ function formCheck(targetId) {
             }
             break;
 
-        case 'phone3': // 담당자 연락처 3
-            phoneDupl = phoneDuplicateCheck($("#phone1").val(), $("#phone2").val(), $("#phone3").val());
+        case 'userPhone3': // 담당자 연락처 3
+            phoneDupl = phoneDuplicateCheck($("#userPhone1").val(), $("#userPhone2").val(), $("#userPhone3").val());
             if (phoneDupl) {
                 $("#phone-dupl-notice").removeClass('deactive-notice');
                 $("#phone-dupl-notice").addClass('active-notice');
@@ -458,7 +484,7 @@ function formCheck(targetId) {
             } else {
                 $("#phone-dupl-notice").removeClass('active-notice');
                 $("#phone-dupl-notice").addClass('deactive-notice');
-                if (!phonePattern1.test($("#phone1").val()) || !phonePattern2.test($("#phone2").val()) || !phonePattern3.test($("#phone3").val())) {
+                if (!phonePattern1.test($("#userPhone1").val()) || !phonePattern2.test($("#userPhone2").val()) || !phonePattern3.test($("#userPhone3").val())) {
                     $("#phone-notice").removeClass('deactive-notice');
                     $("#phone-notice").addClass('active-notice');
                 } else {

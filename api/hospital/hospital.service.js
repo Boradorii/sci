@@ -48,7 +48,6 @@ class hospitalService {
     result.rows[0].h_user_phone_middle = cryptoUtil.decrypt_aes(cryptoKey, result.rows[0].h_user_phone_middle);
     result.rows[0].h_user_phone_last = cryptoUtil.decrypt_aes(cryptoKey, result.rows[0].h_user_phone_last);
     result.rows[0].h_user_email_id = cryptoUtil.decrypt_aes(cryptoKey, result.rows[0].h_user_email_id);
-    result.rows[0].h_telnum = result.rows[0].h_telnum.replace(/-/g,'');
     let operatingTime;
     operatingTime = result.rows[0].h_answer_time.split('-');
     result.operatingTime = operatingTime;

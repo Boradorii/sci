@@ -38,6 +38,26 @@ $('.form-control').not('.notval').on('click input change keyup keydown paste foc
     formCheck(targetId); // 회원가입 양식 검사 호출
 });
 
+// 이메일 도메인 변경
+function selectEmail(ele){
+    var $ele = $(ele);
+    var $email2 = $('#email-input2');
+
+    // '1'인 경우 직접입력
+    if($ele.val() == ""){
+        $email2.attr('readonly', false);
+    } else {
+        $email2.attr('readonly', true);
+    }
+    $email2.val($ele.val());
+    formCheck('email-input2');
+}
+
+// 아이디 소문자, 숫자만 입력받을 수 있게
+$('#id-input').on('input', function() {
+    var filteredValue = $(this).val().replace(/[^0-9a-z]/g, '');
+    $(this).val(filteredValue);
+  });
 
 
 /** ================================================================
@@ -61,9 +81,9 @@ function formCheck(targetId) {
         domainPattern = /[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     // 이메일 중복 확인    
-    let emailDupl = emailDuplicateCheck($("#email-input").val(), $("#email-input2").val());
+    let emailDupl;
     // 담당자 연락처 중복 확인
-    let phoneDupl = phoneDuplicateCheck($("#user-phone1").val(), $("#user-phone2").val(), $("#user-phone3").val());
+    let phoneDupl;
 
     switch (targetId) {
         case 'hospital-name-input':
@@ -220,9 +240,12 @@ function formCheck(targetId) {
             break;
 
         case 'user-phone1': // 담당자 연락처 1
+            phoneDupl= phoneDuplicateCheck($("#user-phone1").val(), $("#user-phone2").val(), $("#user-phone3").val());
             if (phoneDupl) {
                 $("#phone-dupl-notice").removeClass('deactive-notice');
                 $("#phone-dupl-notice").addClass('active-notice');
+                $("#phone-notice").removeClass('active-notice');
+                $("#phone-notice").addClass('deactive-notice');
             } else {
                 $("#phone-dupl-notice").removeClass('active-notice');
                 $("#phone-dupl-notice").addClass('deactive-notice');
@@ -239,9 +262,12 @@ function formCheck(targetId) {
             break;
 
         case 'user-phone2': // 담당자 연락처 2
+            phoneDupl= phoneDuplicateCheck($("#user-phone1").val(), $("#user-phone2").val(), $("#user-phone3").val());
             if (phoneDupl) {
                 $("#phone-dupl-notice").removeClass('deactive-notice');
                 $("#phone-dupl-notice").addClass('active-notice');
+                $("#phone-notice").removeClass('active-notice');
+                $("#phone-notice").addClass('deactive-notice');
             } else {
                 $("#phone-dupl-notice").removeClass('active-notice');
                 $("#phone-dupl-notice").addClass('deactive-notice');
@@ -258,9 +284,12 @@ function formCheck(targetId) {
             break;
 
         case 'user-phone3': // 담당자 연락처 3
+            phoneDupl= phoneDuplicateCheck($("#user-phone1").val(), $("#user-phone2").val(), $("#user-phone3").val());
             if (phoneDupl) {
                 $("#phone-dupl-notice").removeClass('deactive-notice');
                 $("#phone-dupl-notice").addClass('active-notice');
+                $("#phone-notice").removeClass('active-notice');
+                $("#phone-notice").addClass('deactive-notice');
             } else {
                 $("#phone-dupl-notice").removeClass('active-notice');
                 $("#phone-dupl-notice").addClass('deactive-notice');
@@ -275,10 +304,13 @@ function formCheck(targetId) {
             }
             break;
 
-        case 'email-input': // 담당자 이메일 아이디
+        case 'email-input': // 담당자 이메일 아이디  
+            emailDupl = emailDuplicateCheck($("#email-input").val(), $("#email-input2").val());
             if (emailDupl) {
                 $("#email-dupl-notice").removeClass('deactive-notice');
                 $("#email-dupl-notice").addClass('active-notice');
+                $("#email-notice").removeClass('active-notice');
+                $("#email-notice").addClass('deactive-notice');
                 emailCheck = false;
             } else {
                 $("#email-dupl-notice").removeClass('active-notice');
@@ -298,10 +330,13 @@ function formCheck(targetId) {
             }
             break;
 
-        case 'email-input2': // 담당자 이메일 도메인
+        case 'email-input2': // 담당자 이메일 도메인   
+            emailDupl = emailDuplicateCheck($("#email-input").val(), $("#email-input2").val());
             if (emailDupl) {
                 $("#email-dupl-notice").removeClass('deactive-notice');
                 $("#email-dupl-notice").addClass('active-notice');
+                $("#email-notice").removeClass('active-notice');
+                $("#email-notice").addClass('deactive-notice');
                 domainCheck = false;
             } else {
                 $("#email-dupl-notice").removeClass('active-notice');

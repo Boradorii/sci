@@ -258,15 +258,36 @@
 
                                 <!-- 병원 연락처 -->
                                 <div class="form-group mb-3">
-                                    <label for="phone">병원 연락처</label>
-                                    <span id="hospital-phone-notice"
-                                        class="deactive-notice form-control-feedback text-danger">&nbsp;연락처를 입력해
-                                        주세요.</span>
+                                    <label for="phone1">병원 연락처</label>
+                                    <span id="hospital-phone-notice" class="deactive-notice form-control-feedback text-danger">&nbsp;연락처를 올바르게 입력해 주세요.</span>
                                     <div class="input-group">
-                                        <input type="text" id="phone" name="phone" class="form-control form1"
-                                            placeholder="병원 연락처(숫자만 입력)" aria-label="phone" aria-describedby="phone"
-                                            maxlength="11"
-                                            oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                                        <select id="phone1" name="phone1" class="form-control" aria-label="phonenumber" aria-describedby="phone1">
+                                            <option selected>선택</option>
+                                            <option>02</option>
+                                            <option>031</option>
+                                            <option>032</option>
+                                            <option>033</option>
+                                            <option>041</option>
+                                            <option>042</option>
+                                            <option>043</option>
+                                            <option>044</option>
+                                            <option>051</option>
+                                            <option>052</option>
+                                            <option>053</option>
+                                            <option>054</option>
+                                            <option>055</option>
+                                            <option>061</option>
+                                            <option>062</option>
+                                            <option>063</option>
+                                            <option>064</option>
+                                            <option>070</option>
+                                        </select>
+                                        <p class="ml-2 mr-2 mt-2"> - </p>
+                                        <input type="number" id="phone2" name="phone2" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                                        this.value = this.value.replace(/[^0-9]/g, '');" maxlength="4">
+                                        <p class="ml-2 mr-2 mt-2"> - </p>
+                                        <input type="number" id="phone3" name="phone3" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                                        this.value = this.value.replace(/[^0-9]/g, '');" maxlength="4">
                                     </div>
                                 </div>
 
@@ -361,7 +382,7 @@
                                 <div class="form-group mb-3">
                                     <label for="phonenumber">담당자 연락처</label>
                                     <div class="input-group">
-                                        <select id="phone1" name="phone1" class="form-control form1"
+                                        <select id="userPhone1" name="phone1" class="form-control form1"
                                             aria-label="phonenumber" aria-describedby="phone1">
                                             <option selected>선택</option>
                                             <option>010</option>
@@ -372,13 +393,15 @@
                                             <option>019</option>
                                         </select>
                                         <p class="ml-2 mr-2 mt-2"> - </p>
-                                        <input type="number" id="phone2" name="phone2" class="form-control form1"
+                                        <input type="number" id="userPhone2" name="phone2" class="form-control form1"
                                             placeholder="" aria-label="phonenumber" aria-describedby="phone2"
-                                            maxlength="4">
+                                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                                            this.value = this.value.replace(/[^0-9]/g, '');" maxlength="4">
                                         <p class="ml-2 mr-2 mt-2"> - </p>
-                                        <input type="number" id="phone3" name="phone3" class="form-control form1"
+                                        <input type="number" id="userPhone3" name="phone3" class="form-control form1"
                                             placeholder="" aria-label="phonenumber" aria-describedby="phone3"
-                                            maxlength="4">
+                                            oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                                            this.value = this.value.replace(/[^0-9]/g, '');" maxlength="4">
                                     </div>
                                     <div style="text-align: left;">
                                         <p id="phone-dupl-notice" class="deactive-notice text-danger"> 중복된 연락처입니다.</p>

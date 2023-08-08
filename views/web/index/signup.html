@@ -234,9 +234,9 @@
                                     <option>070</option>
                                 </select>
                                 <p class="ml-2 mr-2 mt-2"> - </p>
-                                <input type="number" id="phone2" name="phone2" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone2" maxlength="4">
+                                <input type="number" id="phone2" name="phone2" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4">
                                 <p class="ml-2 mr-2 mt-2"> - </p>
-                                <input type="number" id="phone3" name="phone3" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone3" maxlength="4">
+                                <input type="number" id="phone3" name="phone3" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="4">
                             </div>
                         </div>
 
@@ -324,9 +324,11 @@
                                     <option>019</option>
                                 </select>
                                 <p class="ml-2 mr-2 mt-2"> - </p>
-                                <input type="number" id="user-phone2" name="phone2" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone2" maxlength="4">
+                                <input type="number" id="user-phone2" name="phone2" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone2"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                                this.value = this.value.replace(/[^0-9]/g, '');" maxlength="4">
                                 <p class="ml-2 mr-2 mt-2"> - </p>
-                                <input type="number" id="user-phone3" name="phone3" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone3" maxlength="4">
+                                <input type="number" id="user-phone3" name="phone3" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone3"  oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                                this.value = this.value.replace(/[^0-9]/g, '');" maxlength="4">
                             </div>
                             <div style="text-align: left;">
                                 <p id="phone-dupl-notice" class="deactive-notice text-danger"> 중복된 연락처입니다.</p>
@@ -341,13 +343,13 @@
                                 <input id="email-input" name="eId" type="text" class="form-control" placeholder="아이디" aria-describedby="" />
                                 &nbsp;<span class="ml-1 mr-1 mt-2">@</span>&nbsp;
                                 <input id="email-input2" name="eDomain" type="text" class="form-control" placeholder="도메인" aria-describedby="" />
-                                <select id="email-select-input2" class="form-control">
-                                    <option selected>직접입력</option>
-                                    <option>naver.com</option>
-                                    <option>gmail.com</option>
-                                    <option>daum.net</option>
-                                    <option>hanmail.net</option>
-                                    <option>nate.com</option>
+                                <select id="email-select-input2" class="form-control" onChange="selectEmail(this)">
+                                    <option value="" selected>직접입력</option>
+                                    <option value="naver.com">naver.com</option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="daum.net">daum.net</option>
+                                    <option value="hanmail.net">hanmail.net</option>
+                                    <option value="nate.com">nate.com</option>
                                 </select>
                             </div>
                             <div style="text-align: left;">

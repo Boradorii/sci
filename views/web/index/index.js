@@ -8,7 +8,9 @@ $(function() {
 });
 
 $('#login-btn').on("click", function() {
-    if ($idInput.val() != null && $pwInput.val() != null) {
+    console.log("id " + $idInput.val())
+    console.log("pw " + $pwInput.val())
+    if ($idInput.val() != "" && $pwInput.val() != "") {
         let cmmContentType = 'application/json',
             cmmType = 'post',
             cmmUrl = '/api/userLogin',
@@ -39,7 +41,12 @@ $('#login-btn').on("click", function() {
 
         commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
     } else {
-        alert('아이디 또는 비밀번호를 다시 입력해 주세요.')
+        if($idInput.val() == ""){
+            alert('아이디를 입력해 주세요.')
+        }else if($pwInput.val() == ""){
+            alert('비밀번호를 입력해 주세요.')
+        }
+        
             // 로그인 구현 후 삭제 필요
             // culPageUrl = baseUrl + '/patient/patient/' + h_adminCode;
             // setSessionStorage('culPageUrl', culPageUrl)

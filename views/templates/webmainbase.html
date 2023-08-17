@@ -107,11 +107,14 @@
 <script src="/dist/js/waves.js"></script>
 <!--Menu sidebar -->
 <script src="/dist/js/sidebarmenu.js"></script>
+<script src="/javascripts/alert.js"></script>
 
 <script>
     let h_adminCode = getSessionStorage('h_adminCode');
     check_hospital_alert(h_adminCode)
-
+    setInterval(function () {
+        check_hospital_alert(h_adminCode)
+    }, 10000);
 
     // 사이드 메뉴 색 표시
     let culPageUrl = getSessionStorage("culPageUrl")
@@ -196,12 +199,13 @@
                     cmmAsync = false,
                     cmmSucc = function (result) {
                         if (result.state) {
+                            changeView(baseUrl);
                             localStorage.removeItem('hosName');
-                            removeSessionStorage('userCode');
+                            removeSessionStorage('h_adminCode');
                             removeSessionStorage('accessToken');
                             removeSessionStorage('culPageUrl');
-                            removeLocalStorage('culPageUrl');
-                            changeView(baseUrl);
+
+
                         }
                     },
                     cmmErr = function () {
@@ -225,8 +229,9 @@
             cmmAsync = false,
 
             cmmSucc = function check_hospital_alert(result) {
-                console.log(result);
-                if (result.rows[0].h_alert_count < 10) {
+                if (result.rows[0].h_alert_count == 10) {
+                    $('#alertManage').text("알림관리");
+                } else if (result.rows[0].h_alert_count < 10) {
                     $('#alertManage').text("알림관리(" + result.rows[0].h_alert_count + ")");
                 } else {
                     $('#alertManage').text("알림관리(9+)");

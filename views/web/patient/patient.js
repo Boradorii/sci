@@ -38,6 +38,15 @@ $('.patient-info-input').on('focus', function () {
 $('.patient-info-input').on('blur', function () {
     $(this).removeClass('focus');
 });
+$("#recordBtn").click(function () {
+    // $('body').css('padding-right', '0');
+    // $('.modal-open').css('padding-right', '0');
+
+
+    // $('#record-add-modal').appendTo("body").modal('show');
+
+});
+
 
 
 
@@ -139,7 +148,6 @@ function calculateAge(yearOfBirth) {
     return age;
 }
 
-// 환자 및 보호자 정보 불러오기(검색 목록 클릭하여)
 // 환자 및 보호자 정보 불러오기(검색 목록 클릭하여)
 function petInfoLoad(petId) {
     petIdModify = petId;
@@ -378,6 +386,7 @@ function diagnosis_regist() {
         });
         return;
     }
+    $('#addRecordBtn').attr('data-dismiss', 'modal');
 
     var selectElement = document.getElementById("select-purpose");
     let cmmContentType = 'application/json',
@@ -388,17 +397,21 @@ function diagnosis_regist() {
             medi_purpose: selectElement.selectedIndex,
             medi_contents: $('#record-detail').val(),
             h_staff_name: $('#select-doctor').val(),
-            petId: petIdModify
+            petId: petIdModify,
         },
         cmmAsync = false,
         cmmSucc = function diagnosis_regist(result) {
-            $('#record-add-modal').appendTo("body").modal('hide');
-            Swal.fire({
-                icon: 'success',
-                title: '등록 완료!',
-                text: '',
-            });
-            $('#record-detail').val("");
+            if (result.succ == 1) {
+                Swal.fire({
+                    icon: 'success',
+                    title: '등록 완료!',
+                    text: '진료가 기록되었습니다.',
+                });
+                $('#record-add-modal').appendTo("body").modal('hide');
+                $('#record-detail').val("");
+            }
+            $('#addRecordBtn').removeAttr('data-dismiss');
+            diagnosis_Records(petIdModify);
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
@@ -444,6 +457,14 @@ $("#editRecordBtn").click(function () {
 
 function diagnosis_detail_modify(modify_medi_num) {
 
+    if ($('#recordDetail').val() == '') {
+        Swal.fire({
+            icon: 'error',
+            title: '수정 실패!',
+            text: '진료 내용을 작성해주세요!',
+        });
+        return;
+    }
     var selectElement = document.getElementById("recordPurpose");
     // var textareaElement = document.getElementById("recordDetail");
 
@@ -459,10 +480,23 @@ function diagnosis_detail_modify(modify_medi_num) {
         cmmAsync = false,
         cmmSucc = function diagnosis_detail_modify(result) {
             Swal.fire({
-                icon: 'success',
-                title: '수정 완료',
-                text: '',
-            });
+                title: '',
+                text: "진료 기록을 수정하시겠습니까?",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: '확인',
+                cancelButtonText: '취소'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        icon: 'success',
+                        title: '수정 완료',
+                        text: '진료 기록이 수정되었습니다.'
+                    })
+                }
+            })
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
@@ -494,9 +528,11 @@ function diagnosis_detail_delete(modify_medi_num) {
                 cancelButtonText: '취소'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    Swal.fire(
-                        '삭제가 완료되었습니다.'
-                    )
+                    Swal.fire({
+                        icon: 'success',
+                        title: '삭제 완료',
+                        text: '진료 기록이 삭제되었습니다.'
+                    })
                 }
             })
         },
@@ -557,7 +593,7 @@ function select_bioinfo() {
 
 // 생체정보 세부내용
 function bioInfo_detail(pd_num) {
-
+    console.log('pd_num '+pd_num)
     let cmmContentType = 'application/json',
         cmmType = 'post',
         cmmUrl = '/api/patient/bioInfo_detail',
@@ -566,6 +602,7 @@ function bioInfo_detail(pd_num) {
         },
         cmmAsync = false,
         cmmSucc = function bioInfo_detail(result) {
+            console.log('  result '+result)
             $('#bioInfo-modal-table > tbody').empty();
             $('#bioInfoDate').text(result.rows[0].created_time);
             let tableHtml =
@@ -586,7 +623,7 @@ function bioInfo_detail(pd_num) {
                 `<tr> <td>PNN50</td>` +
                 '<td>' + result.rows[0].pnn50 + '</td> </tr>'
             $('#bioInfo-modal-table > tbody').append(tableHtml);
-            $('#bioInfo-detail-modal').appendTo("body").modal('show');
+            $('#"bioInfo-detail-modal').modal('show');
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
@@ -715,67 +752,37 @@ function draw_chart() {
 }
 
 
-
+$('#rangeDate').daterangepicker();
 
 // 1주일 조회
-$('#weekBtn').click(function () {
-    let today = new Date();
-    let start = new Date(today);
-    start.setDate(today.getDate() - 7);
-    let dateFormat1 = start.getFullYear() +
-        '-' + ((start.getMonth() + 1) < 9 ? "0" + (start.getMonth() + 1) : (start.getMonth() + 1)) +
-        '-' + ((start.getDate()) < 9 ? "0" + (start.getDate()) : (start.getDate()));
-    let dateFormat2 = today.getFullYear() +
-        '-' + ((today.getMonth() + 1) < 9 ? "0" + (today.getMonth() + 1) : (today.getMonth() + 1)) +
-        '-' + ((today.getDate()) < 9 ? "0" + (today.getDate()) : (today.getDate()));
-    $('#rangeDate').val(dateFormat1 + " - " + dateFormat2);
-    if (class_num == 0) {
-        select_bioinfo();
-    } else {
-        draw_chart()
-    }
-})
+$('#weekBtn').on('click', function() {
+  $('#rangeDate').data('daterangepicker').setStartDate(moment().subtract(1, 'weeks'));
+  $('#rangeDate').data('daterangepicker').setEndDate(moment());
+  if (class_num == 0) {
+    select_bioinfo();
+} else {
+    draw_chart()
+}
+});
 
 // 1개월 조회
-$('#monthBtn').click(function () {
-    let today = new Date();
-    let start = new Date(today);
-    let dateFormat1 = start.getFullYear() +
-        '-' + ((start.getMonth()) < 9 ? "0" + (start.getMonth()) : (start.getMonth())) +
-        '-' + ((start.getDate()) < 9 ? "0" + (start.getDate()) : (start.getDate()));
-    let dateFormat2 = today.getFullYear() +
-        '-' + ((today.getMonth() + 1) < 9 ? "0" + (today.getMonth() + 1) : (today.getMonth() + 1)) +
-        '-' + ((today.getDate()) < 9 ? "0" + (today.getDate()) : (today.getDate()));
-    $('#rangeDate').val(dateFormat1 + " - " + dateFormat2);
-    if (class_num == 0) {
-        select_bioinfo();
-    } else {
-        draw_chart()
-    }
-})
-$('#yearBtn').click(function () {
-    // Get the current date
-    let today = new Date();
-
-    // Set the start date to 1 year ago from today
-    let start = new Date(today.getFullYear() - 1, today.getMonth(), today.getDate());
-
-    // Format the start and end dates
-    let dateFormat1 = start.getFullYear() +
-        '-' + ((start.getMonth() + 1) < 10 ? "0" + (start.getMonth() + 1) : (start.getMonth() + 1)) +
-        '-' + ((start.getDate()) < 10 ? "0" + (start.getDate()) : (start.getDate()));
-    let dateFormat2 = today.getFullYear() +
-        '-' + ((today.getMonth() + 1) < 10 ? "0" + (today.getMonth() + 1) : (today.getMonth() + 1)) +
-        '-' + ((today.getDate()) < 10 ? "0" + (today.getDate()) : (today.getDate()));
-
-    // Set the range date input value
-    $('#rangeDate').val(dateFormat1 + " - " + dateFormat2);
-
-    // Call the function to perform the data selection based on the range date
-
-    if (class_num == 0) {
-        select_bioinfo();
-    } else {
-        draw_chart()
-    }
+$('#monthBtn').on('click', function() {
+  $('#rangeDate').data('daterangepicker').setStartDate(moment().subtract(1, 'months'));
+  $('#rangeDate').data('daterangepicker').setEndDate(moment());
+  if (class_num == 0) {
+    select_bioinfo();
+} else {
+    draw_chart()
+}
 });
+
+// 1년 조회
+$('#yearBtn').on('click', function() {
+    $('#rangeDate').data('daterangepicker').setStartDate(moment().subtract(1, 'years'));
+    $('#rangeDate').data('daterangepicker').setEndDate(moment());
+    if (class_num == 0) {
+        select_bioinfo();
+    } else {
+        draw_chart()
+    }
+  });

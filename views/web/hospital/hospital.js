@@ -42,9 +42,16 @@ function pwCheck() {
                 staffListLoad();
                 passwordCheck = true;
             } else {
-                Swal.fire({
-                    html: '비밀번호가 일치하지 않습니다.<br>다시 입력해 주세요.',
-                });
+                if($('#pw-check-input').val() == ''){
+                    Swal.fire({
+                        html: '비밀번호를 입력해 주세요.',
+                    });
+                }else{
+                    Swal.fire({
+                        html: '비밀번호가 일치하지 않습니다.<br>다시 입력해 주세요.',
+                    });
+                }
+                
             }
 
         },
@@ -168,6 +175,10 @@ $('#edit-emailBtn2').click(function () {
     $("#email-input").val(uEmailId);
     $("#email-input2").val(uEmailDomain);
     $("#email-select-input2").val(uEmailDomain);
+    $("#staff-email-dupl-notice").removeClass('active-notice');
+    $("#staff-email-notice").removeClass('active-notice');
+    $("#staff-email-dupl-notice").addClass('deactive-notice');
+    $("#staff-email-notice").addClass('deactive-notice');
     authCheck = true;
 
 })
@@ -177,7 +188,6 @@ function getInput() {
     inputList = {};
     $('.form1').each(function (index, item) {
         formCheck($(item).attr('id'));
-
     });
     return inputList;
 }
@@ -186,6 +196,7 @@ function getInput() {
 // 병원 정보 수정하기
 function hospitalInfoModify(h_adminCode) {
     let inputList = getInput();
+    console.log(inputList);
     if (Object.keys(inputList).length != 12) { // 병원 정보 입력 양식 확인
         alert('병원 정보 입력 양식을 확인해 주세요.')
         return;
@@ -441,7 +452,7 @@ function formCheck(targetId) {
                 $("#phone-dupl-notice").removeClass('active-notice');
                 $("#phone-dupl-notice").addClass('deactive-notice');
 
-                if (!phonePattern1.test($("#userPhone1").val()) || !phonePattern2.test($("#userPone2").val()) || !phonePattern3.test($("#userPhone3").val())) {
+                if (!phonePattern1.test($("#userPhone1").val()) || !phonePattern2.test($("#userPhone2").val()) || !phonePattern3.test($("#userPhone3").val())) {
                     $("#phone-notice").removeClass('deactive-notice');
                     $("#phone-notice").addClass('active-notice');
                 } else {
@@ -1128,6 +1139,7 @@ function insertOpen() {
     $('#select-domain').val("1");
     $('#admin-type').val("100");
     $('#admin-note').val("");
+    $('#admin-domain').attr('readonly', false);
 
     // 유효성 검사 초기화
     $("#name-notice").removeClass('active-notice');
@@ -1180,7 +1192,7 @@ function staffInfoInsertUpdate(state) {
         staffList = getStaffInput2();
     }
     if (Object.keys(staffList).length != 8) { // 직원 정보 입력 양식 확인
-        alert('사용자 ' + state + ' 입력 양식을 확인해 주세요.')
+        alert('사용자 ' + state + ' 정보 입력 양식을 확인해 주세요.')
         return;
     }
 
@@ -1198,7 +1210,7 @@ function staffInfoInsertUpdate(state) {
                 Swal.fire({
                     icon: 'success',
                     title: state + ' 성공',
-                    text: '사용자가 ' + state + '되었습니다.',
+                    text: '사용자 정보가 ' + state + '되었습니다.',
                 }).then((result) => {
                     emailCheck = false;
                     domainCheck = false;

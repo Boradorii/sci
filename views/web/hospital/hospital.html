@@ -593,17 +593,19 @@
                     </select>
                     <p class="ml-2 mr-2 mt-2"> - </p>
                     <input type="number" id="user-phone2" name="phone2" class="form-control form2" placeholder=""
-                        aria-label="phonenumber" aria-describedby="phone2" maxlength="4">
+                        aria-label="phonenumber" aria-describedby="phone2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                        this.value = this.value.replace(/[^0-9]/g, '');" maxlength="4">
                     <p class="ml-2 mr-2 mt-2"> - </p>
                     <input type="number" id="user-phone3" name="phone3" class="form-control form2" placeholder=""
-                        aria-label="phonenumber" aria-describedby="phone3" maxlength="4">
+                        aria-label="phonenumber" aria-describedby="phone3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                        this.value = this.value.replace(/[^0-9]/g, '');" maxlength="4">
                 </div>
                 <div style="text-align: left; display:block">
                     <p id="user-phone-dupl-notice" class="deactive-notice text-danger"> 중복된 연락처입니다.</p>
                     <p id="user-phone-notice" class="deactive-notice text-danger"> 연락처를 올바르게 입력해 주세요.</p>
                 </div>
                 <!-- 사용자 이메일 -->
-                <label for="admin-email">담당자 이메일</label>
+                <label for="admin-email">사용자 이메일</label>
                 <div class="input-group">
                     <input id="admin-email" name="eId" type="text" class="form-control form2" placeholder="아이디" />
                     &nbsp;
@@ -690,10 +692,12 @@
                     </select>
                     <p class="ml-2 mr-2 mt-2"> - </p>
                     <input type="number" id="edit-phone2" name="phone2" class="form-control form3" placeholder=""
-                        aria-label="phonenumber" aria-describedby="phone2" maxlength="4">
+                        aria-label="phonenumber" aria-describedby="phone2" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                        this.value = this.value.replace(/[^0-9]/g, '');" maxlength="4">
                     <p class="ml-2 mr-2 mt-2"> - </p>
                     <input type="number" id="edit-phone3" name="phone3" class="form-control form3" placeholder=""
-                        aria-label="phonenumber" aria-describedby="phone3" maxlength="4">
+                        aria-label="phonenumber" aria-describedby="phone3" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);
+                        this.value = this.value.replace(/[^0-9]/g, '');" maxlength="4">
                 </div>
                 <div style="text-align: left; display:block">
                     <p id="staff-phone-dupl-notice" class="deactive-notice text-danger"> 중복된 연락처입니다.</p>

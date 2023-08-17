@@ -99,8 +99,8 @@ exports.diagnosis_regist_doctorList = `
 
 // 진료 내역의 진료 기록 등록하기
 exports.diagnosis_regist = `
-    insert into medical_record (medi_created_time, medi_purpose, medi_contents, pet_id, h_user_code, h_staff_code )
-    values (NOW(),?, ?, ?, ?, ?);
+    insert into medical_record (medi_created_time, medi_purpose, medi_contents, pet_id, h_user_code, h_staff_code,p_user_code )
+    values (NOW(),?, ?, ?, ?, ?,?);
 `;
 
 // staff 이름으로 staff code 찾기
@@ -109,6 +109,20 @@ exports.find_h_staff_code = `
     FROM hp_staff_info
     where h_user_code = ? and h_staff_name = ? and h_staff_eid=?;
 `;
+
+// petId로 p_user_code 찾기
+exports.find_p_user_code = `
+    SELECT p_user_code
+    FROM pet_info
+    where pet_id =?;
+`;
+
+// 진료 등록 시 alert_list에도 알림 추가
+exports.diagnosis_regist_alert = `
+insert into alert_list (p_user_code, pet_id, alert_class, alert_created_time)
+values(?,?,1,NOW());
+`;
+
 
 // 최근 생체정보 조회
 exports.select_bioinfo = `

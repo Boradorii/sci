@@ -38,15 +38,6 @@ $('.patient-info-input').on('focus', function () {
 $('.patient-info-input').on('blur', function () {
     $(this).removeClass('focus');
 });
-$("#recordBtn").click(function () {
-    // $('body').css('padding-right', '0');
-    // $('.modal-open').css('padding-right', '0');
-
-
-    // $('#record-add-modal').appendTo("body").modal('show');
-
-});
-
 
 
 
@@ -148,6 +139,7 @@ function calculateAge(yearOfBirth) {
     return age;
 }
 
+
 // 환자 및 보호자 정보 불러오기(검색 목록 클릭하여)
 function petInfoLoad(petId) {
     petIdModify = petId;
@@ -204,7 +196,23 @@ function petInfoModify(petIdModify) {
     }
 
     var isNeutering = $('input[name=inlineRadioOptions]:checked').val();
-
+    let petWeigt = $('#petWeightInput').val();
+    petWeigt = petWeigt.replace('kg', '');
+    if(petWeigt == ""){
+        Swal.fire({
+            icon: 'error',
+            title: '수정 실패',
+            text: '몸무게를 입력해 주세요.',
+        });
+        return;
+    }else if(petWeigt >= 1000 || !/^(\d*\.\d{1})$/.test(petWeigt)){
+        Swal.fire({
+            icon: 'error',
+            title: '수정 실패',
+            text: '몸무게는 3자리 이하, 소수 첫째자리까지 입력해 주세요.',
+        });
+        return;
+    }
 
     let cmmContentType = 'application/json',
         cmmType = 'post',
@@ -410,7 +418,6 @@ function diagnosis_regist() {
                 $('#record-add-modal').appendTo("body").modal('hide');
                 $('#record-detail').val("");
             }
-            $('#addRecordBtn').removeAttr('data-dismiss');
             diagnosis_Records(petIdModify);
         },
         cmmErr = null;
@@ -593,7 +600,6 @@ function select_bioinfo() {
 
 // 생체정보 세부내용
 function bioInfo_detail(pd_num) {
-    console.log('pd_num '+pd_num)
     let cmmContentType = 'application/json',
         cmmType = 'post',
         cmmUrl = '/api/patient/bioInfo_detail',
@@ -602,7 +608,6 @@ function bioInfo_detail(pd_num) {
         },
         cmmAsync = false,
         cmmSucc = function bioInfo_detail(result) {
-            console.log('  result '+result)
             $('#bioInfo-modal-table > tbody').empty();
             $('#bioInfoDate').text(result.rows[0].created_time);
             let tableHtml =
@@ -623,7 +628,7 @@ function bioInfo_detail(pd_num) {
                 `<tr> <td>PNN50</td>` +
                 '<td>' + result.rows[0].pnn50 + '</td> </tr>'
             $('#bioInfo-modal-table > tbody').append(tableHtml);
-            $('#"bioInfo-detail-modal').modal('show');
+            $('#bioInfo-detail-modal').modal('show');
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);

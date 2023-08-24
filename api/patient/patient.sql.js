@@ -130,6 +130,7 @@ exports.select_bioinfo = `
     FROM predict_data
     where pet_id = ? and created_time between ? and ? order by created_time desc;
 `;
+
 exports.draw_chart = `
     SELECT *
     FROM predict_data

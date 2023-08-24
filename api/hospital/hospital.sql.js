@@ -57,7 +57,7 @@ exports.withdrawService = `
 exports.staffListLoad = `
     SELECT *
     from hp_staff_info
-    where h_user_code=?;
+    where h_user_code=? and h_staff_delete = 'N';
 `;
 
 // 직원 정보 조회
@@ -72,14 +72,14 @@ exports.select_staff_phone_duplicate =
     `
     SELECT h_staff_phone_first, h_staff_phone_middle, h_staff_phone_last
     FROM hp_staff_info 
-    WHERE h_staff_phone_first = ? AND h_staff_phone_middle = ? AND h_staff_phone_last = ? AND h_staff_code != ?;
+    WHERE h_staff_phone_first = ? AND h_staff_phone_middle = ? AND h_staff_phone_last = ? AND h_staff_code != ? and h_staff_delete = 'N';
 `;
 
 // 중복 email 검사_직원
 exports.select_staff_email_duplicate =
     `
     SELECT h_staff_eid FROM hp_staff_info 
-    WHERE h_staff_eid = ? AND h_staff_edomain = ? AND h_staff_code != ?;
+    WHERE h_staff_eid = ? AND h_staff_edomain = ? AND h_staff_code != ? and h_staff_delete = 'N';
 `;
 
 // 사용자 등록
@@ -103,6 +103,7 @@ exports.updateStaff =
 // 사용자 삭제
 exports.deleteStaff =
     `
-    delete from hp_staff_info
+    update hp_staff_info 
+    set h_staff_delete_date = now() , h_staff_delete = 'Y' 
     where h_staff_code=?;
     `;

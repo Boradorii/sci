@@ -28,13 +28,6 @@ class UserController {
         return res.render('web/index/findPw');
     }
 
-    async adminlogin(req, res, next) {
-        let h_adminCode = "h_1" //임시작성
-        let result = { 'h_adminCode': h_adminCode };
-        return res.json(result)
-    }
-
-
     // SY
 
     /** ================================================================

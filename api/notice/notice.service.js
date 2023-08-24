@@ -61,7 +61,7 @@ class noticeService {
     };
 
     /**
-         *  확인 알림 내역 조회
+         *  확인 알림 내역 검색
          *  @param petId - 관리자 코드 (String)
          *  @return 조회 결과 반환(json)
          *  @author ChangGyu Lee

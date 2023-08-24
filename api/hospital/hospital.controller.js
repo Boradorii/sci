@@ -5,6 +5,7 @@ const service = require('./hospital.service');
 const svInstance = new service();
 
 class hospitalController {
+
     async selectHomeData(req, res, next) {
         let h_adminCode = req.params.h_adminCode; // url에 data 포함하여 전송한 경우 값 가져오기
         return res.render('web/hospital/hospital', {
@@ -68,7 +69,7 @@ class hospitalController {
         return res.send(withdrawService);
     };
     
-    //  환자 및 보호자 정보 수정
+    //  병원 정보 수정
     async hospitalInfoModify(req, res, next) {
         let data = req.body;
     
@@ -77,7 +78,7 @@ class hospitalController {
         return res.send(hospitalInfoModify);
     };
 
-    //  병원 스태프 목록 조회
+    //  직원 목록 조회
     async staffListLoad(req, res, next) {
         let h_user_code = req.body.h_adminCode;
         let staffListLoad = await svInstance.staffListLoad(h_user_code);
@@ -105,7 +106,7 @@ class hospitalController {
         }
 
         //중복 email 검사_직원
-        async checkStaffEmailDuplicate(req, res, next) {
+        async ㅊ(req, res, next) {
             let eIdString = req.query.eIdString,
                 eDomainString = req.query.eDomainString;
             let h_staff_code = req.query.h_staff_code;

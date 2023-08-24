@@ -287,7 +287,6 @@ class patientService {
      */
     async bioInfo_detail(pd_num) {
         let result = await mysqlDB('select', queryList.bioInfo_detail, [pd_num])
-        console.log('result   '+result);
         return result
     };
 

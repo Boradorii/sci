@@ -109,7 +109,6 @@ function hospitalInfoLoad() {
         cmmSucc = function hospitalInfoLoad(result) {
             let telnum = result.rows[0].h_telnum
             let telArray = telnum.split('-');
-            console.log(telArray);
             $("#hospital-name-input").val(result.rows[0].h_name);
             $("#hospital-address1-input").val(result.rows[0].h_address1);
             $("#hospital-address2-input").val(result.rows[0].h_address2);
@@ -196,7 +195,6 @@ function getInput() {
 // 병원 정보 수정하기
 function hospitalInfoModify(h_adminCode) {
     let inputList = getInput();
-    console.log(inputList);
     if (Object.keys(inputList).length != 12) { // 병원 정보 입력 양식 확인
         alert('병원 정보 입력 양식을 확인해 주세요.')
         return;
@@ -1260,7 +1258,6 @@ function delCheck(h_staff_code) {
 
 // 사용자 삭제
 function deleteStaff() {
-    console.log($('#staff_code').val());
     let cmmContentType = 'application/json',
         cmmType = 'post',
         cmmUrl = '/api/hospital/deleteStaff',

@@ -20,13 +20,11 @@ class hospitalService {
      */
  async pwCheck(h_user_code, pw) {
     let result = await mysqlDB('select', queryList.pwCheck, [pw, h_user_code])
-    console.log(result);
     if(result.rows[0].h_user_code == h_user_code){
         result.state = true;
     }else{
         result.state = false;
     }
-    console.log(result + "dkfos");
 
    return result
 };
@@ -119,7 +117,7 @@ async sendEmail(params, context) {
 }
 
     /** ================================================================
-     *  병원정보 변경
+     *  병원정보 수정
      *  @author 
      *  @since 2023.07.12
      *  @history 2023.07.12 초기 작성
@@ -141,8 +139,6 @@ async sendEmail(params, context) {
             list.inputList.h_user_phone_last, list.inputList.h_user_email_id, list.inputList.h_user_email_domain, list.h_adminCode
         ];
         
-        console.log("비밀번호 수정 "+cryptoUtil.decrypt_aes(cryptoKey, list.inputList.h_user_account_pw));
-
         //계정 정보 등록
         let result = await mysqlDB('update', queryList.hospitalInfoModify, accountArray);
         return result;
@@ -157,7 +153,6 @@ async sendEmail(params, context) {
      */
     async withdrawService(h_adminCode) {
         let result = await mysqlDB('update', queryList.withdrawService, [h_adminCode]);
-        console.log(result);
         return result;
     };
 
@@ -313,10 +308,8 @@ async updateStaff(list) {
      *  ================================================================
      */
 async deleteStaff(h_staff_code) {
-    console.log("service    ");
     // 사용자 정보 삭제
-    let result = await mysqlDB('delete', queryList.deleteStaff, [h_staff_code]);
-    console.log("service    sql다음   " + result);
+    let result = await mysqlDB('update', queryList.deleteStaff, [h_staff_code]);
     return result;
 };
 

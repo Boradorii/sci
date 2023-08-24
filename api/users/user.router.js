@@ -27,11 +27,6 @@ router.get('/findUserId', asyncErrHelper(ctrInstance.loadFindIdPage));
 //비밀번호 찾기 페이지 호출
 router.get('/findUserPw', asyncErrHelper(ctrInstance.loadFindPwPage));
 
-
-//로그인 버튼 클릭
-router.post('/adminlogin', asyncErrHelper(ctrInstance.adminlogin));
-
-
 // SY
 
 // jwt token 검증

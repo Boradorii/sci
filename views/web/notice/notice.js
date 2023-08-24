@@ -73,7 +73,6 @@ function inquiryList(inquiry_num, check) {
                 let radioCheck = $('input[name="questionnaire_' + check + '0' + (j + 1) + '"][value="' + result.rows[0].questionnaire[j] + '"]');
                 if (radioCheck.length > 0) {
                     radioCheck.prop('checked', true);
-                    console.log("check")
                 }
             }
             $('#questionnaire_09_text').val(result.rows[0].questionnaire[8]);

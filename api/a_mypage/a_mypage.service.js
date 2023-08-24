@@ -93,7 +93,7 @@ class aMyPageService {
     };
 
     /**
-     *  대표 반려견 설정시 나머지는 대표 반려견 해제
+     *  페이지 리로딩
      *  @param p_user_code 관리자 코드 (String)
      *  @return 조회 결과 반환(json)
      *  @author ChangGyu Lee
@@ -101,7 +101,7 @@ class aMyPageService {
      *  
      */
     async loadModifyPageData(petId) {
-        // 업데이트 전에 기존 대표 반려견 펫 아이디 불러오기
+
         let result = await mysqlDB('selectOne', queryList.loadModifyPageData, [petId]);
         console.log(result.row);
 
@@ -109,7 +109,7 @@ class aMyPageService {
         return result
     };
     /**
-    *  반려견 삭제
+    *  반려견 수정
     *  @param petId 반려동물 코드 (Int)
     *  @return 조회 결과 반환(json)
     *  @author ChangGyu Lee

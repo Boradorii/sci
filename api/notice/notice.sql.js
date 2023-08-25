@@ -56,6 +56,18 @@ exports.inquiry_check = `
     where inquiry_num = ?;
 `;
 
+exports.select_info = `
+    select pet_id, p_user_code
+    from inquiry_list
+    where inquiry_num = ?;
+`
+
+
+exports.inquiry_insert = `
+    insert into alert_list (p_user_code, pet_id, alert_class, inquiry_num, alert_created_time)
+    values(?,?,1,?,NOW());
+`;
+
 
 
 

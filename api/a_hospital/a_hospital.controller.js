@@ -104,16 +104,33 @@ class aHosController {
         return res.json(result)
     }
 
-    // lcg
+    // -----------------문의내역-------------------
+    // 문의내역 페이지 로드
+    async loadInquiryListPage(req, res, next) {
+        let p_userCode = req.query.p_userCode; // url에 data 포함하여 전송한 경우 값 가져오기
+        return res.render('app/a_hospital/a_hospital_inquiry', {
+            "a_hospitalPage": req.__('a_hospitalPage'),
+            "p_userCode": p_userCode
+        });
+    };
+
+    async selectInquiryData(req, res, next) {
+        let { p_userCode, startDate, endDate } = req.body
+        let result = await svInstance.selectInquiryData(p_userCode, startDate, endDate)
+        return res.json(result)
+    }
+
+
+
+
+    // 병원 미확인 알림 카운팅
 
     async sendAlertState(req, res, next) {
-        // console.log(req.body)
-        // let p_userCode = req.body.p_user_code;
+
         let result = await svInstance.sendAlertState()
         return res.json(result)
     }
     async check_hospital_alert(req, res, next) {
-        console.log(req.body)
         let h_user_code = req.body.h_user_code;
         let result = await svInstance.check_hospital_alert(h_user_code)
         return res.json(result)

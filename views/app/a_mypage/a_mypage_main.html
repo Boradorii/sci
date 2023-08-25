@@ -72,10 +72,6 @@
                 <strong>언어 변경</strong>
             </div>
             <hr class="hr-normal" />
-            <div class="info" id="customerCenter">
-                <strong>고객센터</strong>
-            </div>
-            <hr class="hr-normal" />
             <div class="info logout" id="goLogout">
                 <strong>로그아웃</strong>
             </div>
@@ -141,7 +137,6 @@ js파일 로드 -->
                 break;
         }
 
-        console.log(reqUrl)
         reqUrl += '?p_userCode=' + p_userCode /* + '&lang=' + lang + "&accessToken=" + accessToken*/;
         location.href = reqUrl;
 

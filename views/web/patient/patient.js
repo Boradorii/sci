@@ -40,7 +40,6 @@ $('.patient-info-input').on('blur', function () {
 });
 
 
-
 async function init() {
 
     /* 
@@ -109,11 +108,10 @@ function searchPetInfo() {
                     Swal.fire({
                         icon: 'error',
                         title: '검색 실패!',
-                        text: '검색 결과 "' + inputValue + '"는 조회되지 않습니다.',
+                        text: '검색 결과 "' + inputValue + '"은(는) 조회되지 않습니다.',
                     });
                     return;
                 }
-                $('#neuteredRadio').css("display", "table-cell");
                 for (let i = 0; i < result.rowLength; i++) {
                     let tableHtml =
                         `<tr onclick='petInfoLoad("${result.rows[i].pet_id}")'>` +
@@ -139,7 +137,6 @@ function calculateAge(yearOfBirth) {
     return age;
 }
 
-
 // 환자 및 보호자 정보 불러오기(검색 목록 클릭하여)
 function petInfoLoad(petId) {
     petIdModify = petId;
@@ -153,6 +150,7 @@ function petInfoLoad(petId) {
         cmmAsync = false,
 
         cmmSucc = function petInfoLoad(result) {
+            $('#neuteredRadio').css("display", "table-cell");
 
             $("#petName").text(result.rows[0].pet_name);
             $("#petNumber").text(result.rows[0].pet_code);
@@ -196,23 +194,7 @@ function petInfoModify(petIdModify) {
     }
 
     var isNeutering = $('input[name=inlineRadioOptions]:checked').val();
-    let petWeigt = $('#petWeightInput').val();
-    petWeigt = petWeigt.replace('kg', '');
-    if(petWeigt == ""){
-        Swal.fire({
-            icon: 'error',
-            title: '수정 실패',
-            text: '몸무게를 입력해 주세요.',
-        });
-        return;
-    }else if(petWeigt >= 1000 || !/^(\d*\.\d{1})$/.test(petWeigt)){
-        Swal.fire({
-            icon: 'error',
-            title: '수정 실패',
-            text: '몸무게는 3자리 이하, 소수 첫째자리까지 입력해 주세요.',
-        });
-        return;
-    }
+
 
     let cmmContentType = 'application/json',
         cmmType = 'post',
@@ -369,7 +351,14 @@ function diagnosis_regist_doctorList() {
 // 진료기록 등록하기
 function diagnosis_regist() {
 
-
+    if (petIdModify) { } else {
+        Swal.fire({
+            icon: 'error',
+            title: '등록 실패!',
+            text: '환자를 먼저 검색해주세요.',
+        });
+        return;
+    }
     if ($('#select-doctor').val() == '선택 ▼') {
         Swal.fire({
             icon: 'error',
@@ -386,15 +375,8 @@ function diagnosis_regist() {
         });
         return;
     }
-    if (petIdModify) { } else {
-        Swal.fire({
-            icon: 'error',
-            title: '등록 실패!',
-            text: '환자를 먼저 검색해주세요.',
-        });
-        return;
-    }
-    $('#addRecordBtn').attr('data-dismiss', 'modal');
+
+
 
     var selectElement = document.getElementById("select-purpose");
     let cmmContentType = 'application/json',
@@ -405,7 +387,7 @@ function diagnosis_regist() {
             medi_purpose: selectElement.selectedIndex,
             medi_contents: $('#record-detail').val(),
             h_staff_name: $('#select-doctor').val(),
-            petId: petIdModify,
+            petId: petIdModify
         },
         cmmAsync = false,
         cmmSucc = function diagnosis_regist(result) {
@@ -413,12 +395,14 @@ function diagnosis_regist() {
                 Swal.fire({
                     icon: 'success',
                     title: '등록 완료!',
-                    text: '진료가 기록되었습니다.',
+                    text: '',
                 });
                 $('#record-add-modal').appendTo("body").modal('hide');
                 $('#record-detail').val("");
             }
-            diagnosis_Records(petIdModify);
+
+
+
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
@@ -464,14 +448,6 @@ $("#editRecordBtn").click(function () {
 
 function diagnosis_detail_modify(modify_medi_num) {
 
-    if ($('#recordDetail').val() == '') {
-        Swal.fire({
-            icon: 'error',
-            title: '수정 실패!',
-            text: '진료 내용을 작성해주세요!',
-        });
-        return;
-    }
     var selectElement = document.getElementById("recordPurpose");
     // var textareaElement = document.getElementById("recordDetail");
 
@@ -487,23 +463,10 @@ function diagnosis_detail_modify(modify_medi_num) {
         cmmAsync = false,
         cmmSucc = function diagnosis_detail_modify(result) {
             Swal.fire({
-                title: '',
-                text: "진료 기록을 수정하시겠습니까?",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: '확인',
-                cancelButtonText: '취소'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire({
-                        icon: 'success',
-                        title: '수정 완료',
-                        text: '진료 기록이 수정되었습니다.'
-                    })
-                }
-            })
+                icon: 'success',
+                title: '수정 완료',
+                text: '',
+            });
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
@@ -535,11 +498,9 @@ function diagnosis_detail_delete(modify_medi_num) {
                 cancelButtonText: '취소'
             }).then((result) => {
                 if (result.isConfirmed) {
-                    Swal.fire({
-                        icon: 'success',
-                        title: '삭제 완료',
-                        text: '진료 기록이 삭제되었습니다.'
-                    })
+                    Swal.fire(
+                        '삭제가 완료되었습니다.'
+                    )
                 }
             })
         },
@@ -600,6 +561,7 @@ function select_bioinfo() {
 
 // 생체정보 세부내용
 function bioInfo_detail(pd_num) {
+
     let cmmContentType = 'application/json',
         cmmType = 'post',
         cmmUrl = '/api/patient/bioInfo_detail',
@@ -628,7 +590,7 @@ function bioInfo_detail(pd_num) {
                 `<tr> <td>PNN50</td>` +
                 '<td>' + result.rows[0].pnn50 + '</td> </tr>'
             $('#bioInfo-modal-table > tbody').append(tableHtml);
-            $('#bioInfo-detail-modal').modal('show');
+            $('#bioInfo-detail-modal').appendTo("body").modal('show');
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
@@ -757,32 +719,34 @@ function draw_chart() {
 }
 
 
+
+
 $('#rangeDate').daterangepicker();
 
 // 1주일 조회
-$('#weekBtn').on('click', function() {
-  $('#rangeDate').data('daterangepicker').setStartDate(moment().subtract(1, 'weeks'));
-  $('#rangeDate').data('daterangepicker').setEndDate(moment());
-  if (class_num == 0) {
-    select_bioinfo();
-} else {
-    draw_chart()
-}
+$('#weekBtn').on('click', function () {
+    $('#rangeDate').data('daterangepicker').setStartDate(moment().subtract(1, 'weeks'));
+    $('#rangeDate').data('daterangepicker').setEndDate(moment());
+    if (class_num == 0) {
+        select_bioinfo();
+    } else {
+        draw_chart()
+    }
 });
 
 // 1개월 조회
-$('#monthBtn').on('click', function() {
-  $('#rangeDate').data('daterangepicker').setStartDate(moment().subtract(1, 'months'));
-  $('#rangeDate').data('daterangepicker').setEndDate(moment());
-  if (class_num == 0) {
-    select_bioinfo();
-} else {
-    draw_chart()
-}
+$('#monthBtn').on('click', function () {
+    $('#rangeDate').data('daterangepicker').setStartDate(moment().subtract(1, 'months'));
+    $('#rangeDate').data('daterangepicker').setEndDate(moment());
+    if (class_num == 0) {
+        select_bioinfo();
+    } else {
+        draw_chart()
+    }
 });
 
 // 1년 조회
-$('#yearBtn').on('click', function() {
+$('#yearBtn').on('click', function () {
     $('#rangeDate').data('daterangepicker').setStartDate(moment().subtract(1, 'years'));
     $('#rangeDate').data('daterangepicker').setEndDate(moment());
     if (class_num == 0) {
@@ -790,4 +754,4 @@ $('#yearBtn').on('click', function() {
     } else {
         draw_chart()
     }
-  });
+});

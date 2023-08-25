@@ -120,7 +120,7 @@ exports.find_p_user_code = `
 // 진료 등록 시 alert_list에도 알림 추가
 exports.diagnosis_regist_alert = `
 insert into alert_list (p_user_code, pet_id, alert_class, alert_created_time)
-values(?,?,1,NOW());
+values(?,?,0,NOW());
 `;
 
 
@@ -130,7 +130,6 @@ exports.select_bioinfo = `
     FROM predict_data
     where pet_id = ? and created_time between ? and ? order by created_time desc;
 `;
-
 exports.draw_chart = `
     SELECT *
     FROM predict_data

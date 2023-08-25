@@ -70,9 +70,9 @@ class aHosService {
         let answer = JSON.stringify(data.answer),
             result;
         if (data.symptom == '') {
-            result = await mysqlDB('insert', queryList.sendInquiry, [data.pet_id, data.h_userCode, answer, null, data.p_userCode])
+            result = await mysqlDB('insert', queryList.sendInquiry, [data.pet_id, data.title, data.h_userCode, answer, null, data.p_userCode])
         } else {
-            result = await mysqlDB('insert', queryList.sendInquiry, [data.pet_id, data.h_userCode, answer, data.symptom, data.p_userCode])
+            result = await mysqlDB('insert', queryList.sendInquiry, [data.pet_id, data.title, data.h_userCode, answer, data.symptom, data.p_userCode])
         }
         return result
     }
@@ -115,9 +115,21 @@ class aHosService {
     async check_hospital_alert(h_user_code) {
 
         let result = await mysqlDB('select', queryList.check_hospital_alert, [h_user_code])
+        return result
+    }
+
+    // 문의내역 조회
+    async selectInquiryData(p_userCode, startDate, endDate) {
+        let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
+        cryptoKey = cryptoKey.row.key_string;
+        let result = await mysqlDB('select', queryList.selectInquiryData, [p_userCode, startDate, endDate])
+        for (let i = 0; i < result.rowLength; i++) {
+            result.rows[i].h_user_name = cryptoUtil.decrypt_aes(cryptoKey, result.rows[i].h_user_name)
+        }
         console.log(result);
         return result
     }
+
 
 
 

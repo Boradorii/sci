@@ -498,9 +498,3 @@ function successSwal(title) {
     });
 };
 
-// setInterval(function() {
-//     console.log("테스트");
-//     // console.log(getLocalStorage('userCode'));
-//     console.log(getSessionStorage('userCdoe'));
-//     console.log(getSessionStorage('curPageTitle'))
-// }, 500);

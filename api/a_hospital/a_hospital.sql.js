@@ -1,3 +1,6 @@
+// 암호화 키 조회
+exports.select_key_string = `SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';`;
+
 exports.visitHos = `SELECT mr.p_user_code, mr.h_user_code, mr.medi_created_time, uh.h_name
     FROM medical_record AS mr 
     LEFT JOIN user_hospital AS uh
@@ -24,7 +27,7 @@ exports.hInfo = `SELECT h_user_code, h_name, h_address1, h_address2, h_telnum, h
 
 exports.myPet = `SELECT pet_id, pet_name FROM pet_info WHERE p_user_code=?;`;
 
-exports.sendInquiry = `INSERT INTO inquiry_list(pet_id, inquiry_created_time, h_user_code, questionnaire, symptom, p_user_code) VALUES(?, DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%s'), ?, ?, ?, ?)`
+exports.sendInquiry = `INSERT INTO inquiry_list(pet_id, inquiry_title,inquiry_created_time, h_user_code, questionnaire, symptom, p_user_code) VALUES(?, ?, DATE_FORMAT(NOW(), '%Y-%m-%d %H:%i:%s'), ?, ?, ?, ?)`
 
 exports.selectTreatData = `SELECT mr.*,uh.h_name, pet.pet_name, hsi.h_staff_name 
 FROM medical_record AS mr 
@@ -72,3 +75,16 @@ exports.check_hospital_alert =
     `SELECT h_alert_count
     FROM user_hospital
     WHERE h_user_code = ?`;
+
+exports.selectInquiryData =
+    `
+    SELECT il.inquiry_created_time, uh.h_user_name, pi.pet_name, al.alert_created_time, il.inquiry_num
+    FROM inquiry_list il
+    JOIN alert_list al ON il.inquiry_num = al.inquiry_num
+    JOIN user_hospital uh ON il.h_user_code = uh.h_user_code
+    JOIN pet_info pi ON il.pet_id = pi.pet_id
+    WHERE il.p_user_code = ?
+    AND il.inquiry_created_time >= ?
+    AND il.inquiry_created_time < DATE_ADD(?, INTERVAL 1 DAY)
+    ORDER BY il.inquiry_created_time DESC;
+    `;

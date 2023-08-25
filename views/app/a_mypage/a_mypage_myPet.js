@@ -178,7 +178,6 @@ $('#cancel').click(function () {
 
 // 대표 반려견 아이콘 변경 및 대표 반려견 설정
 function setRepresent(target) {
-    console.log(target.id)
 
     let cmmContentType = 'application/json',
         cmmType = 'post',

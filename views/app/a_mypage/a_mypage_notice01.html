@@ -32,6 +32,16 @@
         position: fixed;
         right: 20px;
     }
+
+    #inquiry_modal #inquiry_contents {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .material-icons {
+        z-index: 9999;
+        /* You can adjust this value as needed */
+    }
 </style>
 {%endblock%}
 <!-- ------------------------------------------------------------- -->
@@ -115,32 +125,10 @@
 
     </div>
 </div>
+<div style="padding-bottom: 50px;">
 
-<div id="serviceAlertDetailModal" class="modal bs-example-modal-lg" tabindex="-1" role="dialog"
-    aria-labelledby="longmodal" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title" id="longmodal">
-
-                </h4>
-                <button type="button" id="close_regi" class="close" data-dismiss="modal" aria-hidden="true">
-                    ×
-                </button>
-            </div>
-            <div class="modal-body h4" style="text-align: center;">
-                <h3 style="font-weight: 600;">서비스 알림 수신 정보</h3>
-                <h4 style="font-weight: 600;">건강관리</h4>
-                <p>건강 상태 측정 요청 알림<br>(매일 오전 8시 알림)</p>
-                <h4 style="font-weight: 600;">원격의료</h4>
-                <p>사용자가 요청한 병원 문의 답변 알림<br> (병원 측 답변 전송 시 즉시 알림)</p>
-                <div id="closeModal" class="btn btn-secondary">닫기</div>
-            </div>
-        </div>
-    </div>
-
-    <div id="pushAllowModal" class="modal bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="longmodal"
-        aria-hidden="true">
+    <div id="serviceAlertDetailModal" class="modal bs-example-modal-lg" tabindex="-1" role="dialog"
+        aria-labelledby="longmodal" aria-hidden="true">
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
@@ -152,35 +140,91 @@
                     </button>
                 </div>
                 <div class="modal-body h4" style="text-align: center;">
-                    <h3 style="font-weight: 600;">서비스 알림 수신 동의</h3>
-                    <p>'독닥독닥'에서 알림을 보내고자 합니다.<br>해당 기기로 서비스 이용에 필요한<br> 안내 사항을 푸시 알림으로 보내드리겠습니다.</p>
-                    <div class="row">
-                        <div id="disallow" class="col btn btn-secondary">허용안함</div>
-                        <div id="allow" class="col btn btn-secondary">허용</div>
+                    <h3 style="font-weight: 600;">서비스 알림 수신 정보</h3>
+                    <h4 style="font-weight: 600;">건강관리</h4>
+                    <p>건강 상태 측정 요청 알림<br>(매일 오전 8시 알림)</p>
+                    <h4 style="font-weight: 600;">원격의료</h4>
+                    <p>사용자가 요청한 병원 문의 답변 알림<br> (병원 측 답변 전송 시 즉시 알림)</p>
+                    <div id="closeModal" class="btn btn-secondary">닫기</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="pushAllowModal" class="modal bs-example-modal-lg" tabindex="-1" role="dialog"
+            aria-labelledby="longmodal" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="longmodal">
+
+                        </h4>
+                        <button type="button" id="close_regi" class="close" data-dismiss="modal" aria-hidden="true">
+                            ×
+                        </button>
+                    </div>
+                    <div class="modal-body h4" style="text-align: center;">
+                        <h3 style="font-weight: 600;">서비스 알림 수신 동의</h3>
+                        <p>'독닥독닥'에서 알림을 보내고자 합니다.<br>해당 기기로 서비스 이용에 필요한<br> 안내 사항을 푸시 알림으로 보내드리겠습니다.</p>
+                        <div class="row">
+                            <div id="disallow" class="col btn btn-secondary">허용안함</div>
+                            <div id="allow" class="col btn btn-secondary">허용</div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <div id="inquiry_modal" class="modal bs-example-modal-lg" tabindex="-1" role="dialog"
+            aria-labelledby="longmodal" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="longmodal">
+
+                        </h4>
+                        <button type="button" id="close_regi" class="close" data-dismiss="modal" aria-hidden="true">
+                            ×
+                        </button>
+                    </div>
+                    <div class="modal-body h4" style="text-align: center;">
+                        <h3 style="font-weight: 600;" id="hospital_name">동물병원 이름</h3>
+                        <div style="text-align: left;" id="pet_name">반려동물 이름 : </div>
+                        <div style="text-align: left;" id="inquiry_title">RE: title </div>
+                        <div>
+                            <textarea name="inquiry_contents" id="inquiry_contents" cols="30" rows="5"
+                                readonly="true"></textarea>
+                        </div>
+                        <div class="btn btn-secondary" data-dismiss="modal" aria-hidden="true">닫기</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
     </div>
-</div>
 
 
-{% endblock %}
-<!-- ------------------------------------------------------------- -->
+    {% endblock %}
+    <!-- ------------------------------------------------------------- -->
 
 
 
-<!-- ------------------------------------------------------------- -->
-{% block script %}
-<script src="/assets/node_modules/moment/moment.js"></script>
-<script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
-<script type="text/javascript" src="/app/a_mypage/a_mypage_notice01.js"></script>
-<script>
-    let p_userCode = "{{p_userCode}}";
-    // console.log(p_user_code)
+    <!-- ------------------------------------------------------------- -->
+    {% block script %}
+    <script src="/assets/node_modules/moment/moment.js"></script>
+    <script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
+    <script type="text/javascript" src="/app/a_mypage/a_mypage_notice01.js"></script>
+    <script>
+        let p_userCode = "{{p_userCode}}";
 
 
-    init();
-</script>
+        init();
+    </script>
 
-{% endblock %}
+    {% endblock %}

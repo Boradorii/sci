@@ -72,7 +72,6 @@ class aMyPageController {
     async modifyMyPet(req, res, next) {
 
         let data = req.body;
-        console.log(data)
 
         let modifyMyPet = await svInstance.modifyMyPet(data);
 
@@ -143,19 +142,46 @@ class aMyPageController {
     async checkAlert(req, res, next) {
 
         let p_user_code = req.body.p_user_code;
-        let checkAlert = await svInstance.checkAlert(p_user_code);
+        let alert_created_time = req.body.alert_created_time;
+        let checkAlert = await svInstance.checkAlert(p_user_code, alert_created_time);
+
+        return res.send(checkAlert)
+    };
+
+    async inquiry_answer(req, res, next) {
+
+        let inquiry_num = req.body.inquiry_num;
+        let checkAlert = await svInstance.inquiry_answer(inquiry_num);
 
         return res.send(checkAlert)
     };
 
 
+    async alert_delete_auto(req, res, next) {
+
+        let p_user_code = req.body.p_user_code;
+        let alert_delete_auto = await svInstance.alert_delete_auto(p_user_code);
+
+        return res.send(alert_delete_auto)
+    };
+
+    async alert_delete(req, res, next) {
+
+        let alert_num = req.body.alert_num;
+        let alert_delete = await svInstance.alert_delete(alert_num);
+
+        return res.send(alert_delete)
+    };
+
+
+
     //  내 정보
     async myInfoLoad(req, res, next) {
-    let p_userCode = req.body.p_userCode;
-    let myInfoLoad = await svInstance.myInfoLoad(p_userCode);
+        let p_userCode = req.body.p_userCode;
+        let myInfoLoad = await svInstance.myInfoLoad(p_userCode);
 
-    return res.send(myInfoLoad)
-    };  
+        return res.send(myInfoLoad)
+    };
 
     // 중복 연락처 검사
     async checkPhoneDuplicate(req, res, next) {
@@ -178,7 +204,7 @@ class aMyPageController {
         return res.json(result);
     }
 
-   // 이메일 인증번호 전송
+    // 이메일 인증번호 전송
     async sendEmail(req, res, next) {
         let context = req.__('emailAuth');
         let params = req.body;
@@ -195,14 +221,7 @@ class aMyPageController {
         return res.send(myInfoModify);
     };
 
-    //  서비스 종료
-    async withdrawService(req, res, next) {
-        let p_userCode = req.body.p_userCode;
-    
-        let withdrawService = await svInstance.withdrawService(p_userCode);
 
-        return res.send(withdrawService);
-    };
 
 
 }

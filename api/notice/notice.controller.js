@@ -37,7 +37,7 @@ class noticeController {
         return res.send(inquiryList)
     };
 
-    //  확인 알림 내역 검색
+    //  확인 알림 내역 조회
     async searchInfo(req, res, next) {
         let h_user_code = req.body.h_adminCode;
         let startDate = req.body.startDate;

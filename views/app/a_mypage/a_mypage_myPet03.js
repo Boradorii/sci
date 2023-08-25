@@ -3,7 +3,6 @@ loadModifyPageData(modifyPetId);
 // 수정 페이지로 이동시 데이터 불러오기
 function loadModifyPageData(petId) {
     let currentYear = new Date().getFullYear();
-    console.log("돌아가나여?", petId)
     let cmmContentType = 'application/json',
         cmmType = 'post',
         cmmUrl = '/api/a_mypage/loadModifyPageData',

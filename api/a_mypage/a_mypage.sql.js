@@ -64,6 +64,18 @@ exports.myPetDelete = `
     DELETE FROM pet_info
     WHERE pet_id = ?;
 `;
+exports.myPetDelete2 = `
+    DELETE FROM medical_record
+    WHERE pet_id = ?;
+`;
+exports.myPetDelete3 = `
+    DELETE FROM predict_data
+    WHERE pet_id = ?;
+`;
+exports.myPetDelete4 = `
+    DELETE FROM alert_list
+    WHERE pet_id = ?;
+`;
 
 // 알림관리 페이지 날짜 및 push허용 데이터 로드
 exports.alertPushDateLoad = `
@@ -102,7 +114,39 @@ exports.select_pushSetting = `
 exports.checkAlert = `
     UPDATE alert_list
     SET alert_check = 'Y'
-    WHERE p_user_code = ?;
+    WHERE p_user_code = ? and alert_created_time = ?;
+`;
+
+// 알림 자동 삭제
+
+exports.alert_delete_auto = `
+    DELETE FROM alert_list
+    WHERE 
+        (p_user_code = ? AND alert_created_time <= DATE_SUB(NOW(), INTERVAL 2 WEEK) and alert_class = 1)
+        OR
+        (p_user_code = ? AND alert_created_time <= DATE_SUB(NOW(), INTERVAL 2 WEEK) and alert_class = 2)
+        OR
+        (p_user_code = ? AND alert_class = 0 AND alert_created_time <= DATE_SUB(NOW(), INTERVAL 1 DAY));
+`;
+
+// 알림 삭제 버튼 클릭하여 삭제
+exports.alert_delete = `
+    DELETE FROM alert_list
+    WHERE alert_num = ? ;
+`;
+
+
+exports.select_inquiry_num = `
+    select inquiry_num
+    from alert_list
+    WHERE p_user_code = ? and alert_created_time = ?;
+`;
+exports.inquiry_answer = `
+    select il.opinion, il.inquiry_title, pi.pet_name, uh.h_name
+    from inquiry_list il
+    join user_hospital uh on il.h_user_code = uh.h_user_code
+    join pet_info pi on il.pet_id = pi.pet_id
+    WHERE inquiry_num = ?;
 `;
 
 // 내 정보 로드
@@ -142,9 +186,3 @@ exports.myInfoModify = `
     where p_user_code=?;
 `;
 
-// 서비스 종료
-exports.withdrawService = `
-    update user_protector 
-    set activate_yn = 'D', p_delete_date = now() 
-    where p_user_code=?;
-`;

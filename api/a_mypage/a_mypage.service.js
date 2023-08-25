@@ -81,7 +81,6 @@ class aMyPageService {
     async setRepresent(p_user_code, petId) {
         // 업데이트 전에 기존 대표 반려견 펫 아이디 불러오기
         let result = await mysqlDB('selectOne', queryList.exFirst, [p_user_code]);
-        console.log(result);
         // 대표 반려견 업데이트
         let result2 = await mysqlDB('update', queryList.setSecond, [p_user_code, petId]);
 
@@ -93,7 +92,7 @@ class aMyPageService {
     };
 
     /**
-     *  페이지 리로딩
+     *  대표 반려견 설정시 나머지는 대표 반려견 해제
      *  @param p_user_code 관리자 코드 (String)
      *  @return 조회 결과 반환(json)
      *  @author ChangGyu Lee
@@ -101,9 +100,8 @@ class aMyPageService {
      *  
      */
     async loadModifyPageData(petId) {
-
+        // 업데이트 전에 기존 대표 반려견 펫 아이디 불러오기
         let result = await mysqlDB('selectOne', queryList.loadModifyPageData, [petId]);
-        console.log(result.row);
 
 
         return result
@@ -151,7 +149,11 @@ class aMyPageService {
     async myPetDelete(petId) {
         // 업데이트 전에 기존 대표 반려견 펫 아이디 불러오기
         let result = await mysqlDB('delete', queryList.myPetDelete, [petId]);
-        console.log(result);
+        if (result.succ == 1) {
+            await mysqlDB('delete', queryList.myPetDelete2, [petId]);
+            await mysqlDB('delete', queryList.myPetDelete3, [petId]);
+            await mysqlDB('delete', queryList.myPetDelete4, [petId]);
+        }
 
         return result
     };
@@ -172,12 +174,15 @@ class aMyPageService {
         result.allowState = push_date.row.p_user_provide_yn;
         for (let i = 0; i < result.rowLength; i++) {
             if (result.rows[i].alert_class == 0) {
+                result.rows[i].class_num = 0;
                 result.rows[i].alert_class = "진료기록"
                 result.rows[i].alert_msg = "진료기록이 도착했어요."
             } else if (result.rows[i].alert_class == 1) {
+                result.rows[i].class_num = 1;
                 result.rows[i].alert_class = "원격의료"
                 result.rows[i].alert_msg = "원격의료 답변이 도착했어요."
             } else {
+                result.rows[i].class_num = 2;
                 result.rows[i].alert_class = "건강관리"
                 result.rows[i].alert_msg = "오늘의 건강 상태를 측정해 주세요."
             }
@@ -206,23 +211,71 @@ class aMyPageService {
     };
 
     /**
-*  알림관리 푸쉬설정
+*  알림관리 알림 확인 여부 체크
 *  @param p_user_code 관리자 코드 (String)
 *  @return 조회 결과 반환(json)
 *  @author ChangGyu Lee
 *  @since 2023.07.19. 최초작성
 *  
 */
-    async checkAlert(p_user_code) {
+    async checkAlert(p_user_code, alert_created_time) {
 
-        let result = await mysqlDB('update', queryList.checkAlert, [p_user_code]);
+        let check = await mysqlDB('update', queryList.checkAlert, [p_user_code, alert_created_time]);
+        let result = await mysqlDB('select', queryList.select_inquiry_num, [p_user_code, alert_created_time])
+        result.succ = check.succ;
+        return result
+    };
+    /**
+*  알림관리 원격의료 답변 열람
+*  @param inquiry_num 문의코드 (Int)
+*  @return 조회 결과 반환(json)
+*  @author ChangGyu Lee
+*  @since 2023.08.03. 최초작성
+*  
+*/
+    async inquiry_answer(inquiry_num) {
+
+        let result = await mysqlDB('select', queryList.inquiry_answer, [inquiry_num]);
+
+        return result
+    };
+
+    /**
+*  알림 자동 삭제
+*  @param p_user_code 사용자 코드(string)
+*  @return 조회 결과 반환(json)
+*  @author ChangGyu Lee
+*  @since 2023.08.03. 최초작성
+*  
+*/
+    async alert_delete_auto(p_user_code) {
+
+        let result = await mysqlDB('delete', queryList.alert_delete_auto, [p_user_code, p_user_code, p_user_code]);
+
+        return result
+    };
+
+    /**
+*  알림 삭제 버튼 클릭하여 삭제
+*  @param p_user_code 사용자 코드(string)
+*  @return 조회 결과 반환(json)
+*  @author ChangGyu Lee
+*  @since 2023.08.11. 최초작성
+*  
+*/
+    async alert_delete(alert_num) {
+        let result = await mysqlDB('delete', queryList.alert_delete, [alert_num]);
+
         return result
     };
 
 
+
+
+
     /**
          *  내 정보 조회
-         *  @param petId - 관리자 코드 (String)
+         *  @param petId - 반려동물 코드 (Int)
          *  @return 조회 결과 반환(json)
          *  @author ChangGyu Lee
          *  @since 2023.08.01. 최초작성
@@ -239,7 +292,7 @@ class aMyPageService {
         result.rows[0].p_email_id = cryptoUtil.decrypt_aes(cryptoKey, result.rows[0].p_email_id);
         result.rows[0].p_address_1 = cryptoUtil.decrypt_aes(cryptoKey, result.rows[0].p_address_1);
         result.rows[0].p_address_2 = cryptoUtil.decrypt_aes(cryptoKey, result.rows[0].p_address_2);
-        
+
         return result
     };
 
@@ -326,29 +379,14 @@ class aMyPageService {
         list.inputList.p_address_2 = cryptoUtil.encrypt_aes(cryptoKey, list.inputList.p_address_2); // 상세주소
 
         let accountArray = [list.inputList.p_user_name, list.inputList.p_account_pw, list.inputList.p_phone_first, list.inputList.p_phone_middle,
-            list.inputList.p_phone_last, list.inputList.p_email_id, list.inputList.p_email_domain,
-            list.inputList.p_address_1, list.inputList.p_address_2, list.p_userCode
+        list.inputList.p_phone_last, list.inputList.p_email_id, list.inputList.p_email_domain,
+        list.inputList.p_address_1, list.inputList.p_address_2, list.p_userCode
         ];
-        
+
         //계정 정보 등록
         let result = await mysqlDB('update', queryList.myInfoModify, accountArray);
-        console.log(result)
         return result;
     };
-    
-    /** ================================================================
-     *  서비스 종료
-     *  @author 
-     *  @since 2023.07.12
-     *  @history 2023.07.12 초기 작성
-     *  ================================================================
-     */
-    async withdrawService(p_userCode) {
-        let result = await mysqlDB('update', queryList.withdrawService, [p_userCode]);
-        console.log(result);
-        return result;
-    };
-
 
 }
 

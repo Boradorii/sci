@@ -2,6 +2,7 @@
 async function init() {
     selectPetInfo()
     selectTodayList()
+    alert_delete()
 }
 //  반려견 정보 가져오기
 function selectPetInfo() {
@@ -60,5 +61,24 @@ function selectTodayList() {
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
 }
 
+// 알림 자동 삭제 (어플 시작 시 실행)
+function alert_delete() {
+
+
+    let cmmContentType = 'application/json',
+        cmmType = 'post',
+        cmmUrl = '/api/a_mypage/alert_delete',
+        cmmReqDataObj = {
+            p_user_code: p_userCode
+        },
+        cmmAsync = false,
+        cmmSucc = function (result) {
+        },
+        cmmErr = null;
+
+    commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
+
+
+}
 
 

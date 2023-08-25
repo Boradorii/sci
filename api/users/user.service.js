@@ -155,28 +155,6 @@ class userService {
     };
 
 
-
-
-    /** ================================================================
-     *  ID 찾기
-     *  @author SY
-     *  @since 2023.06.20
-     *  @history 2023.06.20 초기 작성
-     *  ================================================================
-     */
-    async findUserId(userName, eId, eDomain) {
-
-        // 개인 정보 암호화
-        let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
-        cryptoKey = cryptoKey.row.key_string;
-        userName = cryptoUtil.encrypt_aes(cryptoKey, userName);
-        eId = cryptoUtil.encrypt_aes(cryptoKey, eId);
-
-        let isUser = await mysqlDB('selectOne', queryList.select_user_id, [userName, eId, eDomain]);
-        return isUser;
-    }
-
-
     /** ================================================================
      *  PW 찾기_사용자 여부 확인
      *  @author SY
@@ -205,6 +183,45 @@ class userService {
      */
     async modifyUserPassword(userCode, pwd) {
         let result = await mysqlDB('update', queryList.update_new_password, [pwd, userCode]);
+        return result;
+    }
+
+
+    /** ================================================================
+     *  ID 찾기
+     *  @author SY
+     *  @since 2023.06.20
+     *  @history 2023.06.20 초기 작성
+     *  ================================================================
+     */
+    async findUserId(userName, eId, eDomain) {
+
+        // 개인 정보 암호화
+        let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
+        cryptoKey = cryptoKey.row.key_string;
+        userName = cryptoUtil.encrypt_aes(cryptoKey, userName);
+        eId = cryptoUtil.encrypt_aes(cryptoKey, eId);
+
+        let isUser = await mysqlDB('selectOne', queryList.select_user_id, [userName, eId, eDomain]);
+        return isUser;
+    }
+
+
+    /** ================================================================
+     *  PW 찾기_사용자 여부 확인
+     *  @author SY
+     *  @since 2023.06.20
+     *  @history 2023.06.20 초기 작성
+     *  ================================================================
+     */
+    async findUser(params, context) {
+        let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
+        cryptoKey = cryptoKey.row.key_string;
+
+        params.name = cryptoUtil.encrypt_aes(cryptoKey, params.name);
+        params.eId = cryptoUtil.encrypt_aes(cryptoKey, params.eId);
+
+        let result = await mysqlDB('selectOne', queryList.select_user_code, [params.id, params.name, params.eId, params.eDomain]); // PWD 찾기 - 이메일 유무 확인
         return result;
     }
 

@@ -43,8 +43,10 @@ router.get('/noticePage/:p_userCode', asyncErrHelper(ctrInstance.loadNoticePage)
 router.post('/alertDataLoad', asyncErrHelper(ctrInstance.alertDataLoad));
 // 알림관리 푸쉬 설정
 router.post('/alertPushSetting', asyncErrHelper(ctrInstance.alertPushSetting));
+// 미확인 알림 확인 처리
 router.post('/checkAlert', asyncErrHelper(ctrInstance.checkAlert));
-
+// 알림관리 페이지에서 원격의료 클릭 시 답변 열람
+router.post('/inquiry_answer', asyncErrHelper(ctrInstance.inquiry_answer));
 
 
 // 정보 조회
@@ -59,9 +61,10 @@ router.get('/email', asyncErrHelper(ctrInstance.checkEmailDuplicate));
 // 정보 수정
 router.post('/myInfoModify', asyncErrHelper(ctrInstance.myInfoModify));
 
-// 서비스 종료
-router.post('/withdrawService', asyncErrHelper(ctrInstance.withdrawService));
-
+// 알림 자동 삭제(일정 시간이 지난 후 알림내역 삭제)
+router.post('/alert_delete_auto', asyncErrHelper(ctrInstance.alert_delete_auto));
+// 알림 삭제 버튼 클릭하여 해당 알림 삭제
+router.post('/alert_delete', asyncErrHelper(ctrInstance.alert_delete));
 
 
 

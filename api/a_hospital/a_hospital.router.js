@@ -26,6 +26,13 @@ router.get('/myHosList', asyncErrHelper(ctrInstance.myHosList));
 router.get('/treatListPage', asyncErrHelper(ctrInstance.loadTreatListPage));
 router.get('/selectTreatData', asyncErrHelper(ctrInstance.selectTreatData))
 
+// ------------------문의내역------------------
+router.get('/loadInquiryListPage', asyncErrHelper(ctrInstance.loadInquiryListPage));
+router.post('/selectInquiryData', asyncErrHelper(ctrInstance.selectInquiryData));
+
+
+
+
 // ------------------병원상세정보------------------
 //병원 상세정보 페이지 로드
 router.get('/hosInfoPage', asyncErrHelper(ctrInstance.loadHosInfoPage));

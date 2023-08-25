@@ -455,8 +455,8 @@
                         </tr>
                         <tr>
                             <th>환자노트 *</th>
-                            <td><input type="text" class="patient-info-input" name="petNote" id="patient-note" placeholder="100자 이내로 입력"
-                                    value="" maxlength="100" />
+                            <td><input type="text" class="patient-info-input" name="petNote" id="patient-note"
+                                    value="" />
                             </td>
                         </tr>
                     </table>
@@ -486,10 +486,7 @@
                         <input type="text" id="rangeDate_diagnosis" class="form-control form-control-sm" />
                         <input type="text" id="searchWord2" class="form-control form-control-sm" placeholder="진료의 검색" />
                         <input type="button" id="searchBtn2" class="btn btn-secondary btn-sm" value="검색" />
-                        <!-- <input type="button" id="recordBtn" class="btn btn-success btn-sm" data-toggle="modal"
-                            data-target="#record-add-modal" value="진료 기록" /> -->
-
-                        <input type="button" id="recordBtn" class="btn btn-success btn-sm" data-toggle="modal" data-dismiss="modal"
+                        <input type="button" id="recordBtn" class="btn btn-success btn-sm" data-toggle="modal"
                             data-target="#record-add-modal" value="진료 기록" />
                     </div>
 
@@ -565,7 +562,7 @@
 
                     <div class="record-input-div">
                         <label for="recordDate">진료 날짜</label>
-                        <input type="date" id="recordDate" class="form-control form-control-sm" value="" readonly/>
+                        <input type="date" id="recordDate" class="form-control form-control-sm" value="2023-06-14" />
                         <label for="recordDoctor">진료의</label>
                         <input type="text" id="recordDoctor" class="form-control form-control-sm" value="" readonly />
                         <label for="recordPurpose">방문 목적</label>
@@ -629,7 +626,7 @@
 
 
 <!-- 진료 기록 모달 -->
-<div id="record-add-modal" class="modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+<div id="record-add-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
     <div class="modal modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -666,7 +663,8 @@
             </div>
             <div class="modal-footer">
                 <div id="modalBtn-div">
-                    <button id="addRecordBtn" type="button" class="modal-btn btn btn-success waves-effect">등록</button>
+                    <button id="addRecordBtn" type="button" class="modal-btn btn btn-success waves-effect"
+                        data-dismiss="modal">등록</button>
                     <button id="closeBtn" type="button" class="modal-btn btn btn-secondary waves-effect"
                         data-dismiss="modal" aria-hidden="true">닫기</button>
                 </div>
@@ -675,11 +673,8 @@
     </div>
 </div>
 
-
-
-
 <!-- 생체 정보 상세 모달 -->
-<div id="bioInfo-detail-modal" class="modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+<div id="bioInfo-detail-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
     <div class="modal modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">

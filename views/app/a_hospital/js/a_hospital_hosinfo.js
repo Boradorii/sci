@@ -83,6 +83,12 @@ function sendInquery() {
     let answer = [];
     let selectHos = $('#select-hos').val();
     let pet_id, hos_id
+    let inquiry_title = $('#inquiry_title').val();
+
+    if (inquiry_title == '') {
+        errorSwal("문의 제목을 작성해주세요.")
+        return;
+    }
     if (selectHos === '') {
         errorSwal("병원을 선택해주세요.")
     } else {
@@ -125,7 +131,8 @@ function sendInquery() {
                 h_userCode: hos_id,
                 pet_id: pet_id,
                 answer: answer,
-                symptom: symptom
+                symptom: symptom,
+                title: inquiry_title
             },
             cmmAsync = false,
             cmmSucc = function (result) {

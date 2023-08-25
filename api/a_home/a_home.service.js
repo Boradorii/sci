@@ -61,7 +61,6 @@ class aHomeService {
     async alert_icon(p_user_code) {
 
         let result = await mysqlDB('select', queryList.alert_icon, [p_user_code]);
-        console.log(result);
 
 
 

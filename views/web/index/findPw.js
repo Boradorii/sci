@@ -23,16 +23,16 @@ function checkInput() {
     let idChk = true;
     let nameChk = true;
     let emailChk = true;
-    idPattern = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{5,20}$/
 
-    if (!idPattern.test($("#id-input").val())) { // 아이디 유효성 검사
-        $("#id-notice").removeClass('deactive-notice');
-        $("#id-notice").addClass('active-notice');
+    if($("#id-input").val()=='') {
+        $('#id-notice').addClass('active-notice');
+        $('#id-notice').removeClass('deactive-notice');
         idChk = false;
-    } else {
-        $("#id-notice").removeClass('active-notice');
-        $("#id-notice").addClass('deactive-notice');
+    } else{
+        $('#id-notice').addClass('deactive-notice');
+        $('#id-notice').removeClass('active-notice');   
     }
+
     if($("#name-input").val()=='') {
         $('#name-notice').addClass('active-notice');
         $('#name-notice').removeClass('deactive-notice');
@@ -98,7 +98,6 @@ function findPwd() {
  *  ================================================================
  */
 $("#sendNumber").on('click', function() {
-    console.log(checkInput());
     if(!checkInput()) {
         alert('입력 양식을 확인해 주세요.');
         return;

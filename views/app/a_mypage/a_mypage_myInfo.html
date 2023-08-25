@@ -11,95 +11,105 @@
         font-size: 9pt;
         /* color:red !important; */
     }
-    
+
     .deactive-notice {
         display: none;
     }
-    
+
     .scroll {
         overflow: scroll;
     }
+
     /*input type number일 때 화살표 없애기*/
-    
+
     input[type="number"]::-webkit-outer-spin-button,
     input[type="number"]::-webkit-inner-spin-button,
     #authnumber {
         -webkit-appearance: none;
         margin: 0;
     }
+
     /*--------------------이메일 인증 관련 CSS--------------------------*/
     /* 이메일 label */
-    
+
     #label-email {
         float: left;
     }
+
     /* 인증번호 전송 버튼 */
-    
+
     #sendnumber {
         width: 100%;
         font-size: 10pt;
         margin-top: 15px;
     }
+
     /* 인증번호 label */
-    
+
     #label-authNumber {
         float: left;
     }
+
     /* 인증번호 input, button div */
-    
+
     #inputDiv {
         width: 100%;
         float: left;
     }
+
     /* 인증번호 입력 input */
-    
+
     #authnumber {
         width: 75%;
         display: inline;
         margin-top: 0px !important;
         margin-right: 10px;
     }
+
     /* 인증 버튼 */
-    
+
     #checknumber {
         width: 20%;
         display: inline;
     }
+
     /* 인증번호 에러 메시지 */
-    
+
     #e-auth-notice {
         float: center;
     }
-     /*-----------------주소 검색 모달-----------------*/
-        
-     #search-address-modal .modal-body {
-            max-height: 450px;
-            overflow-y: scroll;
-            overflow-x: hidden;
-        }
-        
-        #addressKey {
-            width: 82%;
-            display: inline;
-            float: left;
-            margin-bottom: 15px;
-        }
-        
-        #addressBtn {
-            width: 16%;
-            display: inline;
-            float: left;
-            margin-left: 2%;
-        }
-        /* 검색 테이블 */
-        
-        #search-address-list {
-            width: 100%;
-        }
-        
-        #search-address-list th {
-            text-align: center;
-        }
+
+    /*-----------------주소 검색 모달-----------------*/
+
+    #search-address-modal .modal-body {
+        max-height: 450px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #addressKey {
+        width: 82%;
+        display: inline;
+        float: left;
+        margin-bottom: 15px;
+    }
+
+    #addressBtn {
+        width: 16%;
+        display: inline;
+        float: left;
+        margin-left: 2%;
+    }
+
+    /* 검색 테이블 */
+
+    #search-address-list {
+        width: 100%;
+    }
+
+    #search-address-list th {
+        text-align: center;
+    }
 </style>
 
 {%endblock%}
@@ -121,10 +131,12 @@
 
                 <div class="form-group mb-3">
                     <div class="input-group">
-                        <input id="name-input" name="name" class="form-control" type="text" placeholder="이름" aria-describedby="name-input" maxlength="100">
+                        <input id="name-input" name="name" class="form-control" type="text" placeholder="이름"
+                            aria-describedby="name-input" maxlength="100">
                     </div>
                     <div style="text-align: left;">
-                        <p id="user-name-notice" class="deactive-notice form-control-feedback text-danger">국문으로만 입력해 주세요. (2~12자)</p>
+                        <p id="user-name-notice" class="deactive-notice form-control-feedback text-danger">국문으로만 입력해
+                            주세요. (2~12자)</p>
                     </div>
                 </div>
 
@@ -133,11 +145,14 @@
 
                 <div class="form-group mb-3">
                     <div class="input-group">
-                        <input id="id-input" name="name" class="form-control" type="text" placeholder="아이디" aria-describedby="id-input" maxlength="100" readonly="readonly" ;>
+                        <input id="id-input" name="name" class="form-control" type="text" placeholder="아이디"
+                            aria-describedby="id-input" maxlength="100" readonly="readonly" ;>
                     </div>
                     <div style="text-align: left;">
-                        <p id="id-dupl-notice" class="deactive-notice form-control-feedback text-danger">중복된 아이디 입니다.</p>
-                        <p id="id-notice" class="deactive-notice form-control-feedback text-danger">영문(소문자), 숫자를 혼합하여 입력해 주세요. <br>(4~12자, 소문자로 시작)</p>
+                        <p id="id-dupl-notice" class="deactive-notice form-control-feedback text-danger">중복된 아이디 입니다.
+                        </p>
+                        <p id="id-notice" class="deactive-notice form-control-feedback text-danger">영문(소문자), 숫자를 혼합하여
+                            입력해 주세요. <br>(4~12자, 소문자로 시작)</p>
                     </div>
                 </div>
 
@@ -146,10 +161,12 @@
 
                 <div class="form-group mb-3">
                     <div class="input-group">
-                        <input id="pw-input" name="name" class="form-control" type="password" placeholder="새 비밀번호 입력" aria-describedby="pw-input" maxlength="100">
+                        <input id="pw-input" name="name" class="form-control" type="password" placeholder="새 비밀번호 입력"
+                            aria-describedby="pw-input" maxlength="100">
                     </div>
                     <div style="text-align: left;">
-                        <p id="pwd-notice" class="deactive-notice form-control-feedback text-danger">영문(대소문자), 숫자, 특수문자를 혼합하여 입력해 주세요.<br>(8~15자, 특수문자는!@#$%&*()_+ 만 사용)</p>
+                        <p id="pwd-notice" class="deactive-notice form-control-feedback text-danger">영문(대소문자), 숫자, 특수문자를
+                            혼합하여 입력해 주세요.<br>(8~15자, 특수문자는!@#$%&*()_+ 만 사용)</p>
                     </div>
                 </div>
                 <!-- 새 비밀번호 확인 -->
@@ -157,10 +174,12 @@
 
                 <div class="form-group mb-3">
                     <div class="input-group">
-                        <input id="newPw-input" name="name" class="form-control" type="password" placeholder="새 비밀번호 확인 입력" aria-describedby="newPw-input" maxlength="100">
+                        <input id="newPw-input" name="name" class="form-control" type="password"
+                            placeholder="새 비밀번호 확인 입력" aria-describedby="newPw-input" maxlength="100">
                     </div>
                     <div style="text-align: left;">
-                        <p id="pwd-confirm-notice" class="deactive-notice form-control-feedback text-danger">비밀번호가 일치하지 않습니다.</p>
+                        <p id="pwd-confirm-notice" class="deactive-notice form-control-feedback text-danger">비밀번호가 일치하지
+                            않습니다.</p>
                     </div>
                 </div>
 
@@ -169,32 +188,35 @@
                 <div class="form-group mb-3">
                     <label for="phone1">연락처</label>
                     <div class="input-group">
-                        <select id="phone1" name="phone1" class="form-control" aria-label="phonenumber" aria-describedby="phone1">
-                                    <option selected>선택</option>
-                                    <option>010</option>
-                                    <option>02</option>
-                                    <option>031</option>
-                                    <option>032</option>
-                                    <option>033</option>
-                                    <option>041</option>
-                                    <option>042</option>
-                                    <option>043</option>
-                                    <option>044</option>
-                                    <option>051</option>
-                                    <option>052</option>
-                                    <option>053</option>
-                                    <option>054</option>
-                                    <option>055</option>
-                                    <option>061</option>
-                                    <option>062</option>
-                                    <option>063</option>
-                                    <option>064</option>
-                                    <option>070</option>
-                                </select>
+                        <select id="phone1" name="phone1" class="form-control" aria-label="phonenumber"
+                            aria-describedby="phone1">
+                            <option selected>선택</option>
+                            <option>010</option>
+                            <option>02</option>
+                            <option>031</option>
+                            <option>032</option>
+                            <option>033</option>
+                            <option>041</option>
+                            <option>042</option>
+                            <option>043</option>
+                            <option>044</option>
+                            <option>051</option>
+                            <option>052</option>
+                            <option>053</option>
+                            <option>054</option>
+                            <option>055</option>
+                            <option>061</option>
+                            <option>062</option>
+                            <option>063</option>
+                            <option>064</option>
+                            <option>070</option>
+                        </select>
                         <p class="ml-2 mr-2 mt-2"> - </p>
-                        <input type="number" id="phone2" name="phone2" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone2" maxlength="4">
+                        <input type="number" id="phone2" name="phone2" class="form-control" placeholder=""
+                            aria-label="phonenumber" aria-describedby="phone2" maxlength="4">
                         <p class="ml-2 mr-2 mt-2"> - </p>
-                        <input type="number" id="phone3" name="phone3" class="form-control" placeholder="" aria-label="phonenumber" aria-describedby="phone3" maxlength="4">
+                        <input type="number" id="phone3" name="phone3" class="form-control" placeholder=""
+                            aria-label="phonenumber" aria-describedby="phone3" maxlength="4">
                     </div>
                     <div style="text-align: left;">
                         <p id="phone-dupl-notice" class="deactive-notice text-danger"> 중복된 연락처입니다.</p>
@@ -202,29 +224,37 @@
                     </div>
                 </div>
 
-                 <!-- 주소 -->
-                 <label for="address1-input">주소</label>
-                 <div class="form-group mb-3">
-                     <div class="input-group">
-                         <input id="address1-input" class="form-control" type="text" placeholder="도로명 주소" aria-describedby="address1-input" readonly>
-                         <input id="address-button" type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#search-address-modal" value="주소검색" />
-                         <input id="address2-input" class="form-control" type="text" placeholder="상세 주소" aria-describedby="address2-input" maxlength="100">
-                     </div>
-                     <div style="text-align: left;">
-                         <p id="address1-notice" class="deactive-notice form-control-feedback text-danger">도로명 주소를 입력해 주세요.</p>
-                         <p id="address2-notice" class="deactive-notice form-control-feedback text-danger">상세 주소를 입력해 주세요.</p>
-                     </div>
-                 </div>
+                <!-- 주소 -->
+                <label for="address1-input">주소</label>
+                <div class="form-group mb-3">
+                    <div class="input-group">
+                        <input id="address1-input" class="form-control" type="text" placeholder="도로명 주소"
+                            aria-describedby="address1-input" readonly>
+                        <input id="address-button" type="button" class="btn btn-secondary btn-sm" data-toggle="modal"
+                            data-target="#search-address-modal" value="주소검색" />
+                        <input id="address2-input" class="form-control" type="text" placeholder="상세 주소"
+                            aria-describedby="address2-input" maxlength="100">
+                    </div>
+                    <div style="text-align: left;">
+                        <p id="address1-notice" class="deactive-notice form-control-feedback text-danger">도로명 주소를 입력해
+                            주세요.</p>
+                        <p id="address2-notice" class="deactive-notice form-control-feedback text-danger">상세 주소를 입력해
+                            주세요.</p>
+                    </div>
+                </div>
 
 
                 <!-- 담당자 이메일 -->
                 <div class="form-group mb-3">
                     <label id="label-email" for="email-input">담당자 이메일</label>
                     <div class="input-group">
-                        <input id="email-input" name="eId" type="text" class="form-control" placeholder="아이디" aria-describedby="" /> &nbsp;
+                        <input id="email-input" name="eId" type="text" class="form-control" placeholder="아이디"
+                            aria-describedby="" /> &nbsp;
                         <span class="ml-1 mr-1 mt-2">@</span>&nbsp;
-                        <input id="email-input2" name="eDomain" type="text" class="form-control" placeholder="도메인" aria-describedby="" />
-                        <select id="email-select-input2" class="c" style="display: none;" onChange="selectEmail(this)">   <!-- 변경 버튼 클릭하면 나오도록!-->
+                        <input id="email-input2" name="eDomain" type="text" class="form-control" placeholder="도메인"
+                            aria-describedby="" />
+                        <select id="email-select-input2" class="c" style="display: none;" onChange="selectEmail(this)">
+                            <!-- 변경 버튼 클릭하면 나오도록!-->
                             <option value="1" selected>직접입력</option>
                             <option value="naver.com">naver.com</option>
                             <option value="gmail.com">gmail.com</option>
@@ -233,7 +263,8 @@
                             <option value="nate.com">nate.com</option>
                         </select>
                         <button type="button" id="edit-emailBtn" class="btn btn-secondary btn-sm">변경</button>
-                        <button type="button" id="edit-emailBtn2" class="btn btn-secondary btn-sm" style="display:none;">변경취소</button>
+                        <button type="button" id="edit-emailBtn2" class="btn btn-secondary btn-sm"
+                            style="display:none;">변경취소</button>
                     </div>
                     <div style="text-align: left;">
                         <p id="email-dupl-notice" class="deactive-notice text-danger">중복된 이메일입니다.</p>
@@ -245,62 +276,68 @@
                         <hr />
                         <label id="label-authNumber" for="authnumber">인증번호</label>
                         <div id="inputDiv">
-                            <input id="authnumber" name="authnumber" type="text" class="form-control mt-3" placeholder="인증번호 입력" aria-describedby="" maxlength="6" />
-                            <button type="button" id="checknumber" class="btn btn-block btn-info" type="button">인증</button>
-                            <p id="e-auth-notice" class="form-notice deactive-notice form-control-feedback text-danger">고객님의 메일 주소로 보내드린 인증번호를 입력해 주세요.</p>
-                        </div>
+                            <input id="authnumber" name="authnumber" type="text" class="form-control mt-3"
+                                placeholder="인증번호 입력" aria-describedby="" maxlength="6" />
+                            <button type="button" id="checknumber" class="btn btn-block btn-info"
+                                type="button">인증</button>
+                            <p id="e-auth-notice" class="form-notice deactive-notice form-control-feedback text-danger">
+                                고객님의 메일 주소로 보내드린 인증번호를 입력해 주세요.</p>
                         </div>
                     </div>
                 </div>
+        </div>
 
-                <div class="form-group text-center p-b-20 row">
-                    <div class="col-5 mr-4 ml-4">
-                        <button class="btn btn-info btn-block text-uppercase waves-effect waves-light" id="modifyBtn" type="button">수정</button>
-                    </div>
-                    <div class="col-5 ml-2">
-                        <button class="btn btn-info btn-block text-uppercase waves-effect waves-light" id="serviceEndBtn" type="button">서비스 종료</button>
-                    </div>
-                </div><br />
-            </form>
+        <div class="form-group text-center p-b-20 row">
+            <div class="col-5 mr-4 ml-4">
+                <button class="btn btn-info btn-block text-uppercase waves-effect waves-light" id="modifyBtn"
+                    type="button">수정</button>
+            </div>
+            <div class="col-5 ml-2">
+                <button class="btn btn-info btn-block text-uppercase waves-effect waves-light" id="serviceEndBtn"
+                    type="button">서비스 종료</button>
+            </div>
+        </div><br />
+        </form>
+    </div>
+</div>
+</div>
+
+<!-- 주소 검색 모달창 -->
+<div class="modal fade" id="search-address-modal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">주소 검색</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            </div>
+            <div class="modal-body">
+                <input id="addressKey" type="text" class="form-control" placeholder="검색어(도로명, 건물명 등)를 입력해 주세요." />
+                <button id="addressBtn" class="form-control">검색</button>
+                <p style="float: left; font-size: 13px;">ⓘ 검색결과 중 해당 주소를 클릭하시면 자동 입력됩니다.</p><br />
+                <input type="hidden" id="currentPage" value="1" />
+                <input type="hidden" id="countPerPage" value="5" />
+                <table id="search-address-list" class="table-hover">
+                    <thead>
+                        <tr>
+                            <th style="width:20%;">우편번호</th>
+                            <th>주소</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table">
+                    </tbody>
+                </table>
+                <div id="pagingList" style='text-align:center;'></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">닫기</button>
+            </div>
         </div>
     </div>
 </div>
 
-    <!-- 주소 검색 모달창 -->
-    <div class="modal fade" id="search-address-modal" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">주소 검색</h4>
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                </div>
-                <div class="modal-body">
-                    <input id="addressKey" type="text" class="form-control" placeholder="검색어(도로명, 건물명 등)를 입력해 주세요." />
-                    <button id="addressBtn" class="form-control">검색</button>
-                    <p style="float: left; font-size: 13px;">ⓘ 검색결과 중 해당 주소를 클릭하시면 자동 입력됩니다.</p><br/>
-                    <input type="hidden" id="currentPage" value="1" />
-                    <input type="hidden" id="countPerPage" value="5" />
-                    <table id="search-address-list" class="table-hover">
-                        <thead>
-                            <tr>
-                                <th style="width:20%;">우편번호</th>
-                                <th>주소</th>
-                            </tr>
-                        </thead>
-                        <tbody class="table">
-                        </tbody>
-                    </table>
-                    <div id="pagingList" style='text-align:center;'></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">닫기</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 서비스 종료 모달 -->
-<div id="withdrawal-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+<!-- 서비스 종료 모달 -->
+<div id="withdrawal-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"
+    data-keyboard="false">
     <div class="modal-lg modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -310,15 +347,20 @@
             <div class="modal-body">
                 <br />
                 <div style="padding-left: 20px;">
-                    안녕하세요. 독닥독닥 운영팀입니다.<br/> 서비스 종료(회원탈퇴)를 원하시는 경우 아래의 안내사항을 필수로 확인해 주시기 바랍니다.<br/><br/>
-                    <strong>[서비스 종료 처리기간_휴면계정 처리]</strong><br/> 서비스 종료(회원탈퇴)를 원할 시 서비스 종료 처리기간(14일)동안 휴면계정으로 처리됩니다.<br/> 서비스 종료 처리기간 내에 계정 복구를 원하시는 경우 (회사 메일)로 문의 주시길 바랍니다.<br/><br/>
-                    <strong>[서비스 종료_계정 영구삭제]</strong><br/> 서비스 종료 처리기간(14일)이 지나면 계정이 영구적으로 삭제되며 복구가 불가능합니다.<br/> 계정 삭제 시 독닥독닥 서비스 이용에 필요한 모든 정보가 삭제되며,<br/> 해당 계정으로 독닥독닥 서비스를 이용하실 수 없음을 안내드립니다.<br/><br/> 위 사항들을 충분히 고려하신 후 서비스 종료 절차를 진행해 주시기 바랍니다.<br/>                    이용해 주셔서 감사합니다.<br/><br/> 독닥독닥 드림<br/>
+                    안녕하세요. 독닥독닥 운영팀입니다.<br /> 서비스 종료(회원탈퇴)를 원하시는 경우 아래의 안내사항을 필수로 확인해 주시기 바랍니다.<br /><br />
+                    <strong>[서비스 종료 처리기간_휴면계정 처리]</strong><br /> 서비스 종료(회원탈퇴)를 원할 시 서비스 종료 처리기간(14일)동안 휴면계정으로
+                    처리됩니다.<br /> 서비스 종료 처리기간 내에 계정 복구를 원하시는 경우 (회사 메일)로 문의 주시길 바랍니다.<br /><br />
+                    <strong>[서비스 종료_계정 영구삭제]</strong><br /> 서비스 종료 처리기간(14일)이 지나면 계정이 영구적으로 삭제되며 복구가 불가능합니다.<br /> 계정 삭제
+                    시 독닥독닥 서비스 이용에 필요한 모든 정보가 삭제되며,<br /> 해당 계정으로 독닥독닥 서비스를 이용하실 수 없음을 안내드립니다.<br /><br /> 위 사항들을 충분히
+                    고려하신 후 서비스 종료 절차를 진행해 주시기 바랍니다.<br /> 이용해 주셔서 감사합니다.<br /><br /> 독닥독닥 드림<br />
                 </div>
             </div>
             <div class="modal-footer">
                 <div id="modalBtn-div">
-                    <button id="withdrawalBtn-modal" type="button" class="modal-btn btn btn-danger" onclick="withdrawService()">서비스 종료</button>
-                    <button type="button" class="modal-btn btn btn-secondary" data-dismiss="modal" aria-hidden="true">취소</button>
+                    <button id="withdrawalBtn-modal" type="button" class="modal-btn btn btn-danger"
+                        onclick="withdrawService()">서비스 종료</button>
+                    <button type="button" class="modal-btn btn btn-secondary" data-dismiss="modal"
+                        aria-hidden="true">취소</button>
                 </div>
             </div>
         </div>

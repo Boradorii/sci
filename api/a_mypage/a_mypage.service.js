@@ -270,6 +270,23 @@ class aMyPageService {
     };
 
 
+    /**
+        *  비밀번호 확인
+        *  @param petId - 관리자 코드 (String)
+        *  @return 조회 결과 반환(json)
+        *  @author ChangGyu Lee
+        *  @since 2023.07.10. 최초작성
+        *  
+        */
+    async aPwCheck(p_userCode, pw) {
+        let result = await mysqlDB('select', queryList.aPwCheck, [pw, p_userCode])
+        if (result.rows[0].p_user_code == p_userCode) {
+            result.state = true;
+        } else {
+            result.state = false;
+        }
+        return result
+    };
 
 
 
@@ -388,6 +405,18 @@ class aMyPageService {
         return result;
     };
 
+ /** ================================================================
+     *  서비스 종료
+     *  @author 
+     *  @since 2023.07.12
+     *  @history 2023.07.12 초기 작성
+     *  ================================================================
+     */
+    async withdrawService(p_userCode) {
+        let result = await mysqlDB('update', queryList.withdrawService, [p_userCode]);
+        console.log(result);
+        return result;
+    };
 }
 
 

@@ -6,8 +6,46 @@ let emailCheck = false, // 이메일 아이디 유효성 검사 여부
 let authCheck = false; // 이메일 인증 완료 여부
 
 function init() {
-    myInfoLoad();
     console.log(p_userCode)
+    $('#password-modal').modal('show');
+}
+
+// 비밀번호 확인
+function aPwCheck() {
+    let cmmContentType = 'application/json',
+        cmmType = 'post',
+        cmmUrl = '/api/a_mypage/aPwCheck',
+        cmmReqDataObj = {
+            'p_userCode': p_userCode,
+            'pw': $('#pw-check-input').val()
+        },
+        cmmAsync = false,
+        cmmSucc = function aPwCheck(result) {
+            if (result.state == true) {
+                // 모달창 닫기
+                $('#password-modal').modal('hide');
+                myInfoLoad();
+            } else {
+                if($('#pw-check-input').val()==""){
+                    Swal.fire({
+                        html: '비밀번호를 입력해 주세요.',
+                    });
+                }else{
+                    Swal.fire({
+                        html: '비밀번호가 일치하지 않습니다.<br>다시 입력해 주세요.',
+                    });
+                }
+            }
+
+        },
+        cmmErr = null;
+    commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
+};
+
+// 비밀번호 확인 모달창 닫기(이전페이지로 이동)
+function closePwModal() {
+    $('#password-modal').modal('hide');
+    history.go(-1);
 }
 
 // 이메일 변경 버튼 클릭 이벤트
@@ -24,7 +62,7 @@ $("#edit-emailBtn").on('click', function() {
     authCheck = false;
 
     selectOption(emailId);
-    if($('#email-select-input2').val() == emailId){
+    if($('#email-select-input2').val() == emailDomain){
         $('#email-input2').attr('readonly', true);
     }
 });
@@ -49,7 +87,7 @@ $("#edit-emailBtn2").on('click', function() {
 function selectOption(emailId) {
     let selectElement = document.getElementById("email-select-input2");
     for (var i = 0; i < selectElement.options.length; i++) {
-        if (selectElement.options[i].value === emailId) {
+        if (selectElement.options[i].value === emailDomain) {
           selectElement.selectedIndex = i;
           break;
         }
@@ -565,7 +603,7 @@ function searchAddress() {
     }
 
     jQuery.ajax({
-        url: "http://www.juso.go.kr/addrlink/addrLinkApiJsonp.do",
+        url: "https://www.juso.go.kr/addrlink/addrLinkApiJsonp.do",
         type: "POST",
         data: {
             confmKey: "U01TX0FVVEgyMDIzMDYxOTExNDQzODExMzg1OTI=", // 발급받은 승인키 입력
@@ -628,8 +666,10 @@ function makeListJson(jsonStr) {
 //주소 검색 모달_주소 선택 시 도로명 주소 세팅, 모달 종료
 function setAddress(roadAddr) {
     $("#search-address-modal").modal('hide'); // 모달 종료
+    $(".modal-backdrop.show").css('display', 'none');
     $("#address1-input").val(roadAddr); // 도로명 주소 세팅
     $("#pagingList").html(''); // 페이징 div 초기화
+    
 }
 
 

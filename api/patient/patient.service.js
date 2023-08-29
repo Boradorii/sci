@@ -108,6 +108,8 @@ class patientService {
      *  
      */
     async diagnosis_Records(h_adminCode, startDate, endDate, name, petId) {
+        let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
+        cryptoKey = cryptoKey.row.key_string;
         endDate = endDate + " 23:59:59";
         let result;
         // name 값으로 아무것도 들어오지않으면 total로 들어와져서 전체조회 처리.
@@ -115,13 +117,13 @@ class patientService {
             result = await mysqlDB('select', queryList.diagnosis_Records_total, [h_adminCode, petId, startDate, endDate])
 
         } else {
+            name = cryptoUtil.encrypt_aes(cryptoKey, name);
             result = await mysqlDB('select', queryList.diagnosis_Records, [h_adminCode, petId, name, startDate, endDate])
-
         }
         for (let i = 0; i < result.rowLength; i++) {
             // 진료의 불러오기
             let docName = await mysqlDB('select', queryList.diagnosis_detail_doctorName, [result.rows[i].medi_num])
-            result.rows[i].doctorName = docName.rows[0].h_staff_name;
+            result.rows[i].doctorName = cryptoUtil.decrypt_aes(cryptoKey, docName.rows[0].h_staff_name);
             // 진료 날짜 day까지만 나오도록 수정
             result.rows[i].medi_created_time = result.rows[i].medi_created_time.slice(0, 10);
             // 방문목적 처리
@@ -150,9 +152,14 @@ class patientService {
      *  
      */
     async diagnosis_regist_doctorList(h_user_code) {
+        let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
+        cryptoKey = cryptoKey.row.key_string;
         let result = await mysqlDB('select', queryList.diagnosis_regist_doctorList, [h_user_code])
-
-
+        for (let i = 0; i < result.rowLength; i++) {
+            // 진료의 불러오기
+            result.rows[i].h_staff_name = cryptoUtil.decrypt_aes(cryptoKey, result.rows[i].h_staff_name);
+            result.rows[i].h_staff_eid = cryptoUtil.decrypt_aes(cryptoKey, result.rows[i].h_staff_eid);
+        }
         return result
     };
 
@@ -165,14 +172,18 @@ class patientService {
      *  
      */
     async diagnosis_regist(data) {
+        let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
+        cryptoKey = cryptoKey.row.key_string;
         let h_user_code = data.h_user_code,
             medi_purpose = data.medi_purpose,
             medi_contents = data.medi_contents,
             h_staff_name = data.h_staff_name,
             petId = data.petId;
         let name = h_staff_name.replace(/\s*\([^)]*\)/, '');
+        name = cryptoUtil.encrypt_aes(cryptoKey, name);
         let staffName = name.trim();
         let email = h_staff_name.match(/\(([^)]+)\)/)[1];
+        email = cryptoUtil.encrypt_aes(cryptoKey, email);
         let find_h_staff_code = await mysqlDB('select', queryList.find_h_staff_code, [h_user_code, staffName, email])
         let h_staff_code = find_h_staff_code.rows[0].h_staff_code;
         let p_user_code = await mysqlDB('select', queryList.find_p_user_code, [petId])
@@ -196,10 +207,12 @@ class patientService {
      *  
      */
     async diagnosis_detail(medi_num) {
+        let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
+        cryptoKey = cryptoKey.row.key_string;
         let result = await mysqlDB('select', queryList.diagnosis_detail, [medi_num])
         result.rows[0].medi_created_time = result.rows[0].medi_created_time.slice(0, 10);
         let docName = await mysqlDB('select', queryList.diagnosis_doctorName, [result.rows[0].h_user_code, result.rows[0].h_staff_code])
-        result.rows[0].doctorName = docName.rows[0].h_staff_name;
+        result.rows[0].doctorName = cryptoUtil.decrypt_aes(cryptoKey, docName.rows[0].h_staff_name);
         return result
     };
 

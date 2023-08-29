@@ -48,6 +48,8 @@ router.post('/checkAlert', asyncErrHelper(ctrInstance.checkAlert));
 // 알림관리 페이지에서 원격의료 클릭 시 답변 열람
 router.post('/inquiry_answer', asyncErrHelper(ctrInstance.inquiry_answer));
 
+// 비밀번호 확인
+router.post('/aPwCheck', asyncErrHelper(ctrInstance.aPwCheck));
 
 // 정보 조회
 router.post('/myInfoLoad', asyncErrHelper(ctrInstance.myInfoLoad));
@@ -66,6 +68,8 @@ router.post('/alert_delete_auto', asyncErrHelper(ctrInstance.alert_delete_auto))
 // 알림 삭제 버튼 클릭하여 해당 알림 삭제
 router.post('/alert_delete', asyncErrHelper(ctrInstance.alert_delete));
 
+// 서비스 종료
+router.post('/withdrawService', asyncErrHelper(ctrInstance.withdrawService));
 
 
 

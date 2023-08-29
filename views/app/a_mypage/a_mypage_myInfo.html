@@ -335,6 +335,27 @@
     </div>
 </div>
 
+<!-- 현재 비밀번호 입력 모달 -->
+<div id="password-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"
+    data-keyboard="false">
+    <div class="custom-modal modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">비밀번호 확인</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="closePwModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                현재 비밀번호를 입력해 주세요.<br>
+                <input id="pw-check-input" name="pwCheck" type="password" class="form-control" placeholder="비밀번호 입력"
+                    maxlength="15">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="pwCheckBtn" onclick="aPwCheck()">확인</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- 서비스 종료 모달 -->
 <div id="withdrawal-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"
     data-keyboard="false">

@@ -34,7 +34,7 @@ exports.update_user_login = `UPDATE user_protector SET p_user_login_check = 'Y' 
 // 사용자 가입 여부 조회(로그인)
 exports.select_user_exist = `SELECT p_user_code, p_user_name, p_user_login_check
     FROM user_protector
-    WHERE p_account_id=? AND p_account_pw = SHA2(?, 256);`;
+    WHERE p_account_id=? AND p_account_pw = SHA2(?, 256) and activate_yn = 'Y';`;
 
 // 로그아웃
 exports.update_user_logout =

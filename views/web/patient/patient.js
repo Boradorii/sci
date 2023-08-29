@@ -194,7 +194,23 @@ function petInfoModify(petIdModify) {
     }
 
     var isNeutering = $('input[name=inlineRadioOptions]:checked').val();
-
+    let petWeigt = $('#petWeightInput').val();
+    petWeigt = petWeigt.replace('kg', '');
+    if(petWeigt == ""){
+        Swal.fire({
+            icon: 'error',
+            title: '수정 실패',
+            text: '몸무게를 입력해 주세요.',
+        });
+        return;
+    }else if(petWeigt >= 1000 || !/^(\d*\.\d{1})$/.test(petWeigt)){
+        Swal.fire({
+            icon: 'error',
+            title: '수정 실패',
+            text: '몸무게는 3자리 이하, 소수 첫째자리까지 입력해 주세요.',
+        });
+        return;
+    }
 
     let cmmContentType = 'application/json',
         cmmType = 'post',
@@ -377,7 +393,6 @@ function diagnosis_regist() {
     }
 
 
-
     var selectElement = document.getElementById("select-purpose");
     let cmmContentType = 'application/json',
         cmmType = 'post',
@@ -395,12 +410,12 @@ function diagnosis_regist() {
                 Swal.fire({
                     icon: 'success',
                     title: '등록 완료!',
-                    text: '',
+                    text: '진료가 기록되었습니다.',
                 });
                 $('#record-add-modal').appendTo("body").modal('hide');
                 $('#record-detail').val("");
             }
-
+            diagnosis_Records(petIdModify);
 
 
         },
@@ -439,14 +454,36 @@ function diagnosis_detail(medi_num) {
 
 //  진료 내용 수정
 $("#editRecordBtn").click(function () {
-    diagnosis_detail_modify(modify_medi_num)
-    diagnosis_Records(petIdModify)
-
+    Swal.fire({
+        title: '',
+        text: "진료 기록을 수정하시겠습니까?",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: '확인',
+        cancelButtonText: '취소'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            diagnosis_detail_modify(modify_medi_num)
+        }else{
+            diagnosis_detail(modify_medi_num)
+        }
+    })
 });
 
 // 진료 내용 수정
 
 function diagnosis_detail_modify(modify_medi_num) {
+    
+    if ($('#recordDetail').val() == '') {
+        Swal.fire({
+            icon: 'error',
+            title: '수정 실패!',
+            text: '진료 내용을 작성해주세요!',
+        });
+        return;
+    }
 
     var selectElement = document.getElementById("recordPurpose");
     // var textareaElement = document.getElementById("recordDetail");
@@ -462,11 +499,13 @@ function diagnosis_detail_modify(modify_medi_num) {
         },
         cmmAsync = false,
         cmmSucc = function diagnosis_detail_modify(result) {
+                
             Swal.fire({
                 icon: 'success',
                 title: '수정 완료',
-                text: '',
-            });
+                text: '진료 기록이 수정되었습니다.'
+            })
+            diagnosis_Records(petIdModify)
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
@@ -488,29 +527,34 @@ function diagnosis_detail_delete(modify_medi_num) {
         cmmAsync = false,
         cmmSucc = function diagnosis_detail_delete(result) {
             Swal.fire({
-                title: '정말 삭제 하시겠습니까?',
-                text: "다시 되돌릴 수 없습니다. 신중하세요.",
-                icon: 'warning',
-                showCancelButton: true,
-                confirmButtonColor: '#3085d6',
-                cancelButtonColor: '#d33',
-                confirmButtonText: '삭제',
-                cancelButtonText: '취소'
-            }).then((result) => {
-                if (result.isConfirmed) {
-                    Swal.fire(
-                        '삭제가 완료되었습니다.'
-                    )
-                }
+                icon: 'success',
+                title: '삭제 완료',
+                text: '진료 기록이 삭제되었습니다.'
             })
+            diagnosis_Records(petIdModify)
+            $('#recordDetail').val("");
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
 };
+
 //  진료 내용 삭제
 $("#deleteRecordBtn").click(function () {
-    diagnosis_detail_delete(modify_medi_num)
-    diagnosis_Records(petIdModify)
+    Swal.fire({
+        title: '정말 삭제 하시겠습니까?',
+        text: "다시 되돌릴 수 없습니다. 신중하세요.",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: '삭제',
+        cancelButtonText: '취소'
+    }).then((result) => {
+        if (result.isConfirmed) {
+           diagnosis_detail_delete(modify_medi_num)
+        }
+    })
+    
 });
 
 
@@ -590,7 +634,7 @@ function bioInfo_detail(pd_num) {
                 `<tr> <td>PNN50</td>` +
                 '<td>' + result.rows[0].pnn50 + '</td> </tr>'
             $('#bioInfo-modal-table > tbody').append(tableHtml);
-            $('#bioInfo-detail-modal').appendTo("body").modal('show');
+            $('#bioInfo-detail-modal').modal('show');
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);

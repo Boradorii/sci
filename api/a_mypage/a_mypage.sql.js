@@ -149,6 +149,13 @@ exports.inquiry_answer = `
     WHERE inquiry_num = ?;
 `;
 
+// 비밀번호 확인
+exports.aPwCheck = `
+    SELECT p_user_code
+    from user_protector
+    where p_account_pw = SHA2(?, 256) and p_user_code = ?;
+`;
+
 // 내 정보 로드
 exports.myInfoLoad = `
     SELECT * 
@@ -186,3 +193,9 @@ exports.myInfoModify = `
     where p_user_code=?;
 `;
 
+// 서비스 종료
+exports.withdrawService = `
+    update user_protector 
+    set activate_yn = 'D', p_delete_date = now() 
+    where p_user_code=?;
+`;

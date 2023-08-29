@@ -53,7 +53,7 @@ $('#modify_delete').click(function () {
             Swal.fire({
                 icon: 'success',
                 title: '삭제 성공!',
-                text: '삭제하였습니다.',
+                text: '삭제되었습니다.',
             }).then((result) => {
                 if (result.isConfirmed) {
                     myPetDelete(modifyPetId);
@@ -72,7 +72,7 @@ $('#modify_delete').click(function () {
             Swal.fire({
                 icon: 'info',
                 title: '삭제 취소',
-                text: '취소하였습니다.',
+                text: '취소되었습니다.',
             });
         }
     });
@@ -143,14 +143,21 @@ function modifyMyPet(modifyPetId) {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '반려동물의 이름을 입력주세요!',
+            text: '반려동물의 이름을 입력해 주세요.',
+        });
+        return;
+    } else if ($('#modify_name').val().length > 12) {
+        Swal.fire({
+            icon: 'info',
+            title: '등록 실패!',
+            text: '이름은 국문, 영문 12자 이내로 입력해 주세요.',
         });
         return;
     } else if (!agePattern.test($('#modify_age').val())) {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '나이는 최대 두자리까지 숫자로만 입력주세요!',
+            text: '나이는 최대 두자리까지 숫자로만 입력해 주세요.',
         });
         return;
 
@@ -158,28 +165,28 @@ function modifyMyPet(modifyPetId) {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '몸무게는 최대 소수점 한자리까지 숫자로 입력해주세요!',
+            text: '몸무게는 3자리 이내, 소수점 첫째자리까지 숫자로 입력해 주세요.'
         });
         return;
     } else if (!$('input[name=modify_gender]:checked').val()) {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '반려동물의 성별을 선택해주세요.',
+            text: '반려동물의 성별을 선택해 주세요.',
         });
         return;
     } else if (!$('input[name=neuteredRadio]:checked').val()) {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '반려동물의 중성화 여부를 선택해주세요.',
+            text: '반려동물의 중성화 여부를 선택해 주세요.',
         });
         return;
     } else if ($('#modify_kind').val() == "품종") {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '반려동물의 품종을 선택해주세요.',
+            text: '반려동물의 품종을 선택해 주세요.',
         });
         return;
     }

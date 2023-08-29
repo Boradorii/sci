@@ -173,7 +173,14 @@ class aMyPageController {
         return res.send(alert_delete)
     };
 
+    //  비밀번호 확인
+    async aPwCheck(req, res, next) {
+        let p_userCode = req.body.p_userCode;
+        let pw = req.body.pw;
+        let aPwCheck = await svInstance.aPwCheck(p_userCode, pw);
 
+        return res.send(aPwCheck)
+    };
 
     //  내 정보
     async myInfoLoad(req, res, next) {
@@ -221,7 +228,14 @@ class aMyPageController {
         return res.send(myInfoModify);
     };
 
+ //  서비스 종료
+ async withdrawService(req, res, next) {
+    let p_userCode = req.body.p_userCode;
 
+    let withdrawService = await svInstance.withdrawService(p_userCode);
+
+    return res.send(withdrawService);
+};
 
 
 }

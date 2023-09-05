@@ -186,7 +186,8 @@ function getInput() {
 // 병원 정보 수정하기
 function hospitalInfoModify(h_adminCode) {
     let inputList = getInput();
-    if (Object.keys(inputList).length != 12) { // 병원 정보 입력 양식 확인
+    console.log(Object.keys(inputList).length );
+    if (Object.keys(inputList).length != 11) { // 병원 정보 입력 양식 확인
         alert('병원 정보 입력 양식을 확인해 주세요.')
         return;
     }

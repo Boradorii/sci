@@ -12,21 +12,14 @@ function insertPet() {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '반려동물의 이름을 입력해 주세요.'
-        });
-        return;
-    } else if ($('#name-input').val().length > 12) {
-        Swal.fire({
-            icon: 'info',
-            title: '등록 실패!',
-            text: '이름은 국문, 영문 12자 이내로 입력해 주세요.'
+            text: '반려동물의 이름을 입력주세요!',
         });
         return;
     } else if (!agePattern.test($('#age-input').val())) {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '나이는 최대 두자리까지 숫자로만 입력해 주세요.'
+            text: '나이는 최대 두자리까지 숫자로만 입력주세요!',
         });
         return;
 
@@ -34,28 +27,28 @@ function insertPet() {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '몸무게는 3자리 이내, 소수점 첫째자리까지 숫자로 입력해 주세요.'
+            text: '몸무게는 최대 소수점 한자리까지 숫자로 입력해주세요!',
         });
         return;
     } else if (!$('input[name=gender]:checked').val()) {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '반려동물의 성별을 선택해 주세요.'
+            text: '반려동물의 성별을 선택해주세요.',
         });
         return;
     } else if (!$('input[name=neuteredRadioOptions]:checked').val()) {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '반려동물의 중성화 여부를 선택해 주세요.'
+            text: '반려동물의 중성화 여부를 선택해주세요.',
         });
         return;
     } else if ($('#kind').val() == "품종") {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '반려동물의 품종을 선택해 주세요.'
+            text: '반려동물의 품종을 선택해주세요.',
         });
         return;
     }
@@ -65,7 +58,7 @@ function insertPet() {
         Swal.fire({
             icon: 'info',
             title: '등록 실패!',
-            text: '동물등록번호는 비워두거나 15자리 숫자로 입력해주세요.',
+            text: '동물등록번호는 비워두거나 15자리 숫자로 입력해주세요!',
         });
         return;
     }
@@ -122,22 +115,15 @@ function loadPetList() {
         cmmAsync = false,
 
         cmmSucc = function loadPetList(result) {
-            $('#box').html('');
-            let petInfoHtml =
-            `<div class="card card-box" style="text-align: center; width: 110%;">
-            <p class="m-b-0">모든 서비스는 대표 반려동물을 대상으로 제공합니다. <br> * 아이콘을 터치하여 대표 반려동물을 설정해 주세요. </p>
-        </div>
-        <i id="petAdd" class="material-icons ml-auto" style="color: black; font-size: 50px;">add</i>
-`
             if (result.rowLength == 0) {
-                petInfoHtml +=
+                let petInfoHtml =
                     '<h6 style="font-weight: 700; font-size: 15pt; margin-top: 15px;  text-align: center;" id="petInfo">'
                     + '등록된 우리 아이가 없어요!<br>' + `우측 상단의` + '&nbsp;' + `'+'` + '&nbsp;' + `버튼을 눌러 등록해주세요!</h6>`;
                 $('#box').append(petInfoHtml);
             } else {
                 for (let i = 0; i < result.rowLength; i++) {
                     if (result.rows[i].pet_first_yn == 'Y') {
-                        petInfoHtml +=
+                        let petInfoHtml =
                             `<div class="card card-box" style="width: 80%;">
                         <div>
                             <div class="row">
@@ -147,8 +133,10 @@ function loadPetList() {
                             '</div>' +
                             '<h6 style="font-weight: 700; margin-bottom: 15px;" class="ml-4" id="petInfo">'
                             + result.rows[i].pet_breed + ' | ' + result.rows[i].pet_byear + '세 | ' + result.rows[i].pet_gender + '</h6></div></div>';
+                        $('#box').append(petInfoHtml);
+
                     } else {
-                        petInfoHtml +=
+                        let petInfoHtml =
                             `<div class="card card-box" style="width: 80%;">
                         <div>
                             <div class="row">
@@ -158,11 +146,12 @@ function loadPetList() {
                             '</div>' +
                             '<h6 style="font-weight: 700; margin-bottom: 15px;" class="ml-4" id="petInfo">'
                             + result.rows[i].pet_breed + ' | ' + result.rows[i].pet_byear + '세 | ' + result.rows[i].pet_gender + '</h6></div></div>';
+                        $('#box').append(petInfoHtml);
+
                     }
 
 
                 }
-                $('#box').append(petInfoHtml);
             }
 
 
@@ -202,7 +191,6 @@ function setRepresent(target) {
         cmmSucc = function setRepresent(result) {
             $('#' + result.row.pet_id).css('color', 'gainsboro');
             $(target).css('color', 'gold');
-            loadPetList();
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);

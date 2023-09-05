@@ -1,6 +1,6 @@
 function init() {
     alertDataLoad(p_userCode)
-    setInterval(function () {
+    setInterval(function() {
         isDelete = 0;
     }, 100);
 }
@@ -36,14 +36,21 @@ function alertDataLoad(p_userCode) {
                     `<div style="text-align:center; font-size:20px;">알림목록이 존재하지 않습니다.</div>
                             `;
                 $('#alertList').append(alertList);
-
-
-
-
-
-
             } else {
                 for (let i = 0; i < result.rowLength; i++) {
+                    if (result.rows[i].alert_class == 0) {
+                        result.rows[i].class_num = 0;
+                        result.rows[i].alert_class = "진료기록"
+                        result.rows[i].alert_msg = "진료기록이 도착했어요."
+                    } else if (result.rows[i].alert_class == 1) {
+                        result.rows[i].class_num = 1;
+                        result.rows[i].alert_class = "원격의료"
+                        result.rows[i].alert_msg = "원격의료 답변이 도착했어요."
+                    } else {
+                        result.rows[i].class_num = 2;
+                        result.rows[i].alert_class = "건강관리"
+                        result.rows[i].alert_msg = "오늘의 건강 상태를 측정해 주세요."
+                    }
                     let alertList;
                     if (result.rows[i].alert_check == 'N') {
                         alertList =
@@ -75,11 +82,8 @@ function alertDataLoad(p_userCode) {
                             `;
                     }
                     $('#alertList').append(alertList);
-
                 }
             }
-
-
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
@@ -196,8 +200,6 @@ function inquiry_answer(inquiry_num) {
             $('#pet_name').text("반려동물 이름: " + result.rows[0].pet_name);
             $('#inquiry_title').text("RE: " + result.rows[0].inquiry_title);
             $('#inquiry_contents').val(result.rows[0].opinion);
-
-
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
@@ -212,8 +214,7 @@ function alert_delete_auto() {
     let cmmContentType = 'application/json',
         cmmType = 'post',
         cmmUrl = '/api/a_mypage/alert_delete_auto',
-        cmmReqDataObj = {
-        },
+        cmmReqDataObj = {},
         cmmAsync = false,
 
         cmmSucc = function alert_delete_auto(result) {
@@ -258,31 +259,31 @@ function alert_delete(target) {
 
 
 // 서비스 알림 수신 팝업창 띄우기
-$('#serviceAlertDetail').click(function () {
+$('#serviceAlertDetail').click(function() {
     $('#serviceAlertDetailModal').appendTo("body").modal('show');
 
 });
-$('#closeModal').click(function () {
+$('#closeModal').click(function() {
     $('#serviceAlertDetailModal').appendTo("body").modal('hide');
 
 });
 // 서비스 푸쉬 허용 팝업창 띄우기
-$('.pushAllow').click(function () {
+$('.pushAllow').click(function() {
     $('#pushAllowModal').appendTo("body").modal('show');
 
 });
-$('#disallow').click(function () {
+$('#disallow').click(function() {
     alertPushSetting(p_userCode, 1);
     $('#pushAllowModal').appendTo("body").modal('hide');
 
 });
-$('#allow').click(function () {
+$('#allow').click(function() {
     alertPushSetting(p_userCode, 0);
     $('#pushAllowModal').appendTo("body").modal('hide');
 
 });
 // 알람제거
-$('#alert_delete').click(function () {
+$('#alert_delete').click(function() {
 
 
 })

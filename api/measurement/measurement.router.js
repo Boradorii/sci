@@ -12,8 +12,10 @@ router.get('/measure/:h_adminCode', asyncErrHelper(ctrInstance.loadMeasurePage))
 
 
 // ------------------측정시작------------------
-//환자검색
-router.get('/measure/:h_adminCode', asyncErrHelper(ctrInstance.loadMeasurePage));
+// 환자 및 보호자 검색 
+router.post('/searchPetInfo', asyncErrHelper(ctrInstance.searchPetInfo));
+// 환자 및 보호자 정보 
+router.post('/petInfoLoad', asyncErrHelper(ctrInstance.petInfoLoad));
 
 
 module.exports = router;

@@ -18,75 +18,76 @@
 <!-- Content 시작 -->
 {% block contents%}
 <!-- html -->
-<section id="wrapper">
+<section id="wrapper" style="background: rgb(135,193,246);
+background: linear-gradient(120deg, rgba(135,193,246,1) 0%, rgba(100,160,249,0.6250875350140056) 35%, rgba(16,137,227,1) 100%); height: 790px;">
     <div class="modify-manage pt-5">
-        <div class="card" style="margin: auto; width: 80%;">
+        <div class="card" style="margin: auto; width: 80%; height: 680px;">
             <div class="card-body">
                 <form class="form-horizontal form-material" id="infoForm">
                     <!-- 이름 -->
-                    <div class="row justify-content-center" style="margin-bottom: 30px;">
+                    <div class="row justify-content-center" style="margin-bottom: 20px; margin-top: 5px;">
                         <div class="col-4" style="font-weight: 700;">이름</div>
 
                         <div class="form-group col-7">
 
                             <input id="modify_name" value="" name="modifyName" type="text" placeholder="이름"
-                                aria-describedby="name-input" maxlength="100" style="width: 80%;">
+                                aria-describedby="name-input" maxlength="100" style="width: 80%; height: 30px;">
 
                         </div>
                     </div>
 
                     <!-- 나이 -->
-                    <div class="row justify-content-center" style="margin-bottom: 30px;">
+                    <div class="row justify-content-center" style="margin-bottom: 20px;">
 
                         <div class="col-4" style="font-weight: 700;">나이</div>
 
                         <div class="form-group col-7">
 
                             <input id="modify_age" name="age" type="text" placeholder="나이" aria-describedby="modify_age"
-                                maxlength="100" style="width: 80%;">
+                                maxlength="100" style="width: 80%; height: 30px;">
 
                         </div>
                     </div>
 
                     <!-- 몸무게 -->
-                    <div class="row justify-content-center" style="margin-bottom: 30px;">
+                    <div class="row justify-content-center" style="margin-bottom: 20px;">
 
                         <div class="col-4" style="font-weight: 700;">몸무게</div>
 
                         <div class="form-group col-7" style="font-weight: 700;">
 
                             <input id="modify_weight" name="weight" type="text" placeholder="무게"
-                                aria-describedby="modify_weight" maxlength="100" style="width: 73%;">
+                                aria-describedby="modify_weight" maxlength="100" style="width: 73%; height: 30px;">
                             kg
                         </div>
                     </div>
 
                     <!-- 성별 -->
-                    <div class="row justify-content-center mb-3" style="margin-left: 3px;">
-                        <div class="col-4" style="font-weight: 700;">성별</div>
+                    <div class="row justify-content-center mb-3" style=" margin-bottom: 20px;">
+                        <div class="col-4" style="font-weight: 700; left: 10px;">성별</div>
 
                         <div class="form-group col-7 ml-4">
 
                             <input type="radio" id="modify_male" name="modify_gender" value="male">
-                            <label for="modify_male" style="font-weight: 500; margin-right: 50px;">남</label>
+                            <label for="modify_male" style="font-weight: 500; margin-right: 40px;">남</label>
 
                             <input type="radio" id="modify_female" name="modify_gender" value="female">
-                            <label for="modify_female" style="font-weight: 500;">여</label>
+                            <label for="modify_female" style="font-weight: 500; margin-right: 40px; ">여</label>
 
                         </div>
                     </div>
 
                     <!-- 중성화 여부 -->
-                    <div class="row justify-content-center mb-3" style="margin-left: 3px;">
-                        <div class="col-4" style="font-weight: 700;">중성화 여부</div>
+                    <div class="row justify-content-center mb-3" style="margin-bottom: 20px;">
+                        <div class="col-4" style="font-weight: 700; left: 10px;">중성화 여부</div>
 
                         <div class="form-group col-7 ml-4">
 
                             <input type="radio" id="modify_neuteredRadioY" name="neuteredRadio" value="Y">
-                            <label for="modify_neuteredRadioY" style="font-weight: 500; margin-right: 50px;">O</label>
+                            <label for="modify_neuteredRadioY" style="font-weight: 500; margin-right: 40px;">O</label>
 
                             <input type="radio" id="modify_neuteredRadioN" name="neuteredRadio" value="N">
-                            <label for="modify_neuteredRadioN" style="font-weight: 500;">X</label>
+                            <label for="modify_neuteredRadioN" style="font-weight: 500;  margin-right: 40px;">X</label>
 
                         </div>
                     </div>
@@ -97,7 +98,7 @@
 
                         <div class="form-group col-7">
                             <select id="modify_kind" name="품종" aria-label="pet-kind" aria-describedby="kind"
-                                style="width: 80%;">
+                                style="width: 80%; height: 30px;">
                                 <option selected>품종</option>
                                 <option>말티즈</option>
                                 <option>포메라니안</option>
@@ -119,12 +120,12 @@
 
                     <!-- 동물등록번호 -->
                     <div class="row justify-content-center mb-3">
-                        <div class="col-4" style="font-weight: 700;">동물등록번호</div>
+                        <div class="col-4" style="font-weight: 700; ">동물등록번호</div>
 
                         <div class="form-group col-7">
 
                             <input id="modify_code" name="modify_code" type="text" placeholder="동물등록번호(선택사항)"
-                                aria-describedby="modify_name" maxlength="100" style="width: 80%;">
+                                aria-describedby="modify_name" maxlength="100" style="width: 80%; height: 30px;">
 
                         </div>
                     </div>
@@ -134,12 +135,9 @@
                     </div>
                     <!-- 수정, 취소 버튼 -->
                     <div class="row">
-                        <div id="modifyBtn" class="btn btn-info col-2" style="margin-left: 100px; margin-right: 100px;">
-                            수정</div>
-                        <div id="modify_cancel" class="btn btn-secondary col-2">취소</div>
+                        <div id="modifyBtn" class="btn btn-info col-2" style="margin-left: 60px; margin-right: 110px; width: 60px; height: 35px;">수정</div>
+                        <div id="modify_cancel" class="btn btn-secondary col-2" style="width: 60px; height: 35px;">취소</div>
                     </div>
-
-
                 </form>
             </div>
         </div>
@@ -178,6 +176,22 @@
 <!-- SweetAlert2 예쁜 알람창 -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
 <script>
+
+
+    //앱 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+    window.parent.postMessage({
+            action: 'moveFrameN'
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+        
+        //앱 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+
+    //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+    window.parent.postMessage({
+            action: 'moveFrameY' //메인페이지에서 하위 메뉴로 들어갔을 때 페이지 이동 표시("Y": 하위 메뉴/"N": 메인메뉴)
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
 
     let p_userCode = "{{p_userCode}}";
     let modifyPetId = "{{petId}}";

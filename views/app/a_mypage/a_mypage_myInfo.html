@@ -290,11 +290,11 @@
         <div class="form-group text-center p-b-20 row">
             <div class="col-5 mr-4 ml-4">
                 <button class="btn btn-info btn-block text-uppercase waves-effect waves-light" id="modifyBtn"
-                    type="button">수정</button>
+                    type="button" style="width: 55px;">수정</button>
             </div>
             <div class="col-5 ml-2">
                 <button class="btn btn-info btn-block text-uppercase waves-effect waves-light" id="serviceEndBtn"
-                    type="button">서비스 종료</button>
+                    type="button" style="background-color: rgb(253, 99, 99); border-color: rgb(253, 99, 99) ; width: 100px; margin-right: 50px;">서비스 종료</button>
             </div>
         </div><br />
         </form>
@@ -330,27 +330,6 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">닫기</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- 현재 비밀번호 입력 모달 -->
-<div id="password-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static"
-    data-keyboard="false">
-    <div class="custom-modal modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">비밀번호 확인</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-hidden="true" onclick="closePwModal()">&times;</button>
-            </div>
-            <div class="modal-body">
-                현재 비밀번호를 입력해 주세요.<br>
-                <input id="pw-check-input" name="pwCheck" type="password" class="form-control" placeholder="비밀번호 입력"
-                    maxlength="15">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" id="pwCheckBtn" onclick="aPwCheck()">확인</button>
             </div>
         </div>
     </div>
@@ -402,6 +381,8 @@
 <!-- <script src="/web/index/signup.js"></script> -->
 <script type="text/javascript" src="/app/a_mypage/a_mypage_myInfo.js"></script>
 <script>
+    
+    
     let p_userCode = "{{p_userCode}}";
     init();
 </script>

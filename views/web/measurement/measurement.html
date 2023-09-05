@@ -295,11 +295,11 @@
                                 <div id="searchFrm" class="form-group">
                                     <select id="searchKey" class="form-control form-control-sm">
                                         <!-- <option>선택 ▼</option> -->
-                                        <option id="petName">환자명</option>
-                                        <option id="protectName">보호자명</option>
+                                        <option value="1">환자명</option>
+                                        <option value="2">보호자명</option>
                                     </select>
                                     <input type="text" class="form-control form-control-sm" id="searchWord" placeholder="검색어 입력" />
-                                    <input type="submit" class="btn btn-secondary btn-sm" id="searchBtn" value="검색" data-toggle="modal" data-target="#select-patient-modal" />
+                                    <input type="submit" class="btn btn-secondary btn-sm" id="searchBtn" value="검색" />
                                 </div>
 
                                 <div class="input-div">
@@ -324,7 +324,7 @@
 
                                 <hr />
                                 <div class="input-div" style="margin-top: 10px;">
-                                    <button data-toggle="modal" data-target="#measure-modal1" class="btn btn-success" id="measureBtn">측정하기</button>
+                                    <button class="btn btn-success" id="measureBtn">측정하기</button>
                                 </div>
                             </div>
 
@@ -438,7 +438,7 @@
 </div>
 
 <!-- 환자 선택 모달 -->
-<div id="select-patient-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+<div id="select-patient-modal" class="modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
     <div class="modal modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -476,7 +476,7 @@
 </div>
 
 <!-- 전원 연결 모달1 (측정하기 버튼 클릭 시 열리는 모달) -->
-<div id="measure-modal1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+<div id="measure-modal1" class="modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -485,13 +485,14 @@
             </div>
             <div class="modal-body">
                 <br/>
-                <p>이미지 or 전원 연결 소개 문구 검토</p>
+                <!-- <p>이미지 or 전원 연결 소개 문구 검토</p> -->
                 <p style="font-size:17px;">기기의 전원 연결 후,<br/>다음 버튼을 클릭해 주세요.</p>
                 <br/>
             </div>
             <div class="modal-footer">
                 <div id="modalBtn-div">
-                    <button id="nextBtn" type="button" class="modal-btn btn btn-success waves-effect" data-target="#measure-modal2" data-toggle="modal" data-dismiss="modal">다음</button>
+                    <button id="nextBtn" type="button" class="modal-btn btn btn-success waves-effect">다음</button>
+                    <!--  data-target="#measure-modal2" data-toggle="modal" -->
                     <button id="cancleBtn" type="button" class="modal-btn btn btn-secondary waves-effect" data-dismiss="modal" aria-hidden="true">취소</button>
                 </div>
             </div>
@@ -506,7 +507,7 @@
     h5태그, p태그 id값 참조해서 텍스트만 바꾸기!
     그리고 전원 연결 모달 2는 연결 상태에 따라 자동으로 모달창 바뀌게 하려고 일부러 닫기 기능은 안 넣었어요!
 -->
-<div id="measure-modal2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
+<div id="measure-modal2" class="modal" tabindex="-1" role="dialog" aria-hidden="true" data-backdrop="static">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <div class="modal-header">
@@ -616,7 +617,13 @@
 <!-- ------------------------------------------------------------- -->
 
 {%block script%}
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<!-- SweetAlert2 예쁜 알람창 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.2/dist/sweetalert2.all.min.js"></script>
+<script>
+    // let h_adminCode = '{{h_adminCode}}'
+</script>
 <script type="text/javascript" src="/web/measurement/measurement.js"></script>
 
 <script>

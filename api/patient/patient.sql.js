@@ -4,20 +4,20 @@ exports.select_key_string = `SELECT key_string FROM encryption_key_info WHERE ac
 // 환자 or 보호자 정보 검색
 // 환자(pet)명으로 검색
 exports.searchPetInfo = `
-    SELECT pi.pet_name, pi.pet_code, pi.pet_byear, pi.pet_weight, pi.pet_breed, pi.pet_note,
+    SELECT pi.pet_name, pi.pet_code, pi.pet_byear, pi.pet_weight, pi.pet_breed,
        up.p_user_name, up.p_phone_first, up.p_phone_middle, up.p_phone_last, pi.pet_id
     FROM user_protector up
     JOIN pet_info pi ON up.p_user_code = pi.p_user_code
     JOIN my_hospital mh ON up.p_user_code = mh.p_user_code
-    WHERE pet_name = ? AND PI.p_user_code IN (SELECT p_user_code FROM my_hospital WHERE h_user_code=?);
+    WHERE pet_name = ? AND PI.p_user_code IN (SELECT p_user_code FROM my_hospital WHERE h_user_code=?) AND mh.h_user_code=?;
 `;
 // 보호자(protectort)명으로 검색
 exports.searchProtectorInfo = `
-    SELECT pi.pet_name, pi.pet_code, pi.pet_byear, pi.pet_weight, pi.pet_breed, pi.pet_note, up.p_user_name, up.p_phone_first, up.p_phone_middle, up.p_phone_last, pi.pet_id
-    FROM user_protector up Join pet_info pi
-    ON up.p_user_code = pi.p_user_code
-    JOIN my_hospital mh ON up.p_user_code = mh.p_user_code
-    where p_user_name=? AND PI.p_user_code IN (SELECT p_user_code FROM my_hospital WHERE h_user_code=?);
+SELECT pi.pet_name, pi.pet_code, pi.pet_byear, pi.pet_weight, pi.pet_breed, up.p_user_name, up.p_phone_first, up.p_phone_middle, up.p_phone_last, pi.pet_id  
+  FROM user_protector up    
+  JOIN pet_info pi ON up.p_user_code = pi.p_user_code    
+  JOIN my_hospital mh ON up.p_user_code = mh.p_user_code    
+  WHERE pet_name = ? AND PI.p_user_code IN (SELECT p_user_code FROM my_hospital WHERE h_user_code=?) AND mh.h_user_code=?;
 `;
 
 // pet 정보 로드
@@ -30,7 +30,7 @@ exports.petInfoLoad = `
 // pet 정보 수정
 exports.petInfoModify = `
     update pet_info
-    set pet_isNeutering=?, pet_weight = ?, pet_note=?
+    set pet_isNeutering=?, pet_weight = ?
     where pet_id=?;
 `;
 // 진료 내역 전체 조회
@@ -143,9 +143,3 @@ exports.bioInfo_detail = `
     FROM predict_data
     where pd_num=?;
 `;
-
-
-
-
-
-

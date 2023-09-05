@@ -1,24 +1,24 @@
-// ì•”í˜¸í™” í‚¤ ì¡°íšŒ
+// ¾ÏÈ£È­ Å° Á¶È¸
 exports.select_key_string = `SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';`;
 
-// ìš°ë¦¬ ì•„ì´ ê´€ë¦¬ì—ì„œ ë°˜ë ¤ë™ë¬¼ ì¶”ê°€
+// ¿ì¸® ¾ÆÀÌ °ü¸®¿¡¼­ ¹İ·Áµ¿¹° Ãß°¡
 exports.loadPetList = `
     select *
     from pet_info
     where p_user_code =? order by pet_first_yn desc;
 `;
-// ìš°ë¦¬ ì•„ì´ ë“±ë¡
+// ¿ì¸® ¾ÆÀÌ µî·Ï
 exports.insertPet = `
     insert into pet_info (pet_code, pet_name, pet_byear, pet_weight, pet_breed,p_user_code, pet_isNeutering, pet_gender )
     values(?,?,?,?,?,?,?,?);
 `;
-// ë°˜ë ¤ê²¬ ë¦¬ìŠ¤íŠ¸ì— ë“±ë¡ëœ ë°˜ë ¤ê²¬ ìˆ˜
+// ¹İ·Á°ß ¸®½ºÆ®¿¡ µî·ÏµÈ ¹İ·Á°ß ¼ö
 exports.first = `
     select *
     from pet_info
     where p_user_code =?;
 `;
-// ë°˜ë ¤ê²¬ ë¦¬ìŠ¤íŠ¸ì— í•œë§ˆë¦¬ ë¿ì¼ ë•Œ ìë™ ëŒ€í‘œë°˜ë ¤ê²¬ ì„¤ì •
+// ¹İ·Á°ß ¸®½ºÆ®¿¡ ÇÑ¸¶¸® »ÓÀÏ ¶§ ÀÚµ¿ ´ëÇ¥¹İ·Á°ß ¼³Á¤
 exports.doFirst = `
     UPDATE pet_info
     SET pet_first_yn = 'Y'
@@ -26,13 +26,13 @@ exports.doFirst = `
 `;
 
 
-// ëŒ€í‘œ ë°˜ë ¤ê²¬ ì„¤ì •
+// ´ëÇ¥ ¹İ·Á°ß ¼³Á¤
 exports.setFirst = `
     UPDATE pet_info
     SET pet_first_yn = 'Y'
     WHERE p_user_code = ? AND pet_id = ?;
 `;
-// ëŒ€í‘œ ë°˜ë ¤ê²¬ ë‚˜ë¨¸ì§€ í•´ì œ 
+// ´ëÇ¥ ¹İ·Á°ß ³ª¸ÓÁö ÇØÁ¦ 
 exports.setSecond = `
     UPDATE pet_info
     SET pet_first_yn = 'N'
@@ -40,26 +40,26 @@ exports.setSecond = `
 `;
 
 
-// ê¸°ì¡´ ëŒ€í‘œ ë°˜ë ¤ê²¬ í« ì•„ì´ë”” ê°€ì ¸ì˜¤ê¸°
+// ±âÁ¸ ´ëÇ¥ ¹İ·Á°ß Æê ¾ÆÀÌµğ °¡Á®¿À±â
 exports.exFirst = `
         select pet_id
         from pet_info
         where p_user_code =? and pet_first_yn='Y';
     `;
-// ë°˜ë ¤ê²¬ ìˆ˜ì • í˜ì´ì§€ ë°ì´í„° ê°€ì ¸ì˜¤ê¸°
+// ¹İ·Á°ß ¼öÁ¤ ÆäÀÌÁö µ¥ÀÌÅÍ °¡Á®¿À±â
 exports.loadModifyPageData = `
     select *
     from pet_info
     where pet_id =?;
 `;
-// ë°˜ë ¤ê²¬ ìˆ˜ì •ê¸°ëŠ¥
+// ¹İ·Á°ß ¼öÁ¤±â´É
 exports.modifyMyPet = `
     UPDATE pet_info
     SET pet_name = ?, pet_byear =?, pet_weight = ?, pet_breed =?, pet_isNeutering=?, pet_gender=?, pet_code =?
     WHERE p_user_code = ? AND pet_id = ?;
 `;
 
-//  ë°˜ë ¤ê²¬ ì‚­ì œ
+//  ¹İ·Á°ß »èÁ¦
 exports.myPetDelete = `
     DELETE FROM pet_info
     WHERE pet_id = ?;
@@ -77,27 +77,27 @@ exports.myPetDelete4 = `
     WHERE pet_id = ?;
 `;
 
-// ì•Œë¦¼ê´€ë¦¬ í˜ì´ì§€ ë‚ ì§œ ë° pushí—ˆìš© ë°ì´í„° ë¡œë“œ
+// ¾Ë¸²°ü¸® ÆäÀÌÁö ³¯Â¥ ¹× pushÇã¿ë µ¥ÀÌÅÍ ·Îµå
 exports.alertPushDateLoad = `
     select push_date, p_user_provide_yn
     from user_protector
     where p_user_code=?;
 `;
 
-// ì•Œë¦¼ê´€ë¦¬ í˜ì´ì§€ ë°ì´í„° ë¡œë“œ
+// ¾Ë¸²°ü¸® ÆäÀÌÁö µ¥ÀÌÅÍ ·Îµå
 exports.alertDataLoad = `
     select *
     from alert_list
-    where p_user_code=?;
+    where p_user_code=?  order by alert_created_time desc;
 `;
 
-// í‘¸ì‰¬ ì„¤ì • on
+// Çª½¬ ¼³Á¤ on
 exports.allowPushSetting = `
     UPDATE user_protector
     SET p_user_provide_yn = 'Y'
     WHERE p_user_code = ?;
 `;
-// í‘¸ì‰¬ ì„¤ì • off
+// Çª½¬ ¼³Á¤ off
 exports.disallowPushSetting = `
     UPDATE user_protector
     SET p_user_provide_yn = 'N'
@@ -110,14 +110,14 @@ exports.select_pushSetting = `
     where p_user_code=?;
 `;
 
-// ì•Œë¦¼ í™•ì¸ ì—¬ë¶€ ì²´í¬
+// ¾Ë¸² È®ÀÎ ¿©ºÎ Ã¼Å©
 exports.checkAlert = `
     UPDATE alert_list
     SET alert_check = 'Y'
     WHERE p_user_code = ? and alert_created_time = ?;
 `;
 
-// ì•Œë¦¼ ìë™ ì‚­ì œ
+// ¾Ë¸² ÀÚµ¿ »èÁ¦
 
 exports.alert_delete_auto = `
     DELETE FROM alert_list
@@ -129,7 +129,7 @@ exports.alert_delete_auto = `
         (p_user_code = ? AND alert_class = 0 AND alert_created_time <= DATE_SUB(NOW(), INTERVAL 1 DAY));
 `;
 
-// ì•Œë¦¼ ì‚­ì œ ë²„íŠ¼ í´ë¦­í•˜ì—¬ ì‚­ì œ
+// ¾Ë¸² »èÁ¦ ¹öÆ° Å¬¸¯ÇÏ¿© »èÁ¦
 exports.alert_delete = `
     DELETE FROM alert_list
     WHERE alert_num = ? ;
@@ -139,7 +139,7 @@ exports.alert_delete = `
 exports.select_inquiry_num = `
     select inquiry_num
     from alert_list
-    WHERE p_user_code = ? and alert_created_time = ?;
+    WHERE p_user_code = ? and alert_created_time = ? order by alert_created_time desc;
 `;
 exports.inquiry_answer = `
     select il.opinion, il.inquiry_title, pi.pet_name, uh.h_name
@@ -149,21 +149,21 @@ exports.inquiry_answer = `
     WHERE inquiry_num = ?;
 `;
 
-// ë¹„ë°€ë²ˆí˜¸ í™•ì¸
+// ºñ¹Ğ¹øÈ£ È®ÀÎ
 exports.aPwCheck = `
     SELECT p_user_code
     from user_protector
     where p_account_pw = SHA2(?, 256) and p_user_code = ?;
 `;
 
-// ë‚´ ì •ë³´ ë¡œë“œ
+// ³» Á¤º¸ ·Îµå
 exports.myInfoLoad = `
     SELECT * 
     from user_protector 
     where p_user_code=?;
 `;
 
-// ì¤‘ë³µ ì—°ë½ì²˜ ê²€ì‚¬
+// Áßº¹ ¿¬¶ôÃ³ °Ë»ç
 exports.select_phone_duplicate =
     `
     SELECT p_phone_first, p_phone_middle, p_phone_last
@@ -171,21 +171,21 @@ exports.select_phone_duplicate =
     WHERE p_phone_first = ? AND p_phone_middle = ? AND p_phone_last = ? AND p_user_code != ?;
 `;
 
-// ì¤‘ë³µ email ê²€ì‚¬
+// Áßº¹ email °Ë»ç
 exports.select_user_email_duplicate =
     `
     SELECT p_email_id FROM user_protector 
     WHERE p_email_id = ? AND p_email_domain = ? AND p_user_code != ?;
 `;
 
-// ì´ë©”ì¼ ìœ ë¬´ í™•ì¸
+// ÀÌ¸ŞÀÏ À¯¹« È®ÀÎ
 exports.search_user =
     `
     SELECT p_user_name, p_email_id, p_email_domain
     FROM user_protector WHERE p_user_name=? and p_email_id=? and p_email_domain=?;
 `;
 
-// ì •ë³´ ìˆ˜ì •
+// Á¤º¸ ¼öÁ¤
 exports.myInfoModify = `
     update user_protector
     set p_user_name=?, p_account_pw=SHA2(?, 256), p_phone_first=?, p_phone_middle=?, 
@@ -193,7 +193,12 @@ exports.myInfoModify = `
     where p_user_code=?;
 `;
 
-// ì„œë¹„ìŠ¤ ì¢…ë£Œ
+exports.myInfoModify_noPw = `update user_protector
+    set p_user_name=?, p_phone_first=?, p_phone_middle=?, 
+        p_phone_last=?, p_email_id=?, p_email_domain=?, p_address_1=?, p_address_2=? 
+    where p_user_code=?;`
+
+// ¼­ºñ½º Á¾·á
 exports.withdrawService = `
     update user_protector 
     set activate_yn = 'D', p_delete_date = now() 

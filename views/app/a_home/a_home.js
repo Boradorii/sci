@@ -1,4 +1,3 @@
-
 async function init() {
     selectPetInfo()
     selectTodayList()
@@ -63,8 +62,6 @@ function selectTodayList() {
 
 // 알림 자동 삭제 (어플 시작 시 실행)
 function alert_delete() {
-
-
     let cmmContentType = 'application/json',
         cmmType = 'post',
         cmmUrl = '/api/a_mypage/alert_delete',
@@ -72,13 +69,10 @@ function alert_delete() {
             p_user_code: p_userCode
         },
         cmmAsync = false,
-        cmmSucc = function (result) {
-        },
+        cmmSucc = function(result) {},
         cmmErr = null;
 
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
 
 
 }
-
-

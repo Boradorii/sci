@@ -17,7 +17,7 @@ exports.mainPetId = `
 exports.selectTodayList = `
     select hr_avg, predict_glucose, created_time
     from predict_data
-    where pet_id =?;
+    where pet_id =? and created_time like ?;
 `;
 
 exports.alert_icon = `

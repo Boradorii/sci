@@ -13,6 +13,25 @@ class measurementController {
         });
     };
 
+    //  환자 및 보호자 정보 검색
+    async searchPetInfo(req, res, next) {
+        let h_adminCode = req.body.h_adminCode;
+        let select = req.body.select;
+        let name = req.body.name;
+        let searchPetInfo = await svInstance.searchPetInfo(select, name, h_adminCode);
+
+        return res.send(searchPetInfo)
+    };
+
+    //  환자 및 보호자 정보
+    async petInfoLoad(req, res, next) {
+        let petId = req.body.petId;
+        let h_user_code = req.body.h_adminCode;
+        let petInfoLoad = await svInstance.petInfoLoad(petId, h_user_code);
+
+        return res.send(petInfoLoad)
+    };
+
 }
 
 module.exports = measurementController;

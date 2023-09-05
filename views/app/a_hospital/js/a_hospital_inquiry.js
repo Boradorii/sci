@@ -31,7 +31,8 @@ function selectInquiryData(startDate, endDate) {
         },
         cmmAsync = false,
 
-        cmmSucc = function (result) {
+        cmmSucc = function(result) {
+            console.log(result)
             inquiryList = result
             $('#inquiryList').html('')
             if (result.rowLength != 0) {
@@ -42,7 +43,7 @@ function selectInquiryData(startDate, endDate) {
                         <td>${result.rows[i].inquiry_created_time.slice(0, 10)}</td>
                         <td>${result.rows[i].h_user_name}</td>
                         <td>${result.rows[i].pet_name}</td>
-                        <td>${result.rows[i].alert_created_time.slice(0, 10)} </td>
+                        <td>${result.rows[i].alert_check_time.slice(0, 10)} </td>
                         </tr>`;
                     $('#inquiryList').append(inquiryListHtml);
                 }
@@ -70,17 +71,15 @@ function inquiry_answer(inquiry_num) {
             $('#pet_name').text("반려동물 이름: " + result.rows[0].pet_name);
             $('#inquiry_title').text("RE: " + result.rows[0].inquiry_title);
             $('#inquiry_contents').val(result.rows[0].opinion);
-
-
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
 
 }
 
-$('#day-datepicker').on('change', function () {
+$('#day-datepicker').on('change', function() {
     let selectDate = $(this).val()
     let start = selectDate.slice(0, 10)
-    let end = selectDate.slice(13,)
+    let end = selectDate.slice(13, )
     selectInquiryData(start, end)
 })

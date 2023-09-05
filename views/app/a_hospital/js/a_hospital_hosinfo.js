@@ -54,7 +54,7 @@ function clickHeart(target) {
 
     if (currentColor == 'rgb(255, 0, 0)') { //if 즐겨찾기 된 병원이라면
         cmmReqDataObj['myHosCheck'] = 'uncheck'
-        cmmSucc = function (result) {
+        cmmSucc = function(result) {
             if (result.state)
                 heartIcon.css('color', 'gray');
             else
@@ -63,7 +63,7 @@ function clickHeart(target) {
         commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
     } else {
         cmmReqDataObj['myHosCheck'] = 'check'
-        cmmSucc = function (result) {
+        cmmSucc = function(result) {
             if (result.state)
                 heartIcon.css('color', 'red');
             else
@@ -74,11 +74,11 @@ function clickHeart(target) {
 };
 
 //문의하기 버튼 클릭
-$('#sendInquery').on('click', function () {
-    sendInquery()
+$('#sendInquiry').on('click', function() {
+    sendInquiry()
 })
 
-function sendInquery() {
+function sendInquiry() {
     let sendData = {}
     let answer = [];
     let selectHos = $('#select-hos').val();
@@ -102,7 +102,7 @@ function sendInquery() {
         pet_id = selectPet
     }
 
-    $('.radio-select').each(function (idx) {
+    $('.radio-select').each(function(idx) {
         let questionId = $(this).attr('id');
         let selectedOption = $(this).find('input[name="' + questionId + '"]:checked').val();
         if (typeof selectedOption === 'undefined' | selectedOption == "") {
@@ -135,10 +135,10 @@ function sendInquery() {
                 title: inquiry_title
             },
             cmmAsync = false,
-            cmmSucc = function (result) {
+            cmmSucc = function(result) {
                 if (result.succ == 1) {
                     successSwal("문의사항 전송에 성공했습니다.");
-                    setTimeout(function () {
+                    setTimeout(function() {
                         $('#inquiry-modal').css('display', 'none')
                         location.href = baseUrl + '/a_hospital/hosInfoPage?p_userCode=' + p_userCode + '&h_userCode=' + h_userCode;
                     }, 1500)
@@ -152,4 +152,3 @@ function sendInquery() {
 
     }
 }
-

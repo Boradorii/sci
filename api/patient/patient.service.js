@@ -27,10 +27,7 @@ class patientService {
         // 환자명 조건으로 검색
         let result;
         if (select == 1) {
-            result = await mysqlDB('select', queryList.searchPetInfo, [name, h_adminCode]);
-            console.log('=================test====================');
-            console.log(result);
-            console.log('=================test====================');
+            result = await mysqlDB('select', queryList.searchPetInfo, [name, h_adminCode, h_adminCode]);
             for (let i = 0; i < result.rowLength; i++) {
                 result.rows[i].p_user_name = cryptoUtil.decrypt_aes(cryptoKey, result.rows[i].p_user_name);
                 result.rows[i].p_phone_first = cryptoUtil.decrypt_aes(cryptoKey, result.rows[i].p_phone_first);
@@ -40,10 +37,7 @@ class patientService {
         } else {
             // 보호자명 조건으로 검색
             name = cryptoUtil.encrypt_aes(cryptoKey, name);
-            result = await mysqlDB('select', queryList.searchProtectorInfo, [name, h_adminCode])
-            console.log('=================test====================');
-            console.log(result);
-            console.log('=================test====================');
+            result = await mysqlDB('select', queryList.searchProtectorInfo, [name, h_adminCode, h_adminCode])
             for (let i = 0; i < result.rowLength; i++) {
                 result.rows[i].p_user_name = cryptoUtil.decrypt_aes(cryptoKey, result.rows[i].p_user_name);
                 result.rows[i].p_phone_first = cryptoUtil.decrypt_aes(cryptoKey, result.rows[i].p_phone_first);
@@ -72,7 +66,7 @@ class patientService {
         if (result.rows[0].pet_code === null) {
             result.rows[0].pet_code = '-';
         }
-        result.rows[0].p_user_name = cryptoUtil.decrypt_aes(cryptoKey, result.rows[0].p_user_name)
+        result.rows[0].p_user_name = cryptoUtil.decrypt_aes(cryptoKey, result.rows[0].p_user_name);
         result.rows[0].p_phone_first = cryptoUtil.decrypt_aes(cryptoKey, result.rows[0].p_phone_first);
         result.rows[0].p_phone_middle = cryptoUtil.decrypt_aes(cryptoKey, result.rows[0].p_phone_middle);
         result.rows[0].p_phone_last = cryptoUtil.decrypt_aes(cryptoKey, result.rows[0].p_phone_last);
@@ -86,12 +80,12 @@ class patientService {
      *  @since 2023.07.06. 최초작성
      *  
      */
-    async petInfoModify(petId, pet_isNeutering, pet_note, pet_weight, piN, pW, pN) {
+    async petInfoModify(petId, pet_isNeutering, pet_weight, piN, pW, pN) {
         pet_weight = parseFloat(pet_weight);
         pW = parseFloat(pW);
         let result;
-        if (piN != pet_isNeutering || pW != pet_weight || pN != pet_note) {
-            result = await mysqlDB('update', queryList.petInfoModify, [pet_isNeutering, pet_weight, pet_note, petId])
+        if (piN != pet_isNeutering || pW != pet_weight) {
+            result = await mysqlDB('update', queryList.petInfoModify, [pet_isNeutering, pet_weight, petId])
         } else {
             result = "F";
         }
@@ -119,10 +113,11 @@ class patientService {
         } else {
             name = cryptoUtil.encrypt_aes(cryptoKey, name);
             result = await mysqlDB('select', queryList.diagnosis_Records, [h_adminCode, petId, name, startDate, endDate])
-        }
+
+        };
         for (let i = 0; i < result.rowLength; i++) {
             // 진료의 불러오기
-            let docName = await mysqlDB('select', queryList.diagnosis_detail_doctorName, [result.rows[i].medi_num])
+            let docName = await mysqlDB('select', queryList.diagnosis_detail_doctorName, [result.rows[i].medi_num]);
             result.rows[i].doctorName = cryptoUtil.decrypt_aes(cryptoKey, docName.rows[0].h_staff_name);
             // 진료 날짜 day까지만 나오도록 수정
             result.rows[i].medi_created_time = result.rows[i].medi_created_time.slice(0, 10);
@@ -139,7 +134,7 @@ class patientService {
                 result.rows[i].medi_purpose = "기타"
 
             }
-        }
+        };
         return result
     };
 

@@ -35,13 +35,12 @@ class patientController {
     async petInfoModify(req, res, next) {
         let petId = req.body.petId;
         let pet_isNeutering = req.body.pet_isNeutering;
-        let pet_note = req.body.pet_note;
         let pet_weight = req.body.pet_weight;
         let piN = req.body.piN;
         let pW = req.body.pW;
         let pN = req.body.pN;
 
-        let petInfoModify = await svInstance.petInfoModify(petId, pet_isNeutering, pet_note, pet_weight, piN, pW, pN);
+        let petInfoModify = await svInstance.petInfoModify(petId, pet_isNeutering, pet_weight, piN, pW, pN);
 
         return res.send(petInfoModify);
     };

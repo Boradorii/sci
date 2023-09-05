@@ -5,8 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- Tell the browser to be responsive to screen width -->
-    <meta name="viewport"
-        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=1.0" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=1.0" />
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
@@ -25,7 +24,7 @@
             font-weight: normal;
             font-style: normal;
         }
-
+        
         body {
             font-family: NanumSquareNeo-Variable;
         }
@@ -34,8 +33,7 @@
 
 </head>
 
-<body class="skin-megna fixed-layout"
-    style="-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; overflow-y: scroll;">
+<body class="skin-megna fixed-layout" style="-ms-user-select: none; -moz-user-select: -moz-none; -webkit-user-select: none; -khtml-user-select: none; user-select:none; overflow-y: scroll;">
     <!-- Preloader - style you can find in spinners.css -->
     <div class="preloader">
         <div class="loader">
@@ -58,18 +56,19 @@
     <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="/dist/js/waves.js"></script>
     <!--Custom JavaScript -->
+
     <script>
         let $sideOutside = $('.fixed-layout');
-        $sideOutside.on('click', function () {
+        $sideOutside.on('click', function() {
             window.parent.postMessage({
                 action: 'sideOutside'
             }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
         });
     </script>
 
-    {% block script%} {% endblock %}
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    {% block script%} {% endblock %}
 </body>
 
 </html>

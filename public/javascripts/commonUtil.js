@@ -45,10 +45,10 @@ function changeView(pageUrl, reqData) {
         type: 'post',
         url: authTokenUrl,
         data: { userCode: userCode }, // SY 수정_230622
-        beforeSend: function (xhr, settings) {
+        beforeSend: function(xhr, settings) {
             xhr.setRequestHeader('authorization', 'Bearer ' + getSessionStorage('accessToken'));
         },
-        success: function (result) {
+        success: function(result) {
             let succ = result.success;
             if (succ == 2) { // accessToken이 갱신되면
                 getSessionStorage('accessToken', result.accessToken);
@@ -69,7 +69,7 @@ function changeView(pageUrl, reqData) {
                 removeLocalStorage('homepageTitle');
             }
         },
-        error: function () {
+        error: function() {
             changePageUrl = failPage
             location.href = changePageUrl;
         }
@@ -93,7 +93,7 @@ function changeView(pageUrl, reqData) {
             showPageUrl += '&' + key + '=' + value;
         });
     }
-    if ((window.location.href).slice(-4,) == "/api")
+    if ((window.location.href).slice(-4, ) == "/api")
         showPageUrl += ('?accessToken=Bearer_' + getSessionStorage('accessToken'));
     else showPageUrl += ('?login_user=' + userCode + '&accessToken=Bearer_' + getSessionStorage('accessToken')); // access token 추가 2021.04.20 JG
 
@@ -124,12 +124,12 @@ function commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmS
         type: cmmType,
         async: cmmAsync,
         contentType: cmmContentType,
-        success: function (data) {
+        success: function(data) {
             if (cmmSucc != null && cmmSucc instanceof Function) {
                 cmmSucc(data);
             }
         },
-        error: function (xhr, status, error) {
+        error: function(xhr, status, error) {
             const xhrStatus = xhr.status;
 
             console.log('code: ' + xhrStatus + '\n' +
@@ -297,7 +297,7 @@ function setMinSelBox2($selBox) {
  * @author JG, Go
  * */
 function chkParamType(chkVal, chkType) {
-    var valType = typeof (chkVal);
+    var valType = typeof(chkVal);
     var isMatch = (valType.toLowerCase() == chkType.toLowerCase());
     return isMatch;
 }
@@ -497,4 +497,3 @@ function successSwal(title) {
         timer: 1500
     });
 };
-

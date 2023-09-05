@@ -2,6 +2,7 @@
 const mysqlDB = require('../../config/db/database_mysql');
 const queryList = require('./a_home.sql');
 const cryptoUtil = require('../../public/javascripts/cryptoUtil');
+const moment = require('moment');
 
 
 
@@ -12,13 +13,13 @@ class aHomeService {
 
 
     /**
-         *  반려견 정보 출력
-         *  @param p_user_code 관리자 코드 (String)
-         *  @return 조회 결과 반환(json)
-         *  @author ChangGyu Lee
-         *  @since 2023.07.10. 최초작성
-         *  
-         */
+     *  반려견 정보 출력
+     *  @param p_user_code 관리자 코드 (String)
+     *  @return 조회 결과 반환(json)
+     *  @author ChangGyu Lee
+     *  @since 2023.07.10. 최초작성
+     *  
+     */
     async selectPetInfo(p_user_code) {
         let currentYear = new Date().getFullYear();
 
@@ -45,26 +46,21 @@ class aHomeService {
      *  
      */
     async selectTodayList(p_user_code) {
-
+        let result
+        let curDate = moment().format('YYYY-MM-DD') + "%";
+        console.log(curDate)
         let mainPetId = await mysqlDB('select', queryList.mainPetId, [p_user_code]);
-        let result = await mysqlDB('select', queryList.selectTodayList, [mainPetId.rows[0].pet_id]);
-
-
-
-
-
+        if (mainPetId.rowLength != 0) {
+            result = await mysqlDB('select', queryList.selectTodayList, [mainPetId.rows[0].pet_id, curDate]);
+        } else {
+            result = mainPetId
+        }
         return result
     };
 
     // 아이콘 온오프 기능 만들기
-
     async alert_icon(p_user_code) {
-
         let result = await mysqlDB('select', queryList.alert_icon, [p_user_code]);
-
-
-
-
         return result
     };
 

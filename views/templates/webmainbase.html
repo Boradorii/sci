@@ -18,20 +18,20 @@
         font-weight: normal;
         font-style: normal;
     }
-
+    
     body {
         font-family: NanumSquareNeo-Variable;
     }
-
+    
     .active {
         margin-top: 0.7em;
         margin-bottom: 0;
     }
-
+    
     .deactive {
         display: none;
     }
-
+    
     .border-line {
         border-bottom: 1px solid #ddd;
     }
@@ -45,7 +45,7 @@
                 <div class="navbar-header">
                     <a class="navbar-brand m-auto sd-list" id="page-title" href="javascript:void(0)">
                         <!-- Logo icon --><b>
-                            <img src="/assets/images/sci_logo.png" alt="homepage" />
+                            <img src="/assets/images/sci_logo.png" alt="homepage"/>
                         </b>
                         <!--End Logo icon -->
                         <span class="hidden-xs"><span class="m-l-10" style="font-size:x-large">독닥독닥</span>
@@ -58,29 +58,23 @@
                 <nav class="sidebar-nav">
                     <ul id="sidebarnav">
                         <div class="border-line"></div>
-                        <li class="sd-list" id="side-menu-measure"><a class="waves-effect waves-dark"
-                                href="javascript:void(0)"><span class="hide-menu">혈당/혈압 측정</span></a></li>
-                        <li class="sd-list" id="side-menu-patient"><a class="waves-effect waves-dark"
-                                href="javascript:void(0)"><span class="hide-menu">환자관리</span></a></li>
+                        <li class="sd-list" id="side-menu-measure"><a class="waves-effect waves-dark" href="javascript:void(0)"><span class="hide-menu">혈당/혈압 측정</span></a></li>
+                        <li class="sd-list" id="side-menu-patient"><a class="waves-effect waves-dark" href="javascript:void(0)"><span class="hide-menu">환자관리</span></a></li>
                         <div class="border-line"></div>
-                        <li><a class="has-arrow waves-effect waves-dark" href="javascript:void(0)"
-                                aria-expanded="false"><span class="hide-menu" id="hosName"></span></a>
+                        <li><a class="has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><span class="hide-menu" id="hosName"></span></a>
                             <ul aria-expanded="false" class="collapse">
                                 <li class="sd-list" id="side-menu-notice">
                                     <a class="waves-effect waves-dark" href="javascript:void(0)"><span id="alertManage"
                                             class="hide-menu">알림 관리</span></a>
                                 </li>
                                 <li class="sd-list" id="side-menu-hospital">
-                                    <a class="waves-effect waves-dark" href="javascript:void(0)"></i><span
-                                            class="hide-menu">병원 관리</span></a>
+                                    <a class="waves-effect waves-dark" href="javascript:void(0)"></i><span class="hide-menu">병원 관리</span></a>
                                 </li>
                             </ul>
                         </li>
                         <div class="border-line"></div>
-                        <li class="sd-list" id="side-menu-manual"><a class="waves-effect waves-dark"
-                                href="javascript:void(0)"><span class="hide-menu">독닥독닥 매뉴얼</span></a></li>
-                        <li class="sd-list" id="side-menu-logout"><a class="waves-effect waves-dark"
-                                href="javascript:void(0)"><span class="hide-menu">로그아웃</span></a></li>
+                        <li class="sd-list" id="side-menu-manual"><a class="waves-effect waves-dark" href="javascript:void(0)"><span class="hide-menu">독닥독닥 매뉴얼</span></a></li>
+                        <li class="sd-list" id="side-menu-logout"><a class="waves-effect waves-dark" href="javascript:void(0)"><span class="hide-menu">로그아웃</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -112,7 +106,7 @@
 <script>
     let h_adminCode = getSessionStorage('h_adminCode');
     check_hospital_alert(h_adminCode)
-    setInterval(function () {
+    setInterval(function() {
         check_hospital_alert(h_adminCode)
     }, 10000);
 
@@ -166,7 +160,7 @@
 
 
 
-    $('.sd-list').on('click', function (evnt) {
+    $('.sd-list').on('click', function(evnt) {
         console.log(evnt.currentTarget.id)
         switch (evnt.currentTarget.id) {
             case 'side-menu-measure':
@@ -188,7 +182,7 @@
                 changeView(hospitalUrl)
                 break;
 
-            //로그아웃 구현_230621 SY
+                //로그아웃 구현_230621 SY
             case 'side-menu-logout':
                 let cmmContentType = 'application/json',
                     cmmType = 'post',
@@ -197,7 +191,7 @@
                         userCode: h_adminCode
                     },
                     cmmAsync = false,
-                    cmmSucc = function (result) {
+                    cmmSucc = function(result) {
                         if (result.state) {
                             changeView(baseUrl);
                             localStorage.removeItem('hosName');
@@ -208,7 +202,7 @@
 
                         }
                     },
-                    cmmErr = function () {
+                    cmmErr = function() {
                         alert('로그아웃 실패하였습니다. 다시 시도해 주세요.');
                     };
                 commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
@@ -242,9 +236,6 @@
         commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
 
     }
-
-
-
 </script>
 
 {%block script%} {% endblock %}

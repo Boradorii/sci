@@ -26,11 +26,11 @@ function aPwCheck() {
                 $('#password-modal').modal('hide');
                 myInfoLoad();
             } else {
-                if($('#pw-check-input').val()==""){
+                if ($('#pw-check-input').val() == "") {
                     Swal.fire({
                         html: '비밀번호를 입력해 주세요.',
                     });
-                }else{
+                } else {
                     Swal.fire({
                         html: '비밀번호가 일치하지 않습니다.<br>다시 입력해 주세요.',
                     });
@@ -56,13 +56,13 @@ $("#edit-emailBtn").on('click', function() {
     $("#email-input2").attr('readonly', false);
     $("#email-select-input2").toggle();
     $("#authnumber").val("");
-    $("#e-auth-notice").css("display","none");
+    $("#e-auth-notice").css("display", "none");
 
     $("#input-authnumber").toggle();
     authCheck = false;
 
     selectOption(emailId);
-    if($('#email-select-input2').val() == emailDomain){
+    if ($('#email-select-input2').val() == emailDomain) {
         $('#email-input2').attr('readonly', true);
     }
 });
@@ -88,22 +88,22 @@ function selectOption(emailId) {
     let selectElement = document.getElementById("email-select-input2");
     for (var i = 0; i < selectElement.options.length; i++) {
         if (selectElement.options[i].value === emailDomain) {
-          selectElement.selectedIndex = i;
-          break;
+            selectElement.selectedIndex = i;
+            break;
         }
-        if(i == selectElement.options.length-1){
+        if (i == selectElement.options.length - 1) {
             selectElement.selectedIndex = 0;
         }
-      }
-  }
+    }
+}
 
 // 이메일 도메인 변경
-function selectEmail(ele){
+function selectEmail(ele) {
     var $ele = $(ele);
     var $email2 = $('#email-input2');
 
     // '1'인 경우 직접입력
-    if($ele.val() == "1"){
+    if ($ele.val() == "1") {
         $email2.attr('readonly', false);
         $email2.val('');
     } else {
@@ -143,10 +143,9 @@ function formCheck(targetId) {
         domainPattern = /[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
     // 이메일 중복 확인    
-    let emailDupl = emailDuplicateCheck($("#email-input").val(), $("#email-input2").val());
-    // 연락처 중복 확인
-    let phoneDupl = phoneDuplicateCheck($("#phone1").val(), $("#phone2").val(), $("#phone3").val());
-
+    let emailDupl
+        // 연락처 중복 확인
+    let phoneDupl
     switch (targetId) {
         case 'name-input': // 이름
             if (!namePatternKr.test(targetVal)) { // 국문
@@ -160,28 +159,30 @@ function formCheck(targetId) {
             break;
 
         case 'pw-input': // 비밀번호
-            if (!pwdPattern.test(targetVal)) {
-                $("#pwd-notice").removeClass('deactive-notice');
-                $("#pwd-notice").addClass('active-notice');
-            } else {
-                $("#pwd-notice").removeClass('active-notice');
-                $("#pwd-notice").addClass('deactive-notice');
-                inputList.p_account_pw = targetVal;
-            }
+            if (targetVal != '')
+                if (!pwdPattern.test(targetVal)) {
+                    $("#pwd-notice").removeClass('deactive-notice');
+                    $("#pwd-notice").addClass('active-notice');
+                } else {
+                    $("#pwd-notice").removeClass('active-notice');
+                    $("#pwd-notice").addClass('deactive-notice');
+                    inputList.p_account_pw = targetVal;
+                }
             break;
 
         case 'newPw-input': // 비밀번호 확인
-            if ($("#pw-input").val() != targetVal) {
-                $("#pwd-confirm-notice").removeClass('deactive-notice');
-                $("#pwd-confirm-notice").addClass('active-notice');
-            } else {
-                $("#pwd-confirm-notice").removeClass('active-notice');
-                $("#pwd-confirm-notice").addClass('deactive-notice');
-            }
+            if (targetVal != '')
+                if ($("#pw-input").val() != targetVal) {
+                    $("#pwd-confirm-notice").removeClass('deactive-notice');
+                    $("#pwd-confirm-notice").addClass('active-notice');
+                } else {
+                    $("#pwd-confirm-notice").removeClass('active-notice');
+                    $("#pwd-confirm-notice").addClass('deactive-notice');
+                }
             break;
 
         case 'phone1': // 연락처 1
-            if (phoneDupl) {
+            if (phoneDuplicateCheck($("#phone1").val(), $("#phone2").val(), $("#phone3").val())) {
                 $("#phone-dupl-notice").removeClass('deactive-notice');
                 $("#phone-dupl-notice").addClass('active-notice');
                 $("#phone-notice").removeClass('active-notice');
@@ -202,7 +203,7 @@ function formCheck(targetId) {
             break;
 
         case 'phone2': // 연락처 2
-            if (phoneDupl) {
+            if (phoneDuplicateCheck($("#phone1").val(), $("#phone2").val(), $("#phone3").val())) {
                 $("#phone-dupl-notice").removeClass('deactive-notice');
                 $("#phone-dupl-notice").addClass('active-notice');
                 $("#phone-notice").removeClass('active-notice');
@@ -223,7 +224,7 @@ function formCheck(targetId) {
             break;
 
         case 'phone3': // 연락처 3
-            if (phoneDupl) {
+            if (phoneDuplicateCheck($("#phone1").val(), $("#phone2").val(), $("#phone3").val())) {
                 $("#phone-dupl-notice").removeClass('deactive-notice');
                 $("#phone-dupl-notice").addClass('active-notice');
                 $("#phone-notice").removeClass('active-notice');
@@ -270,7 +271,7 @@ function formCheck(targetId) {
 
 
         case 'email-input': // 이메일 아이디
-            if (emailDupl) {
+            if (emailDuplicateCheck($("#email-input").val(), $("#email-input2").val())) {
                 $("#email-dupl-notice").removeClass('deactive-notice');
                 $("#email-dupl-notice").addClass('active-notice');
                 $("#email-notice").removeClass('active-notice');
@@ -295,7 +296,7 @@ function formCheck(targetId) {
             break;
 
         case 'email-input2': // 이메일 도메인
-            if (emailDupl) {
+            if (emailDuplicateCheck($("#email-input").val(), $("#email-input2").val())) {
                 $("#email-dupl-notice").removeClass('deactive-notice');
                 $("#email-dupl-notice").addClass('active-notice');
                 $("#email-notice").removeClass('active-notice');
@@ -347,14 +348,14 @@ function myInfoLoad() {
             $("#phone").val(result.rows[0].h_telnum);
             $("#email-input").val(result.rows[0].p_email_id);
             $("#email-input2").val(result.rows[0].p_email_domain);
-            
+
             $("#email-input").attr('readonly', true);
             $("#email-input2").attr('readonly', true);
             emailId = result.rows[0].p_email_id;
             emailDomain = result.rows[0].p_email_domain;
             authCheck = true;
 
-            selectOption(emailDomain);         
+            selectOption(emailDomain);
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
@@ -453,31 +454,31 @@ function sendEmail() {
 
 // 인증번호 확인 버튼 클릭 이벤트
 $('#checknumber').on('click', function() {
-    if (validator($('#authnumber').val(), 'isEmpty')) {
-        alert('인증번호를 입력해 주세요.');
-        authCheck = false;
-    } else {
-        if ($('#authnumber').val() == authnumber) {
-            alert('이메일 인증에 성공하였습니다.');
-            $('#input-authnumber').toggle();
-            uEmailId = $("#email-input").val();
-            uEmailDomain = $("#email-input2").val();
-            $("#e-auth-notice").toggle();
-            $("#edit-emailBtn").toggle();
-            $("#edit-emailBtn2").toggle();
-            authCheck = true;
-        } else {
-            alert('인증에 실패하였습니다. 다시 시도해 주세요.');
+        if (validator($('#authnumber').val(), 'isEmpty')) {
+            alert('인증번호를 입력해 주세요.');
             authCheck = false;
+        } else {
+            if ($('#authnumber').val() == authnumber) {
+                alert('이메일 인증에 성공하였습니다.');
+                $('#input-authnumber').toggle();
+                uEmailId = $("#email-input").val();
+                uEmailDomain = $("#email-input2").val();
+                $("#e-auth-notice").toggle();
+                $("#edit-emailBtn").toggle();
+                $("#edit-emailBtn2").toggle();
+                authCheck = true;
+            } else {
+                alert('인증에 실패하였습니다. 다시 시도해 주세요.');
+                authCheck = false;
+            }
         }
-    }
-})
-// 내정보 입력값 받아오기
+    })
+    // 내정보 입력값 받아오기
 function getInput() {
     inputList = {};
     $('.form-control').each(function(index, item) {
         formCheck($(item).attr('id'));
-        
+
     });
     return inputList;
 }
@@ -485,8 +486,13 @@ function getInput() {
 // 내정보 수정하기
 function myInfoModify(p_userCode) {
     let inputList = getInput();
-    console.log(inputList)
-    if (Object.keys(inputList).length != 9) { // 병원 정보 입력 양식 확인
+    let checknum
+    if ($('#pw-input').val() == '') {
+        checknum = 8
+    } else {
+        checknum = 10
+    }
+    if (Object.keys(inputList).length != checknum) { // 정보 입력 양식 확인
         alert('내 정보 입력 양식을 확인해 주세요.')
         return;
     }
@@ -504,7 +510,7 @@ function myInfoModify(p_userCode) {
             'inputList': inputList
         },
         cmmAsync = false,
-        cmmSucc = function myInfoModify(result) {
+        cmmSucc = function(result) {
             if (result.state == true) {
                 Swal.fire({
                     icon: 'success',
@@ -515,7 +521,8 @@ function myInfoModify(p_userCode) {
                     domainCheck = false;
                     if (result.isConfirmed) {
                         window.location.href = window.location.href;
-                    }});
+                    }
+                });
             } else {
                 Swal.fire({
                     icon: 'error',
@@ -534,7 +541,7 @@ $("#modifyBtn").click(function() {
     myInfoModify(p_userCode)
 });
 
-$('#serviceEndBtn').click(function () {
+$('#serviceEndBtn').click(function() {
     $("#withdrawal-modal").modal("show");
 
 });
@@ -669,7 +676,7 @@ function setAddress(roadAddr) {
     $(".modal-backdrop.show").css('display', 'none');
     $("#address1-input").val(roadAddr); // 도로명 주소 세팅
     $("#pagingList").html(''); // 페이징 div 초기화
-    
+
 }
 
 

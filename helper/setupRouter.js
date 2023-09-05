@@ -10,6 +10,7 @@
 
 // TO-DO custom router 선언
 // 라우터 주소 작성
+
 // ======web============
 const errorRouter = require('../helper/error/error.router'); // 에러 페이지 라우터 
 const indexRouter = require('../api/index/index.router')
@@ -25,6 +26,8 @@ const ahomeRouter = require('../api/a_home/a_home.router'); // 앱 홈 화면 �
 const ahealthRouter = require('../api/a_health/a_health.router'); // 앱 건강관리 화면 라우터
 const ahospitalRouter = require('../api/a_hospital/a_hospital.router'); //앱 병원찾기 화면 라우터
 const amypageRouter = require('../api/a_mypage/a_mypage.router'); //앱 마이페이지 화면 라우터
+// ======공통============
+const predictRouter = require('../api/predict/predict.router'); //예측 수행 라우터
 // 라우터 주소 작성
 
 
@@ -32,6 +35,8 @@ const amypageRouter = require('../api/a_mypage/a_mypage.router'); //앱 마이�
 const setupRouter = (app) => {
     try {
         // 라우터 사용 등록
+        // ======공통============
+        app.use('/api/predict', predictRouter);
         // ======web============
         app.use('/error', errorRouter); // 에러 처리
         app.use('/api', indexRouter);

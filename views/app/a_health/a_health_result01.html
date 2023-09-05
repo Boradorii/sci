@@ -171,6 +171,20 @@
         console.log(reqUrl)
         location.href = reqUrl;
     })
+
+    //앱 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+    window.parent.postMessage({
+        action: 'moveFrameN'
+    }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+    //앱 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+
+    //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+    window.parent.postMessage({
+            action: 'moveFrameY' //메인페이지에서 하위 메뉴로 들어갔을 때 페이지 이동 표시("Y": 하위 메뉴/"N": 메인메뉴)
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
 </script>
 
 {% endblock %}

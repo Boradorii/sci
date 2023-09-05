@@ -65,12 +65,15 @@ router.post('/myInfoModify', asyncErrHelper(ctrInstance.myInfoModify));
 
 // 알림 자동 삭제(일정 시간이 지난 후 알림내역 삭제)
 router.post('/alert_delete_auto', asyncErrHelper(ctrInstance.alert_delete_auto));
+
 // 알림 삭제 버튼 클릭하여 해당 알림 삭제
 router.post('/alert_delete', asyncErrHelper(ctrInstance.alert_delete));
 
 // 서비스 종료
 router.post('/withdrawService', asyncErrHelper(ctrInstance.withdrawService));
 
+router.get('/noticePage', asyncErrHelper(ctrInstance.loadNoticePage));
+//페이지 로드
 
 
 module.exports = router;

@@ -42,12 +42,6 @@
         z-index: 9999;
         /* You can adjust this value as needed */
     }
-  
-  .ml-auto{
-    position: absolute;
-    right: 5px;
-  }
-
 </style>
 {%endblock%}
 <!-- ------------------------------------------------------------- -->
@@ -201,7 +195,7 @@
                             <textarea name="inquiry_contents" id="inquiry_contents" cols="30" rows="5"
                                 readonly="true"></textarea>
                         </div>
-                        <div class="btn btn-secondary" data-dismiss="modal" aria-hidden="true">닫기</div>
+                        <div class="btn btn-secondary" data-dismiss="modal" aria-hidden="true" style="background-color: rgb(253, 99, 99); border-radius: 5px; border-color: rgb(253, 99, 99); color:white;">닫기</div>
                     </div>
                 </div>
             </div>
@@ -227,6 +221,22 @@
     <script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
     <script type="text/javascript" src="/app/a_mypage/a_mypage_notice01.js"></script>
     <script>
+
+
+        //앱 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+        window.parent.postMessage({
+            action: 'moveFrameN'
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+        //앱 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+        window.parent.postMessage({
+            action: 'moveFrameY' //메인페이지에서 하위 메뉴로 들어갔을 때 페이지 이동 표시("Y": 하위 메뉴/"N": 메인메뉴)
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
         let p_userCode = "{{p_userCode}}";
 
 

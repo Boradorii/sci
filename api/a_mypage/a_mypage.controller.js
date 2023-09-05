@@ -23,13 +23,13 @@ class aMyPageController {
     };
     // 우리 아이 관리 페이지 로드
     async loadMyPetPage(req, res, next) {
-        let p_userCode = req.query.p_userCode; // url에 data 포함하여 전송한 경우 값 가져오기
-        return res.render('app/a_mypage/a_mypage_myPet01', {
-            "a_myPage": req.__('a_myPage'),
-            "p_userCode": p_userCode
-        });
-    }
-    // 알림 관리 페이지 로드
+            let p_userCode = req.query.p_userCode; // url에 data 포함하여 전송한 경우 값 가져오기
+            return res.render('app/a_mypage/a_mypage_myPet01', {
+                "a_myPage": req.__('a_myPage'),
+                "p_userCode": p_userCode
+            });
+        }
+        // 알림 관리 페이지 로드
     async loadNoticePage(req, res, next) {
         let p_userCode = req.params.p_userCode; // url에 data 포함하여 전송한 경우 값 가져오기
         return res.render('app/a_mypage/a_mypage_notice01', {
@@ -41,13 +41,13 @@ class aMyPageController {
 
     // 우리 아이 등록 페이지 로드
     async loadMyPetPage2(req, res, next) {
-        let p_userCode = req.query.p_userCode; // url에 data 포함하여 전송한 경우 값 가져오기
-        return res.render('app/a_mypage/a_mypage_myPet02', {
-            "a_myPage": req.__('a_myPage'),
-            "p_userCode": p_userCode
-        });
-    }
-    // 우리 아이 수정 페이지 로드
+            let p_userCode = req.query.p_userCode; // url에 data 포함하여 전송한 경우 값 가져오기
+            return res.render('app/a_mypage/a_mypage_myPet02', {
+                "a_myPage": req.__('a_myPage'),
+                "p_userCode": p_userCode
+            });
+        }
+        // 우리 아이 수정 페이지 로드
     async loadMyPetPage3(req, res, next) {
         let p_userCode = req.query.p_userCode; // url에 data 포함하여 전송한 경우 값 가져오기
         let pet_id = req.query.pet_id;
@@ -158,7 +158,6 @@ class aMyPageController {
 
 
     async alert_delete_auto(req, res, next) {
-
         let p_user_code = req.body.p_user_code;
         let alert_delete_auto = await svInstance.alert_delete_auto(p_user_code);
 
@@ -166,7 +165,6 @@ class aMyPageController {
     };
 
     async alert_delete(req, res, next) {
-
         let alert_num = req.body.alert_num;
         let alert_delete = await svInstance.alert_delete(alert_num);
 
@@ -228,14 +226,14 @@ class aMyPageController {
         return res.send(myInfoModify);
     };
 
- //  서비스 종료
- async withdrawService(req, res, next) {
-    let p_userCode = req.body.p_userCode;
+    //  서비스 종료
+    async withdrawService(req, res, next) {
+        let p_userCode = req.body.p_userCode;
 
-    let withdrawService = await svInstance.withdrawService(p_userCode);
+        let withdrawService = await svInstance.withdrawService(p_userCode);
 
-    return res.send(withdrawService);
-};
+        return res.send(withdrawService);
+    };
 
 
 }

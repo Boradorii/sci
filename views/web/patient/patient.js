@@ -10,32 +10,32 @@ let piN;
 
 
 //  환자 또는 보호자 명 검색
-$('#searchWord2').on('keydown', function (event) {
+$('#searchWord2').on('keydown', function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
         $('#searchBtn2').click();
     }
 });
-$('#searchWord').on('keydown', function (event) {
+$('#searchWord').on('keydown', function(event) {
     if (event.keyCode === 13) {
         event.preventDefault();
         $('#searchBtn').click();
     }
 });
-$("#searchBtn").click(function () {
+$("#searchBtn").click(function() {
     searchPetInfo()
 });
 //  환자 및 보호자 정보 수정
-$("#patientEditBtn").click(function () {
+$("#patientEditBtn").click(function() {
 
     petInfoModify(petIdModify)
 });
 // 환자 및 보호자 정보 수정 시 input태그 잘 보이도록
-$('.patient-info-input').on('focus', function () {
+$('.patient-info-input').on('focus', function() {
     $(this).addClass('focus');
 });
 
-$('.patient-info-input').on('blur', function () {
+$('.patient-info-input').on('blur', function() {
     $(this).removeClass('focus');
 });
 
@@ -133,7 +133,7 @@ function searchPetInfo() {
 // 나이 계산 함수
 function calculateAge(yearOfBirth) {
     var currentYear = new Date().getFullYear();
-    var age = currentYear - yearOfBirth;
+    var age = currentYear - yearOfBirth + 1;
     return age;
 }
 
@@ -158,7 +158,6 @@ function petInfoLoad(petId) {
             $("#petGender").text(result.rows[0].pet_gender);
             $("#petKind").text(result.rows[0].pet_breed);
             $("#petWeightInput").val(result.rows[0].pet_weight + ' kg');
-            $("#patient-note").val(result.rows[0].pet_note);
             $("#protectorName").text(result.rows[0].p_user_name);
             $("#protectorPhone").text(result.rows[0].p_phone_first + '-' + result.rows[0].p_phone_middle + '-' + result.rows[0].p_phone_last);
             diagnosis_Records(petIdModify)
@@ -196,14 +195,16 @@ function petInfoModify(petIdModify) {
     var isNeutering = $('input[name=inlineRadioOptions]:checked').val();
     let petWeigt = $('#petWeightInput').val();
     petWeigt = petWeigt.replace('kg', '');
-    if(petWeigt == ""){
+    petWeigt = petWeigt.replace(' ', '');
+
+    if (petWeigt == "") {
         Swal.fire({
             icon: 'error',
             title: '수정 실패',
             text: '몸무게를 입력해 주세요.',
         });
         return;
-    }else if(petWeigt >= 1000 || !/^(\d*\.\d{1})$/.test(petWeigt)){
+    } else if (petWeigt >= 1000 || !/^(\d*\.\d{1})$/.test(petWeigt)) {
         Swal.fire({
             icon: 'error',
             title: '수정 실패',
@@ -219,7 +220,6 @@ function petInfoModify(petIdModify) {
             petId: petIdModify,
             pet_isNeutering: isNeutering,
             pet_weight: $("#petWeightInput").val(),
-            pet_note: $("#patient-note").val(),
             piN: piN,
             pW: pW,
             pN: pN
@@ -272,7 +272,7 @@ function diagnosis_Records(petIdModify) {
     if (inputValue.length == 0) {
         inputValue = "total";
     }
-    if (petIdModify) { } else {
+    if (petIdModify) {} else {
         Swal.fire({
             icon: 'error',
             title: '등록 실패!',
@@ -316,21 +316,21 @@ function diagnosis_Records(petIdModify) {
 };
 
 // 진료 내역 검색
-$("#searchBtn2").click(function () {
+$("#searchBtn2").click(function() {
     diagnosis_Records(petIdModify)
 
 });
 
 // 진료 기록 클릭 시 진료의 목록 불러오기
 
-$("#recordBtn").click(function () {
+$("#recordBtn").click(function() {
 
     diagnosis_regist_doctorList()
 });
 
 // 진료 기록에 등록버튼!
 
-$("#addRecordBtn").click(function () {
+$("#addRecordBtn").click(function() {
     diagnosis_regist()
 
 });
@@ -367,14 +367,7 @@ function diagnosis_regist_doctorList() {
 // 진료기록 등록하기
 function diagnosis_regist() {
 
-    if (petIdModify) { } else {
-        Swal.fire({
-            icon: 'error',
-            title: '등록 실패!',
-            text: '환자를 먼저 검색해주세요.',
-        });
-        return;
-    }
+
     if ($('#select-doctor').val() == '선택 ▼') {
         Swal.fire({
             icon: 'error',
@@ -388,6 +381,14 @@ function diagnosis_regist() {
             icon: 'error',
             title: '등록 실패!',
             text: '진료 내용을 작성해주세요!',
+        });
+        return;
+    }
+    if (petIdModify) {} else {
+        Swal.fire({
+            icon: 'error',
+            title: '등록 실패!',
+            text: '환자를 먼저 검색해주세요.',
         });
         return;
     }
@@ -453,7 +454,7 @@ function diagnosis_detail(medi_num) {
 
 
 //  진료 내용 수정
-$("#editRecordBtn").click(function () {
+$("#editRecordBtn").click(function() {
     Swal.fire({
         title: '',
         text: "진료 기록을 수정하시겠습니까?",
@@ -464,18 +465,20 @@ $("#editRecordBtn").click(function () {
         confirmButtonText: '확인',
         cancelButtonText: '취소'
     }).then((result) => {
-        if (result.isConfirmed) {
-            diagnosis_detail_modify(modify_medi_num)
-        }else{
-            diagnosis_detail(modify_medi_num)
+        if (result.isConfirmed) { // 사용자가 확인 버튼을 클릭한 경우에만 저장 로직 실행
+            diagnosis_detail_modify(modify_medi_num);
+        } else {
+            diagnosis_detail(modify_medi_num);
         }
-    })
+    });
+
+
 });
 
 // 진료 내용 수정
 
 function diagnosis_detail_modify(modify_medi_num) {
-    
+
     if ($('#recordDetail').val() == '') {
         Swal.fire({
             icon: 'error',
@@ -484,7 +487,6 @@ function diagnosis_detail_modify(modify_medi_num) {
         });
         return;
     }
-
     var selectElement = document.getElementById("recordPurpose");
     // var textareaElement = document.getElementById("recordDetail");
 
@@ -499,7 +501,6 @@ function diagnosis_detail_modify(modify_medi_num) {
         },
         cmmAsync = false,
         cmmSucc = function diagnosis_detail_modify(result) {
-                
             Swal.fire({
                 icon: 'success',
                 title: '수정 완료',
@@ -526,20 +527,24 @@ function diagnosis_detail_delete(modify_medi_num) {
         },
         cmmAsync = false,
         cmmSucc = function diagnosis_detail_delete(result) {
+
             Swal.fire({
                 icon: 'success',
                 title: '삭제 완료',
                 text: '진료 기록이 삭제되었습니다.'
-            })
+            });
             diagnosis_Records(petIdModify)
-            $('#recordDetail').val("");
+            $('#recordDate').val('');
+            $('#recordDoctor').val('');
+            $('#recordDetail').val('');
+
         },
         cmmErr = null;
     commAjax(cmmContentType, cmmType, cmmUrl, cmmReqDataObj, cmmAsync, cmmSucc, cmmErr);
 };
 
 //  진료 내용 삭제
-$("#deleteRecordBtn").click(function () {
+$("#deleteRecordBtn").click(function() {
     Swal.fire({
         title: '정말 삭제 하시겠습니까?',
         text: "다시 되돌릴 수 없습니다. 신중하세요.",
@@ -551,10 +556,12 @@ $("#deleteRecordBtn").click(function () {
         cancelButtonText: '취소'
     }).then((result) => {
         if (result.isConfirmed) {
-           diagnosis_detail_delete(modify_medi_num)
+            diagnosis_detail_delete(modify_medi_num)
+        } else {
+            diagnosis_detail(modify_medi_num);
         }
     })
-    
+
 });
 
 
@@ -641,22 +648,22 @@ function bioInfo_detail(pd_num) {
 };
 
 // 조회 버튼
-$('#recentSearchBtn').click(function () {
-    $('#recentInfo-table').css("display", "");
-    $('#hrChart').css("display", "None");
-    class_num = 0;
-    select_bioinfo()
-})
-// 표 버튼
-$('#tableBtn').click(function () {
-    $('#recentInfo-table').css("display", "");
-    $('#hrChart').css("display", "None");
-    class_num = 0;
-    select_bioinfo()
+$('#recentSearchBtn').click(function() {
+        $('#recentInfo-table').css("display", "");
+        $('#hrChart').css("display", "None");
+        class_num = 0;
+        select_bioinfo()
+    })
+    // 표 버튼
+$('#tableBtn').click(function() {
+        $('#recentInfo-table').css("display", "");
+        $('#hrChart').css("display", "None");
+        class_num = 0;
+        select_bioinfo()
 
-})
-// 그래프 버튼
-$('#graphBtn').click(function () {
+    })
+    // 그래프 버튼
+$('#graphBtn').click(function() {
     class_num = 1;
     draw_chart()
 
@@ -689,7 +696,7 @@ function draw_chart() {
         },
         cmmAsync = false,
         cmmSucc = function draw_chart(result) {
-
+            $('#hrChart').css('display', 'block');
             //  차트 그리기
             // Get the chart canvas element
             let ctx = document.getElementById('hrChart').getContext('2d');
@@ -730,8 +737,8 @@ function draw_chart() {
                     data: newChartData,
                     borderColor: 'green',
                     fill: false
-                    // ,
-                    // yAxisID: 'y-axis-2' // Assign the new chart dataset to the secondary y-axis
+                        // ,
+                        // yAxisID: 'y-axis-2' // Assign the new chart dataset to the secondary y-axis
                 }]
             };
 
@@ -768,7 +775,7 @@ function draw_chart() {
 $('#rangeDate').daterangepicker();
 
 // 1주일 조회
-$('#weekBtn').on('click', function () {
+$('#weekBtn').on('click', function() {
     $('#rangeDate').data('daterangepicker').setStartDate(moment().subtract(1, 'weeks'));
     $('#rangeDate').data('daterangepicker').setEndDate(moment());
     if (class_num == 0) {
@@ -779,7 +786,7 @@ $('#weekBtn').on('click', function () {
 });
 
 // 1개월 조회
-$('#monthBtn').on('click', function () {
+$('#monthBtn').on('click', function() {
     $('#rangeDate').data('daterangepicker').setStartDate(moment().subtract(1, 'months'));
     $('#rangeDate').data('daterangepicker').setEndDate(moment());
     if (class_num == 0) {
@@ -790,7 +797,7 @@ $('#monthBtn').on('click', function () {
 });
 
 // 1년 조회
-$('#yearBtn').on('click', function () {
+$('#yearBtn').on('click', function() {
     $('#rangeDate').data('daterangepicker').setStartDate(moment().subtract(1, 'years'));
     $('#rangeDate').data('daterangepicker').setEndDate(moment());
     if (class_num == 0) {

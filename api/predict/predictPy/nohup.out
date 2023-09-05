@@ -1,0 +1,751 @@
+Traceback (most recent call last):
+  File "model_socket.py", line 12, in <module>
+    from sklearn.externals.joblib import load
+ModuleNotFoundError: No module named 'sklearn.externals.joblib'
+2023-08-22 16:40:34.605363: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator StandardScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Model Predict Server On [2023-08-22 16:40:35.484729]
+Client Connect [2023-08-22 16:45:16.394949] :  ('127.0.0.1', 63980)
+Traceback (most recent call last):
+  File "model_socket.py", line 344, in <module>
+    main()
+  File "model_socket.py", line 198, in main
+    received_data = json.loads(data)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 1025 (char 1024)
+2023-08-22 16:52:23.725400: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator StandardScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Model Predict Server On [2023-08-22 16:52:24.415927]
+Client Connect [2023-08-22 16:53:38.121677] :  ('127.0.0.1', 64721)
+{"DT":"HCC","HR":["83","84","86","87","85","85","85","87","91","92","90","92","88","86","87","85","82","83","83","83","81","79","78","78","76","77","79","76","74","73","75","72","73","73","75","74","74","75","75","73","73","77","77","75","74","74","73","73","73","75","74","74","75","76","76","78","79","80","81","82"],"VOLTAGE":["1.50","1.33","1.07","1.43","1.56","1.44","1.52","1.56","1.58","1.58","1.58","1.55","1.55","1.57","1.56","1.56","1.30","1.54","1.57","1.58","1.56","1.56","1.49","1.55","1.58","1.58","1.57","1.57","1.57","1.57","1.58","1.61","1.54","1.54","1.57","1.55","1.55","1.44","1.53","1.54","1.70","1.53","1.53","1.56","1.57","1.59","1.57","1.55","1.55","1.58","1.57","1.55","1.55","1.57","1.55","1.54","1.55","1.53","1.54","1.54"],"HRV":["100","111","104","100","95","77","77","77","71","50","50","42","28","25","21","21","23","28","40","50","50","62","74","77","92","101","99","97","85","78","81","69","73","79","82","85","100","109","109","106","101","114","103","95","86","74","59","56","56","56","61"
+Traceback (most recent call last):
+  File "model_socket.py", line 345, in <module>
+    main()
+  File "model_socket.py", line 199, in main
+    received_data = json.loads(data)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting ',' delimiter: line 1 column 1025 (char 1024)
+2023-08-22 16:56:00.799106: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator StandardScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Model Predict Server On [2023-08-22 16:56:01.450518]
+Client Connect [2023-08-22 16:57:07.150310] :  ('127.0.0.1', 65067)
+{"DT":"HCC","HR":["90","91","91","92","93","93","92","92","92","93","93","93","93","92","91","91","91","91","90","90","91","90","89","89","88","89","88","88","88","88","88","88","88","89","89","89","89","89","89","88","88","87","86","85","84","83","83","84","84","83","83","83","84","84","84","84","85","85","85","85"],"VOLTAGE":["1.55","1.55","1.55","1.57","1.54","1.54","1.54","1.56","1.55","1.56","1.54","1.55","1.56","1.54","1.56","1.54","1.55","1.55","1.56","1.54","1.56","1.54","1.55","1.55","1.54","1.56","1.56","1.56","1.55","1.56","1.56","1.56","1.54","1.55","1.56","1.55","1.56","1.54","1.59","1.55","1.56","1.55","1.55","1.55","1.56","1.54","1.56","1.55","1.55","1.55","1.56","1.57","1.55","1.55","1.55","1.55","1.58","1.55","1.54","1.56"],"HRV":["31","34","35","25","29","29","26","23","26","26","29","29","27","28","23","21","24","24","24","27","27","27","24","27","24","24","24","24","24","18","18","15","15","9","9","9","6","6","6","9","9","15","18","18","24","30","33","33","36","33","33","30","33","39","33","30","30","36","33","33"],"AGE":0,"GENDER":1}
+Traceback (most recent call last):
+  File "model_socket.py", line 345, in <module>
+    main()
+  File "model_socket.py", line 204, in main
+    HR = json.loads(received_data["HR"])
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+2023-08-22 17:04:04.800555: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator StandardScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Model Predict Server On [2023-08-22 17:04:05.492892]
+Client Connect [2023-08-22 17:05:24.450331] :  ('127.0.0.1', 49419)
+{"DT":"HCC","HR":"104,102,98,97,97,97,96,96,97,97,96,96,96,96,97,97,96,96,96,96,95,94,94,94,93,92,92,92,91,90,91,91,91,90,90,91,90,88,89,89,88,87,87,88,87,87,87,88,88,88,88,89,88,88,88,89,88,89,89,89","VOLTAGE":"1.56,1.55,1.57,1.57,1.55,1.57,1.55,1.56,1.56,1.54,1.55,1.56,1.56,1.55,1.55,1.56,1.53,1.56,1.58,1.53,1.46,1.53,1.55,1.59,1.55,1.55,1.57,1.55,1.57,1.54,1.53,1.56,1.56,1.53,1.52,1.53,1.54,1.55,1.55,1.55,1.54,1.53,1.54,1.55,1.54,1.54,1.57,1.53,1.55,1.54,1.55,1.55,1.53,1.57,1.53,1.54,1.53,1.54,1.55,1.53","HRV":"51,53,52,34,31,22,19,16,13,13,10,8,9,3,6,9,9,9,12,18,18,21,18,21,24,24,33,36,33,30,36,36,36,33,27,24,18,21,21,27,27,33,36,39,48,51,57,51,51,45,39,30,30,33,30,33,30,30,33,30","AGE":0,"GENDER":1}
+Extra data: line 1 column 4 (char 3)
+2023-08-22 17:06:43.021288: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator StandardScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Model Predict Server On [2023-08-22 17:06:43.680687]
+Client Connect [2023-08-22 17:08:09.992557] :  ('127.0.0.1', 49703)
+{"DT":"HCC","HR":"91,86,86,86,86,86,85,86,85,88,93,96,96,96,96,95,95,95,94,93,93,93,93,92,92,92,91,91,90,91,90,90,90,91,91,90,91,91,91,91,92,93,93,92,92,92,91,90,91,91,90,89,90,90,90,90,90,91,90,89","VOLTAGE":"1.57,1.56,1.56,1.55,1.57,1.56,1.57,1.57,1.57,1.56,1.56,1.56,1.57,1.57,1.57,1.57,1.57,1.57,1.57,1.57,1.57,1.56,1.57,1.55,1.56,1.56,1.57,1.55,1.57,1.58,1.56,1.56,1.56,1.57,1.56,1.57,1.57,1.57,1.56,1.56,1.57,1.57,1.54,1.54,1.57,1.58,1.56,1.56,1.57,1.57,1.57,1.57,1.57,1.56,1.57,1.58,1.58,1.57,1.56,1.57","HRV":"51,73,73,73,90,87,90,90,90,82,70,51,53,46,30,30,27,24,24,27,24,24,21,21,21,21,21,21,18,18,21,18,21,21,18,18,15,18,24,27,27,30,24,27,30,30,33,33,30,30,30,27,30,30,30,33,33,30,30,27","AGE":0,"GENDER":1}
+Traceback (most recent call last):
+  File "model_socket.py", line 205, in main
+    HR = json.loads(received_data["HR"])
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 3 (char 2)
+
+2023-08-22 17:11:19.898937: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator StandardScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Model Predict Server On [2023-08-22 17:11:20.584877]
+Client Connect [2023-08-22 17:13:12.950347] :  ('127.0.0.1', 50160)
+{"DT":"HCC","HR":["91","90","91","91","91","92","91","92","92","93","93","94","94","95","95","96","96","97","96","96","97","96","97","97","97","98","98","98","99","99","98","98","98","99","98","98","98","98","97","96","97","97","97","97","98","98","98","99","100","100","100","100","99","99","98","98","98","98","98","98"],"VOLTAGE":["1.55","1.55","1.55","1.56","1.56","1.54","1.52","1.53","1.53","1.55","1.53","1.54","1.54","1.54","1.55","1.55","1.55","1.55","1.54","1.54","1.55","1.55","1.54","1.55","1.55","1.54","1.55","1.55","1.54","1.54","1.53","1.52","1.51","1.53","1.53","1.53","1.54","1.54","1.54","1.53","1.55","1.55","1.56","1.54","1.52","1.54","1.55","1.55","1.55","1.55","1.54","1.55","1.55","1.55","1.55","1.56","1.56","1.55","1.55","1.56"],"HRV":["70","74","60","42","37","19","19","16","16","13","13","9","12","15","18","18","18","18","18","18","21","21","18","15","12","12","15","12","12","9","6","9","9","12","12","18","21","21","18","18","21","24","30","27","27","21","15","15","15","15","15","9","6","12","12","12","12","18","18","21"],"AGE":0,"GENDER":1}
+Traceback (most recent call last):
+  File "model_socket.py", line 205, in main
+    HR = json.loads(received_data["HR"])
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+
+2023-08-22 17:16:15.484967: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator StandardScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Model Predict Server On [2023-08-22 17:16:16.229288]
+Client Connect [2023-08-22 17:17:26.617169] :  ('127.0.0.1', 50535)
+{"DT":"HCC","HR":"97,101,98,97,95,94,92,90,87,84,82,80,79,78,78,79,80,80,82,85,87,88,88,88,87,83,81,81,82,82,81,82,83,84,85,89,90,91,90,90,90,89,89,89,88,88,88,87,88,87,88,89,88,88,89,90,89,89,88,89","VOLTAGE":["1.57","1.55","1.55","1.55","1.55","1.56","1.56","1.55","1.56","1.56","1.56","1.57","1.58","1.57","1.56","1.57","1.54","1.54","1.53","1.54","1.54","1.54","1.57","1.53","1.54","1.31","1.57","1.52","1.57","1.56","1.55","1.54","1.55","1.54","1.54","1.55","1.55","1.54","1.55","1.55","1.55","1.55","1.55","1.54","1.55","1.54","1.55","1.55","1.55","1.54","1.55","1.54","1.55","1.54","1.54","1.55","1.54","1.53","1.53","1.54"],"HRV":["40","44","32","26","24","24","21","18","18","27","36","38","42","48","54","51","57","63","66","60","51","45","42","33","24","27","37","34","53","50","47","50","50","50","50","47","34","31","9","12","18","15","12","15","18","24","21","30","33","33","30","30","33","33","36","30","33","24","24","24"],"AGE":0,"GENDER":1}
+Traceback (most recent call last):
+  File "model_socket.py", line 205, in main
+    HR = json.loads(received_data["HR"])
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 3 (char 2)
+
+2023-08-22 17:18:47.063809: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator StandardScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Model Predict Server On [2023-08-22 17:18:47.710620]
+Client Connect [2023-08-22 17:21:08.536231] :  ('127.0.0.1', 50847)
+{"DT":"HCC","HR":"\"90,94,95,92,91,92,91,91,93,91,86,85,86,86,86,85,85,86,84,86,90,92,91,92,93,93,95,95,96,95,93,89,91,90,92,93,92,87,86,83,86,90,88,89,87,87,88,92,94,99,98,99,100,100,100,101,99,94,94,94\"","VOLTAGE":["1.57","1.56","1.55","1.56","1.55","1.56","1.56","1.56","1.56","0.92","1.57","1.57","1.55","1.54","1.56","1.55","1.55","1.55","1.55","1.54","1.54","1.55","1.53","1.56","1.56","1.55","1.56","1.51","1.54","1.53","1.53","1.26","1.55","1.55","1.57","1.56","1.56","1.57","1.57","1.56","1.56","1.55","1.58","1.57","1.56","1.55","1.56","1.56","1.56","1.58","1.56","1.58","1.55","1.56","1.55","1.56","1.54","1.62","1.51","1.54"],"HRV":["73","74","61","46","37","24","21","18","18","24","39","56","69","71","68","65","62","65","71","65","50","32","23","24","27","36","45","42","39","39","45","57","64","64","71","65","59","71","77","80","92","88","89","86","76","73","73","67","58","55","37","31","21","18","18","18","18","18","37","43"],"AGE":0,"GENDER":1}
+Traceback (most recent call last):
+  File "model_socket.py", line 206, in main
+    HRV = json.loads(received_data["HRV"])
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+
+2023-08-22 17:23:09.297236: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator StandardScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Model Predict Server On [2023-08-22 17:23:09.937317]
+Client Connect [2023-08-22 17:24:18.082620] :  ('127.0.0.1', 51131)
+{"DT":"HCC","HR":["92","92","92","94","95","97","99","100","104","103","105","101","101","102","102","101","101","100","98","97","95","99","98","95","95","94","93","93","94","94","95","96","97","98","97","98","99","98","98","97","97","97","96","96","97","96","95","94","94","94","93","92","92","91","91","92","92","92","92","93"],"VOLTAGE":["1.57","1.56","1.56","1.56","1.56","1.57","1.55","1.58","1.56","1.57","1.57","1.57","1.55","1.55","1.55","1.55","1.57","1.56","1.49","1.56","1.53","1.56","1.52","1.53","1.55","1.54","1.55","1.54","1.55","1.55","1.53","1.55","1.54","1.54","1.53","1.55","1.56","1.52","1.54","1.53","1.54","1.54","1.54","1.54","1.55","1.54","1.55","1.55","1.56","1.55","1.54","1.54","1.54","1.55","1.54","1.56","1.55","1.54","1.54","1.55"],"HRV":["79","94","83","79","60","51","54","54","42","45","42","29","23","26","43","43","46","43","43","43","43","40","43","40","21","30","33","33","36","36","36","39","33","33","36","27","21","27","27","24","24","21","21","21","21","24","21","18","18","18","21","24","27","24","24","24","27","24","27","24"],"AGE":0,"GENDER":1}
+Traceback (most recent call last):
+  File "model_socket.py", line 205, in main
+    HR = json.loads(received_data["HR"])
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 341, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not list
+
+2023-08-22 17:32:37.985565: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator StandardScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Model Predict Server On [2023-08-22 17:32:38.658681]
+Client Connect [2023-08-22 17:33:28.820501] :  ('127.0.0.1', 51993)
+{"DT":"HCC","HR":"[\"94\",\"100\",\"101\",\"101\",\"100\",\"99\",\"98\",\"97\",\"95\",\"94\",\"94\",\"92\",\"92\",\"93\",\"94\",\"94\",\"95\",\"96\",\"97\",\"98\",\"99\",\"99\",\"100\",\"99\",\"99\",\"99\",\"99\",\"99\",\"98\",\"97\",\"97\",\"97\",\"96\",\"96\",\"96\",\"96\",\"96\",\"95\",\"95\",\"95\",\"96\",\"96\",\"96\",\"95\",\"96\",\"95\",\"96\",\"96\",\"97\",\"97\",\"96\",\"96\",\"95\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\"]","VOLTAGE":"[\"1.56\",\"1.51\",\"1.45\",\"1.57\",\"1.54\",\"1.56\",\"1.58\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.56\",\"1.55\",\"1.57\",\"1.54\",\"1.54\",\"1.53\",\"1.54\",\"1.54\",\"1.55\",\"1.54\",\"1.54\",\"1.55\",\"1.54\",\"1.54\",\"1.53\",\"1.53\",\"1.54\",\"1.53\",\"1.54\",\"1.53\",\"1.53\",\"1.54\",\"1.54\",\"1.54\",\"1.53\",\"1.54\",\"1.54\",\"1.53\",\"1.54\",\"1.57\",\"1.56\",\"1.55\",\"1.53\",\"1.56\",\"1.54\",\"1.54\",\"1.51\",\"1.54\",\"1.54\",\"1.54\",\"1.53\",\"1.54\",\"1.54\",\"1.54\",\"1.50\",\"1.55\",\"1.54\",\"1.52\",\"1.51\"]","HRV":"[\"86\",\"90\",\"76\",\"65\",\"65\",\"60\",\"55\",\"45\",\"25\",\"25\",\"28\",\"27\",\"24\",\"27\",\"24\",\"21\",\"21\",\"21\",\"18\",\"15\",\"12\",\"9\",\"6\",\"6\",\"6\",\"9\",\"9\",\"9\",\"12\",\"12\",\"15\",\"18\",\"21\",\"21\",\"21\",\"21\",\"21\",\"24\",\"21\",\"24\",\"21\",\"18\",\"18\",\"18\",\"15\",\"15\",\"21\",\"21\",\"27\",\"27\",\"30\",\"33\",\"30\",\"33\",\"39\",\"42\",\"39\",\"39\",\"36\",\"36\"]","AGE":0,"GENDER":1}
+
+1/2 [==============>...............] - ETA: 0s
+2/2 [==============================] - 0s 4ms/step
+
+1/2 [==============>...............] - ETA: 0s
+2/2 [==============================] - 0s 2ms/step
+lowpressure operands could not be broadcast together with shapes (60,10) (12,) (60,10) 
+Client DisConnect [2023-08-22 17:33:29.743957] :  ('127.0.0.1', 51993)
+predict.py
+predict.py
+predict.py
+2023-08-23 09:22:56.863936: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator StandardScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Model Predict Server On [2023-08-23 09:22:57.770929]
+Client Connect [2023-08-23 09:24:29.151600] :  ('127.0.0.1', 55827)
+{"DT":"D4","HR":"[\"99\",\"97\",\"96\",\"93\",\"95\",\"97\",\"101\",\"100\",\"99\",\"98\",\"97\",\"96\",\"96\",\"96\",\"95\",\"94\",\"93\",\"93\",\"94\",\"94\",\"94\",\"94\",\"93\",\"94\",\"94\",\"96\",\"96\",\"98\",\"99\",\"99\",\"100\",\"101\",\"102\",\"103\",\"103\",\"104\",\"105\",\"104\",\"105\",\"106\",\"105\",\"106\",\"106\",\"107\",\"107\",\"107\",\"108\",\"103\",\"102\",\"102\",\"103\",\"104\",\"104\",\"104\",\"104\",\"104\",\"104\",\"109\",\"109\",\"109\"]","VOLTAGE":"[\"1.53\",\"1.54\",\"1.53\",\"1.54\",\"1.54\",\"1.56\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.52\",\"1.53\",\"1.54\",\"1.47\",\"1.53\",\"1.52\",\"1.54\",\"1.53\",\"1.53\",\"1.55\",\"1.55\",\"1.54\",\"1.60\",\"1.57\",\"1.52\",\"1.57\",\"1.54\",\"1.56\",\"1.55\",\"1.55\",\"1.59\",\"1.55\",\"1.56\",\"1.55\",\"1.53\",\"1.56\",\"1.57\",\"1.56\",\"1.57\",\"1.53\",\"1.56\",\"1.54\",\"1.52\",\"1.54\"]","HRV":"[\"97\",\"99\",\"85\",\"67\",\"67\",\"46\",\"46\",\"40\",\"23\",\"19\",\"19\",\"17\",\"15\",\"15\",\"15\",\"18\",\"18\",\"15\",\"12\",\"15\",\"15\",\"18\",\"18\",\"21\",\"21\",\"15\",\"12\",\"15\",\"24\",\"30\",\"30\",\"27\",\"33\",\"30\",\"27\",\"30\",\"30\",\"30\",\"21\",\"18\",\"21\",\"30\",\"30\",\"33\",\"33\",\"30\",\"33\",\"33\",\"58\",\"52\",\"74\",\"68\",\"68\",\"68\",\"68\",\"68\",\"65\",\"65\",\"43\",\"43\"]","AGE":0,"GENDER":1}
+
+1/2 [==============>...............] - ETA: 0s
+2/2 [==============================] - 0s 4ms/step
+
+1/2 [==============>...............] - ETA: 0s
+2/2 [==============================] - 0s 2ms/step
+lowpressure operands could not be broadcast together with shapes (60,10) (12,) (60,10) 
+Client DisConnect [2023-08-23 09:24:30.132766] :  ('127.0.0.1', 55827)
+Client Connect [2023-08-23 09:40:58.111496] :  ('127.0.0.1', 56262)
+{"DT":"D4","HR":"[\"90\",\"92\",\"91\",\"92\",\"92\",\"92\",\"95\",\"96\",\"91\",\"91\",\"91\",\"90\",\"92\",\"91\",\"90\",\"86\",\"84\",\"81\",\"82\",\"83\",\"83\",\"81\",\"80\",\"78\",\"76\",\"79\",\"81\",\"84\",\"84\",\"76\",\"80\",\"83\",\"84\",\"85\",\"87\",\"88\",\"89\",\"90\",\"91\",\"93\",\"87\",\"84\",\"83\",\"82\",\"81\",\"83\",\"80\",\"79\",\"81\",\"82\",\"82\",\"82\",\"81\",\"81\",\"81\",\"77\",\"79\",\"78\",\"77\",\"76\"]","VOLTAGE":"[\"1.53\",\"1.50\",\"1.58\",\"1.64\",\"1.52\",\"1.56\",\"1.57\",\"1.55\",\"1.54\",\"1.57\",\"1.54\",\"1.53\",\"1.58\",\"1.54\",\"1.50\",\"1.59\",\"1.20\",\"1.56\",\"1.40\",\"1.70\",\"1.53\",\"1.95\",\"1.33\",\"1.60\",\"1.30\",\"1.33\",\"1.55\",\"1.32\",\"1.53\",\"1.63\",\"1.58\",\"1.55\",\"1.57\",\"1.57\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.58\",\"1.56\",\"1.55\",\"1.56\",\"1.57\",\"1.56\",\"1.57\",\"1.71\",\"1.65\",\"1.55\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.54\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.56\"]","HRV":"[\"50\",\"50\",\"56\",\"45\",\"48\",\"60\",\"63\",\"65\",\"54\",\"57\",\"68\",\"80\",\"87\",\"87\",\"84\",\"75\",\"88\",\"94\",\"100\",\"97\",\"88\",\"79\",\"76\",\"79\",\"82\",\"79\",\"66\",\"66\",\"63\",\"54\",\"49\",\"47\",\"55\",\"67\",\"67\",\"73\",\"67\",\"58\",\"55\",\"58\",\"56\",\"58\",\"39\",\"33\",\"42\",\"39\",\"57\",\"77\",\"86\",\"86\",\"86\",\"86\",\"98\",\"101\",\"89\",\"92\",\"77\",\"54\",\"54\",\"57\"]","AGE":0,"GENDER":1}
+
+1/2 [==============>...............] - ETA: 0s
+2/2 [==============================] - 0s 3ms/step
+
+1/2 [==============>...............] - ETA: 0s
+2/2 [==============================] - 0s 2ms/step
+lowpressure operands could not be broadcast together with shapes (60,10) (12,) (60,10) 
+Client DisConnect [2023-08-23 09:40:58.350855] :  ('127.0.0.1', 56262)
+2023-08-23 09:45:30.116935: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Traceback (most recent call last):
+  File "model_socket.py", line 196, in main
+    pred=predict()
+  File "model_socket.py", line 124, in __init__
+    self.glucossc= self.glucossc.fit(self.raw_data_1)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\preprocessing\_data.py", line 1528, in fit
+    if self.unit_variance:
+AttributeError: 'RobustScaler' object has no attribute 'unit_variance'
+
+Traceback (most recent call last):
+  File "model_socket.py", line 12, in <module>
+    from sklearn.externals.joblib import load
+ModuleNotFoundError: No module named 'sklearn.externals.joblib'
+2023-08-23 09:47:48.821220: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Traceback (most recent call last):
+  File "model_socket.py", line 196, in main
+    pred=predict()
+  File "model_socket.py", line 124, in __init__
+    self.glucossc= self.glucossc.fit(self.raw_data_1)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\preprocessing\_data.py", line 1528, in fit
+    if self.unit_variance:
+AttributeError: 'RobustScaler' object has no attribute 'unit_variance'
+
+2023-08-23 09:50:06.959574: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py:338: UserWarning: Trying to unpickle estimator RobustScaler from version 0.22.2.post1 when using version 1.0.2. This might lead to breaking code or invalid results. Use at your own risk. For more info please refer to:
+https://scikit-learn.org/stable/modules/model_persistence.html#security-maintainability-limitations
+  UserWarning,
+Traceback (most recent call last):
+  File "model_socket.py", line 196, in main
+    pred=predict()
+  File "model_socket.py", line 124, in __init__
+    self.glucossc= self.glucossc.fit(self.raw_data_1)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\preprocessing\_data.py", line 1528, in fit
+    if self.unit_variance:
+AttributeError: 'RobustScaler' object has no attribute 'unit_variance'
+
+2023-08-23 09:55:12.002007: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Traceback (most recent call last):
+  File "model_socket.py", line 193, in main
+    server_socket.bind((host, port))
+OSError: [WinError 10048] 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다
+
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Traceback (most recent call last):
+  File "model_socket.py", line 193, in main
+    server_socket.bind((host, port))
+OSError: [WinError 10048] 각 소켓 주소(프로토콜/네트워크 주소/포트)는 하나만 사용할 수 있습니다
+
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Traceback (most recent call last):
+  File "model_socket.py", line 196, in main
+    pred=predict()
+  File "model_socket.py", line 118, in __init__
+    self.glucosmodel = tf.keras.models.load_model('C:/Users/SCI/Desktop/PPG_Pet/server/model/20230821_ppgbloodsugar_JSG_ver2_1.h5')
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\keras\saving\save.py", line 146, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects, compile)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\keras\saving\hdf5_format.py", line 210, in load_model_from_hdf5
+    model_config = json.loads(model_config.decode('utf-8'))
+AttributeError: 'str' object has no attribute 'decode'
+
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Traceback (most recent call last):
+  File "model_socket.py", line 196, in main
+    pred=predict()
+  File "model_socket.py", line 118, in __init__
+    self.glucosmodel = tf.keras.models.load_model('C:/Users/SCI/Desktop/PPG_Pet/server/model/20230821_ppgbloodsugar_JSG_ver2_1.h5')
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\keras\saving\save.py", line 146, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects, compile)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\keras\saving\hdf5_format.py", line 210, in load_model_from_hdf5
+    model_config = json.loads(model_config.decode('utf-8'))
+AttributeError: 'str' object has no attribute 'decode'
+
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:516: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:517: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:518: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:519: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:520: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\framework\dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:541: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:542: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:543: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:544: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:545: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorboard\compat\tensorflow_stub\dtypes.py:550: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+Traceback (most recent call last):
+  File "model_socket.py", line 196, in main
+    pred=predict()
+  File "model_socket.py", line 118, in __init__
+    self.glucosmodel = tf.keras.models.load_model('C:/Users/SCI/Desktop/PPG_Pet/server/model/20230821_ppgbloodsugar_JSG_ver2_1.h5')
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\keras\saving\save.py", line 146, in load_model
+    return hdf5_format.load_model_from_hdf5(filepath, custom_objects, compile)
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\tensorflow\python\keras\saving\hdf5_format.py", line 210, in load_model_from_hdf5
+    model_config = json.loads(model_config.decode('utf-8'))
+AttributeError: 'str' object has no attribute 'decode'
+
+Traceback (most recent call last):
+  File "model_socket.py", line 196, in main
+    pred=predict()
+  File "model_socket.py", line 118, in __init__
+    self.glucosmodel = tf.keras.models.load_model('C:/Users/SCI/Desktop/PPG_Pet/server/model/20230821_ppgbloodsugar_JSG_ver2_1.h5')
+AttributeError: module 'tensorflow' has no attribute 'keras'
+
+Traceback (most recent call last):
+  File "model_socket.py", line 194, in main
+    pred=predict()
+  File "model_socket.py", line 116, in __init__
+    self.glucosmodel = tf.keras.models.load_model('C:/Users/SCI/Desktop/PPG_Pet/server/model/20230821_ppgbloodsugar_JSG_ver2_1.h5')
+AttributeError: module 'tensorflow' has no attribute 'keras'
+
+Traceback (most recent call last):
+  File "model_socket.py", line 13, in <module>
+    from sklearn.preprocessing import RobustScaler, StandardScaler
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\__init__.py", line 82, in <module>
+    from .base import clone
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py", line 20, in <module>
+    from .utils import _IS_32BIT
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\__init__.py", line 27, in <module>
+    from .fixes import np_version
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\fixes.py", line 18, in <module>
+    import scipy.stats
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\scipy\stats\__init__.py", line 384, in <module>
+    from .stats import *
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\scipy\stats\stats.py", line 179, in <module>
+    from scipy.spatial.distance import cdist
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\scipy\spatial\__init__.py", line 107, in <module>
+    from . import distance, transform
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\scipy\spatial\distance.py", line 125, in <module>
+    from ..special import rel_entr
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\scipy\special\__init__.py", line 634, in <module>
+    from . import _ufuncs
+  File "<frozen importlib._bootstrap>", line 416, in parent
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "model_socket.py", line 194, in main
+    pred=predict()
+  File "model_socket.py", line 116, in __init__
+    self.glucosmodel = tf.keras.models.load_model('C:/Users/SCI/Desktop/PPG_Pet/server/model/20230821_ppgbloodsugar_JSG_ver2_1.h5')
+AttributeError: module 'tensorflow' has no attribute 'keras'
+
+Traceback (most recent call last):
+  File "model_socket.py", line 194, in main
+    pred=predict()
+  File "model_socket.py", line 116, in __init__
+    self.glucosmodel = tf.keras.models.load_model('C:/Users/SCI/Desktop/PPG_Pet/server/model/20230821_ppgbloodsugar_JSG_ver2_1.h5')
+AttributeError: module 'tensorflow' has no attribute 'keras'
+
+Traceback (most recent call last):
+  File "model_socket.py", line 194, in main
+    pred=predict()
+  File "model_socket.py", line 116, in __init__
+    self.glucosmodel = tf.keras.models.load_model('C:/Users/SCI/Desktop/PPG_Pet/server/model/20230821_ppgbloodsugar_JSG_ver2_1.h5')
+AttributeError: module 'tensorflow' has no attribute 'keras'
+
+Traceback (most recent call last):
+  File "model_socket.py", line 7, in <module>
+    from tensorflow import keras
+ImportError: cannot import name 'keras' from 'tensorflow' (unknown location)
+
+
+Traceback (most recent call last):
+  File "model_socket.py", line 194, in main
+    pred=predict()
+  File "model_socket.py", line 116, in __init__
+    self.glucosmodel = tf.keras.models.load_model('C:/Users/SCI/Desktop/PPG_Pet/server/model/20230821_ppgbloodsugar_JSG_ver2_1.h5')
+AttributeError: module 'tensorflow' has no attribute 'keras'
+
+Traceback (most recent call last):
+  File "model_socket.py", line 7, in <module>
+    import keras
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\keras\__init__.py", line 21, in <module>
+    from keras import models
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\keras\models\__init__.py", line 18, in <module>
+    from keras.engine.functional import Functional
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\keras\engine\functional.py", line 24, in <module>
+    import tensorflow.compat.v2 as tf
+ModuleNotFoundError: No module named 'tensorflow.compat'
+Traceback (most recent call last):
+  File "model_socket.py", line 7, in <module>
+    from tensorflow import keras
+ImportError: cannot import name 'keras' from 'tensorflow' (unknown location)
+2023-08-23 11:36:37.646377: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-23 11:36:37.646525: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-08-23 11:36:43.884729: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-23 11:36:43.886556: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2023-08-23 11:36:43.888427: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2023-08-23 11:36:43.890283: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2023-08-23 11:36:43.892049: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2023-08-23 11:36:43.893899: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2023-08-23 11:36:43.895661: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2023-08-23 11:36:43.897413: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2023-08-23 11:36:43.897460: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-08-23 11:36:43.898295: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+
+
+2023-08-23 11:43:15.492209: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-23 11:43:15.492288: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-08-23 11:43:20.049335: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-23 11:43:20.051117: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2023-08-23 11:43:20.052874: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2023-08-23 11:43:20.054799: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2023-08-23 11:43:20.056548: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2023-08-23 11:43:20.058269: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2023-08-23 11:43:20.059968: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2023-08-23 11:43:20.061662: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2023-08-23 11:43:20.061686: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-08-23 11:43:20.061901: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-23 11:43:51.041670: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-23 11:43:51.042737: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-08-23 11:43:55.146959: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-23 11:43:55.150106: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2023-08-23 11:43:55.153000: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2023-08-23 11:43:55.155840: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2023-08-23 11:43:55.158629: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2023-08-23 11:43:55.161449: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2023-08-23 11:43:55.164348: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2023-08-23 11:43:55.167344: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2023-08-23 11:43:55.168331: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-08-23 11:43:55.170846: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model Predict Server On [2023-08-23 11:43:55.880214]
+Client Connect [2023-08-23 11:45:15.901665] :  ('127.0.0.1', 51023)
+{"DT":"D4","HR":"[\"82\",\"80\",\"83\",\"81\",\"80\",\"79\",\"78\",\"77\",\"76\",\"77\",\"76\",\"76\",\"78\",\"80\",\"81\",\"82\",\"83\",\"84\",\"84\",\"84\",\"84\",\"84\",\"83\",\"83\",\"83\",\"82\",\"82\",\"82\",\"83\",\"82\",\"83\",\"84\",\"86\",\"86\",\"87\",\"89\",\"90\",\"91\",\"91\",\"93\",\"94\",\"94\",\"94\",\"95\",\"95\",\"94\",\"94\",\"94\",\"95\",\"94\",\"94\",\"93\",\"92\",\"91\",\"90\",\"89\",\"88\",\"86\",\"86\",\"85\"]","VOLTAGE":"[\"1.57\",\"1.58\",\"1.57\",\"1.57\",\"1.56\",\"1.58\",\"1.56\",\"1.57\",\"1.55\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.58\",\"1.58\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.57\",\"1.58\",\"1.57\",\"1.56\",\"1.57\",\"1.58\",\"1.57\",\"1.56\",\"1.56\",\"1.57\",\"1.57\",\"1.57\",\"1.56\",\"1.55\",\"1.57\",\"1.57\",\"1.56\",\"1.57\",\"1.58\",\"1.57\",\"1.54\",\"1.56\",\"1.54\",\"1.56\",\"1.57\",\"1.57\",\"1.56\",\"1.55\",\"1.55\",\"1.56\",\"1.57\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.57\",\"1.57\"]","HRV":"[\"65\",\"69\",\"61\",\"48\",\"49\",\"37\",\"34\",\"34\",\"37\",\"40\",\"37\",\"36\",\"39\",\"36\",\"27\",\"30\",\"30\",\"36\",\"30\",\"27\",\"27\",\"27\",\"24\",\"24\",\"24\",\"24\",\"21\",\"18\",\"21\",\"24\",\"24\",\"24\",\"27\",\"30\",\"33\",\"30\",\"33\",\"33\",\"30\",\"24\",\"24\",\"21\",\"24\",\"21\",\"24\",\"27\",\"24\",\"24\",\"24\",\"27\",\"24\",\"30\",\"27\",\"27\",\"21\",\"18\",\"24\",\"27\",\"27\",\"33\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-23 11:45:16.736515] :  ('127.0.0.1', 51023)
+Client Connect [2023-08-23 17:44:38.877003] :  ('127.0.0.1', 50792)
+{"DT":"D4","HR":"[\"91\",\"89\",\"87\",\"86\",\"86\",\"87\",\"87\",\"87\",\"88\",\"88\",\"88\",\"88\",\"87\",\"87\",\"88\",\"87\",\"87\",\"87\",\"86\",\"86\",\"85\",\"85\",\"86\",\"86\",\"86\",\"85\",\"86\",\"87\",\"86\",\"87\",\"88\",\"88\",\"88\",\"88\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"88\",\"88\",\"88\",\"89\",\"89\",\"89\",\"89\",\"89\",\"90\",\"91\",\"91\",\"92\",\"93\",\"94\",\"94\",\"94\",\"95\",\"97\"]","VOLTAGE":"[\"1.53\",\"1.57\",\"1.56\",\"1.58\",\"1.54\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.54\",\"1.54\",\"1.55\",\"1.54\",\"1.53\",\"1.55\",\"1.54\",\"1.54\",\"1.54\",\"1.56\",\"1.57\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.53\",\"1.55\",\"1.56\",\"1.53\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.56\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.55\",\"1.55\",\"1.54\",\"1.53\",\"1.53\",\"1.55\",\"1.54\",\"1.56\",\"1.54\",\"1.56\",\"1.54\"]","HRV":"[\"60\",\"61\",\"67\",\"42\",\"42\",\"36\",\"27\",\"24\",\"24\",\"30\",\"27\",\"32\",\"27\",\"27\",\"27\",\"33\",\"36\",\"36\",\"36\",\"36\",\"36\",\"33\",\"33\",\"39\",\"36\",\"30\",\"33\",\"36\",\"36\",\"30\",\"33\",\"33\",\"36\",\"33\",\"33\",\"30\",\"27\",\"24\",\"21\",\"24\",\"24\",\"24\",\"18\",\"18\",\"15\",\"15\",\"12\",\"15\",\"18\",\"18\",\"15\",\"18\",\"21\",\"18\",\"18\",\"21\",\"21\",\"18\",\"18\",\"18\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-23 17:44:39.287395] :  ('127.0.0.1', 50792)
+Client Connect [2023-08-23 17:47:03.393067] :  ('127.0.0.1', 51024)
+{"DT":"D4","HR":"[\"90\",\"92\",\"91\",\"91\",\"91\",\"92\",\"94\",\"96\",\"96\",\"97\",\"99\",\"99\",\"99\",\"99\",\"100\",\"99\",\"99\",\"98\",\"98\",\"98\",\"98\",\"98\",\"98\",\"97\",\"97\",\"98\",\"97\",\"96\",\"95\",\"95\",\"94\",\"94\",\"93\",\"93\",\"92\",\"92\",\"91\",\"91\",\"91\",\"91\",\"91\",\"91\",\"91\",\"91\",\"91\",\"90\",\"89\",\"89\",\"88\",\"87\",\"86\",\"84\",\"84\",\"83\",\"82\",\"82\",\"82\",\"83\",\"83\",\"83\"]","VOLTAGE":"[\"1.53\",\"1.51\",\"1.52\",\"1.52\",\"1.53\",\"1.52\",\"1.53\",\"1.55\",\"1.52\",\"1.53\",\"1.53\",\"1.52\",\"1.53\",\"1.54\",\"1.55\",\"1.54\",\"1.57\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.56\",\"1.56\",\"1.54\",\"1.53\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.54\",\"1.56\",\"1.54\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.56\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.53\",\"1.53\"]","HRV":"[\"71\",\"73\",\"58\",\"46\",\"33\",\"30\",\"36\",\"39\",\"33\",\"33\",\"33\",\"33\",\"33\",\"30\",\"30\",\"30\",\"24\",\"18\",\"18\",\"18\",\"18\",\"18\",\"18\",\"18\",\"21\",\"21\",\"27\",\"33\",\"39\",\"39\",\"36\",\"33\",\"30\",\"30\",\"30\",\"30\",\"30\",\"30\",\"30\",\"27\",\"30\",\"30\",\"30\",\"30\",\"30\",\"30\",\"27\",\"30\",\"27\",\"27\",\"27\",\"33\",\"39\",\"45\",\"48\",\"48\",\"45\",\"36\",\"36\",\"39\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-23 17:47:03.639406] :  ('127.0.0.1', 51024)
+Client Connect [2023-08-23 17:51:00.469465] :  ('127.0.0.1', 51406)
+{"DT":"D4","HR":"[\"91\",\"94\",\"92\",\"91\",\"91\",\"91\",\"93\",\"93\",\"94\",\"98\",\"95\",\"94\",\"97\",\"96\",\"98\",\"95\",\"93\",\"91\",\"91\",\"90\",\"93\",\"91\",\"87\",\"84\",\"83\",\"83\",\"83\",\"82\",\"79\",\"78\",\"78\",\"79\",\"81\",\"83\",\"84\",\"85\",\"85\",\"86\",\"86\",\"86\",\"86\",\"86\",\"86\",\"85\",\"86\",\"86\",\"86\",\"86\",\"86\",\"87\",\"86\",\"86\",\"86\",\"86\",\"86\",\"86\",\"86\",\"86\",\"87\",\"87\"]","VOLTAGE":"[\"1.58\",\"1.60\",\"1.50\",\"1.56\",\"1.52\",\"1.49\",\"1.53\",\"1.54\",\"1.55\",\"1.58\",\"1.54\",\"0.84\",\"1.59\",\"1.56\",\"1.56\",\"1.56\",\"1.54\",\"1.55\",\"1.56\",\"1.56\",\"1.55\",\"1.52\",\"1.49\",\"1.49\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.55\",\"1.56\",\"1.58\",\"1.56\",\"1.56\",\"1.55\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.51\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.53\",\"1.55\",\"1.54\",\"1.53\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.53\",\"1.54\",\"1.54\",\"1.54\",\"1.55\"]","HRV":"[\"82\",\"84\",\"86\",\"82\",\"73\",\"62\",\"62\",\"77\",\"74\",\"77\",\"63\",\"66\",\"76\",\"90\",\"91\",\"94\",\"94\",\"73\",\"70\",\"76\",\"82\",\"79\",\"68\",\"59\",\"63\",\"60\",\"63\",\"60\",\"63\",\"54\",\"48\",\"48\",\"48\",\"33\",\"30\",\"30\",\"21\",\"27\",\"27\",\"30\",\"30\",\"30\",\"30\",\"30\",\"30\",\"33\",\"39\",\"33\",\"30\",\"30\",\"39\",\"39\",\"39\",\"39\",\"36\",\"33\",\"27\",\"33\",\"33\",\"30\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-23 17:51:00.737721] :  ('127.0.0.1', 51406)
+Client Connect [2023-08-23 17:59:38.122163] :  ('127.0.0.1', 52088)
+{"DT":"D4","HR":"[\"86\",\"91\",\"96\",\"97\",\"95\",\"94\",\"94\",\"93\",\"93\",\"95\",\"94\",\"94\",\"94\",\"96\",\"96\",\"95\",\"95\",\"95\",\"96\",\"95\",\"95\",\"94\",\"95\",\"95\",\"95\",\"94\",\"95\",\"95\",\"93\",\"93\",\"95\",\"95\",\"92\",\"88\",\"86\",\"83\",\"81\",\"78\",\"77\",\"75\",\"73\",\"72\",\"73\",\"72\",\"71\",\"71\",\"70\",\"69\",\"69\",\"67\",\"66\",\"66\",\"67\",\"68\",\"70\",\"72\",\"73\",\"74\",\"75\",\"76\"]","VOLTAGE":"[\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.55\",\"1.57\",\"1.54\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.55\",\"1.42\",\"1.55\",\"1.59\",\"1.56\",\"1.57\",\"1.54\",\"1.55\",\"1.53\",\"1.56\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.58\",\"1.54\",\"1.54\",\"1.56\",\"1.55\",\"1.55\",\"1.57\",\"1.54\",\"1.55\",\"1.54\",\"1.57\",\"1.57\",\"1.58\",\"1.58\",\"1.57\",\"1.58\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.57\",\"1.56\",\"1.56\",\"1.56\",\"1.58\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.56\",\"1.54\"]","HRV":"[\"51\",\"55\",\"58\",\"56\",\"56\",\"50\",\"34\",\"34\",\"40\",\"40\",\"34\",\"30\",\"27\",\"27\",\"27\",\"24\",\"27\",\"30\",\"27\",\"30\",\"30\",\"39\",\"36\",\"36\",\"33\",\"36\",\"39\",\"36\",\"33\",\"30\",\"33\",\"24\",\"24\",\"45\",\"43\",\"43\",\"34\",\"37\",\"40\",\"40\",\"43\",\"49\",\"52\",\"40\",\"42\",\"54\",\"54\",\"51\",\"51\",\"51\",\"48\",\"48\",\"48\",\"42\",\"42\",\"33\",\"36\",\"36\",\"33\",\"33\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-23 17:59:38.570739] :  ('127.0.0.1', 52088)
+QObject::~QObject: Timers cannot be stopped from another thread
+2023-08-28 10:56:35.849250: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-28 10:56:35.850705: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-08-28 10:56:40.261190: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-28 10:56:40.262844: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2023-08-28 10:56:40.264446: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2023-08-28 10:56:40.266044: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2023-08-28 10:56:40.267642: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2023-08-28 10:56:40.269307: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2023-08-28 10:56:40.270979: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2023-08-28 10:56:40.272741: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2023-08-28 10:56:40.272769: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-08-28 10:56:40.279051: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-08-28 10:59:09.954378: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-28 10:59:09.955552: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+Traceback (most recent call last):
+  File "model_socket.py", line 13, in <module>
+    from sklearn.preprocessing import RobustScaler
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\__init__.py", line 82, in <module>
+    from .base import clone
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\base.py", line 20, in <module>
+    from .utils import _IS_32BIT
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\__init__.py", line 27, in <module>
+    from .fixes import np_version
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\sklearn\utils\fixes.py", line 18, in <module>
+    import scipy.stats
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\scipy\stats\__init__.py", line 384, in <module>
+    from .stats import *
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\scipy\stats\stats.py", line 185, in <module>
+    from . import distributions
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\scipy\stats\distributions.py", line 13, in <module>
+    from . import _continuous_distns
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\scipy\stats\_continuous_distns.py", line 17, in <module>
+    from scipy import interpolate
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\scipy\interpolate\__init__.py", line 167, in <module>
+    from .interpolate import *
+  File "C:\Users\SCI\AppData\Local\Programs\Python\Python37\lib\site-packages\scipy\interpolate\interpolate.py", line 26, in <module>
+    from .interpnd import _ndim_coords_from_arrays
+  File "interpnd.pyx", line 29, in init scipy.interpolate.interpnd
+  File "<frozen importlib._bootstrap>", line 1009, in _handle_fromlist
+KeyboardInterrupt
+2023-08-28 10:59:16.513397: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-28 10:59:16.514493: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-08-28 10:59:20.928656: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-28 10:59:20.931427: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2023-08-28 10:59:20.934391: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2023-08-28 10:59:20.937760: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2023-08-28 10:59:20.940599: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2023-08-28 10:59:20.943412: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2023-08-28 10:59:20.946141: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2023-08-28 10:59:20.948948: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2023-08-28 10:59:20.949943: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-08-28 10:59:20.952426: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model Predict Server On [2023-08-28 10:59:21.674537]
+Client Connect [2023-08-28 11:02:45.189585] :  ('127.0.0.1', 53904)
+{"DT":"D4","HR":"[\"77\",\"77\",\"76\",\"72\",\"69\",\"68\",\"68\",\"69\",\"71\",\"71\",\"71\",\"71\",\"72\",\"75\",\"77\",\"75\",\"74\",\"74\",\"72\",\"71\",\"71\",\"72\",\"72\",\"72\",\"73\",\"74\",\"74\",\"74\",\"75\",\"76\",\"76\",\"76\",\"76\",\"76\",\"77\",\"77\",\"76\",\"76\",\"76\",\"76\",\"75\",\"75\",\"75\",\"76\",\"76\",\"76\",\"76\",\"77\",\"78\",\"79\",\"80\",\"80\",\"79\",\"78\",\"77\",\"77\",\"77\",\"77\",\"77\",\"77\"]","VOLTAGE":"[\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"2.20\",\"1.40\",\"1.56\",\"1.56\",\"1.54\",\"1.56\",\"1.56\",\"1.55\",\"1.58\",\"1.57\",\"1.57\",\"1.57\",\"1.58\",\"1.56\",\"1.55\",\"1.56\",\"1.56\",\"1.58\",\"1.58\",\"1.54\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.57\",\"1.56\",\"1.55\",\"1.56\",\"1.55\",\"1.56\",\"1.55\",\"1.56\",\"1.57\",\"1.57\",\"1.56\",\"1.57\",\"1.57\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.57\",\"1.57\",\"1.57\",\"1.55\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.55\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.55\"]","HRV":"[\"96\",\"106\",\"96\",\"83\",\"89\",\"108\",\"119\",\"122\",\"110\",\"104\",\"107\",\"100\",\"97\",\"97\",\"88\",\"73\",\"54\",\"54\",\"54\",\"57\",\"63\",\"63\",\"57\",\"54\",\"42\",\"36\",\"42\",\"42\",\"48\",\"45\",\"36\",\"33\",\"33\",\"27\",\"27\",\"33\",\"30\",\"30\",\"30\",\"27\",\"30\",\"30\",\"33\",\"33\",\"36\",\"36\",\"30\",\"24\",\"21\",\"24\",\"21\",\"24\",\"21\",\"36\",\"30\",\"33\",\"36\",\"36\",\"36\",\"33\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 11:02:46.162256] :  ('127.0.0.1', 53904)
+Client Connect [2023-08-28 11:13:56.392730] :  ('127.0.0.1', 54779)
+{"DT":"D4","HR":"[\"81\",\"79\",\"79\",\"80\",\"77\",\"77\",\"79\",\"75\",\"75\",\"74\",\"75\",\"75\",\"76\",\"76\",\"83\",\"82\",\"84\",\"83\",\"84\",\"81\",\"79\",\"80\",\"80\",\"81\",\"78\",\"79\",\"76\",\"77\",\"76\",\"75\",\"75\",\"72\",\"70\",\"68\",\"68\",\"68\",\"68\",\"68\",\"68\",\"69\",\"71\",\"71\",\"70\",\"69\",\"68\",\"67\",\"69\",\"71\",\"72\",\"72\",\"70\",\"70\",\"71\",\"72\",\"73\",\"74\",\"73\",\"72\",\"73\",\"74\"]","VOLTAGE":"[\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"0.92\",\"1.44\",\"1.40\",\"1.58\",\"1.57\",\"1.56\",\"1.58\",\"1.52\",\"1.54\",\"1.51\",\"1.47\",\"1.56\",\"1.58\",\"1.56\",\"1.57\",\"1.55\",\"1.57\",\"1.54\",\"1.57\",\"1.55\",\"1.56\",\"1.54\",\"1.54\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.54\",\"1.54\",\"1.55\",\"1.53\",\"1.53\",\"1.54\",\"1.53\",\"1.55\",\"1.54\",\"1.54\",\"1.55\",\"1.55\",\"1.54\",\"1.53\",\"1.52\",\"1.54\",\"1.53\",\"1.55\",\"1.55\",\"1.54\",\"1.53\",\"1.54\",\"1.54\",\"1.53\"]","HRV":"[\"103\",\"115\",\"94\",\"75\",\"66\",\"70\",\"82\",\"88\",\"92\",\"79\",\"68\",\"69\",\"80\",\"77\",\"80\",\"73\",\"83\",\"87\",\"84\",\"90\",\"88\",\"95\",\"116\",\"137\",\"135\",\"129\",\"108\",\"98\",\"101\",\"98\",\"94\",\"75\",\"54\",\"30\",\"39\",\"45\",\"42\",\"54\",\"57\",\"51\",\"51\",\"60\",\"63\",\"69\",\"66\",\"60\",\"60\",\"54\",\"54\",\"57\",\"57\",\"60\",\"60\",\"69\",\"75\",\"69\",\"69\",\"66\",\"60\",\"54\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 11:13:56.608730] :  ('127.0.0.1', 54779)
+Client Connect [2023-08-28 11:16:59.721120] :  ('127.0.0.1', 55050)
+{"DT":"D4","HR":"[\"91\",\"89\",\"92\",\"88\",\"87\",\"86\",\"85\",\"85\",\"85\",\"85\",\"85\",\"85\",\"85\",\"85\",\"84\",\"84\",\"84\",\"84\",\"84\",\"84\",\"83\",\"84\",\"83\",\"83\",\"84\",\"84\",\"84\",\"84\",\"85\",\"85\",\"85\",\"81\",\"82\",\"83\",\"84\",\"85\",\"86\",\"87\",\"87\",\"84\",\"82\",\"87\",\"85\",\"84\",\"85\",\"84\",\"84\",\"83\",\"83\",\"85\",\"89\",\"89\",\"89\",\"90\",\"88\",\"88\",\"89\",\"89\",\"88\",\"87\"]","VOLTAGE":"[\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.57\",\"1.56\",\"1.55\",\"1.58\",\"1.55\",\"1.56\",\"1.54\",\"1.54\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.56\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.55\",\"1.55\",\"1.53\",\"1.53\",\"1.55\",\"1.56\",\"1.60\",\"1.75\",\"1.55\",\"1.56\",\"1.56\",\"1.57\",\"1.57\",\"1.57\",\"1.58\",\"1.56\",\"1.58\",\"1.64\",\"1.55\",\"1.54\",\"1.54\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.56\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.57\",\"1.55\",\"1.56\",\"1.54\"]","HRV":"[\"53\",\"53\",\"57\",\"44\",\"32\",\"24\",\"18\",\"19\",\"19\",\"18\",\"24\",\"23\",\"18\",\"21\",\"21\",\"24\",\"24\",\"24\",\"21\",\"21\",\"18\",\"21\",\"24\",\"24\",\"27\",\"24\",\"21\",\"18\",\"21\",\"23\",\"34\",\"40\",\"50\",\"55\",\"61\",\"61\",\"64\",\"67\",\"64\",\"65\",\"68\",\"72\",\"60\",\"53\",\"47\",\"59\",\"65\",\"65\",\"68\",\"65\",\"48\",\"44\",\"43\",\"48\",\"45\",\"33\",\"27\",\"27\",\"30\",\"33\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 11:16:59.917659] :  ('127.0.0.1', 55050)
+Client Connect [2023-08-28 11:20:44.718790] :  ('127.0.0.1', 55415)
+{"DT":"D4","HR":"[\"84\",\"84\",\"87\",\"89\",\"87\",\"85\",\"85\",\"83\",\"83\",\"83\",\"85\",\"87\",\"86\",\"86\",\"86\",\"85\",\"86\",\"82\",\"82\",\"82\",\"81\",\"82\",\"83\",\"83\",\"83\",\"83\",\"83\",\"87\",\"88\",\"88\",\"89\",\"89\",\"89\",\"89\",\"90\",\"89\",\"89\",\"89\",\"88\",\"88\",\"87\",\"86\",\"86\",\"85\",\"84\",\"83\",\"82\",\"82\",\"81\",\"80\",\"80\",\"80\",\"80\",\"79\",\"79\",\"79\",\"80\",\"80\",\"80\",\"79\"]","VOLTAGE":"[\"1.57\",\"1.58\",\"1.54\",\"1.55\",\"1.57\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.57\",\"1.57\",\"1.53\",\"1.51\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.50\",\"1.57\",\"1.57\",\"1.55\",\"1.54\",\"1.56\",\"1.57\",\"1.55\",\"1.55\",\"1.53\",\"1.55\",\"1.56\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.57\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.57\",\"1.56\",\"1.54\",\"1.54\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.56\",\"1.56\",\"1.55\"]","HRV":"[\"95\",\"103\",\"100\",\"124\",\"117\",\"105\",\"87\",\"84\",\"84\",\"84\",\"84\",\"79\",\"68\",\"43\",\"36\",\"33\",\"33\",\"30\",\"29\",\"29\",\"26\",\"23\",\"23\",\"23\",\"23\",\"26\",\"26\",\"20\",\"17\",\"17\",\"18\",\"18\",\"21\",\"24\",\"27\",\"27\",\"30\",\"36\",\"36\",\"36\",\"36\",\"39\",\"42\",\"45\",\"48\",\"48\",\"45\",\"39\",\"39\",\"42\",\"42\",\"42\",\"42\",\"42\",\"33\",\"36\",\"39\",\"45\",\"45\",\"39\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 11:20:44.935629] :  ('127.0.0.1', 55415)
+Client Connect [2023-08-28 11:22:45.049715] :  ('127.0.0.1', 55601)
+{"DT":"D4","HR":"[\"83\",\"83\",\"80\",\"77\",\"75\",\"75\",\"76\",\"77\",\"80\",\"82\",\"85\",\"88\",\"91\",\"93\",\"94\",\"94\",\"93\",\"92\",\"92\",\"93\",\"92\",\"91\",\"91\",\"91\",\"90\",\"91\",\"92\",\"91\",\"91\",\"91\",\"92\",\"93\",\"92\",\"91\",\"89\",\"86\",\"86\",\"85\",\"85\",\"85\",\"84\",\"85\",\"85\",\"86\",\"88\",\"90\",\"89\",\"89\",\"90\",\"89\",\"88\",\"87\",\"88\",\"88\",\"89\",\"90\",\"91\",\"93\",\"93\",\"94\"]","VOLTAGE":"[\"1.55\",\"1.56\",\"1.55\",\"1.45\",\"1.55\",\"1.51\",\"1.48\",\"1.52\",\"1.58\",\"1.55\",\"1.56\",\"1.54\",\"1.57\",\"1.55\",\"1.57\",\"1.55\",\"1.56\",\"1.57\",\"1.57\",\"1.57\",\"1.49\",\"1.55\",\"1.53\",\"1.49\",\"1.56\",\"1.56\",\"1.57\",\"1.56\",\"1.56\",\"1.58\",\"1.58\",\"1.55\",\"1.58\",\"1.53\",\"1.55\",\"1.54\",\"1.57\",\"1.56\",\"1.57\",\"1.57\",\"1.58\",\"1.58\",\"1.57\",\"1.59\",\"1.58\",\"1.56\",\"1.56\",\"1.53\",\"1.60\",\"1.51\",\"1.59\",\"1.56\",\"1.57\",\"1.57\",\"1.56\",\"1.55\",\"1.58\",\"1.56\",\"1.54\",\"1.51\"]","HRV":"[\"71\",\"76\",\"72\",\"55\",\"53\",\"63\",\"82\",\"82\",\"88\",\"79\",\"70\",\"68\",\"72\",\"75\",\"78\",\"63\",\"45\",\"42\",\"36\",\"33\",\"33\",\"36\",\"36\",\"30\",\"27\",\"24\",\"33\",\"39\",\"45\",\"45\",\"48\",\"42\",\"39\",\"42\",\"45\",\"57\",\"48\",\"48\",\"48\",\"48\",\"48\",\"48\",\"48\",\"48\",\"48\",\"33\",\"30\",\"27\",\"27\",\"30\",\"30\",\"30\",\"36\",\"36\",\"39\",\"42\",\"45\",\"48\",\"45\",\"42\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 11:22:45.344282] :  ('127.0.0.1', 55601)
+Client Connect [2023-08-28 11:26:03.154865] :  ('127.0.0.1', 55875)
+{"DT":"D4","HR":"[\"78\",\"78\",\"79\",\"78\",\"76\",\"72\",\"69\",\"69\",\"69\",\"70\",\"71\",\"71\",\"70\",\"72\",\"72\",\"72\",\"71\",\"72\",\"73\",\"72\",\"72\",\"72\",\"73\",\"72\",\"71\",\"70\",\"71\",\"70\",\"69\",\"68\",\"68\",\"68\",\"66\",\"66\",\"67\",\"67\",\"66\",\"67\",\"69\",\"70\",\"70\",\"71\",\"73\",\"73\",\"73\",\"73\",\"74\",\"75\",\"75\",\"76\",\"76\",\"77\",\"77\",\"78\",\"78\",\"80\",\"80\",\"79\",\"79\",\"78\"]","VOLTAGE":"[\"1.55\",\"1.56\",\"1.57\",\"1.53\",\"1.57\",\"1.55\",\"1.56\",\"1.56\",\"1.54\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.57\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.56\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.54\",\"1.55\",\"1.54\",\"1.54\",\"1.55\"]","HRV":"[\"98\",\"99\",\"77\",\"75\",\"84\",\"67\",\"58\",\"60\",\"51\",\"45\",\"45\",\"50\",\"51\",\"45\",\"42\",\"48\",\"57\",\"60\",\"63\",\"63\",\"60\",\"57\",\"60\",\"66\",\"69\",\"72\",\"63\",\"66\",\"60\",\"57\",\"63\",\"63\",\"63\",\"63\",\"54\",\"45\",\"48\",\"42\",\"42\",\"45\",\"39\",\"42\",\"36\",\"33\",\"36\",\"36\",\"36\",\"36\",\"42\",\"36\",\"33\",\"30\",\"36\",\"36\",\"33\",\"33\",\"36\",\"36\",\"33\",\"36\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 11:26:03.370020] :  ('127.0.0.1', 55875)
+Client Connect [2023-08-28 11:36:42.462808] :  ('127.0.0.1', 56730)
+{"DT":"D4","HR":"[\"70\",\"71\",\"70\",\"71\",\"70\",\"71\",\"71\",\"73\",\"76\",\"79\",\"81\",\"84\",\"86\",\"88\",\"88\",\"87\",\"87\",\"85\",\"82\",\"79\",\"77\",\"75\",\"73\",\"72\",\"71\",\"73\",\"74\",\"76\",\"76\",\"76\",\"75\",\"73\",\"72\",\"71\",\"70\",\"68\",\"65\",\"64\",\"64\",\"65\",\"66\",\"67\",\"69\",\"69\",\"71\",\"71\",\"72\",\"72\",\"72\",\"72\",\"73\",\"74\",\"74\",\"76\",\"78\",\"81\",\"82\",\"83\",\"84\",\"86\"]","VOLTAGE":"[\"1.51\",\"1.58\",\"1.55\",\"1.47\",\"1.55\",\"1.49\",\"1.53\",\"1.54\",\"1.52\",\"1.54\",\"1.57\",\"1.55\",\"1.52\",\"1.54\",\"1.54\",\"1.53\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.57\",\"1.56\",\"1.53\",\"1.54\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.53\",\"1.54\",\"1.54\",\"1.53\",\"1.54\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.57\",\"1.54\",\"1.56\",\"1.52\",\"1.54\",\"1.57\",\"1.49\",\"1.57\",\"1.54\",\"1.54\",\"1.52\",\"1.54\",\"1.53\",\"1.54\",\"1.54\",\"1.54\",\"1.55\",\"1.53\",\"1.52\",\"1.54\",\"1.54\"]","HRV":"[\"71\",\"74\",\"74\",\"69\",\"55\",\"55\",\"48\",\"36\",\"36\",\"39\",\"42\",\"38\",\"39\",\"39\",\"39\",\"48\",\"51\",\"54\",\"57\",\"60\",\"54\",\"60\",\"66\",\"66\",\"63\",\"48\",\"48\",\"60\",\"54\",\"63\",\"72\",\"75\",\"72\",\"72\",\"78\",\"81\",\"75\",\"60\",\"75\",\"69\",\"60\",\"54\",\"51\",\"54\",\"51\",\"54\",\"48\",\"48\",\"36\",\"24\",\"24\",\"27\",\"30\",\"27\",\"27\",\"24\",\"27\",\"27\",\"27\",\"30\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 11:36:42.686084] :  ('127.0.0.1', 56730)
+Client Connect [2023-08-28 13:09:27.133481] :  ('127.0.0.1', 61826)
+{"DT":"D4","HR":"[\"86\",\"92\",\"92\",\"93\",\"93\",\"93\",\"92\",\"96\",\"100\",\"98\",\"99\",\"100\",\"99\",\"99\",\"99\",\"99\",\"100\",\"99\",\"98\",\"95\",\"93\",\"91\",\"89\",\"86\",\"85\",\"83\",\"81\",\"81\",\"80\",\"82\",\"83\",\"84\",\"82\",\"82\",\"82\",\"82\",\"82\",\"81\",\"82\",\"81\",\"80\",\"78\",\"79\",\"80\",\"79\",\"78\",\"77\",\"78\",\"77\",\"77\",\"76\",\"78\",\"79\",\"80\",\"81\",\"82\",\"83\",\"83\",\"83\",\"83\"]","VOLTAGE":"[\"1.53\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.55\",\"1.55\",\"1.54\",\"1.53\",\"1.54\",\"1.55\",\"1.53\",\"1.53\",\"1.53\",\"1.53\",\"1.54\",\"1.56\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.56\",\"1.54\",\"1.54\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.53\",\"1.52\",\"1.53\",\"1.55\",\"1.53\",\"1.54\",\"1.54\",\"1.52\",\"1.53\",\"1.53\",\"1.52\",\"1.51\",\"1.55\",\"1.55\",\"1.54\",\"1.53\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.53\",\"1.56\",\"1.55\",\"1.53\",\"1.53\",\"1.54\",\"1.53\",\"1.53\",\"1.53\"]","HRV":"[\"87\",\"92\",\"87\",\"79\",\"55\",\"58\",\"55\",\"49\",\"45\",\"41\",\"25\",\"20\",\"15\",\"21\",\"27\",\"27\",\"30\",\"36\",\"42\",\"42\",\"51\",\"60\",\"57\",\"54\",\"51\",\"48\",\"45\",\"45\",\"42\",\"36\",\"33\",\"33\",\"39\",\"57\",\"75\",\"84\",\"96\",\"90\",\"90\",\"96\",\"93\",\"84\",\"93\",\"84\",\"66\",\"60\",\"51\",\"57\",\"54\",\"51\",\"45\",\"48\",\"33\",\"24\",\"21\",\"18\",\"15\",\"9\",\"9\",\"9\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 13:09:27.367847] :  ('127.0.0.1', 61826)
+Client Connect [2023-08-28 13:16:54.334864] :  ('127.0.0.1', 62477)
+{"DT":"D4","HR":"[\"83\",\"83\",\"82\",\"83\",\"83\",\"82\",\"81\",\"81\",\"81\",\"85\",\"85\",\"85\",\"85\",\"86\",\"85\",\"85\",\"87\",\"84\",\"86\",\"86\",\"89\",\"91\",\"93\",\"94\",\"95\",\"97\",\"96\",\"100\",\"98\",\"98\",\"97\",\"96\",\"93\",\"91\",\"89\",\"89\",\"89\",\"90\",\"88\",\"84\",\"82\",\"80\",\"79\",\"78\",\"76\",\"74\",\"73\",\"71\",\"72\",\"73\",\"74\",\"75\",\"76\",\"76\",\"77\",\"77\",\"77\",\"77\",\"77\",\"78\"]","VOLTAGE":"[\"1.43\",\"1.55\",\"1.53\",\"1.57\",\"1.56\",\"1.55\",\"1.54\",\"1.57\",\"1.57\",\"1.58\",\"1.58\",\"1.56\",\"1.54\",\"1.56\",\"1.48\",\"1.49\",\"1.57\",\"1.58\",\"1.47\",\"1.52\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.56\",\"1.58\",\"1.56\",\"1.57\",\"1.55\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.56\",\"1.56\",\"1.55\",\"1.54\",\"1.57\",\"1.55\",\"1.57\",\"1.54\",\"1.54\",\"1.55\",\"1.57\",\"1.54\",\"1.55\",\"1.54\",\"1.56\",\"1.54\",\"1.57\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\"]","HRV":"[\"65\",\"73\",\"62\",\"61\",\"58\",\"55\",\"58\",\"61\",\"61\",\"67\",\"50\",\"45\",\"39\",\"36\",\"48\",\"51\",\"51\",\"57\",\"76\",\"70\",\"70\",\"67\",\"67\",\"67\",\"58\",\"55\",\"52\",\"49\",\"29\",\"26\",\"21\",\"21\",\"18\",\"18\",\"18\",\"15\",\"21\",\"24\",\"24\",\"42\",\"54\",\"60\",\"66\",\"72\",\"72\",\"75\",\"66\",\"60\",\"63\",\"48\",\"36\",\"30\",\"24\",\"24\",\"24\",\"24\",\"27\",\"30\",\"30\",\"27\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 13:16:54.888375] :  ('127.0.0.1', 62477)
+Client Connect [2023-08-28 13:19:02.034019] :  ('127.0.0.1', 62664)
+{"DT":"D4","HR":"[\"91\",\"93\",\"91\",\"91\",\"91\",\"91\",\"91\",\"91\",\"92\",\"92\",\"94\",\"95\",\"95\",\"95\",\"95\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"97\",\"97\",\"98\",\"98\",\"98\",\"98\",\"98\",\"97\",\"97\",\"97\",\"97\",\"97\",\"96\",\"95\",\"95\",\"95\",\"95\",\"95\",\"95\",\"96\",\"95\",\"97\",\"98\",\"98\",\"98\",\"98\",\"99\",\"100\",\"99\",\"100\",\"100\",\"99\",\"98\",\"99\",\"100\",\"100\",\"101\"]","VOLTAGE":"[\"1.54\",\"1.56\",\"1.57\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.53\",\"1.54\",\"1.55\",\"1.55\",\"1.54\",\"1.53\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.52\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.53\",\"1.53\",\"1.52\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.52\",\"1.53\",\"1.52\",\"1.55\",\"1.54\",\"1.54\",\"1.54\",\"1.58\",\"1.52\",\"1.56\",\"1.54\",\"1.54\",\"1.56\",\"1.50\",\"1.55\",\"1.56\",\"1.55\",\"1.57\",\"1.57\",\"1.57\",\"1.56\",\"1.57\"]","HRV":"[\"94\",\"97\",\"78\",\"65\",\"42\",\"36\",\"33\",\"33\",\"30\",\"30\",\"27\",\"24\",\"30\",\"30\",\"30\",\"30\",\"33\",\"33\",\"33\",\"30\",\"27\",\"27\",\"24\",\"24\",\"24\",\"24\",\"21\",\"24\",\"21\",\"24\",\"24\",\"24\",\"21\",\"18\",\"21\",\"24\",\"27\",\"21\",\"24\",\"24\",\"27\",\"24\",\"24\",\"24\",\"24\",\"18\",\"15\",\"15\",\"15\",\"12\",\"12\",\"15\",\"18\",\"24\",\"21\",\"30\",\"27\",\"30\",\"27\",\"27\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 13:19:02.283353] :  ('127.0.0.1', 62664)
+Client Connect [2023-08-28 13:21:30.474301] :  ('127.0.0.1', 62864)
+{"DT":"D4","HR":"[\"91\",\"96\",\"95\",\"96\",\"95\",\"95\",\"96\",\"96\",\"97\",\"96\",\"97\",\"96\",\"97\",\"97\",\"97\",\"97\",\"96\",\"97\",\"97\",\"97\",\"97\",\"97\",\"97\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"95\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"95\",\"95\",\"95\",\"95\",\"94\",\"93\",\"93\",\"93\",\"93\",\"92\",\"91\",\"91\",\"91\",\"92\",\"93\",\"93\",\"89\",\"86\",\"84\",\"82\"]","VOLTAGE":"[\"1.57\",\"1.57\",\"1.56\",\"1.58\",\"1.58\",\"1.57\",\"1.58\",\"1.57\",\"1.56\",\"1.56\",\"1.59\",\"1.58\",\"1.52\",\"1.59\",\"1.55\",\"1.54\",\"1.54\",\"1.57\",\"1.57\",\"1.55\",\"1.54\",\"1.58\",\"1.57\",\"1.58\",\"1.56\",\"1.57\",\"1.58\",\"1.55\",\"1.56\",\"1.58\",\"1.60\",\"1.55\",\"1.53\",\"1.54\",\"1.56\",\"1.58\",\"1.58\",\"1.57\",\"1.56\",\"1.56\",\"1.55\",\"1.55\",\"1.57\",\"1.54\",\"1.55\",\"1.56\",\"1.55\",\"1.57\",\"1.56\",\"1.57\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.58\",\"1.57\",\"1.56\",\"1.54\",\"1.57\",\"1.58\"]","HRV":"[\"53\",\"54\",\"50\",\"25\",\"19\",\"16\",\"13\",\"13\",\"13\",\"16\",\"13\",\"12\",\"12\",\"12\",\"15\",\"15\",\"15\",\"12\",\"9\",\"9\",\"12\",\"12\",\"12\",\"12\",\"9\",\"12\",\"15\",\"15\",\"18\",\"15\",\"12\",\"15\",\"15\",\"18\",\"24\",\"24\",\"30\",\"30\",\"27\",\"27\",\"30\",\"27\",\"27\",\"27\",\"21\",\"18\",\"12\",\"12\",\"12\",\"15\",\"15\",\"15\",\"18\",\"18\",\"18\",\"24\",\"24\",\"39\",\"40\",\"40\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 13:21:30.757543] :  ('127.0.0.1', 62864)
+Client Connect [2023-08-28 13:41:33.257359] :  ('127.0.0.1', 63560)
+{"DT":"D4","HR":"[\"99\",\"95\",\"92\",\"91\",\"91\",\"92\",\"92\",\"92\",\"92\",\"92\",\"94\",\"93\",\"93\",\"95\",\"96\",\"96\",\"96\",\"96\",\"97\",\"96\",\"95\",\"95\",\"95\",\"94\",\"93\",\"92\",\"91\",\"91\",\"91\",\"91\",\"91\",\"92\",\"92\",\"92\",\"92\",\"93\",\"94\",\"93\",\"93\",\"92\",\"92\",\"91\",\"91\",\"90\",\"90\",\"90\",\"90\",\"90\",\"89\",\"90\",\"91\",\"91\",\"90\",\"91\",\"92\",\"93\",\"92\",\"91\",\"89\",\"88\"]","VOLTAGE":"[\"1.55\",\"1.57\",\"1.55\",\"1.54\",\"1.53\",\"1.56\",\"1.56\",\"1.55\",\"1.53\",\"1.56\",\"1.56\",\"1.55\",\"1.54\",\"1.57\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.53\",\"1.54\",\"1.55\",\"1.54\",\"1.59\",\"1.54\",\"1.45\",\"1.54\",\"1.56\",\"1.56\",\"1.54\",\"1.54\",\"1.53\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.57\",\"1.55\",\"1.54\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.54\",\"1.55\",\"1.56\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.56\"]","HRV":"[\"47\",\"48\",\"35\",\"32\",\"25\",\"19\",\"25\",\"31\",\"31\",\"31\",\"34\",\"42\",\"42\",\"39\",\"42\",\"45\",\"42\",\"39\",\"39\",\"39\",\"36\",\"30\",\"27\",\"30\",\"27\",\"33\",\"33\",\"33\",\"33\",\"36\",\"36\",\"36\",\"39\",\"39\",\"36\",\"30\",\"24\",\"21\",\"18\",\"12\",\"12\",\"12\",\"12\",\"9\",\"12\",\"15\",\"15\",\"21\",\"24\",\"24\",\"24\",\"21\",\"21\",\"27\",\"27\",\"21\",\"24\",\"21\",\"27\",\"36\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 13:41:33.489753] :  ('127.0.0.1', 63560)
+Client Connect [2023-08-28 13:56:50.560234] :  ('127.0.0.1', 63717)
+{"DT":"D4","HR":"[\"103\",\"101\",\"102\",\"105\",\"104\",\"104\",\"104\",\"104\",\"103\",\"103\",\"105\",\"104\",\"105\",\"104\",\"105\",\"105\",\"104\",\"104\",\"105\",\"105\",\"105\",\"105\",\"104\",\"103\",\"102\",\"102\",\"101\",\"101\",\"100\",\"99\",\"99\",\"98\",\"98\",\"98\",\"97\",\"97\",\"98\",\"98\",\"97\",\"100\",\"100\",\"99\",\"101\",\"101\",\"101\",\"100\",\"100\",\"100\",\"99\",\"94\",\"91\",\"87\",\"83\",\"79\",\"77\",\"78\",\"80\",\"79\",\"81\",\"82\"]","VOLTAGE":"[\"1.45\",\"1.57\",\"1.56\",\"1.57\",\"1.56\",\"1.54\",\"1.55\",\"1.54\",\"1.52\",\"1.55\",\"1.57\",\"1.55\",\"1.51\",\"1.54\",\"1.55\",\"1.53\",\"1.54\",\"1.53\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.53\",\"1.54\",\"1.53\",\"1.53\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.55\",\"1.54\",\"1.54\",\"1.55\",\"1.56\",\"1.53\",\"1.51\",\"0.82\",\"1.53\",\"1.53\",\"1.55\",\"1.56\",\"1.56\",\"1.57\",\"1.57\",\"1.57\",\"1.58\",\"1.56\",\"1.56\",\"1.48\",\"1.40\",\"1.64\",\"1.50\",\"1.47\",\"1.53\",\"1.47\",\"1.56\",\"1.55\"]","HRV":"[\"80\",\"91\",\"72\",\"60\",\"39\",\"30\",\"27\",\"27\",\"30\",\"30\",\"33\",\"27\",\"30\",\"24\",\"24\",\"24\",\"24\",\"24\",\"24\",\"24\",\"24\",\"18\",\"18\",\"18\",\"21\",\"21\",\"21\",\"24\",\"24\",\"21\",\"21\",\"24\",\"24\",\"21\",\"18\",\"18\",\"18\",\"21\",\"21\",\"22\",\"35\",\"51\",\"51\",\"60\",\"66\",\"78\",\"78\",\"72\",\"72\",\"79\",\"66\",\"50\",\"66\",\"63\",\"66\",\"60\",\"72\",\"81\",\"87\",\"84\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 13:56:50.810565] :  ('127.0.0.1', 63717)
+Client Connect [2023-08-28 13:58:16.148775] :  ('127.0.0.1', 63723)
+{"DT":"D4","HR":"[\"96\",\"96\",\"95\",\"95\",\"94\",\"95\",\"95\",\"95\",\"91\",\"91\",\"94\",\"94\",\"94\",\"94\",\"95\",\"95\",\"95\",\"94\",\"95\",\"95\",\"96\",\"96\",\"96\",\"97\",\"96\",\"97\",\"97\",\"97\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"96\",\"97\",\"97\",\"97\",\"97\",\"97\",\"96\",\"96\",\"97\",\"98\",\"98\",\"98\",\"97\",\"97\",\"97\",\"97\",\"97\",\"96\",\"96\",\"95\",\"95\",\"96\",\"97\"]","VOLTAGE":"[\"1.45\",\"1.55\",\"1.54\",\"1.56\",\"1.58\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.58\",\"1.56\",\"1.57\",\"1.56\",\"1.58\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.58\",\"1.55\",\"1.58\",\"1.57\",\"1.58\",\"1.58\",\"1.56\",\"1.56\",\"1.56\",\"1.59\",\"1.57\",\"1.55\",\"1.58\",\"1.58\",\"1.57\",\"1.54\",\"1.56\",\"1.57\",\"1.58\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.58\",\"1.59\",\"1.58\",\"1.58\",\"1.55\",\"1.56\",\"1.57\",\"1.56\",\"1.57\",\"1.56\",\"1.55\",\"1.55\",\"1.57\",\"1.56\",\"1.57\",\"1.55\",\"1.56\",\"1.57\",\"1.57\"]","HRV":"[\"28\",\"30\",\"30\",\"54\",\"57\",\"54\",\"57\",\"60\",\"60\",\"45\",\"43\",\"41\",\"39\",\"18\",\"15\",\"15\",\"15\",\"15\",\"15\",\"15\",\"18\",\"15\",\"15\",\"15\",\"18\",\"18\",\"18\",\"15\",\"15\",\"15\",\"12\",\"15\",\"15\",\"12\",\"12\",\"12\",\"12\",\"12\",\"15\",\"12\",\"15\",\"12\",\"12\",\"12\",\"9\",\"9\",\"12\",\"15\",\"15\",\"18\",\"15\",\"15\",\"18\",\"21\",\"21\",\"21\",\"18\",\"18\",\"15\",\"12\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 13:58:16.388644] :  ('127.0.0.1', 63723)
+Client Connect [2023-08-28 14:01:33.825290] :  ('127.0.0.1', 63732)
+{"DT":"D4","HR":"[\"85\",\"89\",\"89\",\"95\",\"93\",\"91\",\"92\",\"96\",\"99\",\"97\",\"97\",\"96\",\"95\",\"95\",\"95\",\"94\",\"94\",\"94\",\"94\",\"94\",\"94\",\"94\",\"94\",\"95\",\"95\",\"95\",\"95\",\"94\",\"95\",\"94\",\"94\",\"94\",\"93\",\"92\",\"92\",\"92\",\"92\",\"92\",\"91\",\"92\",\"92\",\"92\",\"93\",\"93\",\"94\",\"94\",\"94\",\"94\",\"94\",\"93\",\"93\",\"93\",\"93\",\"93\",\"93\",\"92\",\"92\",\"93\",\"93\",\"94\"]","VOLTAGE":"[\"1.58\",\"1.59\",\"1.58\",\"1.57\",\"1.58\",\"1.59\",\"1.58\",\"1.56\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.58\",\"1.59\",\"1.57\",\"1.58\",\"1.57\",\"1.57\",\"1.59\",\"1.57\",\"1.56\",\"1.56\",\"1.58\",\"1.58\",\"1.57\",\"1.55\",\"1.57\",\"1.56\",\"1.57\",\"1.56\",\"1.58\",\"1.55\",\"1.58\",\"1.56\",\"1.58\",\"1.56\",\"1.58\",\"1.58\",\"1.57\",\"1.56\",\"1.56\",\"1.58\",\"1.59\",\"1.58\",\"1.56\",\"1.58\",\"1.57\",\"1.57\",\"1.56\",\"1.55\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.56\",\"1.56\"]","HRV":"[\"122\",\"122\",\"117\",\"106\",\"89\",\"77\",\"68\",\"44\",\"41\",\"23\",\"16\",\"11\",\"6\",\"9\",\"12\",\"15\",\"15\",\"18\",\"21\",\"24\",\"24\",\"24\",\"21\",\"21\",\"21\",\"21\",\"24\",\"24\",\"21\",\"24\",\"24\",\"30\",\"30\",\"30\",\"27\",\"27\",\"27\",\"24\",\"27\",\"21\",\"24\",\"18\",\"24\",\"24\",\"24\",\"21\",\"21\",\"24\",\"24\",\"27\",\"21\",\"24\",\"18\",\"15\",\"18\",\"18\",\"18\",\"15\",\"18\",\"18\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-28 14:01:34.449607] :  ('127.0.0.1', 63732)
+QObject::~QObject: Timers cannot be stopped from another thread
+2023-08-29 08:59:20.187557: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-29 08:59:20.188622: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-08-29 08:59:33.731105: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-29 08:59:33.734330: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2023-08-29 08:59:33.737453: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2023-08-29 08:59:33.740267: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2023-08-29 08:59:33.743038: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2023-08-29 08:59:33.745759: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2023-08-29 08:59:33.748779: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2023-08-29 08:59:33.751592: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2023-08-29 08:59:33.752587: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-08-29 08:59:33.755659: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model Predict Server On [2023-08-29 08:59:34.631505]
+Client Connect [2023-08-29 09:04:34.387828] :  ('127.0.0.1', 63600)
+{"DT":"D4","HR":"[\"84\",\"82\",\"84\",\"82\",\"78\",\"78\",\"76\",\"77\",\"77\",\"79\",\"80\",\"82\",\"84\",\"85\",\"90\",\"92\",\"98\",\"99\",\"100\",\"100\",\"100\",\"95\",\"95\",\"96\",\"93\",\"89\",\"84\",\"86\",\"86\",\"86\",\"86\",\"92\",\"94\",\"92\",\"98\",\"103\",\"109\",\"108\",\"108\",\"110\",\"111\",\"110\",\"110\",\"111\",\"110\",\"109\",\"109\",\"109\",\"109\",\"108\",\"105\",\"100\",\"94\",\"94\",\"95\",\"95\",\"95\",\"95\",\"95\",\"95\"]","VOLTAGE":"[\"1.58\",\"1.57\",\"1.58\",\"1.57\",\"1.58\",\"1.53\",\"1.50\",\"1.50\",\"1.54\",\"1.54\",\"1.57\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.57\",\"1.56\",\"1.54\",\"1.58\",\"1.58\",\"1.55\",\"1.58\",\"1.56\",\"1.58\",\"1.58\",\"1.59\",\"1.53\",\"1.60\",\"1.56\",\"1.44\",\"1.55\",\"1.55\",\"1.57\",\"1.51\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.56\",\"1.58\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.57\",\"1.55\",\"1.57\",\"1.58\",\"1.53\",\"1.61\",\"1.54\",\"1.56\",\"1.57\",\"1.52\",\"1.55\",\"1.56\",\"1.55\",\"1.53\"]","HRV":"[\"75\",\"88\",\"93\",\"94\",\"97\",\"91\",\"97\",\"85\",\"100\",\"94\",\"88\",\"75\",\"68\",\"59\",\"56\",\"47\",\"35\",\"35\",\"20\",\"15\",\"15\",\"18\",\"34\",\"37\",\"53\",\"71\",\"79\",\"83\",\"99\",\"120\",\"120\",\"120\",\"113\",\"113\",\"105\",\"88\",\"85\",\"82\",\"65\",\"48\",\"48\",\"45\",\"36\",\"36\",\"27\",\"27\",\"18\",\"18\",\"15\",\"12\",\"9\",\"18\",\"22\",\"43\",\"46\",\"64\",\"70\",\"73\",\"73\",\"73\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 09:04:35.069314] :  ('127.0.0.1', 63600)
+Client Connect [2023-08-29 09:06:35.734819] :  ('127.0.0.1', 63623)
+{"DT":"D4","HR":"[\"90\",\"91\",\"90\",\"89\",\"88\",\"87\",\"86\",\"86\",\"88\",\"87\",\"85\",\"82\",\"82\",\"83\",\"83\",\"83\",\"84\",\"85\",\"86\",\"89\",\"92\",\"93\",\"95\",\"96\",\"95\",\"94\",\"94\",\"95\",\"95\",\"95\",\"95\",\"95\",\"96\",\"97\",\"100\",\"103\",\"103\",\"104\",\"104\",\"103\",\"102\",\"103\",\"102\",\"102\",\"100\",\"98\",\"97\",\"95\",\"94\",\"93\",\"91\",\"88\",\"87\",\"86\",\"86\",\"86\",\"86\",\"85\",\"85\",\"88\"]","VOLTAGE":"[\"1.61\",\"1.54\",\"1.58\",\"1.58\",\"1.58\",\"1.56\",\"1.58\",\"1.56\",\"1.57\",\"1.55\",\"1.55\",\"1.56\",\"1.57\",\"1.58\",\"1.58\",\"1.59\",\"1.57\",\"1.57\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.54\",\"1.54\",\"1.55\",\"1.56\",\"1.55\",\"1.58\",\"1.57\",\"1.56\",\"1.56\",\"1.56\",\"1.57\",\"1.57\",\"1.54\",\"1.55\",\"1.57\",\"1.58\",\"1.54\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.57\",\"1.58\",\"1.57\",\"1.54\",\"1.58\",\"1.60\",\"1.57\",\"1.59\",\"1.60\",\"1.54\",\"1.50\",\"1.54\"]","HRV":"[\"47\",\"69\",\"67\",\"82\",\"103\",\"106\",\"106\",\"106\",\"100\",\"91\",\"86\",\"61\",\"63\",\"45\",\"21\",\"15\",\"15\",\"18\",\"15\",\"12\",\"18\",\"27\",\"24\",\"24\",\"24\",\"30\",\"33\",\"42\",\"54\",\"54\",\"51\",\"48\",\"48\",\"48\",\"48\",\"42\",\"39\",\"30\",\"18\",\"18\",\"15\",\"12\",\"15\",\"18\",\"18\",\"21\",\"24\",\"24\",\"27\",\"30\",\"30\",\"33\",\"33\",\"36\",\"42\",\"42\",\"39\",\"36\",\"39\",\"42\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 09:06:35.953938] :  ('127.0.0.1', 63623)
+Client Connect [2023-08-29 15:31:44.728945] :  ('127.0.0.1', 54340)
+{"DT":"D4","HR":"[\"99\",\"100\",\"99\",\"99\",\"99\",\"99\",\"99\",\"100\",\"99\",\"102\",\"101\",\"101\",\"100\",\"101\",\"100\",\"100\",\"98\",\"97\",\"97\",\"97\",\"96\",\"96\",\"95\",\"94\",\"94\",\"94\",\"95\",\"95\",\"95\",\"94\",\"94\",\"95\",\"95\",\"94\",\"95\",\"95\",\"94\",\"95\",\"94\",\"91\",\"91\",\"90\",\"90\",\"92\",\"92\",\"91\",\"92\",\"93\",\"94\",\"98\",\"97\",\"98\",\"97\",\"97\",\"95\",\"95\",\"94\",\"94\",\"93\",\"90\"]","VOLTAGE":"[\"1.70\",\"1.68\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.57\",\"1.57\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.57\",\"1.57\",\"1.57\",\"1.56\",\"1.56\",\"1.57\",\"1.58\",\"1.57\",\"1.58\",\"1.55\",\"1.57\",\"1.57\",\"1.56\",\"1.58\",\"1.56\",\"1.55\",\"1.55\",\"1.56\",\"1.57\",\"1.55\",\"1.56\",\"1.54\",\"1.55\",\"1.54\",\"1.57\",\"1.58\",\"1.59\",\"1.62\",\"1.49\",\"1.47\",\"1.55\",\"1.55\",\"1.57\",\"1.57\",\"1.57\",\"1.56\",\"1.57\",\"1.57\",\"1.56\",\"1.55\",\"1.58\",\"1.56\",\"1.56\",\"1.58\",\"1.56\",\"1.55\",\"1.59\",\"1.57\"]","HRV":"[\"45\",\"46\",\"47\",\"59\",\"58\",\"55\",\"55\",\"52\",\"55\",\"55\",\"36\",\"33\",\"32\",\"17\",\"18\",\"18\",\"24\",\"30\",\"30\",\"27\",\"24\",\"27\",\"30\",\"30\",\"30\",\"27\",\"24\",\"21\",\"21\",\"27\",\"27\",\"24\",\"27\",\"27\",\"27\",\"30\",\"36\",\"39\",\"39\",\"36\",\"60\",\"66\",\"64\",\"64\",\"70\",\"67\",\"61\",\"55\",\"55\",\"52\",\"31\",\"25\",\"21\",\"18\",\"9\",\"12\",\"12\",\"12\",\"12\",\"18\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 15:31:45.080248] :  ('127.0.0.1', 54340)
+2023-08-29 15:34:31.996409: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-29 15:34:31.997462: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your machine.
+2023-08-29 15:34:37.114131: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror: cudart64_110.dll not found
+2023-08-29 15:34:37.117706: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublas64_11.dll'; dlerror: cublas64_11.dll not found
+2023-08-29 15:34:37.121120: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cublasLt64_11.dll'; dlerror: cublasLt64_11.dll not found
+2023-08-29 15:34:37.124012: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cufft64_10.dll'; dlerror: cufft64_10.dll not found
+2023-08-29 15:34:37.126738: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'curand64_10.dll'; dlerror: curand64_10.dll not found
+2023-08-29 15:34:37.129974: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusolver64_11.dll'; dlerror: cusolver64_11.dll not found
+2023-08-29 15:34:37.133102: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cusparse64_11.dll'; dlerror: cusparse64_11.dll not found
+2023-08-29 15:34:37.136415: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudnn64_8.dll'; dlerror: cudnn64_8.dll not found
+2023-08-29 15:34:37.137465: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1850] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2023-08-29 15:34:37.139969: I tensorflow/core/platform/cpu_feature_guard.cc:151] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Model Predict Server On [2023-08-29 15:34:37.918447]
+Client Connect [2023-08-29 15:52:33.306163] :  ('127.0.0.1', 56469)
+{"DT":"D4","HR":"[\"87\",\"90\",\"96\",\"102\",\"101\",\"100\",\"99\",\"98\",\"96\",\"98\",\"102\",\"103\",\"101\",\"102\",\"102\",\"102\",\"103\",\"103\",\"103\",\"103\",\"102\",\"102\",\"102\",\"102\",\"101\",\"100\",\"99\",\"98\",\"97\",\"98\",\"98\",\"97\",\"96\",\"95\",\"95\",\"94\",\"93\",\"94\",\"94\",\"93\",\"92\",\"92\",\"92\",\"91\",\"92\",\"93\",\"94\",\"94\",\"94\",\"94\",\"93\",\"93\",\"93\",\"93\",\"93\",\"93\",\"93\",\"92\",\"93\",\"93\"]","VOLTAGE":"[\"1.58\",\"1.56\",\"1.55\",\"1.57\",\"1.58\",\"1.58\",\"1.58\",\"1.57\",\"1.56\",\"1.56\",\"1.57\",\"1.56\",\"1.58\",\"1.56\",\"1.58\",\"1.58\",\"1.58\",\"1.58\",\"1.58\",\"1.57\",\"1.57\",\"1.59\",\"1.56\",\"1.57\",\"1.57\",\"1.56\",\"1.57\",\"1.56\",\"1.57\",\"1.59\",\"1.58\",\"1.58\",\"1.58\",\"1.57\",\"1.56\",\"1.57\",\"1.58\",\"1.58\",\"1.57\",\"1.58\",\"1.58\",\"1.57\",\"1.56\",\"1.57\",\"1.57\",\"1.58\",\"1.57\",\"1.57\",\"1.57\",\"1.57\",\"1.58\",\"1.58\",\"1.58\",\"1.58\",\"1.56\",\"1.56\",\"1.58\",\"1.58\",\"1.58\",\"1.57\"]","HRV":"[\"68\",\"61\",\"78\",\"71\",\"68\",\"74\",\"73\",\"70\",\"70\",\"67\",\"48\",\"36\",\"22\",\"24\",\"24\",\"15\",\"15\",\"18\",\"21\",\"24\",\"24\",\"21\",\"18\",\"15\",\"18\",\"24\",\"27\",\"27\",\"24\",\"24\",\"27\",\"33\",\"33\",\"33\",\"30\",\"24\",\"21\",\"21\",\"27\",\"27\",\"24\",\"21\",\"18\",\"21\",\"21\",\"24\",\"27\",\"24\",\"18\",\"18\",\"15\",\"15\",\"18\",\"18\",\"18\",\"18\",\"18\",\"21\",\"24\",\"24\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 15:52:33.970597] :  ('127.0.0.1', 56469)
+Client Connect [2023-08-29 16:51:20.951432] :  ('127.0.0.1', 61510)
+{"DT":"D4","HR":"[\"98\",\"97\",\"96\",\"94\",\"95\",\"94\",\"94\",\"88\",\"85\",\"88\"]","VOLTAGE":"[\"1.58\",\"1.56\",\"1.55\",\"1.54\",\"1.57\",\"1.57\",\"1.57\",\"1.55\",\"1.55\",\"1.58\"]","HRV":"[\"67\",\"84\",\"84\",\"81\",\"75\",\"69\",\"69\",\"69\",\"57\",\"42\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 16:51:21.182882] :  ('127.0.0.1', 61510)
+Client Connect [2023-08-29 16:51:21.182882] :  ('127.0.0.1', 61511)
+{"DT":"D4","HR":"[\"98\",\"97\",\"96\",\"94\",\"95\",\"94\",\"94\",\"88\",\"85\",\"88\",\"88\"]","VOLTAGE":"[\"1.58\",\"1.56\",\"1.55\",\"1.54\",\"1.57\",\"1.57\",\"1.57\",\"1.55\",\"1.55\",\"1.58\",\"1.56\"]","HRV":"[\"67\",\"84\",\"84\",\"81\",\"75\",\"69\",\"69\",\"69\",\"57\",\"42\",\"50\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 16:51:21.380471] :  ('127.0.0.1', 61511)
+Client Connect [2023-08-29 16:55:04.761513] :  ('127.0.0.1', 61834)
+{"DT":"D4","HR":"[\"87\",\"87\",\"85\",\"87\",\"86\",\"87\",\"88\",\"88\",\"90\",\"89\",\"89\",\"89\",\"89\",\"89\",\"90\",\"90\",\"90\",\"90\",\"91\",\"91\",\"91\",\"91\",\"92\",\"93\",\"92\",\"93\",\"95\",\"95\",\"97\",\"98\",\"98\",\"98\",\"99\",\"98\",\"98\",\"97\",\"95\",\"95\",\"92\",\"91\",\"91\",\"90\",\"90\",\"89\",\"89\",\"88\",\"89\",\"88\",\"89\",\"89\",\"88\",\"89\",\"89\",\"89\",\"89\",\"89\",\"89\",\"89\",\"89\",\"89\"]","VOLTAGE":"[\"1.55\",\"1.57\",\"1.56\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.57\",\"1.55\",\"1.54\",\"1.54\",\"1.55\",\"1.56\",\"1.57\",\"1.56\",\"1.56\",\"1.58\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.57\",\"1.56\",\"1.56\",\"1.54\",\"1.58\",\"1.57\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.56\",\"1.52\",\"1.56\",\"1.57\",\"1.56\",\"1.55\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.54\",\"1.56\",\"1.55\",\"1.55\",\"1.56\",\"1.53\",\"1.56\",\"1.55\",\"1.56\",\"1.55\",\"1.57\",\"1.56\",\"1.55\",\"1.54\",\"1.57\"]","HRV":"[\"62\",\"53\",\"49\",\"45\",\"35\",\"26\",\"23\",\"29\",\"32\",\"31\",\"19\",\"18\",\"21\",\"24\",\"27\",\"27\",\"27\",\"21\",\"18\",\"15\",\"12\",\"15\",\"12\",\"6\",\"9\",\"9\",\"12\",\"15\",\"15\",\"18\",\"21\",\"21\",\"21\",\"24\",\"18\",\"24\",\"24\",\"21\",\"27\",\"27\",\"27\",\"27\",\"33\",\"33\",\"36\",\"36\",\"36\",\"39\",\"36\",\"33\",\"33\",\"36\",\"33\",\"36\",\"36\",\"36\",\"36\",\"33\",\"30\",\"30\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 16:55:04.977173] :  ('127.0.0.1', 61834)
+Client Connect [2023-08-29 17:08:02.734046] :  ('127.0.0.1', 62631)
+{"DT":"D4","HR":"[\"90\",\"91\",\"90\",\"91\",\"90\",\"90\",\"91\",\"92\",\"95\",\"92\",\"91\",\"90\",\"90\",\"90\",\"89\",\"89\",\"89\",\"89\",\"90\",\"90\",\"92\",\"93\",\"94\",\"95\",\"97\",\"97\",\"97\",\"97\",\"96\",\"96\",\"93\",\"94\",\"93\",\"91\",\"90\",\"90\",\"90\",\"90\",\"90\",\"91\",\"93\",\"92\",\"93\",\"92\",\"93\",\"94\",\"94\",\"94\",\"93\",\"93\",\"93\",\"93\",\"92\",\"92\",\"92\",\"91\",\"91\",\"90\",\"91\",\"91\"]","VOLTAGE":"[\"1.50\",\"1.56\",\"1.55\",\"1.54\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.56\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.55\",\"1.56\",\"1.57\",\"1.56\",\"1.51\",\"1.53\",\"1.54\",\"1.54\",\"1.53\",\"1.54\",\"1.53\",\"1.53\",\"1.54\",\"1.54\",\"1.56\",\"1.54\",\"1.55\",\"1.49\",\"1.55\",\"1.56\",\"1.57\",\"1.54\",\"1.54\",\"1.55\",\"1.53\",\"1.55\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.54\",\"1.55\",\"1.56\",\"1.54\",\"1.53\",\"1.54\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.56\",\"1.55\"]","HRV":"[\"83\",\"76\",\"66\",\"63\",\"66\",\"69\",\"66\",\"66\",\"66\",\"48\",\"36\",\"26\",\"24\",\"24\",\"18\",\"21\",\"24\",\"24\",\"21\",\"21\",\"24\",\"30\",\"30\",\"27\",\"27\",\"21\",\"21\",\"27\",\"30\",\"30\",\"30\",\"27\",\"36\",\"36\",\"42\",\"42\",\"39\",\"33\",\"30\",\"30\",\"30\",\"30\",\"21\",\"18\",\"15\",\"15\",\"18\",\"21\",\"27\",\"27\",\"27\",\"27\",\"27\",\"27\",\"27\",\"30\",\"30\",\"27\",\"24\",\"24\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 17:08:03.071145] :  ('127.0.0.1', 62631)
+Client Connect [2023-08-29 17:14:52.402417] :  ('127.0.0.1', 62698)
+{"DT":"D4","HR":"[\"102\",\"99\",\"99\",\"99\",\"97\",\"97\",\"96\",\"99\",\"97\",\"92\",\"91\",\"91\",\"90\",\"89\",\"88\",\"87\",\"87\",\"87\",\"86\",\"86\",\"86\",\"86\",\"86\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"88\",\"88\",\"88\",\"88\",\"88\",\"88\",\"88\",\"89\",\"88\",\"89\",\"88\",\"88\",\"89\",\"88\",\"89\",\"89\",\"89\",\"89\",\"89\",\"89\",\"90\",\"90\",\"90\",\"90\",\"90\"]","VOLTAGE":"[\"1.57\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.57\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.57\",\"1.56\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.54\",\"1.55\",\"1.55\",\"1.56\",\"1.55\",\"1.56\",\"1.56\",\"1.54\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.54\",\"1.55\",\"1.55\",\"1.57\",\"1.56\",\"1.53\",\"1.57\",\"1.54\",\"1.55\",\"1.55\"]","HRV":"[\"45\",\"53\",\"68\",\"67\",\"58\",\"58\",\"55\",\"58\",\"52\",\"46\",\"43\",\"35\",\"21\",\"18\",\"21\",\"21\",\"21\",\"15\",\"12\",\"12\",\"12\",\"15\",\"12\",\"15\",\"15\",\"12\",\"12\",\"15\",\"18\",\"21\",\"24\",\"24\",\"24\",\"21\",\"18\",\"21\",\"21\",\"21\",\"18\",\"18\",\"18\",\"18\",\"18\",\"21\",\"24\",\"24\",\"27\",\"27\",\"30\",\"30\",\"30\",\"27\",\"33\",\"30\",\"30\",\"27\",\"24\",\"24\",\"24\",\"24\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 17:14:52.604625] :  ('127.0.0.1', 62698)
+Client Connect [2023-08-29 17:17:16.766995] :  ('127.0.0.1', 62713)
+{"DT":"D4","HR":"[\"78\",\"76\",\"78\",\"78\",\"79\",\"80\",\"81\",\"82\",\"81\",\"81\",\"85\",\"81\",\"81\",\"82\",\"83\",\"85\",\"86\",\"86\",\"86\",\"87\",\"87\",\"88\",\"87\",\"87\",\"87\",\"87\",\"86\",\"86\",\"86\",\"85\",\"85\",\"84\",\"83\",\"84\",\"85\",\"85\",\"85\",\"85\",\"86\",\"87\",\"87\",\"86\",\"86\",\"85\",\"84\",\"83\",\"81\",\"81\",\"80\",\"79\",\"78\",\"78\",\"80\",\"80\",\"81\",\"82\",\"84\",\"85\",\"85\",\"86\"]","VOLTAGE":"[\"1.54\",\"1.66\",\"1.56\",\"1.56\",\"1.54\",\"1.54\",\"1.56\",\"1.56\",\"1.55\",\"1.55\",\"1.56\",\"1.54\",\"1.57\",\"1.56\",\"1.50\",\"1.55\",\"1.54\",\"1.54\",\"1.55\",\"1.53\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.54\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.53\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.54\",\"1.52\",\"1.54\",\"1.54\",\"1.55\",\"1.54\",\"1.54\",\"1.54\",\"1.55\",\"1.55\",\"1.54\",\"1.55\",\"1.54\",\"1.55\",\"1.55\",\"1.54\",\"1.54\",\"1.55\",\"1.55\",\"1.55\",\"1.56\"]","HRV":"[\"84\",\"85\",\"69\",\"85\",\"82\",\"88\",\"79\",\"76\",\"76\",\"70\",\"67\",\"71\",\"72\",\"57\",\"51\",\"45\",\"48\",\"51\",\"54\",\"54\",\"48\",\"45\",\"39\",\"30\",\"27\",\"21\",\"21\",\"21\",\"21\",\"24\",\"27\",\"24\",\"27\",\"30\",\"36\",\"42\",\"39\",\"39\",\"39\",\"39\",\"36\",\"39\",\"36\",\"39\",\"30\",\"21\",\"24\",\"21\",\"21\",\"21\",\"24\",\"27\",\"27\",\"27\",\"33\",\"36\",\"36\",\"39\",\"42\",\"42\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 17:17:16.998345] :  ('127.0.0.1', 62713)
+Client Connect [2023-08-29 17:27:15.149871] :  ('127.0.0.1', 62782)
+{"DT":"D4","HR":"[\"99\",\"101\",\"99\",\"96\",\"95\",\"98\",\"95\",\"90\",\"89\",\"88\",\"87\",\"86\",\"86\",\"86\",\"87\",\"87\",\"87\",\"86\",\"86\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"87\",\"88\",\"89\",\"89\",\"89\",\"90\",\"91\",\"92\",\"92\",\"93\",\"93\",\"92\",\"91\",\"92\",\"93\",\"91\",\"91\",\"90\",\"91\",\"91\",\"90\",\"90\",\"90\",\"90\",\"90\",\"90\",\"88\",\"88\",\"87\",\"87\",\"87\",\"89\",\"89\",\"89\"]","VOLTAGE":"[\"1.57\",\"1.56\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.54\",\"1.55\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.56\",\"1.57\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.55\",\"1.55\",\"1.51\",\"1.52\",\"1.55\",\"1.54\",\"1.47\",\"1.56\",\"1.54\",\"1.54\",\"1.53\",\"1.55\",\"1.56\",\"1.57\",\"1.50\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.55\",\"1.54\",\"1.52\",\"1.53\",\"1.56\",\"1.55\",\"1.52\",\"1.53\",\"1.53\",\"1.55\",\"1.54\",\"1.54\",\"1.56\",\"1.55\",\"1.56\"]","HRV":"[\"92\",\"90\",\"74\",\"51\",\"49\",\"49\",\"55\",\"49\",\"46\",\"37\",\"28\",\"30\",\"33\",\"39\",\"36\",\"36\",\"33\",\"33\",\"30\",\"27\",\"21\",\"18\",\"18\",\"18\",\"18\",\"18\",\"18\",\"18\",\"21\",\"27\",\"33\",\"39\",\"45\",\"42\",\"45\",\"45\",\"45\",\"45\",\"45\",\"42\",\"39\",\"33\",\"27\",\"27\",\"24\",\"24\",\"27\",\"30\",\"30\",\"27\",\"27\",\"30\",\"30\",\"30\",\"30\",\"27\",\"21\",\"15\",\"18\",\"24\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 17:27:15.379483] :  ('127.0.0.1', 62782)
+Client Connect [2023-08-29 17:29:50.323017] :  ('127.0.0.1', 62794)
+{"DT":"D4","HR":"[\"95\",\"95\",\"93\",\"94\",\"95\",\"91\",\"92\",\"89\",\"89\",\"88\",\"88\",\"89\",\"89\",\"88\",\"88\",\"88\",\"89\",\"90\",\"91\",\"90\",\"91\",\"91\",\"91\",\"91\",\"90\",\"90\",\"90\",\"90\",\"90\",\"90\",\"89\",\"87\",\"86\",\"86\",\"86\",\"87\",\"86\",\"86\",\"87\",\"88\",\"89\",\"90\",\"91\",\"91\",\"92\",\"92\",\"92\",\"91\",\"91\",\"91\",\"92\",\"93\",\"93\",\"94\",\"93\",\"93\",\"93\",\"94\",\"94\",\"94\"]","VOLTAGE":"[\"1.44\",\"1.69\",\"1.56\",\"1.55\",\"1.56\",\"1.56\",\"1.54\",\"1.58\",\"1.57\",\"1.57\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.57\",\"1.55\",\"1.55\",\"1.56\",\"1.57\",\"1.55\",\"1.54\",\"1.54\",\"1.54\",\"1.55\",\"1.52\",\"1.56\",\"1.55\",\"1.56\",\"1.56\",\"1.58\",\"1.57\",\"1.57\",\"1.57\",\"1.58\",\"1.55\",\"1.54\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.55\",\"1.55\",\"1.55\",\"1.56\",\"1.56\",\"1.56\",\"1.56\",\"1.57\",\"1.57\",\"1.55\",\"1.57\",\"1.58\",\"1.57\",\"1.56\",\"1.56\",\"1.55\",\"1.56\",\"1.56\",\"1.56\",\"1.57\"]","HRV":"[\"102\",\"110\",\"95\",\"100\",\"111\",\"106\",\"103\",\"98\",\"82\",\"64\",\"52\",\"47\",\"48\",\"45\",\"36\",\"39\",\"39\",\"33\",\"30\",\"27\",\"36\",\"42\",\"39\",\"33\",\"30\",\"30\",\"27\",\"33\",\"39\",\"42\",\"36\",\"30\",\"30\",\"27\",\"24\",\"21\",\"24\",\"21\",\"15\",\"12\",\"15\",\"18\",\"18\",\"18\",\"18\",\"18\",\"15\",\"12\",\"15\",\"18\",\"12\",\"6\",\"9\",\"12\",\"12\",\"15\",\"15\",\"21\",\"21\",\"18\"]","AGE":0,"GENDER":1}
+Client DisConnect [2023-08-29 17:29:50.675638] :  ('127.0.0.1', 62794)

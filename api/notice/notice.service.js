@@ -9,11 +9,11 @@ const average = arr => arr.reduce((p, c) => p + c, 0) / arr.length;
 class noticeService {
 
     /**
-    *  ë¯¸í™•ì¸ ì•Œë¦¼ ë‚´ì—­ ì¡°íšŒ
-    *  @param petId - ê´€ë¦¬ì ì½”ë“œ (String)
-    *  @return ì¡°íšŒ ê²°ê³¼ ë°˜í™˜(json)
+    *  ¹ÌÈ®ÀÎ ¾Ë¸² ³»¿ª Á¶È¸
+    *  @param petId - °ü¸®ÀÚ ÄÚµå (String)
+    *  @return Á¶È¸ °á°ú ¹İÈ¯(json)
     *  @author ChangGyu Lee
-    *  @since 2023.07.26. ìµœì´ˆì‘ì„±
+    *  @since 2023.07.26. ÃÖÃÊÀÛ¼º
     *  
     */
     async noticeNList(h_user_code) {
@@ -28,11 +28,11 @@ class noticeService {
     };
 
     /**
-         *  í™•ì¸ ì•Œë¦¼ ë‚´ì—­ ì¡°íšŒ
-         *  @param petId - ê´€ë¦¬ì ì½”ë“œ (String)
-         *  @return ì¡°íšŒ ê²°ê³¼ ë°˜í™˜(json)
+         *  È®ÀÎ ¾Ë¸² ³»¿ª Á¶È¸
+         *  @param petId - °ü¸®ÀÚ ÄÚµå (String)
+         *  @return Á¶È¸ °á°ú ¹İÈ¯(json)
          *  @author ChangGyu Lee
-         *  @since 2023.07.26. ìµœì´ˆì‘ì„±
+         *  @since 2023.07.26. ÃÖÃÊÀÛ¼º
          *  
          */
     async noticeYList(h_user_code) {
@@ -47,11 +47,11 @@ class noticeService {
     };
 
     /**
-         *  ë¬¸ì§„í‘œ ë‚´ìš© ì¡°íšŒ
-         *  @param petId - ê´€ë¦¬ì ì½”ë“œ (String)
-         *  @return ì¡°íšŒ ê²°ê³¼ ë°˜í™˜(json)
+         *  ¹®ÁøÇ¥ ³»¿ë Á¶È¸
+         *  @param petId - °ü¸®ÀÚ ÄÚµå (String)
+         *  @return Á¶È¸ °á°ú ¹İÈ¯(json)
          *  @author ChangGyu Lee
-         *  @since 2023.07.26. ìµœì´ˆì‘ì„±
+         *  @since 2023.07.26. ÃÖÃÊÀÛ¼º
          *  
          */
     async inquiryList(inquiry_num) {
@@ -61,23 +61,23 @@ class noticeService {
     };
 
     /**
-         *  í™•ì¸ ì•Œë¦¼ ë‚´ì—­ ì¡°íšŒ
-         *  @param petId - ê´€ë¦¬ì ì½”ë“œ (String)
-         *  @return ì¡°íšŒ ê²°ê³¼ ë°˜í™˜(json)
+         *  È®ÀÎ ¾Ë¸² ³»¿ª Á¶È¸
+         *  @param petId - °ü¸®ÀÚ ÄÚµå (String)
+         *  @return Á¶È¸ °á°ú ¹İÈ¯(json)
          *  @author ChangGyu Lee
-         *  @since 2023.07.26. ìµœì´ˆì‘ì„±
+         *  @since 2023.07.26. ÃÖÃÊÀÛ¼º
          *  
          */
     async searchInfo(h_user_code, startDate, endDate, name, select) {
         let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
         cryptoKey = cryptoKey.row.key_string;
         endDate = endDate + " 23:59:59";
-        // í™˜ìëª… ì¡°ê±´ìœ¼ë¡œ ê²€ìƒ‰
+        // È¯ÀÚ¸í Á¶°ÇÀ¸·Î °Ë»ö
         let result;
         if (select == 1) {
             result = await mysqlDB('select', queryList.searchPetInfo, [name, h_user_code, startDate, endDate]);
         } else {
-            // ë³´í˜¸ìëª… ì¡°ê±´ìœ¼ë¡œ ê²€ìƒ‰
+            // º¸È£ÀÚ¸í Á¶°ÇÀ¸·Î °Ë»ö
             name = cryptoUtil.encrypt_aes(cryptoKey, name);
             result = await mysqlDB('select', queryList.searchProtectorInfo, [name, h_user_code, startDate, endDate])
         }
@@ -89,11 +89,11 @@ class noticeService {
 
 
     /**
-         *  ë¬¸ì˜ ë‚´ìš© dbì— ì €ì¥ inquiry_listì˜ opinion
-         *  @param petId - ê´€ë¦¬ì ì½”ë“œ (String)
-         *  @return ì¡°íšŒ ê²°ê³¼ ë°˜í™˜(json)
+         *  ¹®ÀÇ ³»¿ë db¿¡ ÀúÀå inquiry_listÀÇ opinion
+         *  @param petId - °ü¸®ÀÚ ÄÚµå (String)
+         *  @return Á¶È¸ °á°ú ¹İÈ¯(json)
          *  @author ChangGyu Lee
-         *  @since 2023.08.02. ìµœì´ˆì‘ì„±
+         *  @since 2023.08.02. ÃÖÃÊÀÛ¼º
          *  
          */
     async inquiry_post(inquiry_num, inquiry_contents) {

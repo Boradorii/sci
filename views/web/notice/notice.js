@@ -190,6 +190,7 @@ function inquiry_post(inquiry_num) {
                     if (result.isConfirmed) {
                         $("#answer-modal").modal('hide');
                         location.reload();
+                        sendAlertState();
                     }
                 })
             }

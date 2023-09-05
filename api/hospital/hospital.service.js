@@ -11,11 +11,11 @@ const average = arr => arr.reduce((p, c) => p + c, 0) / arr.length;
 class hospitalService {
 
     /**
-    *  ë¹„ë°€ë²ˆí˜¸ í™•ì¸
-    *  @param petId - ê´€ë¦¬ì ì½”ë“œ (String)
-    *  @return ì¡°íšŒ ê²°ê³¼ ë°˜í™˜(json)
+    *  ºñ¹Ğ¹øÈ£ È®ÀÎ
+    *  @param petId - °ü¸®ÀÚ ÄÚµå (String)
+    *  @return Á¶È¸ °á°ú ¹İÈ¯(json)
     *  @author ChangGyu Lee
-    *  @since 2023.07.10. ìµœì´ˆì‘ì„±
+    *  @since 2023.07.10. ÃÖÃÊÀÛ¼º
     *  
     */
     async pwCheck(h_user_code, pw) {
@@ -32,11 +32,11 @@ class hospitalService {
     };
 
     /**
-        *  ë³‘ì› ì •ë³´
-        *  @param petId - ê´€ë¦¬ì ì½”ë“œ (String)
-        *  @return ì¡°íšŒ ê²°ê³¼ ë°˜í™˜(json)
+        *  º´¿ø Á¤º¸
+        *  @param petId - °ü¸®ÀÚ ÄÚµå (String)
+        *  @return Á¶È¸ °á°ú ¹İÈ¯(json)
         *  @author ChangGyu Lee
-        *  @since 2023.07.10. ìµœì´ˆì‘ì„±
+        *  @since 2023.07.10. ÃÖÃÊÀÛ¼º
         *  
         */
     async hospitalInfoLoad(h_user_code) {
@@ -55,10 +55,10 @@ class hospitalService {
     };
 
     /** ================================================================
-        *  ì¤‘ë³µ ì—°ë½ì²˜ ê²€ì‚¬
+        *  Áßº¹ ¿¬¶ôÃ³ °Ë»ç
         *  @author 
         *  @since 2023.07.12
-        *  @history 2023.07.12 ì´ˆê¸° ì‘ì„±
+        *  @history 2023.07.12 ÃÊ±â ÀÛ¼º
         *  ================================================================
         */
     async checkPhoneDuplicate(phone1, phone2, phone3, h_adminCode) {
@@ -76,42 +76,42 @@ class hospitalService {
     }
 
     /** ================================================================
-     *  ì¤‘ë³µ email ê²€ì‚¬
+     *  Áßº¹ email °Ë»ç
      *  @author 
      *  @since 2023.07.12
-     *  @history 2023.07.12 ì´ˆê¸° ì‘ì„±
+     *  @history 2023.07.12 ÃÊ±â ÀÛ¼º
      *  ================================================================
      */
     async checkEmailDuplicate(eIdString, eDomainString, h_adminCode) {
         let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
         cryptoKey = cryptoKey.row.key_string;
         eIdString = cryptoUtil.encrypt_aes(cryptoKey, eIdString);
-
+        
         let result = await mysqlDB('selectOne', queryList.select_user_email_duplicate, [eIdString, eDomainString, h_adminCode]);
         result = (result.rowLength > 0) ? true : false;
         return result;
     }
 
     /** ================================================================
-         *  ì´ë©”ì¼ ìœ ë¬´ í™•ì¸ ë° ì¸ì¦ë²ˆí˜¸ ì „ì†¡
+         *  ÀÌ¸ŞÀÏ À¯¹« È®ÀÎ ¹× ÀÎÁõ¹øÈ£ Àü¼Û
          *  @author 
          *  @since 2023.06.19
-         *  @history 2023.06.19 ì´ˆê¸° ì‘ì„±
+         *  @history 2023.06.19 ÃÊ±â ÀÛ¼º
          *  ================================================================
          */
     async sendEmail(params, context) {
         let result = {}
 
-        //ì´ë©”ì¼ ì¸ì¦ë²ˆí˜¸ ì „ì†¡
+        //ÀÌ¸ŞÀÏ ÀÎÁõ¹øÈ£ Àü¼Û
         let authNumber = ''
         for (let i = 0; i < 6; i++) {
             authNumber += Math.floor(Math.random() * 10);
         }
         let sendResult = await authEmailSend(params.eId, params.eDomain, authNumber, context);
-        if (sendResult.status == 'Success') { // ì´ë©”ì¼ ì „ì†¡ ì„±ê³µ
+        if (sendResult.status == 'Success') { // ÀÌ¸ŞÀÏ Àü¼Û ¼º°ø
             result["authNumber"] = authNumber;
             result["success"] = 1;
-        } else { // ì´ë©”ì¼ ì „ì†¡ ì‹¤íŒ¨
+        } else { // ÀÌ¸ŞÀÏ Àü¼Û ½ÇÆĞ
             result["success"] = 0;
         }
 
@@ -119,21 +119,21 @@ class hospitalService {
     }
 
     /** ================================================================
-     *  ë³‘ì›ì •ë³´ ë³€ê²½
+     *  º´¿øÁ¤º¸ º¯°æ
      *  @author 
      *  @since 2023.07.12
-     *  @history 2023.07.12 ì´ˆê¸° ì‘ì„±
+     *  @history 2023.07.12 ÃÊ±â ÀÛ¼º
      *  ================================================================
      */
     async hospitalInfoModify(list) {
-        // ê°œì¸ ì •ë³´ ì•”í˜¸í™”
+        // °³ÀÎ Á¤º¸ ¾ÏÈ£È­
         let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
         cryptoKey = cryptoKey.row.key_string;
-        list.inputList.h_user_name = cryptoUtil.encrypt_aes(cryptoKey, list.inputList.h_user_name); // ë‹´ë‹¹ìëª…
-        list.inputList.h_user_phone_first = cryptoUtil.encrypt_aes(cryptoKey, list.inputList.h_user_phone_first); // ë‹´ë‹¹ì íœ´ëŒ€í°ë²ˆí˜¸ ì•ìë¦¬
-        list.inputList.h_user_phone_middle = cryptoUtil.encrypt_aes(cryptoKey, list.inputList.h_user_phone_middle); // ë‹´ë‹¹ì íœ´ëŒ€í°ë²ˆí˜¸ ê°€ìš´ë°ìë¦¬
-        list.inputList.h_user_phone_last = cryptoUtil.encrypt_aes(cryptoKey, list.inputList.h_user_phone_last); // ë‹´ë‹¹ì íœ´ëŒ€í°ë²ˆí˜¸ ëìë¦¬
-        list.inputList.h_user_email_id = cryptoUtil.encrypt_aes(cryptoKey, list.inputList.h_user_email_id); // ë‹´ë‹¹ì ì´ë©”ì¼ ID
+        list.inputList.h_user_name = cryptoUtil.encrypt_aes(cryptoKey, list.inputList.h_user_name); // ´ã´çÀÚ¸í
+        list.inputList.h_user_phone_first = cryptoUtil.encrypt_aes(cryptoKey, list.inputList.h_user_phone_first); // ´ã´çÀÚ ÈŞ´ëÆù¹øÈ£ ¾ÕÀÚ¸®
+        list.inputList.h_user_phone_middle = cryptoUtil.encrypt_aes(cryptoKey, list.inputList.h_user_phone_middle); // ´ã´çÀÚ ÈŞ´ëÆù¹øÈ£ °¡¿îµ¥ÀÚ¸®
+        list.inputList.h_user_phone_last = cryptoUtil.encrypt_aes(cryptoKey, list.inputList.h_user_phone_last); // ´ã´çÀÚ ÈŞ´ëÆù¹øÈ£ ³¡ÀÚ¸®
+        list.inputList.h_user_email_id = cryptoUtil.encrypt_aes(cryptoKey, list.inputList.h_user_email_id); // ´ã´çÀÚ ÀÌ¸ŞÀÏ ID
 
         let accountArray = [list.inputList.h_name, list.inputList.h_address2, list.inputList.h_telnum, list.inputList.h_operating_time,
         list.inputList.h_answer_time, list.inputList.h_user_account_pw, list.inputList.h_user_name,
@@ -141,18 +141,18 @@ class hospitalService {
         list.inputList.h_user_phone_last, list.inputList.h_user_email_id, list.inputList.h_user_email_domain, list.h_adminCode
         ];
 
-        console.log("ë¹„ë°€ë²ˆí˜¸ ìˆ˜ì • " + cryptoUtil.decrypt_aes(cryptoKey, list.inputList.h_user_account_pw));
+        console.log("ºñ¹Ğ¹øÈ£ ¼öÁ¤ " + cryptoUtil.decrypt_aes(cryptoKey, list.inputList.h_user_account_pw));
 
-        //ê³„ì • ì •ë³´ ë“±ë¡
+        //°èÁ¤ Á¤º¸ µî·Ï
         let result = await mysqlDB('update', queryList.hospitalInfoModify, accountArray);
         return result;
     };
 
     /** ================================================================
-     *  ì„œë¹„ìŠ¤ ì¢…ë£Œ
+     *  ¼­ºñ½º Á¾·á
      *  @author 
      *  @since 2023.07.12
-     *  @history 2023.07.12 ì´ˆê¸° ì‘ì„±
+     *  @history 2023.07.12 ÃÊ±â ÀÛ¼º
      *  ================================================================
      */
     async withdrawService(h_adminCode) {
@@ -163,11 +163,11 @@ class hospitalService {
 
 
     /**
-     *  ë³‘ì› ìŠ¤íƒœí”„ ëª©ë¡ ì¡°íšŒ
-     *  @param petId - ê´€ë¦¬ì ì½”ë“œ (String)
-     *  @return ì¡°íšŒ ê²°ê³¼ ë°˜í™˜(json)
+     *  º´¿ø ½ºÅÂÇÁ ¸ñ·Ï Á¶È¸
+     *  @param petId - °ü¸®ÀÚ ÄÚµå (String)
+     *  @return Á¶È¸ °á°ú ¹İÈ¯(json)
      *  @author ChangGyu Lee
-     *  @since 2023.07.10. ìµœì´ˆì‘ì„±
+     *  @since 2023.07.10. ÃÖÃÊÀÛ¼º
      *  
      */
     async staffListLoad(h_user_code) {
@@ -187,11 +187,11 @@ class hospitalService {
 
 
     /**
-     *  ì§ì› ì •ë³´ ì¡°íšŒ
-     *  @param petId - ê´€ë¦¬ì ì½”ë“œ (String)
-     *  @return ì¡°íšŒ ê²°ê³¼ ë°˜í™˜(json)
+     *  Á÷¿ø Á¤º¸ Á¶È¸
+     *  @param petId - °ü¸®ÀÚ ÄÚµå (String)
+     *  @return Á¶È¸ °á°ú ¹İÈ¯(json)
      *  @author ChangGyu Lee
-     *  @since 2023.07.10. ìµœì´ˆì‘ì„±
+     *  @since 2023.07.10. ÃÖÃÊÀÛ¼º
      *  
      */
     async staffInfo(h_staff_code) {
@@ -211,10 +211,10 @@ class hospitalService {
 
 
     /** ================================================================
-        *  ì¤‘ë³µ ì—°ë½ì²˜ ê²€ì‚¬_ì§ì›
+        *  Áßº¹ ¿¬¶ôÃ³ °Ë»ç_Á÷¿ø
         *  @author 
         *  @since 2023.07.12
-        *  @history 2023.07.12 ì´ˆê¸° ì‘ì„±
+        *  @history 2023.07.12 ÃÊ±â ÀÛ¼º
         *  ================================================================
         */
     async checkStaffPhoneDuplicate(phone1, phone2, phone3, h_staff_code) {
@@ -232,10 +232,10 @@ class hospitalService {
     }
 
     /** ================================================================
-     *  ì¤‘ë³µ email ê²€ì‚¬_ì§ì›
+     *  Áßº¹ email °Ë»ç_Á÷¿ø
      *  @author 
      *  @since 2023.07.12
-     *  @history 2023.07.12 ì´ˆê¸° ì‘ì„±
+     *  @history 2023.07.12 ÃÊ±â ÀÛ¼º
      *  ================================================================
      */
     async checkStaffEmailDuplicate(eIdString, eDomainString, h_staff_code) {
@@ -249,21 +249,21 @@ class hospitalService {
     }
 
     /** ================================================================
-         *  ì§ì› ë“±ë¡
+         *  Á÷¿ø µî·Ï
          *  @author 
          *  @since 2023.07.12
-         *  @history 2023.07.12 ì´ˆê¸° ì‘ì„±
+         *  @history 2023.07.12 ÃÊ±â ÀÛ¼º
          *  ================================================================
          */
     async insertStaff(list) {
-        // ê°œì¸ ì •ë³´ ì•”í˜¸í™”
+        // °³ÀÎ Á¤º¸ ¾ÏÈ£È­
         let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
         cryptoKey = cryptoKey.row.key_string;
-        list.staffList.h_staff_name = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_name); // ë‹´ë‹¹ìëª…
-        list.staffList.h_staff_phone_first = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_first); // ë‹´ë‹¹ì íœ´ëŒ€í°ë²ˆí˜¸ ì•ìë¦¬
-        list.staffList.h_staff_phone_middle = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_middle); // ë‹´ë‹¹ì íœ´ëŒ€í°ë²ˆí˜¸ ê°€ìš´ë°ìë¦¬
-        list.staffList.h_staff_phone_last = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_last); // ë‹´ë‹¹ì íœ´ëŒ€í°ë²ˆí˜¸ ëìë¦¬
-        list.staffList.h_staff_eid = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_eid); // ë‹´ë‹¹ì ì´ë©”ì¼ ID
+        list.staffList.h_staff_name = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_name); // ´ã´çÀÚ¸í
+        list.staffList.h_staff_phone_first = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_first); // ´ã´çÀÚ ÈŞ´ëÆù¹øÈ£ ¾ÕÀÚ¸®
+        list.staffList.h_staff_phone_middle = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_middle); // ´ã´çÀÚ ÈŞ´ëÆù¹øÈ£ °¡¿îµ¥ÀÚ¸®
+        list.staffList.h_staff_phone_last = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_last); // ´ã´çÀÚ ÈŞ´ëÆù¹øÈ£ ³¡ÀÚ¸®
+        list.staffList.h_staff_eid = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_eid); // ´ã´çÀÚ ÀÌ¸ŞÀÏ ID
 
         let accountArray = [list.h_adminCode, list.staffList.h_staff_name, list.staffList.h_staff_phone_first,
         list.staffList.h_staff_phone_middle, list.staffList.h_staff_phone_last, list.staffList.h_staff_eid,
@@ -272,27 +272,27 @@ class hospitalService {
         ];
 
 
-        //ê³„ì • ì •ë³´ ë“±ë¡
+        //°èÁ¤ Á¤º¸ µî·Ï
         let result = await mysqlDB('insert', queryList.insertStaff, accountArray);
         return result;
     };
 
     /** ================================================================
-         *  ì§ì› ì •ë³´ ë³€ê²½
+         *  Á÷¿ø Á¤º¸ º¯°æ
          *  @author 
          *  @since 2023.07.12
-         *  @history 2023.07.12 ì´ˆê¸° ì‘ì„±
+         *  @history 2023.07.12 ÃÊ±â ÀÛ¼º
          *  ================================================================
          */
     async updateStaff(list) {
-        // ê°œì¸ ì •ë³´ ì•”í˜¸í™”
+        // °³ÀÎ Á¤º¸ ¾ÏÈ£È­
         let cryptoKey = await mysqlDB('selectOne', queryList.select_key_string, []);
         cryptoKey = cryptoKey.row.key_string;
-        list.staffList.h_staff_name = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_name); // ë‹´ë‹¹ìëª…
-        list.staffList.h_staff_phone_first = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_first); // ë‹´ë‹¹ì íœ´ëŒ€í°ë²ˆí˜¸ ì•ìë¦¬
-        list.staffList.h_staff_phone_middle = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_middle); // ë‹´ë‹¹ì íœ´ëŒ€í°ë²ˆí˜¸ ê°€ìš´ë°ìë¦¬
-        list.staffList.h_staff_phone_last = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_last); // ë‹´ë‹¹ì íœ´ëŒ€í°ë²ˆí˜¸ ëìë¦¬
-        list.staffList.h_staff_eid = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_eid); // ë‹´ë‹¹ì ì´ë©”ì¼ ID
+        list.staffList.h_staff_name = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_name); // ´ã´çÀÚ¸í
+        list.staffList.h_staff_phone_first = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_first); // ´ã´çÀÚ ÈŞ´ëÆù¹øÈ£ ¾ÕÀÚ¸®
+        list.staffList.h_staff_phone_middle = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_middle); // ´ã´çÀÚ ÈŞ´ëÆù¹øÈ£ °¡¿îµ¥ÀÚ¸®
+        list.staffList.h_staff_phone_last = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_phone_last); // ´ã´çÀÚ ÈŞ´ëÆù¹øÈ£ ³¡ÀÚ¸®
+        list.staffList.h_staff_eid = cryptoUtil.encrypt_aes(cryptoKey, list.staffList.h_staff_eid); // ´ã´çÀÚ ÀÌ¸ŞÀÏ ID
 
         let accountArray = [list.staffList.h_staff_name, list.staffList.h_staff_phone_first,
         list.staffList.h_staff_phone_middle, list.staffList.h_staff_phone_last, list.staffList.h_staff_eid,
@@ -300,23 +300,23 @@ class hospitalService {
         list.h_staff_code
         ];
 
-        // ì‚¬ìš©ì ì •ë³´ ìˆ˜ì •
+        // »ç¿ëÀÚ Á¤º¸ ¼öÁ¤
         let result = await mysqlDB('update', queryList.updateStaff, accountArray);
         return result;
     };
 
     /** ================================================================
-         *  ì‚¬ìš©ì ì‚­ì œ
+         *  »ç¿ëÀÚ »èÁ¦
          *  @author 
          *  @since 2023.07.12
-         *  @history 2023.07.12 ì´ˆê¸° ì‘ì„±
+         *  @history 2023.07.12 ÃÊ±â ÀÛ¼º
          *  ================================================================
          */
     async deleteStaff(h_staff_code) {
         console.log("service    ");
-        // ì‚¬ìš©ì ì •ë³´ ì‚­ì œ
-        let result = await mysqlDB('delete', queryList.deleteStaff, [h_staff_code]);
-        console.log("service    sqlë‹¤ìŒ   " + result);
+        // »ç¿ëÀÚ Á¤º¸ »èÁ¦
+        let result = await mysqlDB('update', queryList.deleteStaff, [h_staff_code]);
+        console.log("service    sql´ÙÀ½   " + result);
         return result;
     };
 

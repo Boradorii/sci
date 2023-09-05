@@ -1,4 +1,4 @@
-// 암호화 키 조회
+// ��ȣȭ Ű ��ȸ
 exports.select_key_string = `SELECT key_string FROM encryption_key_info WHERE activate_yn = 'Y';`;
 
 exports.visitHos = `SELECT mr.p_user_code, mr.h_user_code, mr.medi_created_time, uh.h_name
@@ -78,9 +78,8 @@ exports.check_hospital_alert =
 
 exports.selectInquiryData =
     `
-    SELECT il.inquiry_created_time, uh.h_user_name, pi.pet_name, al.alert_created_time, il.inquiry_num
+    SELECT il.inquiry_created_time, uh.h_user_name, pi.pet_name, il.alert_check_time, il.inquiry_num
     FROM inquiry_list il
-    JOIN alert_list al ON il.inquiry_num = al.inquiry_num
     JOIN user_hospital uh ON il.h_user_code = uh.h_user_code
     JOIN pet_info pi ON il.pet_id = pi.pet_id
     WHERE il.p_user_code = ?

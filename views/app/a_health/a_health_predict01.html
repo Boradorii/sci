@@ -14,7 +14,7 @@
     
     .card-box {
         margin-top: 10px;
-        border: 2px solid lightgray;
+        border: 2px solid rgb(77, 161, 187);
         width: 100%;
     }
     
@@ -73,13 +73,13 @@
     <div class="container-fluid">
 
         <!-- 장치 연결 상태 -->
-        <div class="card card-box" style="text-align: center; margin-top: 100px;">
+        <div class="card card-box" style="text-align: center; margin-top: 50px;">
             <div>
-                <div class="h3" style="margin: 10px; font-weight: 700;">장치 연결 상태</div>
-                <div class="h5">* 장치 연결 버튼을 클릭하면 장치가 연결됩니다. <br> 블루투스를 ON으로 설정해주세요.</div>
-                <div class="row m-10" style="margin: 20px;">
+                <div class="h3" style="margin: 20px; font-weight: 700;">장치 연결 상태</div>
+                <div class="h6">* 장치 연결 버튼을 클릭하면 장치가 연결됩니다. <br> 블루투스를 ON으로 설정해주세요.</div>
+                <div class="row m-10" style="margin: 10px;">
                     <div class="col">
-                        <table style="align-items: center;">
+                        <table style="align-items: center; margin-top: 5px;">
                             <tr>
                                 <td id="age" class="text-center ml-5">
                                     <i class="material-icons text-center" style="color: red; vertical-align: middle;">circle</i>&nbsp;&nbsp;&nbsp;미연결
@@ -88,28 +88,27 @@
                         </table>
 
                     </div>
-                    <div class="col" style="align-self: center;">
-                        <button class="btn btn-outline-secondary" id="connectDevice">장치 연결</button>
+                    <div class="col" style="align-self: center; margin-bottom: 10px;">
+                        <button class="btn btn-outline-secondary" id="connectDevice" style="border: 2px solid lightgray; margin-top: 5px;">장치 연결</button>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- 측정 전 체크 -->
-        <div class="card card-box" style="margin-top: 50px;">
-            <div class="h3" style="text-align: center; margin:10px; font-weight: 700;">측정 전 체크!</div>
-            <div style="margin-left: 10px;">
+        <div class="card card-box" style="margin-top: 30px;">
+            <div class="h3" style="text-align: center; margin:20px; font-weight: 700;">측정 전 체크!</div>
+            <div style="margin-left: 10px; margin-right: 10px;">
                 <ol>
                     <li>장치를 연결해 주세요.</li>
                     <li>아이가 안정을 취했을 때 측정을 시작해 주세요.</li>
                     <li>측정 중에는 아이가 움직이지 않도록 해 주세요. <br>* 아이가 움직이면 측정 결과의 정확도가 떨어집니다.</li>
                 </ol>
             </div>
-            <div style="text-align: center; margin-bottom: 10px;">
-                <button class="btn btn-lg btn-info" id="start-btn" style="width: 30%;">측정 시작</button>
+            <div style="text-align: center; margin-bottom: 20px;">
+                <button class="btn btn-lg btn-info" id="start-btn" style="width: 110px;">측정 시작</button>
             </div>
         </div>
-
     </div>
 </div>
 
@@ -134,6 +133,18 @@
         reqUrl += 'predictResult';
         location.href = reqUrl;
     })
+    //앱 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+    window.parent.postMessage({
+        action: 'moveFrameN'
+    }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+    //앱 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+
+    //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
+    window.parent.postMessage({
+            action: 'moveFrameY' //메인페이지에서 하위 메뉴로 들어갔을 때 페이지 이동 표시("Y": 하위 메뉴/"N": 메인메뉴)
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+
+        //앱>> 페이지 이동 시 필수 작성(뒤로가기 버튼 구현시 필요)
 </script>
 
 {% endblock %}

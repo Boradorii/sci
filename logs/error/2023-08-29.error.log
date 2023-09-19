@@ -1,0 +1,57 @@
+[2023-08-29 13:45:58, error] "[Router Error]: /api"
+[2023-08-29 13:50:40, error] "[DB Connection Error!] Error: connect ECONNREFUSED 127.0.0.1:3306"
+[2023-08-29 13:50:40, error] "[DB Connection Error!] Error: connect ECONNREFUSED 127.0.0.1:3306"
+[2023-08-29 14:43:14, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:14, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:14, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:14, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:14, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:29, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:29, error] "[System Error]: Cannot read properties of undefined (reading 'key_string')"
+[2023-08-29 14:43:29, error] "Cannot read properties of undefined (reading 'key_string')"
+TypeError: Cannot read properties of undefined (reading 'key_string')
+    at userService.checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.service.js:235:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.controller.js:66:22)
+[2023-08-29 14:43:31, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:31, error] "[System Error]: Cannot read properties of undefined (reading 'key_string')"
+[2023-08-29 14:43:31, error] "Cannot read properties of undefined (reading 'key_string')"
+TypeError: Cannot read properties of undefined (reading 'key_string')
+    at userService.checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.service.js:235:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.controller.js:66:22)
+[2023-08-29 14:43:31, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:31, error] "[System Error]: Cannot read properties of undefined (reading 'key_string')"
+[2023-08-29 14:43:31, error] "Cannot read properties of undefined (reading 'key_string')"
+TypeError: Cannot read properties of undefined (reading 'key_string')
+    at userService.checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.service.js:235:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.controller.js:66:22)
+[2023-08-29 14:43:32, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:32, error] "[System Error]: Cannot read properties of undefined (reading 'key_string')"
+[2023-08-29 14:43:32, error] "Cannot read properties of undefined (reading 'key_string')"
+TypeError: Cannot read properties of undefined (reading 'key_string')
+    at userService.checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.service.js:235:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.controller.js:66:22)
+[2023-08-29 14:43:32, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:32, error] "[System Error]: Cannot read properties of undefined (reading 'key_string')"
+[2023-08-29 14:43:32, error] "Cannot read properties of undefined (reading 'key_string')"
+TypeError: Cannot read properties of undefined (reading 'key_string')
+    at userService.checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.service.js:235:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.controller.js:66:22)
+[2023-08-29 14:43:32, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:32, error] "[System Error]: Cannot read properties of undefined (reading 'key_string')"
+[2023-08-29 14:43:32, error] "Cannot read properties of undefined (reading 'key_string')"
+TypeError: Cannot read properties of undefined (reading 'key_string')
+    at userService.checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.service.js:235:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.controller.js:66:22)
+[2023-08-29 14:43:33, error] "[DB Connection Error!] Error: Access denied for user 'edlmanager'@'localhost' (using password: YES)"
+[2023-08-29 14:43:33, error] "[System Error]: Cannot read properties of undefined (reading 'key_string')"
+[2023-08-29 14:43:33, error] "Cannot read properties of undefined (reading 'key_string')"
+TypeError: Cannot read properties of undefined (reading 'key_string')
+    at userService.checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.service.js:235:35)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async checkEmailDuplicate (C:\Users\User\Desktop\소프트웨어융합연구소\프로젝트\스마트아이웨어 디자인\C011. 소스코딩\B2C(2.0)\server\api\users\user.controller.js:66:22)

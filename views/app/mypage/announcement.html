@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% extends "templates/appmainbase.html" %} {% block head %}
+    <!-- <link href="/dist/css/pages/dashboard1.css" rel="stylesheet"> -->
+    <!-- page css -->
+    <link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+        rel="stylesheet">
+    <link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+    {%endblock%}{% block contents %}
+
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Poppins", sans-serif;
+            font-size: 0.875rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+            background-color: #FFF;
+        }
+
+
+        .material-symbols-outlined {
+            font-size: 40px;
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 700,
+                'GRAD' 0,
+                'opsz' 48
+        }
+
+        .profile {
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        .fighting {
+            font-size: 30px;
+            font-weight: 400;
+        }
+
+        .hr-bold {
+            border: 0px;
+            border-top: 5px solid rgb(209, 206, 206);
+        }
+
+        .hr-normal {
+            border: 0px;
+            border-top: 2px solid rgb(170, 168, 168);
+        }
+
+        .info {
+            font-size: 20px;
+            font-weight: 300;
+            margin-left: 2%;
+        }
+
+        .logout {
+            float: right;
+            margin-top: 20px;
+            margin-right: 20px;
+            font-size: 25px;
+            font-weight: 900;
+            color: gray;
+        }
+
+        .menu .hide {
+            display: block;
+        }
+
+        .title {
+            font-size: 25px;
+
+        }
+
+        #img_announcement {
+            height: 25px;
+            margin-bottom: 10px;
+        }
+
+        .date {
+            float: right;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="mt-5 ml-3 profile">
+            <img id="img_announcement" src="/images/icon/announcement.png">
+            {{announcePage.Notice}}
+        </div>
+    </div>
+    <hr class="hr-bold">
+    <div id="insertContents">
+        <li class="info">
+            <a class="title">{{announcePage.CustomerService}}</a>
+            <span class="date"></span>
+            <div class="hide" id="contents">{{announcePage.Representative}}
+                <br>{{announcePage.Tel}}<br>{{announcePage.EMail}}</div>
+        </li>
+        <hr class="hr-normal">
+        </hr>
+    </div>
+</body>
+
+</html>
+
+{% endblock %} {%block script%}
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="/dist/js/perfect-scrollbar.jquery.min.js"></script>
+<!-- <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<!--Wave Effects -->
+<script src="/dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<!-- <script src="../dist/js/sidebarmenu.js"></script> -->
+<!--Custom JavaScript -->
+<script src="/dist/js/custom.min.js"></script>
+<script src="/javascripts/commonUtil.js"></script>
+<script src="/app/mypage/announcement.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+{% endblock %}

@@ -1,0 +1,132 @@
+/*datepicker css*/
+
+.table-condensed{
+    font-size: 18px;
+    text-align: center;
+}
+.dropdown-menu{
+    left: 0 !important;
+}
+span.month, span.year{
+    border: 1px solid rgb(228, 225, 225);
+    padding:2px;
+    display: inline-block;
+    width: 100px;
+    line-height: 50px;
+    height: 50px;
+}
+span.month.focused.active, span.year.active{
+    background-color: rgb(221, 221, 221);
+    font-weight: 500;
+    margin:0;
+}
+/*탭 active*/
+a#tab-daily, a#tab-monthly{
+    margin:0;
+}
+.card-title{
+    font-size:16pt;
+    text-align: center;
+    margin-top:30px;
+}
+.card-body>span{
+    font-size:15pt;
+}
+
+#monthly-datepicker{
+    text-align: center;
+    font-size:20px;
+    margin-top: 20px;
+}
+/*데이터 없음*/
+.empty-notice{
+    color: #dcdcdc;
+    padding: 3%;
+    font-size: 15pt;
+    font-weight: 500;
+}
+/*건강지수 추세 분석 내용*/
+.health-content{
+    font-size: 15pt;
+}
+/*건강 조언 관련 CSS*/
+.health-img{
+    display:inline-block;
+    margin-right:5%;
+    width:20%;
+    height:90px;
+    text-align: center;
+}
+.health-img>img {
+    width:100%;
+}
+.health-advice{
+    float:right;
+    width:75%;
+    height:90px;
+    line-height: 90px;
+    text-align: left;
+}
+#li-daily-area>ul>li, #li-monthly-area>ul>li{
+    margin-bottom:10px;
+}
+
+
+/*************ds***********/
+.date_wrap {
+    display: block;
+    border : 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.date_wrap .form-control {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='currentColor' class='bi bi-calendar-week' viewBox='0 0 16 16'%3E%3Cpath d='M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z'/%3E%3Cpath d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z'/%3E%3C/svg%3E"); 
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 20px;
+    max-width: 180px;
+    border: none;
+}
+
+/*건강팁*/
+.tip_box {
+    /* border: 1px solid #06c597; */
+    padding: 0.3rem;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.tip_box .tip_comment {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.tip_title img {
+    vertical-align: top;
+}
+
+.tip_title P {
+    display: inline-block;
+    font-size: 1.3rem;
+    margin-top: 5px;
+    font-weight: 600;
+    position: relative;
+    z-index: 1;
+}
+
+.tip_title P::before {
+    content: '';
+    width: 100%;
+    height: 10px;
+    background-color: #ffd100;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.tab-pane {
+    padding-bottom: 0px;
+}

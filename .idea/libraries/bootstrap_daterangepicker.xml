@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="bootstrap-daterangepicker">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/public/assets/node_modules/bootstrap-daterangepicker/bootstrap-daterangepicker.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

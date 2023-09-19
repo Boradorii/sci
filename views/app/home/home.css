@@ -1,0 +1,509 @@
+@import "compass/css3";
+
+
+.first_text{
+    font-size: 17pt;
+    font-weight: 500;
+}
+.card{
+    /* background-color: antiquewhite; */
+    margin-top:10px;
+}
+
+.second_text{
+    font-size: 17pt;
+    font-weight: 500;
+}
+
+.tit_comment {
+    font-size: 14px;
+    display: block;
+}
+
+.second_text_big {
+    font-size: 40px;
+}
+
+.second_text_mid {
+    font-size: 35px;
+}
+
+.second_text_normal {
+  font-size: 26px;
+}
+
+.second_text_small {
+    font-size: 20px;
+}
+
+.second_text_mini {
+    font-size: 18px;
+}
+
+.top-content, .middle-content{
+    text-align: center;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.top-content > li{
+    width: 46%;
+    padding: 10px;
+    border: 1px solid rgb(233 236 239);
+    border-radius: 12px;
+    box-shadow: 2px 3px 9px rgb(233 236 239);
+    display: flex;
+    width: calc(98% / 2);
+}
+
+.middle-content>li{
+    position: relative;
+    width: calc(98%/2);
+    padding: 25px 10px 15px;
+    display: inline-block;
+    border: 1px solid rgb(233 236 239);
+    border-radius: 12px;
+    box-shadow: 2px 3px 9px rgb(233 236 239);
+    margin-bottom: 10px;
+}
+
+.middle-content li img {
+    width: 25px;
+    vertical-align: text-bottom;
+}
+
+.middle-content .modal-icon {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    color: #01c0c8;
+    font-size: 15pt;
+    border-radius: 0 10px 0 10px;
+    background: #ffcc33;
+    width: 30px;
+}
+
+.middle-content span .modal-icon .mdi-set, .mdi:before {
+    color: #fff !important;
+}
+
+.middle-content .unit_txt {
+    padding-left: 5px;
+}
+
+.modal-icon{
+    position:absolute;
+	top: 1%;
+	right: 3%;
+    color: #01c0c8;
+    font-size:15pt;
+}
+.modal-title{
+    font-weight: bold;
+    text-align: center;
+}
+.modal-body{
+    padding-right:3%;
+    padding-left:3%;
+}
+.modal-text{
+    font-size:15pt;
+    text-align: left;
+}
+table{
+    margin-left:auto; 
+    margin-right:auto;
+    width:100%;
+}
+td, th{
+    border: 1px solid lightgray;
+    text-align: center;
+    font-size: 15pt;
+}
+.t1{
+    width:40%;
+}
+.t2{
+    width: 60%;
+}
+#sleep-data{
+    text-align: center;
+    list-style: none;
+    padding:0px;
+    font-size:15pt;
+    width:90%;
+    margin-left:auto; 
+    margin-right:auto;
+    margin-bottom:10px;
+}
+#sleep-data>li{
+    float: left;
+    width:50%;
+}
+
+span.dtp-select-day{
+    font-size:10pt;
+    padding:0;
+}
+a.dtp-select-day{   /*날짜 활성화*/
+    font-size:10pt;
+}
+.dtp-picker{
+    font-size:10pt;
+}
+.dtp table.dtp-picker-days tr > th{
+    font-size: 11pt;
+}
+.dtp div.dtp-picker{
+    padding:0 !important;
+}
+.dtp-picker-month{
+    margin-top:20px;
+    font-size: 15pt;
+}
+
+/*건강 조언 관련 CSS*/
+.health-img{
+    display:inline-block;
+    margin-right:5%;
+    width:20%;
+    height:90px;
+    text-align: center;
+}
+.health-img>img {
+    width:100%;
+}
+.health-advice{
+    float:right;
+    width:75%;
+    height:90px;
+    line-height: 90px;
+    text-align: left;
+}
+
+#li-area>ul>li{
+    margin-bottom:10px;
+}
+
+
+
+/*************ds***********/
+.date_wrap {
+    display: block;
+    border : 1px solid #e9ecef;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.date_wrap .form-control {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' fill='currentColor' class='bi bi-calendar-week' viewBox='0 0 16 16'%3E%3Cpath d='M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm-5 3a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3 0a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z'/%3E%3Cpath d='M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z'/%3E%3C/svg%3E"); 
+    background-repeat: no-repeat;
+    background-position: center right;
+    background-size: 20px;
+    max-width: 180px;
+    border: none;
+}
+
+.section_02 {
+    margin-top: 20px;
+    position: relative;
+}
+
+.section_02 .modal-icon {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    color: #01c0c8;
+    font-size: 15pt;
+    border-radius: 0 0 0 10px;
+    background: #ffcc33;
+    width: 30px;
+}
+
+.section_02 span .modal-icon .mdi-set, .mdi:before {
+    color: #fff !important;
+}
+
+.step_progress li {
+margin-bottom: 10px; 
+padding: 5px;
+}
+
+  /* 프로그레스 바 스타일 */
+  .progress-bar {
+    background-color: #007bff; /* 프로그레스 바 색상 */
+    color: white;
+    width: 0;
+    padding: 3px;
+    text-align: center;
+    transition: width 0.5s; /* 프로그레스 바 애니메이션 */
+  }
+ 
+  .step-state{
+    position: relative;
+  }
+
+  .pro_bar, .pro_bar_modal {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .pro_bar::after {
+    width: 100%;
+    height: 10px;
+    border-radius: 30px;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 50%;
+    background-color: #ccc;
+    left: 0;
+    z-index: 0;
+  }
+
+ .pro_bar_modal::after {
+    width: 100%;
+    height: 10px;
+    border-radius: 30px;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    top: 60%;
+    background-color: #ccc;
+    left: 0;
+    z-index: 0;
+  }
+
+
+  .step-state .step_progress, .step-state .step_progress_modal {
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
+
+  .step-state .step_progress li, .step-state .step_progress_modal li {
+    display: inline-block;
+    background: #e6e6e6;
+    width: 15px;
+    height: 38px;
+    border-radius: 30px;
+  }
+  
+  .last-active {
+    height: 48px !important;
+    margin-top: -8px;
+  }
+
+  /* highlighted 클래스 추가 시 프로그레스 바 스타일 변경 */
+  .highlighted .progress-bar {
+    width: 100%;
+  }
+
+  .hr_value {
+    position: relative;
+  }
+
+  .hr_value:after {
+    content: 'BPM';
+    font-size: 12px;
+    color: #464646;
+    position: absolute;
+    bottom: 16%;
+    right: -55%;
+  }
+
+  .normal_rate_value {
+    position: relative;
+    margin-right: 16px;
+  }
+
+  /* .normal_rate_value::after {
+    content: '정상';
+    font-size: 12px;
+    color: #847f7f;
+    position: absolute;
+    top: -35%;
+    left: 0%;
+    font-weight: bold;
+  } */
+
+  .normal_rate_value::before {
+    /* content: '%'; */
+    font-size: 12px;
+    color: #847f7f;
+    position: absolute;
+    bottom: 10%;
+    right: -25%;
+    font-weight: bold;
+  }
+
+  .tachycardia_value {
+    position: relative;
+    margin-right: 11px;
+  }
+
+  /* .tachycardia_value::after {
+    content: '빈맥';
+    font-size: 12px;
+    color: #847f7f;
+    position: absolute;
+    top: -35%;
+    left: 0%;
+    font-weight: bold;
+  } */
+
+  .tachycardia_value::before {
+    /* content: '%'; */
+    font-size: 12px;
+    color: #847f7f;
+    position: absolute;
+    bottom: 10%;
+    right: -55%;
+    font-weight: bold;
+  }
+
+
+  .bradycardia_value {
+    position: relative;
+    margin-right: 11px;
+  }
+
+  /* .bradycardia_value::after{
+    content: '서맥';
+    font-size: 12px;
+    color: #847f7f;
+    position: absolute;
+    top: -35%;
+    left: 0%;
+    font-weight: bold;
+  } */
+
+  .bradycardia_value::before{
+    /* content: '%'; */
+    font-size: 12px;
+    color: #847f7f;
+    position: absolute;
+    bottom: 10%;
+    right: -40%;
+    font-weight: bold;
+  }
+
+  .pressure_high_value {
+    position: relative;
+    margin-right: 25px;
+  }
+
+  .pressure_high_value::after{
+    content: '최고';
+    font-size: 12px;
+    color: #847f7f;
+    position: absolute;
+    top: -25%;
+    left: 0%;
+    font-weight: bold;
+  }
+
+  .pressure_low_value {
+    position: relative;
+  }
+
+  .pressure_low_value::after{
+    content: '최저';
+    font-size: 13px;
+    color: #847f7f;
+    position: absolute;
+    top: -25%;
+    left: 0%;
+    font-weight: bold;
+  }
+
+  /*건강지수 테이블*/
+
+  .standard_table {
+    line-height: 20px;
+    padding: 10px 0;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+  }
+
+  .standard_table td, th {
+    border: 1px solid #ccc;
+    padding: 8px 0;
+    font-size: 1rem;
+  }
+
+  .standard_table th {
+    padding: 5px 0;
+    font-weight: 500;
+  }
+
+  .standard_table span { 
+    display: inline-block;
+    font-size: 0.8rem;
+  }
+
+  @media all and (max-width:300px) {
+    .tachycardia_value {
+        margin-right: 0;
+    }
+
+    .tachycardia_value {
+      margin-right: 0;
+    }
+
+    .tachycardia_value {
+      margin-right: 15px;
+    }
+
+
+  }
+/*건강팁*/
+.tip_box {
+  /* border: 1px solid #06c597; */
+  padding: 0.3rem;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.tip_box .tip_comment {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.tip_title img {
+  vertical-align: top;
+}
+
+.tip_title P {
+  display: inline-block;
+  font-size: 1.3rem;
+  margin-top: 5px;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+
+.tip_title P::before {
+  content: '';
+  width: 100%;
+  height: 10px;
+  background-color: #ffd100;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+
+
+/*************ds***********/

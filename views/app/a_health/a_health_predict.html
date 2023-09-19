@@ -1,0 +1,199 @@
+{% extends "templates/appmainbase.html" %}
+<!-- ------------------------------------------------------------- -->
+{% block head %}
+<!-- CSS -->
+<!-- datepicker CSS -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet">
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style>
+    .pet-info {
+        margin-bottom: 0px;
+    }
+    
+    .card-box {
+        margin-top: 10px;
+        border: 2px solid lightgray;
+        width: 100%;
+    }
+    
+    table {
+        width: 100%;
+        /* border-collapse: collapse; */
+    }
+    
+    table td,
+    table th {
+        /* padding: 10px; */
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 3px solid white;
+    }
+    
+    .td-pet-info {
+        border-right: 1px solid lightgray;
+    }
+    
+    .table-test {
+        width: 100%;
+    }
+    
+    .table-test td,
+    .table-test th {
+        text-align: center;
+        vertical-align: middle;
+        border-bottom: 1px solid lightgray;
+        border-top: none;
+    }
+    
+    .container-fluid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .center-align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+{%endblock%}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+<!-- Content 시작 -->
+{% block contents%}
+<!-- html -->
+<div class="skin-megna page-wrapper" style="padding: 0; overflow-y: scroll;">
+    <div class="container-fluid">
+
+        <!-- 장치 연결 상태 -->
+        <div class="card card-box" style="text-align: center; margin-top: 50px;">
+            <div>
+                <div class="h3" style="margin: 10px; font-weight: 700;">장치 연결 상태</div>
+                <div class="h5">* 장치 연결 버튼을 클릭하면 장치가 연결됩니다. <br> 블루투스를 ON으로 설정해주세요.</div>
+                <div class="row m-10" style="margin: 20px;">
+                    <div class="col">
+                        <table style="align-items: center;">
+                            <tr>
+                                <td id="device-status" class="text-center ml-5">
+                                    <i class="material-icons text-center" style="color: red; vertical-align: middle;">circle</i>&nbsp;&nbsp;&nbsp;미연결
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                    <div class="col" style="align-self: center;">
+                        <button class="btn btn-outline-secondary" id="connectDevice">장치 연결</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 측정 전 체크 -->
+        <div class="card card-box" style="margin-top: 50px;">
+            <div class="h3" style="text-align: center; margin:10px; font-weight: 700;">측정 전 체크!</div>
+            <div style="margin-left: 10px;">
+                <ol>
+                    <li>장치를 연결해 주세요.</li>
+                    <li>아이가 안정을 취했을 때 측정을 시작해 주세요.</li>
+                    <li>측정 중에는 아이가 움직이지 않도록 해 주세요. <br>* 아이가 움직이면 측정 결과의 정확도가 떨어집니다.</li>
+                </ol>
+            </div>
+            <div class="row" style="align-items: center; margin-bottom:10px;">
+                <div class="col-1"></div>
+                <div class="col-3">반려동물 선택</div>
+                <div class="col-8">
+                    <select id="select-pet" name="petList" class="form-control" style="width: 80%;" aria-label="region"
+                        aria-describedby="region">
+                    </select>
+                </div>
+            </div>
+            <div style="text-align: center; margin-bottom: 10px;">
+                <button class="btn btn-lg btn-info" id="predict-btn" style="width: 30%;">측정 시작</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+{% endblock %}
+<!-- ------------------------------------------------------------- -->
+
+
+
+<!-- ------------------------------------------------------------- -->
+{% block script %}
+<script src="/javascripts/config.js"></script>
+<script src="/assets/node_modules/moment/moment.js"></script>
+<script src="/assets/node_modules/Chart.js/Chart.min.js"></script>
+<script src="/javascripts/commonUtil.js"></script>
+<script>
+    // let p_userCode = 'p_1';
+</script>
+
+<script type="text/javascript" src="/app/a_health/a_health_predict.js"></script>
+
+<script>
+    let reqUrl = baseUrl + '/a_health/';
+
+    // //장치연결 버튼 클릭 시 앱으로 postmessage전송
+    // $('#connectDevice').on('click', function() {
+    //     window.parent.postMessage({
+    //         action: 'connectDevice'
+    //     }, '*');
+    // })
+
+    // // 측정시작 버튼 클릭 시 앱으로 postmessage 전송
+    // $('#predict-btn').on('click', function() {
+    //     let selectPet = $('#select-pet').val();
+    //     if (typeof selectPet === 'null') {
+    //         errorSwal("반려견을 선택해주세요.")
+    //     } else {
+    //         pet_id = selectPet;
+    //         window.parent.postMessage({
+    //             action: 'predictStart',
+    //             pet_id: pet_id
+    //         }, '*');
+    //         // reqUrl += 'predictResult';
+    //         // location.href = reqUrl;
+    //     }
+
+    // });
+
+    // //부모페이지에서 메세지 전달받고 수행
+    // $(window).on('message', function(event) {
+    //     let receivedData = event.originalEvent.data.message;
+    //     console.log('Received data:', receivedData);
+
+    //     switch (receivedData) {
+    //         case 'connect-success':
+    //             let statusTrue = `<i class="material-icons text-center" style="color: green; vertical-align: middle;">circle</i>&nbsp;&nbsp;&nbsp;연결`;
+    //             $('#device-status').html(statusTrue);
+    //             break;
+    //         case 'connect-fail':
+    //             let statusFalse = `<i class="material-icons text-center" style="color: red; vertical-align: middle;">circle</i>&nbsp;&nbsp;&nbsp;미연결`;
+    //             $('#device-status').html(statusFalse);
+    //             break;
+    //         case 'predict-success':
+    //             reqUrl += 'predictResult?p_userCode=' + p_userCode + '&pet_id=' + event.originalEvent.data.pet_id + '&time=' + event.originalEvent.data.time;;
+    //             location.href = reqUrl;
+    //             break;
+    //         case 'predict-fail':
+    //             reqUrl += 'a_health/' + p_userCode
+    //             location.href = reqUrl;
+    //             break;
+    //         case 'predict-loading':
+    //             console.log("collecting data " + event.originalEvent.data.colData)
+
+
+    //     }
+    // });
+</script>
+
+{% endblock %}

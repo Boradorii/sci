@@ -1,0 +1,207 @@
+{% extends "templates/appmainbase.html" %} {% block head %}
+<!-- <link href="/dist/css/pages/dashboard1.css" rel="stylesheet"> -->
+<!-- page css -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    rel="stylesheet" />
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css" />
+{%endblock%}{% block contents %}
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        font-size: 0.875rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #fff;
+    }
+
+    .profile {
+        font-size: 25pt;
+        font-weight: 400;
+    }
+
+    .old {
+        font-size: 15pt;
+        font-weight: 100;
+        color: gray;
+    }
+
+    .fighting {
+        font-size: 20px;
+        font-weight: 400;
+    }
+
+    .hr-bold {
+        border: 0px;
+        border-top: 5px solid rgb(209, 206, 206);
+    }
+
+    .hr-normal {
+        border: 0px;
+        border-top: 2px solid rgb(170, 168, 168);
+    }
+
+    .info {
+        font-size: 25px;
+        font-weight: 300;
+        margin-left: 2%;
+    }
+
+    .logout {
+        float: right;
+        margin-top: 20px;
+        margin-right: 20px;
+        font-size: 15px;
+        font-weight: 900;
+        color: gray;
+    }
+</style>
+<div class="skin-megna page-wrapper" style="padding: 0; background-color: white">
+    <div class="container-fluid">
+        <div>
+            <div class="row">
+                <div class="mt-3 ml-2 profile"></div>
+                <div class="mt-4 ml-2 old"></div>
+            </div>
+            <div class="mt-3 ml-3 fighting">{{myPage.HealthyToday}}</div>
+        </div>
+        <hr class="hr-bold" />
+        <div>
+            <div class="info" id="announce"><strong>{{myPage.Notice}}</strong></div>
+            <hr class="hr-normal" />
+            <div class="info" id="go-modify">
+                <strong>{{myPage.MemberInformation}}</strong>
+            </div>
+            <hr class="hr-normal" />
+            <div class="info" id="go-sensor">
+                <strong>{{myPage.SensorManagement}}</strong>
+            </div>
+            <hr class="hr-normal" />
+            <div class="info" id="language-change">
+                <strong>{{myPage.LanguageChange}}</strong>
+            </div>
+            <hr class="hr-normal" />
+            <div class="logout" id="go-logout">
+                <strong>{{myPage.Logout}}</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %} {%block script%}
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="/dist/js/perfect-scrollbar.jquery.min.js"></script>
+<!-- <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<!--Wave Effects -->
+<script src="/dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<!-- <script src="../dist/js/sidebarmenu.js"></script> -->
+<!--Custom JavaScript -->
+<script src="/dist/js/custom.min.js"></script>
+<script src="/javascripts/commonUtil.js"></script>
+<script src="/app/mypage/mypage.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script>
+    let userCode = "{{userCode}}";
+    let accessToken = "{{accessToken}}";
+    let lang = "{{lang}}";
+
+    let Age = "{{myPage.Age}}";
+    let LanguageChange = "{{myPage.LanguageChange}}";
+    let LanguageSelection = "{{myPage.LanguageSelection}}";
+    let Change = "{{myPage.Change}}";
+    let Cancellation = "{{myPage.Cancellation}}";
+    let male = "{{myPage.Male}}";
+    let female = "{{myPage.FeMale}}";
+
+    $("#go-sensor").on("click", function () {
+        window.parent.postMessage({
+            action: "sensorPage",
+        },
+            "*"
+        ); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+    });
+
+    // 회원 정보 수정
+    $("#go-modify").on("click", function () {
+        window.parent.postMessage({
+            action: "modifyPage",
+        },
+            "*"
+        ); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+    });
+
+    $("#announce").on("click", function () {
+        window.parent.postMessage({
+            action: "announcePage",
+        },
+            "*"
+        ); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+        // location.href="/api/mypage/announcement?usercode="+userCode //  /api들어가고 users의 router에 들어간후 router의 주소인 announcement로 이동함. usercode도 가져옴.
+    });
+
+    $("#go-logout").on("click", function () {
+        window.parent.postMessage({
+            action: "logout",
+        },
+            "*"
+        ); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+    });
+
+    function name() {
+        let cmmContentType = "application/json",
+            cmmType = "get",
+            cmmUrl = "/api/users/show/info",
+            cmmReqDataObj = {
+                userCode: userCode,
+            },
+            cmmAsync = false,
+            cmmSucc = function (result) {
+                const username = result.name,
+                    today = new Date();
+                birthDate = new Date(
+                    result.birth_year,
+                    result.birth_month,
+                    result.birth_day
+                );
+                let gender = result.gender;
+
+                if (gender == "M") {
+                    gender = male;
+                } else {
+                    gender = female;
+                }
+                console.log
+
+                let age = today.getFullYear() - birthDate.getFullYear();
+                const m = today.getMonth() - birthDate.getMonth();
+                if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+                    age--;
+                }
+                $(".profile").text(username);
+                $(".old").text("" + gender + " " + age + Age);
+            },
+            cmmErr = null;
+        commAjax(
+            cmmContentType,
+            cmmType,
+            cmmUrl,
+            cmmReqDataObj,
+            cmmAsync,
+            cmmSucc,
+            cmmErr
+        );
+    }
+
+    //
+
+    name();
+</script>
+{% endblock %}

@@ -1,0 +1,29 @@
+.skin-green {
+  /*Theme Colors*/
+}
+.skin-green .topbar {
+  background: #66cccc;
+}
+.skin-green .topbar .top-navbar .navbar-header .navbar-brand .dark-logo {
+  display: none;
+}
+.skin-green .topbar .top-navbar .navbar-header .navbar-brand .light-logo {
+  display: inline-block;
+  color: rgba(255, 255, 255, 0.8);
+}
+.skin-green .sidebar-nav ul li a.active, .skin-green .sidebar-nav ul li a:hover {
+  color: #66cccc;
+}
+.skin-green .sidebar-nav ul li a.active i, .skin-green .sidebar-nav ul li a:hover i {
+  color: #66cccc;
+}
+.skin-green .sidebar-nav > ul > li.active > a {
+  color: #66cccc;
+  border-left: 3px solid #66cccc;
+}
+.skin-green .sidebar-nav > ul > li.active > a i {
+  color: #66cccc;
+}
+.skin-green .page-titles .breadcrumb .breadcrumb-item.active {
+  color: #66cccc;
+}/*# sourceMappingURL=green.css.map */

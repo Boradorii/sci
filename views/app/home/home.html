@@ -1,0 +1,522 @@
+{% extends "templates/appmainbase.html" %} {% block head %}
+<!-- <link href="/dist/css/pages/dashboard1.css" rel="stylesheet"> -->
+<!-- page css -->
+<link href="/assets/node_modules/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css"
+    rel="stylesheet">
+<link href="/assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="/assets/icons/material-design-iconic-font/css/material-design-iconic-font.css">
+<link rel="stylesheet" href="/app/home/home.css" type="text/css" />
+{%endblock%}{% block contents %}
+
+<!-- <h3 id="click-alert" style="text-align: center; margin-top:10px;">{{homePage.initAlert}}</h3> -->
+<div class="skin-megna page-wrapper" style="padding: 0;">
+    <div class="container-fluid">
+        <!-- 건강상태 -->
+        <div class="card ">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="card-title" style="text-align: center;">
+                        <!-- <span class="first_text"> {{homePage.HealthState}}</span>
+                        <span><i class="mdi mdi-information-outline modal-icon" id="health-state-info" style="position: static;"></i></span><br/>                         -->
+                        <div class="date_wrap"><input type="text" class="form-control" id="biometric-datepicker"
+                                style="text-align: center; font-size:20px;">
+
+                        </div>
+                        <ul class="middle-content">
+                            <li>
+                                <span class="second_text_mini">{{homePage.HeartRate}}</span>
+                                <img src="/images/icon/heart_rate.png" width="45px" alt="">
+                                <span><i class="mdi mdi-information-outline modal-icon" id="hr-info"></i></span>
+                                <div><span class="second_text_big hr_value">110</span></div>
+                            </li>
+                            <li>
+                                <span class="second_text_mini">{{homePage.Arrhythmia}}</span>
+                                <img src="/images/icon/arrhythmia.png" width="45px" alt="">
+                                <!-- <span class="tit_comment">{{homePage.Tachycardia}} / {{homePage.Bradycardia}}</span> -->
+                                <span><i class="mdi mdi-information-outline modal-icon" id="arrhythmia-info"></i></span>
+                                <div>
+                                    <span style="    font-size: 12px;
+                                    display: block;
+                                    padding: 0;
+                                    margin-bottom: -6px;
+                                    margin-top: 5px;
+                                    color: #646464;">빈맥/정상/서맥</span>
+                                    <span class="second_text_small tachycardia_value">10</span>
+                                    <span class="second_text_mid normal_rate_value">70</span>
+                                    <span class="second_text_small bradycardia_value">20</span>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="second_text_mini">{{homePage.BloodSugar}}</span>
+                                <img src="/images/icon/bloodSugar.png" width="45px" alt="">
+                                <span><i class="mdi mdi-information-outline modal-icon" id="bloodSugar-info"></i></span>
+                                <br><span class="second_text_big glucose_value">80</span>
+                            </li>
+                            <li>
+                                <span class="second_text_mini">{{homePage.BloodPressure}}</span>
+                                <img src="/images/icon/bloodPressure.png" width="45px" alt="">
+                                <span><i class="mdi mdi-information-outline modal-icon"
+                                        id="bloodPressure-info"></i></span>
+                                <div style="margin-top: 10px;">
+                                    <span class="second_text_mid pressure_high_value">120</span>
+                                    <span class="second_text_mid pressure_low_value">40</span>
+                                </div>
+                            </li>
+
+                        </ul>
+
+                        <!--건강지수 그래프-->
+                        <div class="section_02" style="margin-top: 20px;">
+                            <hr>
+                            <span class="first_text">{{homePage.HealthIndexGraph}}</span>
+                            <span><i class="mdi mdi-information-outline modal-icon" id="health-info"></i></span><br />
+                            <div class="step-state">
+                                <span class="pro_bar"></span>
+                                <ul class="step_progress">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- 세부정보 모달 -->
+
+<!-- 센서 연결 상태-->
+<div id="sensor-modal" class="modal long-modal" tabindex="-1" role="dialog" aria-labelledby="longmodal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="longmodal">{{homePage.SensorConnectionDetails}}</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body" style="text-align: left;">
+                <p class="modal-text" style="text-align: left;">
+                    <img id="sensor-icon" src="/images/icon/green.png" width="12px" alt=""><span
+                        class="modal-text">&nbsp;<strong>{{homePage.Connecting}}</strong></span>
+                    {{homePage.SensorConnectedState}}
+                </p>
+                <p class="modal-text" style="text-align: left;">
+                    <img id="sensor-icon" src="/images/icon/red.png" width="12px" alt=""><span
+                        class="modal-text">&nbsp;<strong>{{homePage.NotConnected}}</strong></span>
+                    {{homePage.SensorNotConnected}}
+                </p>
+                <p class="modal-text" style="text-align: left;">
+                    <img id="sensor-icon" src="/images/icon/red.png" width="12px" alt=""><span
+                        class="modal-text">&nbsp;<strong>{{homePage.UnconnectedActionMethod}}</strong></span>
+                    <br>{{homePage.UnconnectedActionMethod1}}
+                    <br>{{homePage.UnconnectedActionMethod2}}
+                    <br>{{homePage.UnconnectedActionMethod3}}
+                </p>
+                <p class="modal-text" style="text-align: left;">{{homePage.MoveSensorPage}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--********************detail_modal*********************-->
+<!-- 건강상태(심박수) -->
+<div id="hr-modal" class="modal long-modal" tabindex="-1" role="dialog" aria-labelledby="longmodal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="longmodal">{{homePage.HeartRateDetails}}</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body" style="text-align: center;">
+                <img src="/images/icon/heart_rate.png" width=100px; /><br />
+                <span class="second_text_big hr_value">110</span>
+                <hr>
+                <p class="modal-text" style="text-align: center;">{{homePage.HeartRateAvg}}</p>
+                <span style="color:gray; font-size: 13pt;">{{homePage.AHA}}</span>
+                <hr />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 건강상태(부정맥) -->
+<div id="arrhythmia-modal" class="modal long-modal" tabindex="-1" role="dialog" aria-labelledby="longmodal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="longmodal">{{homePage.ArrhythmiaDetails}}</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body" style="text-align: center; padding-right:5%; padding-left:5%;">
+                <img src="/images/icon/arrhythmia.png" width=100px; /><br />
+                <span class="second_text rate_value">빈맥 : 20%|서맥 : 10%|정상 : 70</span>
+                <!-- <img id="glucose-val-icon" src="/images/icon/green.png" width="12px" alt="">&nbsp;<span class="second_text glucose_value">-</span><br/> -->
+                <!-- <p class="modal-text">{{homePage.ArrhythmiaComment}}</p> -->
+                <hr>
+                <p class="modal-text">비정상적인 전기 신호체계가 활성화되어 규칙적인 수축과 이완이 지속적으로 이루어지지 않아서 심장 박동이 비정상적으로 빨라지거나, 늦어지거나, 혹은
+                    불규칙하게 되는 것</p>
+                <div>
+                    빈맥 : 맥박수가 분당 100회 이상인 경우<Br>
+                    서맥 : 맥박이 느려져 분당 50회 미만으로 저하되는 경우<br>
+                </div>
+                <span style="color:gray; font-size: 13pt;">{{homePage.AMC}}</span>
+                <hr>
+                <!--                 <table>
+                    <tr style="background-color: rgb(226, 226, 226);">
+                        <th class="t1" style="font-weight: 500;">{{homePage.Sortation}}</th>
+                        <th class="t2" style="font-weight: 500;">{{homePage.SleepQuality}}</th>
+                    </tr>
+                    <tr>
+                        <td class="t1"><img src="/images/icon/green.png" width="7%" alt="">&nbsp;{{homePage.Good}}</td>
+                        <td class="t2">70~100</td>
+                    </tr>
+                    <tr>
+                        <td class="t1"><img src="/images/icon/orange.png" width="7%" alt="">&nbsp;{{homePage.Normal}}</td>
+                        <td class="t2">30~69</td>
+                    </tr>
+                    <tr>
+                        <td class="t1"><img src="/images/icon/red.png" width="7%" alt="">&nbsp;{{homePage.Bad}}</td>
+                        <td class="t2">0~29</td>
+                    </tr>
+                </table>> -->
+                <hr />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 건강상태(혈당) -->
+<div id="bloodSugar-modal" class="modal long-modal" tabindex="-1" role="dialog" aria-labelledby="longmodal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="longmodal">{{homePage.BloodSugarDetails}}</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body" style="text-align: center; padding-right:5%; padding-left:5%;">
+                <img src="/images/icon/bloodSugar.png" width=100px; /><br />
+                <img id="glucose-val-icon" src="/images/icon/green.png" width="12px" alt="">&nbsp;<span
+                    class="second_text bloodSugar_value">-</span>
+                <hr />
+                <p style="font-size:15pt; font-weight: 500; text-align: center;">혈당 정상 수치표</p>
+                <!-- <p style="font-size:15pt; font-weight: 500; text-align: center;">{{homePage.StressClassificationTable}}</p> -->
+                <table class="standard_table">
+                    <colgroup>
+                        <col style="width:25%;">
+                        <col style="width:25%;">
+                        <col style="width:25%;">
+                        <col style="width:25%;">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>시간별<br>건강지수</th>
+                            <th>안심</th>
+                            <th>관심</th>
+                            <th>주의</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>아침</td>
+                            <td>99이하</td>
+                            <td>100~119</td>
+                            <td>120~300</td>
+                        </tr>
+                        <tr>
+                            <td>점심<span>(식후2시간)</span></td>
+                            <td>139이하</td>
+                            <td>140~169</td>
+                            <td>170~300</td>
+                        </tr>
+                        <tr>
+                            <td>저녁<span>(식후2시간)</span></td>
+                            <td>139이하</td>
+                            <td>140~169</td>
+                            <td>170~300</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- <table>
+                    <tr style="background-color: rgb(226, 226, 226);">
+                        <th class="t1" style="font-weight: 500;">{{homePage.Sortation}}</th>
+                        <th class="t2" style="font-weight: 500;">{{homePage.StressIndex}}</th>
+                    </tr>
+                    <tr>
+                        <td class="t1"><img src="/images/icon/green.png" width="7%" alt="">&nbsp;{{homePage.Good}}</td>
+                        <td class="t2">0 ~ 19</td>
+                    </tr>
+                    <tr>
+                        <td class="t1"><img src="/images/icon/orange.png" width="7%" alt="">&nbsp;{{homePage.Normal}}</td>
+                        <td class="t2">20~39</td>
+                    </tr>
+                    <tr>
+                        <td class="t1"><img src="/images/icon/red.png" width="7%" alt="">&nbsp;{{homePage.Bad}}</td>
+                        <td class="t2">40~100</td>
+                    </tr>
+                </table><br/> -->
+                <hr />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 건강상태(혈압) -->
+<div id="bloodPressure-modal" class="modal long-modal" tabindex="-1" role="dialog" aria-labelledby="longmodal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="longmodal">{{homePage.BloodPressureDetails}}</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body" style="text-align: center; padding-right:5%; padding-left:5%;">
+                <img src="/images/icon/bloodPressure.png" width=100px; /><br />
+                <img id="bloodPressure-val-icon" src="/images/icon/green.png" width="12px" alt="">&nbsp;<span
+                    class="second_text bloodPressure_value">-</span>
+                <hr />
+                <p style="font-size:15pt; font-weight: 500; text-align: center;"> </p>
+                <table class="standard_table">
+                    <colgroup>
+                        <col style="width:34%;">
+                        <col style="width:33%;">
+                        <col style="width:33%;">
+
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>혈압 분류</th>
+                            <th>수축기 혈압<span>(mmHg)</span></th>
+                            <th>이완기 혈압<span>(mmHg)</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>정상 혈압</td>
+                            <td>120미만</td>
+                            <td>80미만</td>
+                        </tr>
+                        <tr>
+                            <td>주의 혈압</td>
+                            <td>120~129</td>
+                            <td>80미만</td>
+                        </tr>
+                        <tr>
+                            <td>고혈압 전단계</td>
+                            <td>130~139</td>
+                            <td>80~89</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <span style="color:gray; font-size: 13pt;display: inline-block; margin-top: 10px;">질병관리청 국가건강정보포털</span>
+                <hr />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 건강지수 modal 그래프 -->
+<div id="health-modal" class="modal long-modal" tabindex="-1" role="dialog" aria-labelledby="longmodal"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title" id="longmodal">{{homePage.HealthIndexGraph}}</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <div class="step-state">
+                    <span class="pro_bar_modal"></span>
+                    <ul class="step_progress_modal">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div style="text-align: right; margin-right:30px;">
+                    <img src="/images/icon/red.png" width="13px" alt="">&nbsp;<span
+                        style="font-size: 15pt;">{{homePage.Bad}}</span>
+                    <img src="/images/icon/orange.png" width="13px" alt="">&nbsp;<span
+                        style="font-size: 15pt;">{{homePage.Normal}}</span>
+                    <img src="/images/icon/green.png" width="13px" alt="">&nbsp;<span
+                        style="font-size: 15pt;">{{homePage.Good}}</span>
+                </div><br />
+                <p class="modal-text">{{homePage.HealthIndexGraph1}}</p>
+                <p class="modal-text">{{homePage.HealthIndexGraph2}}</p>
+                <p class="modal-text">{{homePage.HealthIndexGraph3}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="tip_box">
+        <div class="tip_title">
+            <img src="/images/icon/tip_icon.png">
+            <p>{{resultPage.HealthAdvice}}</p>
+        </div>
+        <div class="tip_comment" id="li-area">
+            
+        </div>
+    </div>
+</div>
+
+
+{% endblock %} {%block script%}
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="/dist/js/perfect-scrollbar.jquery.min.js"></script>
+<!-- <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<!--Wave Effects -->
+<script src="/dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<!-- <script src="../dist/js/sidebarmenu.js"></script> -->
+<!-- Plugin JavaScript -->
+<script src="../../../assets/node_modules/moment/moment.js"></script>
+<!-- Date Picker Plugin JavaScript -->
+<script src="../../../assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+<script
+    src="../../../assets/node_modules/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+<script src="../../../assets/node_modules/bootstrap-daterangepicker/daterangepicker.js"></script>
+<!-- bootstrap-datepicker 언어팩 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ko.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/zh-cn.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/locale/ja.js"></script>
+<!--Custom JavaScript -->
+<script src="/dist/js/custom.min.js"></script>
+<script src="/javascripts/commonUtil.js"></script>
+<script src="/app/home/home.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<!-- Resources -->
+<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+
+<!--progress bar-->
+
+<script>
+    // 모달창 프로그래스 바
+    var data = 100; // 데이터 여기다 넣어주세요!
+
+    var liElements = document.querySelectorAll('.step_progress_modal li');
+
+    var colors = ['#ff4f36', '#ff4e3f', '#ff6a31', '#ff8a24', '#fead17', '#fece05', '#e0de10', '#b9dc1c', '#8fde2c', '#65db3b', '#36dd4e', '#1bd75c'];
+
+    liElements.forEach(function (li, index) {
+        var value = (index + 1) * (100 / liElements.length);
+        var backgroundColor;
+
+        if (value <= data) {
+            backgroundColor = colors[index];
+        } else {
+            backgroundColor = '#d2d2d2';
+        }
+
+        li.style.backgroundColor = backgroundColor;
+
+        if (value <= data) {
+            li.classList.add('data_active');
+        } else {
+            li.classList.remove('data_active');
+        }
+
+        //$(".step_progress li.data_active:last").addClass("last-active");
+
+    });
+</script>
+
+<script>
+    let userCode = '{{userCode}}';
+    let SensorActive = '{{SensorActive}}';
+    let HrActive = '{{HrActive}}';
+    let accessToken = '{{accessToken}}';
+    let lang = '{{lang}}';
+
+
+    let Connecting = '{{homePage.Connecting}}'
+    let NotConnected = '{{homePage.NotConnected}}'
+    let NoData = '{{homePage.NoData}}'
+    let NoDataInDate = '{{homePage.NoDataInDate}}'
+    let HealthAlert1 = '{{homePage.HealthAlert1}}'
+    let HealthAlert2 = '{{homePage.HealthAlert2}}'
+    let HealthAlert3 = '{{homePage.HealthAlert3}}'
+    let HealthAlert4 = '{{homePage.HealthAlert4}}'
+    let SleepAlert1 = '{{homePage.SleepAlert1}}'
+    let SleepAlert2 = '{{homePage.SleepAlert2}}'
+    let SleepAlert3 = '{{homePage.SleepAlert3}}'
+    let StressAlert1 = '{{homePage.StressAlert1}}'
+    let StressAlert2 = '{{homePage.StressAlert2}}'
+    let StressAlert3 = '{{homePage.StressAlert3}}'
+    let StressAlert4 = '{{homePage.StressAlert4}}'
+    let HealthTips = '{{homePage.HealthTips}}'
+    let HospitalAlert1 = '{{homePage.HospitalAlert1}}'
+    let HospitalAlert2 = '{{homePage.HospitalAlert2}}'
+    let HospitalAlert3 = '{{homePage.HospitalAlert3}}'
+    let GlucoseTest = '{{homePage.GlucoseTest}}'
+    let PressureTest = '{{homePage.PressureTest}}'
+    let FoodAlert1 = '{{homePage.FoodAlert1}}'
+    let FoodAlert2 = '{{homePage.FoodAlert2}}'
+    let WeightAlert = '{{homePage.WeightAlert}}'
+
+    init();
+    rTimeSensorHr(userCode);
+
+    $("#go-sensor").on('click', function () {
+        window.parent.postMessage({
+            action: 'sensorPage'
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const bars = document.querySelectorAll('.bar');
+
+        // 가장 긴 바의 너비를 찾음
+        let maxBarWidth = 0;
+        bars.forEach(bar => {
+            const width = parseInt(bar.style.width);
+            if (width > maxBarWidth) {
+                maxBarWidth = width;
+            }
+        });
+
+        // 나머지 바의 색상과 너비를 변경
+        bars.forEach(bar => {
+            const width = parseInt(bar.style.width);
+            if (width < maxBarWidth) {
+                bar.style.backgroundColor = '#ccc';
+                bar.style.width = `${maxBarWidth}%`;
+            }
+        });
+    });
+
+</script>
+
+
+
+{% endblock %}

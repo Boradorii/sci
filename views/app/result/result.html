@@ -1,0 +1,176 @@
+{% extends "templates/appmainbase.html" %} {% block head %}
+<!-- <link href="/dist/css/pages/dashboard1.css" rel="stylesheet"> -->
+<!-- page css -->
+<link href="/dist/css/pages/login-register-lock.css" rel="stylesheet">
+<link href="/dist/css/pages/tab-page.css" rel="stylesheet">
+<link rel="stylesheet" href="/stylesheets/modal.css">
+<link rel="stylesheet" href="/app/result/result.css" type="text/css" />
+{% endblock %} {% block contents %}
+
+<div class="skin-megna page-wrapper" style="padding: 0;">
+    <div class="container-fluid">
+        <div class="row page-titles" style="list-style:none;">
+            <div class="col ">
+                <hr class="m-t-24 m-b-0">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs customtab nav-justified" role="tablist" style="text-align: center;">
+                    <li class="nav-item">
+                        <a id="tab-daily" class="nav-link active" data-toggle="tab" href="#tab-contents1" role="tab">
+                            <span class="hidden-xs-down">{{resultPage.Daily}}</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="tab-monthly" class="nav-link" data-toggle="tab" href="#tab-contents2" role="tab">
+                            <span class="hidden-xs-down">{{resultPage.Monthly}}</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="tab-content">
+            <div class="tab-pane show active" id="tab-contents1" role="tabpanel">
+                <div class="card">
+                    <h3 class="card-title">{{resultPage.Days30HealthIndex}}</h3>
+                    <div class="card-body">
+                        <div id="daily-div"></div>
+                        <div class="empty-notice text-center">{{resultPage.NoData}}</div>
+                    </div>
+
+                    <hr />
+                    <!--health tip daily-->
+                    <div class="tip_box">
+                        <div class="tip_title">
+                            <img src="/images/icon/tip_icon.png">
+                            <p>{{resultPage.HealthAdvice}}</p>
+                        </div>
+                        <div class="tip_comment">
+                            <ul id="health-daily-area">
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- <ul id = "health-daily-area" style="font-size: 15pt; list-style: none; padding:0px; margin-top:10px; display: none;">
+                        <strong style="float:left;">{{resultPage.HealthAdvice}}</strong><br/>
+                        <li class="health-img"><img src="" id = "health_index_img1" alt=""></li>
+                        <li id="health_index_info1" class="health-advice"></li>
+                        <li class="health-img"><img src="" id = "sleep_img1" alt=""></li>
+                        <li id="sleep_info1" class="health-advice"></li>
+                        <li class="health-img"><img src="" id = "stress_img1" alt=""></li>
+                        <li id="stress_info1" class="health-advice"></li>
+                    </ul> -->
+
+                    <div id="li-daily-area" style="font-size: 15pt; text-align: left;"></div>
+                </div>
+            </div>
+            <div class="tab-pane" id="tab-contents2" role="tabpanel">
+                <div class="card">
+                    <input type="text" class="form-control" id="monthly-datepicker" readonly>
+                    <h3 class="card-title">{{resultPage.MonthlyHealthIndex}}</h3>
+                    <div class="card-body">
+                        <div id="monthly-div"></div>
+                        <div class="empty-notice text-center">{{resultPage.NoData}}</div>
+                    </div>
+                    <hr />
+                    <!--health tip monthly-->
+                    <div class="tip_box">
+                        <div class="tip_title">
+                            <img src="/images/icon/tip_icon.png">
+                            <p>{{resultPage.HealthAdvice}}</p>
+                        </div>
+                        <div class="tip_comment">
+                            <ul id="health-monthly-area">
+                                
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <!-- <ul id = "health-monthly-area" style="font-size: 15pt; list-style: none; padding:0px; margin-top:10px; display: none;">
+                        <strong style="float:left;">{{resultPage.HealthAdvice}}</strong><br/>
+                        <li class="health-img"><img src="" id = "health_index_img2" alt=""></li>
+                        <li id="health_index_info2" class="health-advice"></li>
+                        <li class="health-img"><img src="" id = "sleep_img2" alt=""></li>
+                        <li id="sleep_info2" class="health-advice"></li>
+                        <li class="health-img"><img src="" id = "stress_img2" alt=""></li>
+                        <li id="stress_info2" class="health-advice"></li>
+                    </ul> -->
+                    <div id="li-monthly-area" style="font-size: 15pt; text-align: left;"></div>
+                </div>
+            </div>
+            <div style="margin-bottom : 60px"></div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %} {%block script%}
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="/dist/js/perfect-scrollbar.jquery.min.js"></script>
+<!-- <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+<!--Wave Effects -->
+<script src="/dist/js/waves.js"></script>
+<!-- Chart JS -->
+<script src="../../../assets/node_modules/Chart.js/Chart.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.7/chartjs-plugin-annotation.min.js"></script>
+<!-- moment.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+<!-- bootstrap-datepicker -->
+<script src="../../../assets/node_modules/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+<script
+    src="../../../assets/node_modules/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
+<script src="../../../assets/node_modules/bootstrap-daterangepicker/daterangepicker.js"></script>
+<script src="../../../assets/node_modules/moment/moment.js"></script>
+<!-- bootstrap-datepicker 언어팩 -->
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ko.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/locales/bootstrap-datepicker.ja.min.js"></script>
+<!--Custom JavaScript -->
+<script src="/dist/js/custom.min.js"></script>
+<script src="/javascripts/commonUtil.js"></script>
+<script src="/app/result/result.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+<script>
+    let userCode = '{{userCode}}';
+    let accessToken = '{{accessToken}}';
+    let lang = '{{lang}}';
+    let resultPage = '{{resultPage|safe}}';
+
+    let NoData2 = '{{resultPage.NoData2}}'
+    let NoDataInDate = '{{resultPage.NoDataInDate}}'
+    let HealthIndex = '{{resultPage.HealthIndex}}'
+    let HealthTips = '{{resultPage.HealthTips}}'
+    let HealthAlert1 = '{{resultPage.HealthAlert1}}'
+    let HealthAlert2 = '{{resultPage.HealthAlert2}}'
+    let HealthAlert3 = '{{resultPage.HealthAlert3}}'
+    let HealthAlert4 = '{{resultPage.HealthAlert4}}'
+    let SleepAlert1 = '{{resultPage.SleepAlert1}}'
+    let SleepAlert2 = '{{resultPage.SleepAlert2}}'
+    let SleepAlert3 = '{{resultPage.SleepAlert3}}'
+    let StressAlert1 = '{{resultPage.StressAlert1}}'
+    let StressAlert2 = '{{resultPage.StressAlert2}}'
+    let StressAlert3 = '{{resultPage.StressAlert3}}'
+    let StressAlert4 = '{{resultPage.StressAlert4}}'
+    let HospitalAlert1 = '{{resultPage.HospitalAlert1}}'
+    let HospitalAlert2 = '{{resultPage.HospitalAlert2}}'
+    let HospitalAlert3 = '{{resultPage.HospitalAlert3}}'
+    let GlucosTest = '{{resultPage.GlucosTest}}'
+    let PressureTest = '{{resultPage.PressureTest}}'
+    let FoodAlert1 = '{{resultPage.FoodAlert1}}'
+    let FoodAlert2 = '{{resultPage.FoodAlert2}}'
+    let WeightAlert = '{{resultPage.WeightAlert}}'
+    let SugarAlert = '{{resultPage.SugarAlert}}'
+    let SalinityAlert = '{{resultPage.SalinityAlert}}'
+
+
+    init()
+</script>
+{% endblock %}

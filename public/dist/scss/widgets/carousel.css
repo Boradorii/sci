@@ -1,0 +1,17 @@
+/*******************/
+/*Vertical carousel*/
+/*******************/
+.vert .carousel-item-next.carousel-item-left,
+.vert .carousel-item-prev.carousel-item-right {
+  transform: translate3d(0, 0, 0);
+}
+
+.vert .carousel-item-next,
+.vert .active.carousel-item-right {
+  transform: translate3d(0, 100% 0);
+}
+
+.vert .carousel-item-prev,
+.vert .active.carousel-item-left {
+  transform: translate3d(0, -100%, 0);
+}/*# sourceMappingURL=carousel.css.map */

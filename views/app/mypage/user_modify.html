@@ -1,0 +1,197 @@
+{% extends "templates/appmainbase.html" %} {% block head %}
+<!-- <link href="/dist/css/pages/dashboard1.css" rel="stylesheet"> -->
+<!-- page css -->
+<link href="/dist/css/pages/login-register-lock.css" rel="stylesheet">
+<link href="/dist/css/pages/tab-page.css" rel="stylesheet">
+<link rel="stylesheet" href="/stylesheets/modal.css">{% endblock %} {% block contents %}
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        font-size: 1.2rem;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #212529;
+        text-align: left;
+        background-color: #FFF;
+    }
+
+    .active-notice,
+    .bytes-check {
+        margin-top: 0.7em;
+        margin-bottom: 0;
+        font-size: 10pt;
+    }
+
+    .deactive-notice {
+        display: none;
+    }
+
+    .notice-area {
+        flex-direction: row-reverse;
+    }
+</style>
+
+<div class="skin-megna page-wrapper" style="padding: 0; overflow-y: scroll; background-color: white;">
+    <div class="container-fluid">
+        <div class="card">
+            <div class="card-body">
+                <form class="form p-t-20">
+                    <div class="form-group mb-3">
+                        <label id="label-userName" for="name-input">{{modifyPage.Name}}</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="userNm-addon"><i class="ti-user"></i></span>
+                            </div>
+                            <input id="name-input" name="name" class="form-control" type="text"
+                                placeholder={{modifyPage.Name}} aria-describedby="name-notice" required>
+                        </div>
+                        <div class="row notice-area">
+                            <p class="bytes-check ml-2 mr-2"></p>
+                            <p id="name-notice" class="deactive-notice form-control-feedback">{{modifyPage.NameAlert}}
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label id="label-userId" for="id-input">{{modifyPage.ID}}</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="userId-addon"><i class=" ti-marker-alt"></i></span>
+                            </div>
+                            <input id="id-input" name="id" class="form-control" type="text"
+                                placeholder={{modifyPage.ID}} aria-describedby="id-notice" readonly>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label id="label-pwd" for="label-pwd">{{modifyPage.PasswordModification}}</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon3"><i class="ti-lock"></i></span>
+                            </div>
+                            <input id="pwd-input" name="pwd" type="password" class="form-control" placeholder="********"
+                                aria-describedby="pwd-notice">
+                        </div>
+                        <div class="row notice-area">
+                            <p class="bytes-check ml-2 mr-2"></p>
+                            <p id="pwd-notice" class="deactive-notice form-control-feedback">
+                                {{modifyPage.PasswordAlert1}}</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group mb-3">
+                        <label id="label-pwd-confirm" for="label-pwd-confirm">{{modifyPage.ConfirmPassword}}</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="pwd-confirm-addon"><i class="ti-lock"></i></span>
+                            </div>
+                            <input id="pwd-confirm-input" name="pwd-confirm" type="password" class="form-control"
+                                placeholder="********" aria-describedby="pwd-notice">
+                        </div>
+                        <div class="row notice-area">
+                            <p class="bytes-check ml-2 mr-2"></p>
+                            <p id="pwd-confirm-notice" class="deactive-notice form-control-feedback">
+                                {{modifyPage.PasswordAlert2}}</p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label id="label-email" for="email-input">{{modifyPage.emailModification}}</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="email-confirm"><i class="ti-email"></i></span>
+                            </div>
+                            <input id="email-input" name="eId" type="text" class="form-control" placeholder="Email"
+                                aria-describedby="" readonly/>
+                            <span class="ml-1 mr-1 mt-2">@</span>
+                            <input id="email-input2" name="eDomain" type="text" class="form-control"
+                                placeholder="Email Domain" aria-describedby="" readonly/>
+                        </div>
+                        <div class="row notice-area" style="justify-content: space-around">
+                            <p id="email-bytes2" class="bytes-check"></p>
+                            <p id="email-bytes1" class="bytes-check"></p>
+                        </div>
+                        <!-- <p id="email-notice2" class="deactive-notice form-control-feedback text-right">
+                            {{modifyPage.emailNotice2}}</p>
+                        <p id="email-notice" class="active-notice form-control-feedback text-info">
+                            {{modifyPage.emailNotice}}
+                        </p> -->
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phonenumber">{{modifyPage.MobileNumber}}</label>
+                        <div class="input-group">
+                            <input type="text" id="phone1" name="phone1" class="form-control notval" placeholder=""
+                                aria-label="phonenumber" aria-describedby="basic-addon6">
+                            <p class="ml-2 mr-2 mt-2"> - </p>
+                            <input type="text" id="phone2" name="phone2" class="form-control notval" placeholder=""
+                                aria-label="phonenumber" aria-describedby="basic-addon6">
+                            <p class="ml-2 mr-2 mt-2"> - </p>
+                            <input type="text" id="phone3" name="phone3" class="form-control notval" placeholder=""
+                                aria-label="phonenumber" aria-describedby="basic-addon6">
+                        </div>
+                        <div class="row notice-area">
+                            <p class="bytes-check ml-2 mr-2"></p>
+                            <p id="phone-notice" class="deactive-notice form-control-feedback">
+                                {{modifyPage.MobileNumberAlert1}}</p>
+                            <p id="phone-duplicate-notice" class="deactive-notice form-control-feedback">
+                                {{modifyPage.MobileNumberAlert2}}</p>
+                        </div>
+                    </div>
+
+                    <div class="row float-right">
+                        <button id="submit-btn" type="button"
+                            class="btn btn-success waves-effect waves-light m-r-10">{{modifyPage.Edit}}</button>
+                        <button id="delete-btn" type="button"
+                            class="btn btn-danger waves-effect waves-light m-r-10">{{modifyPage.Withdrawal}}</button>
+                        <button id="cancel-btn" type="button"
+                            class="btn btn-light waves-effect waves-light">{{modifyPage.Cancellation}}</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %} {%block script%}
+<!-- ============================================================== -->
+<!-- All Jquery -->
+<!-- ============================================================== -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="/assets/node_modules/jquery/jquery-3.2.1.min.js"></script>
+<script src="/javascripts/commonUtil.js"></script>
+<!-- slimscrollbar scrollbar JavaScript -->
+<script src="/dist/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="/app/mypage/user_modify.js"></script>
+<!--Wave Effects -->
+<script src="/dist/js/waves.js"></script>
+<!--Menu sidebar -->
+<!-- <script src="../dist/js/sidebarmenu.js"></script> -->
+<!--Custom JavaScript -->
+<script src="/dist/js/custom.min.js"></script>
+<script>
+    let userCode = '{{userCode}}';
+    let userInfo = '{{userInfo|safe}}'
+    userInfo = JSON.parse(userInfo)
+
+    let Crystal = '{{modifyPage.Crystal}}'
+    let Withdrawal = '{{modifyPage.Withdrawal}}'
+    let Cancellation = '{{modifyPage.Cancellation}}'
+    let InformationModified = '{{modifyPage.InformationModified}}'
+    let Retry = '{{modifyPage.Retry}}'
+    let WithdrawalAlert = '{{modifyPage.WithdrawalAlert}}'
+    let WithdrawalCompleted = '{{modifyPage.WithdrawalCompleted}}'
+
+    init();
+
+    $("#cancel-btn").on('click', function () {
+        window.parent.postMessage({
+            action: 'MyPage'
+        }, '*'); // TO-DO: 임시로 모든 도메인 허용(*)하였음. 추후 수정할 것
+    });
+</script>
+
+{% endblock %}
